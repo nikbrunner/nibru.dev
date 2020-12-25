@@ -50,10 +50,10 @@ const skills: Skill[] = [
     lib: 'fab',
   },
   {
-    icon: 'adobe',
+    icon: 'drafting-compass',
     level: 85,
     title: 'Photoshop & Lightroom',
-    lib: 'fab',
+    lib: 'fas',
   },
   {
     icon: 'code',
