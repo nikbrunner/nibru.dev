@@ -1,24 +1,30 @@
 @charset "UTF-8";
 
-// 1. Configuration and helpers
-@import 'variables/variables';
-@import 'variables/uni-space';
+// Configuration and helpers
+@import 'variables/colors';
+@import 'variables/layout';
 @import 'variables/mixins';
+@import 'variables/responsive-design';
+@import 'variables/uni-space';
+@import 'variables/variables';
 
-// 2. Vendors
+// Vendors
 @import 'vendors/normalize';
 
-// 3. Base stuff
+// Base stuff
 @import 'base/base';
 @import 'base/fonts';
 @import 'base/typography';
 @import 'base/helpers';
 
-// 4. Components
+// Components
+@import 'components/Main';
+@import 'components/Section';
+@import 'components/Row';
 @import 'components/Skill';
 
-// 5. Page-specific styles
+// Page-specific styles
 @import 'pages/home';
 
-// 6. Themes
+// Themes
 @import 'themes/default';

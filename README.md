@@ -8,15 +8,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [x] Implement local data as `.ts` file
 - [x] Remove `/api`
 - [x] Remove `NOTES.md`
-- [ ] Setup SCSS
+- [x] Setup SCSS
     - [x] No modules
-    - [ ] Mixins
+    - [x] Mixins
 - [x] Import `cn()`
-- [ ] Basic components
-  - [ ] Wrapper
-- [ ] Rename Repo ( Avoid 2.0 )
-- [ ] [Bubble Like Chart for Skills](https://www.npmjs.com/package/@weknow/react-bubble-chart-d3)
+- [x] Basic components
+  - [x] Main
+  - [x] Section
+  - [x] Row
+- [ ] Fonts
+- [ ] Colors
+- [ ] Data
 
+## Ideas
+
+- [ ] [Bubble Like Chart for Skills](https://www.npmjs.com/package/@weknow/react-bubble-chart-d3)
 ## Questions
 
 - Why does the `export` script does not work when opening as a file in browser?

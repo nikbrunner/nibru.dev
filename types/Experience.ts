@@ -1,6 +1,6 @@
 export interface Experience {
+  dateRange: string;
+  company?: string;
   title: string;
-  state: string;
-  since: string;
-  specialty: string;
+  details?: string;
 }

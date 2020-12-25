@@ -31,3 +31,12 @@
     @content;
   }
 }
+
+@mixin overlay($zIndex) {
+  position: absolute;
+  z-index: $zIndex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
