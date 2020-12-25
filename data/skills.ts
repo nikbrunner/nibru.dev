@@ -46,7 +46,7 @@ const skills: Skill[] = [
   {
     icon: 'figma',
     level: 75,
-    title: 'Figma ( Design & Prototyping )',
+    title: 'Figma',
     lib: 'fab',
   },
   {

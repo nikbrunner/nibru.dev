@@ -9,10 +9,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [x] Remove `/api`
 - [x] Remove `NOTES.md`
 - [ ] Setup SCSS
-    - [ ] No modules
+    - [x] No modules
     - [ ] Mixins
-- [ ] Import `cn()`
+- [x] Import `cn()`
 - [ ] Basic components
+  - [ ] Wrapper
 - [ ] Rename Repo ( Avoid 2.0 )
 - [ ] [Bubble Like Chart for Skills](https://www.npmjs.com/package/@weknow/react-bubble-chart-d3)
 
