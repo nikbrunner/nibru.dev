@@ -10,19 +10,19 @@
     "export": "rm -rf ./.next && rm -rf ./out && npm run build && npm run next -- export"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "next": "9.5.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "next": "10.0.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@types/node": "^14.11.2",
-    "@types/react": "^16.9.49",
-    "prettier": "^2.1.2",
-    "sass": "^1.26.11",
-    "typescript": "^4.0.3"
+    "@types/node": "^14.14.16",
+    "@types/react": "^17.0.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.30.0",
+    "typescript": "^4.1.3"
   }
 }
