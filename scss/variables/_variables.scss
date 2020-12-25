@@ -1,17 +1,11 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
+/*
+ * This file contains generic application-wide Sass variables.
+ */
 
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
   'Helvetica', 'Arial', sans-serif !default;
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono',
   'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-$text-color: rgb(34, 34, 34) !default;
-$brand-color: rgb(229, 0, 80) !default;
-$light-grey: rgb(237, 237, 237) !default;
-$mid-grey: rgb(153, 153, 153) !default;
-$dark-grey: rgb(68, 68, 68) !default;
 
 $border-radius: 0.25rem;
 

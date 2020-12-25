@@ -1,0 +1,42 @@
+/*
+ * This file contains layout specific mixins
+ */
+
+@mixin grid($cols: 1fr, $col-gap: 0, $rows: auto, $row-gap: 0) {
+  display: grid;
+  grid-template-columns: $cols;
+  grid-column-gap: $col-gap;
+  grid-template-rows: $rows;
+  grid-row-gap: $row-gap;
+}
+
+@mixin grid-position(
+  $col-start,
+  $col-end,
+  $row-start: auto,
+  $row-end: auto
+) {
+  grid-column-start: $col-start;
+  grid-column-end: $col-end;
+  grid-row-start: $row-start;
+  grid-row-end: $row-end;
+}
+
+@mixin flex(
+  $flex-flow: row nowrap,
+  $justify-content: flex-start,
+  $align-items: stretch,
+  $align-content: normal,
+  $inline: false
+) {
+  @if $inline {
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+
+  flex-flow: $flex-flow;
+  justify-content: $justify-content;
+  align-content: $align-content;
+  align-items: $align-items;
+}
