@@ -1,9 +1,4 @@
-interface Skill {
-  icon: string;
-  level: number;
-  title: string;
-  lib: string;
-}
+import { Skill } from '../types/Skill';
 
 const skills: Skill[] = [
   {

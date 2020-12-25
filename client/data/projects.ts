@@ -1,8 +1,4 @@
-// TODO Project Description with Markdown?
-interface Project {
-  title: string;
-  description: string;
-}
+import { Project } from '../types/Project';
 
 const projects: Project[] = [
   {

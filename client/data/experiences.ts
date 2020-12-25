@@ -1,9 +1,4 @@
-interface Experience {
-  title: string;
-  state: string;
-  since: string;
-  specialty: string;
-}
+import { Experience } from '../types/Experience';
 
 const experiences: Experience[] = [
   {
