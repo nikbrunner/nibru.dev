@@ -1,7 +1,6 @@
 # nibru.dev 2
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+This is my next personal website.
 ## Todos
 
 - [x] [Implement Font Awesome](https://dev.to/vuongddang/how-to-use-fontawesome-in-next-js-5bl5)
@@ -19,6 +18,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [ ] Fonts
 - [ ] Colors
 - [ ] Data
+- [ ] debug mode
 
 ## Ideas
 
