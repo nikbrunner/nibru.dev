@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import Skill from '../components/Skill';
 
 import personalData from '../data/personalData';
 import skills from '../data/skills';
@@ -24,21 +25,17 @@ const Home = () => {
 
         <h2>{email}</h2>
 
-        <ul>
+        <div>
           {skills.map(({ title, level, lib, icon }) => (
-            <li key={title}>
-              <FontAwesomeIcon
-                icon={[lib, icon]}
-                style={{ width: '2em' }}
-              />
-              <progress id={title} max='100' value={level}>
-                {' '}
-                {level}%{' '}
-              </progress>
-              {title}
-            </li>
+            <Skill
+              key={title}
+              title={title}
+              level={level}
+              lib={lib}
+              icon={icon}
+            />
           ))}
-        </ul>
+        </div>
       </main>
     </div>
   );
