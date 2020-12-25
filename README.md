@@ -2,13 +2,17 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-
 ## Todos
 
 - [x] [Implement Font Awesome](https://dev.to/vuongddang/how-to-use-fontawesome-in-next-js-5bl5)
 - [x] Implement local data as `.ts` file
 - [x] Remove `/api`
 - [x] Remove `NOTES.md`
+- [ ] Setup SCSS
+    - [ ] No modules
+    - [ ] Mixins
+- [ ] Import `cn()`
+- [ ] Basic components
 - [ ] Rename Repo ( Avoid 2.0 )
 - [ ] [Bubble Like Chart for Skills](https://www.npmjs.com/package/@weknow/react-bubble-chart-d3)
 
