@@ -1,21 +1,13 @@
 import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useQuery } from 'react-query';
 
 import styles from '../styles/Home.module.scss';
 
-const fetchNibru = async () =>
-  (await fetch(`${process.env.NEXT_PUBLIC_API_URI}/nibru`)).json();
+import personalData from '../data/personalData';
+import skills from '../data/skills';
 
 const Home = () => {
-  const { isLoading, error, data } = useQuery('nibru', fetchNibru);
-
-  if (isLoading) return 'Loading...';
-
-  if (error) return 'An error has occurred: ';
-
-  const { firstName, lastName, skills, email } = data;
-
+  const { firstname, lastname, email } = personalData;
   return (
     <div className={styles.container}>
       <Head>
@@ -26,12 +18,12 @@ const Home = () => {
 
       <main className={styles.main}>
         <h1>
-          Hello, Im {firstName} {lastName}
+          Hello, Im {firstname} {lastname}
         </h1>
         <h2>{email}</h2>
         <ul>
-          {skills.map(({ id, title, level, lib, icon }) => (
-            <li key={id}>
+          {skills.map(({ title, level, lib, icon }) => (
+            <li key={title}>
               <FontAwesomeIcon
                 icon={[lib, icon]}
                 style={{ width: '2em' }}

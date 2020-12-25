@@ -3,6 +3,7 @@
 ## General
 
 - [ ] Implement local data as `.ts` file
+- [ ] Generate static build
 - [ ] Research how to work with .env Variables for Prod and Deploy
 - [ ] Rename Repo ( Avoid 2.0 )
 
