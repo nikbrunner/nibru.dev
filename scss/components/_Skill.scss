@@ -1,17 +1,14 @@
 // TODO Style Experience component
 .Skill {
-  @include flex(row nowrap, flex-start, center, center);
+  @include flex(column nowrap, flex-start, center, center);
   @include shadowAndEffect();
 
-  height: 50px;
-  padding: $space-s $space-m;
-  margin: $space-s 0;
+  padding: $space-m;
   border-radius: $border-radius;
 
   svg {
-    height: 100%;
-    width: 20px;
-    margin-right: $space-m;
+    height: 50px;
+    margin-bottom: $space-m;
   }
 
   progress {
