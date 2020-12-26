@@ -15,9 +15,10 @@ This is my next personal website.
   - [x] Main
   - [x] Section
   - [x] Row
+  - [ ] Cell
+- [ ] Data
 - [ ] Fonts
 - [ ] Colors
-- [ ] Data
 - [ ] debug mode
 
 ## Ideas

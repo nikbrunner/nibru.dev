@@ -4,11 +4,15 @@ import Main from '../components/Main';
 import Section from '../components/Section';
 import Row, { RowCols } from '../components/Row';
 import Skill from '../components/Skill';
+import Experience from '../components/Experience';
+
+import { Experience as ExperienceType } from '../types/Experience';
 
 import personalData from '../data/personalData';
 import skills from '../data/skills';
+import experiences from '../data/experiences';
 
-import { cn } from '../lib/cn';
+import React from 'react';
 
 const Home = () => (
   <Main classNames={['Home']}>
@@ -39,6 +43,26 @@ const Home = () => (
             icon={icon}
           />
         ))}
+      </Row>
+    </Section>
+
+    <Section>
+      <Row cols={RowCols.fourCols}>
+        {experiences.map(
+          (
+            { title, dateRange, company, details }: ExperienceType,
+            idx
+          ) => (
+            <Experience
+              key={title}
+              title={title}
+              dateRange={dateRange}
+              company={company}
+              details={details}
+              current={idx === experiences.length - 1}
+            />
+          )
+        )}
       </Row>
     </Section>
   </Main>

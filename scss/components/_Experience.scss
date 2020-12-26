@@ -1,0 +1,11 @@
+// TODO Style Experience component
+.Experience {
+  @include shadowAndEffect();
+
+  border-radius: $border-radius;
+  padding: $space-m;
+
+  &--current {
+    color: blue;
+  }
+}
