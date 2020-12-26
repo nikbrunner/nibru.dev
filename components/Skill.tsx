@@ -1,19 +1,14 @@
 import React from 'react';
-import { IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { GenericComponentProps } from '../types/GenericComponentProps';
+import { Skill as SkillType } from '../types/Skill';
 
 import { cn } from '../lib/cn';
 
-interface Props extends GenericComponentProps {
-  title: string;
-  level: number;
-  icon: IconName;
-  lib: IconPrefix;
-}
+type SkillProps = SkillType & GenericComponentProps;
 
-const Skill = ({ classNames, title, level, icon, lib }: Props) => (
+const Skill = ({ classNames, title, level, icon, lib }: SkillProps) => (
   <div className={cn('Skill', classNames)}>
     <FontAwesomeIcon icon={[lib, icon]} />
 
