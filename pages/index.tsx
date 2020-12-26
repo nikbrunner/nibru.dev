@@ -22,7 +22,7 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-    <Section>
+    <Section classNames={['Home__personalData']}>
       <Row cols={RowCols.twoCols}>
         <h1>
           Hello, Im {personalData.firstname} {personalData.lastname}
@@ -32,8 +32,8 @@ const Home = () => (
       </Row>
     </Section>
 
-    <Section>
-      <Row>
+    <Section classNames={['Home__skills']}>
+      <Row cols={RowCols.fourCols}>
         {skills.map(({ title, level, lib, icon }) => (
           <Skill
             key={title}
@@ -46,7 +46,7 @@ const Home = () => (
       </Row>
     </Section>
 
-    <Section>
+    <Section classNames={['Home__experiences']}>
       <Row cols={RowCols.fourCols}>
         {experiences.map(
           (
