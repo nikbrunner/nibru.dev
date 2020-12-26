@@ -30,7 +30,14 @@ const Home = () => (
             Hello, Im {personalData.firstname} {personalData.lastname}
           </h1>
 
-          <h2>{personalData.github}</h2>
+          <ul>
+            <li>{personalData.birthday}</li>
+            <li>{personalData.email}</li>
+            <li>{personalData.phone}</li>
+            <li>{personalData.website}</li>
+            <li>{personalData.github}</li>
+            <li>{personalData.linkedin}</li>
+          </ul>
         </Row>
       </Section>
 
