@@ -16,14 +16,22 @@ This is my next personal website.
   - [x] Section
   - [x] Row
   - [ ] Cell
-- [ ] Data
+- [ ] Migrate Data
+  - [ ] Personal Data
+  - [ ] Skills
+  - [ ] Experiences
+  - [ ] Projects
+    - Add disclaimer for company projects
+    - Only personal projects
+- [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
 - [ ] Fonts
 - [ ] Colors
 - [ ] debug mode
 
 ## Ideas
 
-- [ ] [Bubble Like Chart for Skills](https://www.npmjs.com/package/@weknow/react-bubble-chart-d3)
+- [ ] [Bubble Like Chart for Skills](https://www.npmjs.com/package/@weknow/react-bubble-chart-d3)?
+- [ ] Nord Colors?
 ## Questions
 
 - Why does the `export` script does not work when opening as a file in browser?
