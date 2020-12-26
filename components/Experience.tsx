@@ -20,8 +20,8 @@ const Experience = ({
   <div className={cn('Experience', classNames, { current })}>
     <p>{title}</p>
     <p>{dateRange}</p>
-    <p>{company}</p>
-    <p>{details}</p>
+    {company && <p>{company}</p>}
+    {details && <p>{details}</p>}
   </div>
 );
 
