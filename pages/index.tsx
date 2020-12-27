@@ -68,7 +68,7 @@ const Home = () => (
           {experiences.map(
             (
               { title, dateRange, company, details }: ExperienceType,
-              idx
+              idx: number
             ) => (
               <Experience
                 key={title}
