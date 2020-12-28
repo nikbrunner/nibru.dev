@@ -1,11 +1,27 @@
 // TODO Style Experience component
 .Experience {
-  @include shadowAndEffect();
-
   border-radius: $border-radius;
   padding: $space-m;
 
-  &--current {
-    color: blue;
+  &--dark {
+    @include shadowAndEffect('dark');
+
+    background: $color-dark-grey;
+    color: $color-off-white;
+
+    &.Experience--current {
+      color: $color-accent;
+    }
+  }
+
+  &--light {
+    @include shadowAndEffect('light');
+
+    background: $color-off-white;
+    color: $color-dark-grey;
+
+    &.Experience--current {
+      color: $color-accent;
+    }
   }
 }

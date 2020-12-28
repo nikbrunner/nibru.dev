@@ -8,8 +8,15 @@ import { cn } from '../lib/cn';
 
 type SkillProps = SkillType & GenericComponentProps;
 
-const Skill = ({ classNames, title, level, icon, lib }: SkillProps) => (
-  <div className={cn('Skill', classNames)}>
+const Skill = ({
+  classNames,
+  theme,
+  title,
+  level,
+  icon,
+  lib
+}: SkillProps) => (
+  <div className={cn('Skill', classNames, { [theme]: theme })}>
     <FontAwesomeIcon icon={[lib, icon]} />
 
     <progress id={title} max='100' value={level}>

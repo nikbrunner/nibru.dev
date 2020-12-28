@@ -11,13 +11,16 @@ interface ExperienceProps extends ExperienceType, GenericComponentProps {
 
 const Experience = ({
   classNames,
+  theme,
   title,
   dateRange,
   company,
   details,
   current
 }: ExperienceProps) => (
-  <div className={cn('Experience', classNames, { current })}>
+  <div
+    className={cn('Experience', classNames, { [theme]: theme, current })}
+  >
     <p>{title}</p>
     <p>{dateRange}</p>
     {company && <p>{company}</p>}

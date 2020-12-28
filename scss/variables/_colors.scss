@@ -1,11 +1,12 @@
 /*
  * This file contains color-variables
  */
+$color-off-white: #c9d1d9 !default;
+$color-white: #e7eaec !default;
 
-$text-color: rgb(34, 34, 34) !default;
+$color-dark-grey: #0d1117 !default;
+$color-mid-grey: #111822 !default;
 
-$brand-color: rgb(229, 0, 80) !default;
+$color-accent: #2ea043 !default;
 
-$light-grey: rgb(237, 237, 237) !default;
-$mid-grey: rgb(153, 153, 153) !default;
-$dark-grey: rgb(68, 68, 68) !default;
+$text-color: $color-dark-grey;

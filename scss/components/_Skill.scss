@@ -1,7 +1,6 @@
 // TODO Style Experience component
 .Skill {
   @include flex(column nowrap, flex-start, center, center);
-  @include shadowAndEffect();
 
   padding: $space-m;
   border-radius: $border-radius;
@@ -13,5 +12,13 @@
 
   progress {
     margin-right: $space-m;
+  }
+
+  &--dark {
+    @include shadowAndEffect('dark');
+  }
+
+  &--light {
+    @include shadowAndEffect('light');
   }
 }

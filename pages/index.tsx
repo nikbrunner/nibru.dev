@@ -1,4 +1,7 @@
+import React, { useContext } from 'react';
 import Head from 'next/head';
+
+import { ThemeContext, Theme } from '../context/ThemeContext';
 
 import Main from '../components/Main';
 import Section from '../components/Section';
@@ -13,77 +16,84 @@ import personalData from '../data/personalData';
 import skills from '../data/skills';
 import experiences from '../data/experiences';
 
-import React from 'react';
+const Home = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
 
-const Home = () => (
-  <>
-    <Head>
-      <title>nibru.dev</title>
+  return (
+    <>
+      <Head>
+        <title>nibru.dev</title>
 
-      <link rel='icon' href='/favicon.ico' />
-    </Head>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
 
-    <Main classNames={['Home']}>
-      <Section classNames={['Home__personalData']}>
-        <Row cols={RowCols.twoCols}>
-          <h1>
-            Hello, Im {personalData.firstname} {personalData.lastname}
-          </h1>
+      <Main classNames={['Home']} theme={theme}>
+        <button onClick={() => setTheme(Theme.dark)}>🌚</button>
+        <button onClick={() => setTheme(Theme.light)}>🌞</button>
 
-          <ul>
-            <li>{personalData.birthday}</li>
-            <li>{personalData.email}</li>
-            <li>{personalData.phone}</li>
-            <li>{personalData.website}</li>
-            <li>{personalData.github}</li>
-            <li>{personalData.linkedin}</li>
-          </ul>
-        </Row>
-      </Section>
+        <Section classNames={['Home__personalData']}>
+          <Row cols={RowCols.twoCols}>
+            <h1>
+              Hello, Im {personalData.firstname} {personalData.lastname}
+            </h1>
 
-      <Section classNames={['Home__skills']}>
-        <Row>
-          <h1>Skills</h1>
-        </Row>
+            <ul>
+              <li>{personalData.birthday}</li>
+              <li>{personalData.email}</li>
+              <li>{personalData.phone}</li>
+              <li>{personalData.website}</li>
+              <li>{personalData.github}</li>
+              <li>{personalData.linkedin}</li>
+            </ul>
+          </Row>
+        </Section>
 
-        <Row cols={RowCols.fourCols}>
-          {skills.map(({ title, level, lib, icon }: SkillType) => (
-            <Skill
-              key={title}
-              title={title}
-              level={level}
-              lib={lib}
-              icon={icon}
-            />
-          ))}
-        </Row>
-      </Section>
+        <Section classNames={['Home__skills']}>
+          <Row>
+            <h1>Skills</h1>
+          </Row>
 
-      <Section classNames={['Home__experiences']}>
-        <Row>
-          <h1>Experiences</h1>
-        </Row>
-
-        <Row cols={RowCols.fourCols}>
-          {experiences.map(
-            (
-              { title, dateRange, company, details }: ExperienceType,
-              idx: number
-            ) => (
-              <Experience
+          <Row cols={RowCols.fourCols}>
+            {skills.map(({ title, level, lib, icon }: SkillType) => (
+              <Skill
                 key={title}
                 title={title}
-                dateRange={dateRange}
-                company={company}
-                details={details}
-                current={idx === experiences.length - 1}
+                level={level}
+                lib={lib}
+                icon={icon}
+                theme={theme}
               />
-            )
-          )}
-        </Row>
-      </Section>
-    </Main>
-  </>
-);
+            ))}
+          </Row>
+        </Section>
+
+        <Section classNames={['Home__experiences']}>
+          <Row>
+            <h1>Experiences</h1>
+          </Row>
+
+          <Row cols={RowCols.fourCols}>
+            {experiences.map(
+              (
+                { title, dateRange, company, details }: ExperienceType,
+                idx: number
+              ) => (
+                <Experience
+                  key={title}
+                  title={title}
+                  dateRange={dateRange}
+                  company={company}
+                  details={details}
+                  current={idx === experiences.length - 1}
+                  theme={theme}
+                />
+              )
+            )}
+          </Row>
+        </Section>
+      </Main>
+    </>
+  );
+};
 
 export default Home;

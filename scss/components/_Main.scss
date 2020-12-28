@@ -5,4 +5,14 @@
   @include mq('l') {
     padding: $space-l;
   }
+
+  &--dark {
+    background: $color-dark-grey;
+    color: $color-off-white;
+  }
+
+  &--light {
+    background: $color-white;
+    color: $color-dark-grey;
+  }
 }
