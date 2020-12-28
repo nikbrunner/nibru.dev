@@ -31,8 +31,8 @@ const Home = () => {
         <button onClick={() => setTheme(Theme.dark)}>🌚</button>
         <button onClick={() => setTheme(Theme.light)}>🌞</button>
 
-        <Section classNames={['Home__personalData']}>
-          <Row cols={RowCols.twoCols}>
+        <Section theme={theme} classNames={['Home__personalData']}>
+          <Row theme={theme} cols={RowCols.twoCols}>
             <h1>
               Hello, Im {personalData.firstname} {personalData.lastname}
             </h1>
@@ -48,12 +48,12 @@ const Home = () => {
           </Row>
         </Section>
 
-        <Section classNames={['Home__skills']}>
-          <Row>
+        <Section theme={theme} classNames={['Home__skills']}>
+          <Row theme={theme}>
             <h1>Skills</h1>
           </Row>
 
-          <Row cols={RowCols.fourCols}>
+          <Row theme={theme} cols={RowCols.fourCols}>
             {skills.map(({ title, level, lib, icon }: SkillType) => (
               <Skill
                 key={title}
@@ -67,12 +67,12 @@ const Home = () => {
           </Row>
         </Section>
 
-        <Section classNames={['Home__experiences']}>
-          <Row>
+        <Section theme={theme} classNames={['Home__experiences']}>
+          <Row theme={theme}>
             <h1>Experiences</h1>
           </Row>
 
-          <Row cols={RowCols.fourCols}>
+          <Row theme={theme} cols={RowCols.fourCols}>
             {experiences.map(
               (
                 { title, dateRange, company, details }: ExperienceType,

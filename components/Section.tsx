@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { GenericComponentProps } from '../types/GenericComponentProps';
+
 import { cn } from '../lib/cn';
 
-interface Props {
+interface Props extends GenericComponentProps {
   children: React.ReactNode;
   classNames?: string[];
   id?: string;
@@ -15,6 +17,7 @@ interface Props {
 
 const Section = ({
   children,
+  theme,
   id,
   classNames = [],
   debug = false,
@@ -25,6 +28,7 @@ const Section = ({
 }: Props) => (
   <section
     className={cn('Section', classNames, {
+      [theme]: theme,
       debug,
       backgroundImage,
       backgroundVideo,

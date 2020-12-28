@@ -16,8 +16,15 @@ interface Props extends GenericComponentProps {
   cols?: RowCols;
 }
 
-const Row = ({ classNames, children, cols = RowCols.oneCol }: Props) => (
-  <article className={cn('Row', classNames, { [cols]: cols })}>
+const Row = ({
+  classNames,
+  theme,
+  children,
+  cols = RowCols.oneCol
+}: Props) => (
+  <article
+    className={cn('Row', classNames, { [theme]: theme, [cols]: cols })}
+  >
     {children}
   </article>
 );
