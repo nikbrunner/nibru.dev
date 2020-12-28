@@ -43,13 +43,16 @@
 
 @mixin shadowAndEffect($theme: 'dark') {
   // TODO Improve FPS with the trick from Kevin Powell
-  box-shadow: 0 1px 3px rgba($color: #000000, $alpha: 0.2);
-  transition: 0.25s all ease-in-out;
+  box-shadow: 0 3px 9px rgba($color: #000000, $alpha: 0.2);
+
+  @include on-event() {
+    box-shadow: 0 9px 18px rgba($color: #000000, $alpha: 0.2);
+  }
 
   @if $theme == 'dark' {
     @include on-event() {
       background-color: $color-mid-grey;
-      color: $color-off-white;
+      color: $color-accent;
     }
   }
 

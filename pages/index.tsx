@@ -28,8 +28,10 @@ const Home = () => {
       </Head>
 
       <Main classNames={['Home']} theme={theme}>
-        <button onClick={() => setTheme(Theme.dark)}>🌚</button>
-        <button onClick={() => setTheme(Theme.light)}>🌞</button>
+        <Row theme={theme} cols={RowCols.twoCols}>
+          <button onClick={() => setTheme(Theme.dark)}>🌚</button>
+          <button onClick={() => setTheme(Theme.light)}>🌞</button>
+        </Row>
 
         <Section theme={theme} classNames={['Home__personalData']}>
           <Row theme={theme} cols={RowCols.twoCols}>
