@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { ThemeContext } from '../context/ThemeContext';
 
 import { GenericComponentProps } from '../types/GenericComponentProps';
 
@@ -17,7 +19,6 @@ interface Props extends GenericComponentProps {
 
 const Section = ({
   children,
-  theme,
   id,
   classNames = [],
   debug = false,
@@ -25,35 +26,41 @@ const Section = ({
   backgroundVideo = false,
   backgroundOverlay = false,
   backgroundBlur = false
-}: Props) => (
-  <section
-    className={cn('Section', classNames, {
-      [theme]: theme,
-      debug,
-      backgroundImage,
-      backgroundVideo,
-      backgroundOverlay,
-      backgroundBlur
-    })}
-    id={id}
-    style={
-      backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}
-    }
-  >
-    {backgroundBlur && <div className='Section__backgroundBlur' />}
+}: Props) => {
+  const { theme } = useContext(ThemeContext);
 
-    {backgroundOverlay && <div className='Section__backgroundOverlay' />}
+  return (
+    <section
+      className={cn('Section', classNames, {
+        [theme]: theme,
+        debug,
+        backgroundImage,
+        backgroundVideo,
+        backgroundOverlay,
+        backgroundBlur
+      })}
+      id={id}
+      style={
+        backgroundImage
+          ? { backgroundImage: `url(${backgroundImage})` }
+          : {}
+      }
+    >
+      {backgroundBlur && <div className='Section__backgroundBlur' />}
 
-    {backgroundVideo && (
-      <div className='Section__backgroundVideo'>
-        <video muted loop autoPlay>
-          <source src={backgroundVideo} type='video/mp4' />
-        </video>
-      </div>
-    )}
+      {backgroundOverlay && <div className='Section__backgroundOverlay' />}
 
-    <article className='Section__content'>{children}</article>
-  </section>
-);
+      {backgroundVideo && (
+        <div className='Section__backgroundVideo'>
+          <video muted loop autoPlay>
+            <source src={backgroundVideo} type='video/mp4' />
+          </video>
+        </div>
+      )}
+
+      <article className='Section__content'>{children}</article>
+    </section>
+  );
+};
 
 export default Section;

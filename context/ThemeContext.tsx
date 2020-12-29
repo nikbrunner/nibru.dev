@@ -5,14 +5,21 @@ export enum Theme {
   light = 'light'
 }
 
-export const ThemeContext = createContext(null);
+export type ThemeContextType = {
+  theme: Theme;
+  setTheme: React.Dispatch<React.SetStateAction<Theme>>;
+};
+
+export const ThemeContext: React.Context<ThemeContextType> = createContext(
+  null
+);
 
 interface Props {
   children: React.ReactNode;
 }
 
 export const ThemeProvider = ({ children }: Props) => {
-  const [theme, setTheme] = useState(Theme.dark);
+  const [theme, setTheme] = useState<Theme>(Theme.dark);
 
   return (
     <ThemeContext.Provider

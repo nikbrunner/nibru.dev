@@ -17,7 +17,7 @@ import skills from '../data/skills';
 import experiences from '../data/experiences';
 
 const Home = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { setTheme } = useContext(ThemeContext);
 
   return (
     <>
@@ -27,14 +27,14 @@ const Home = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Main classNames={['Home']} theme={theme}>
-        <Row theme={theme} cols={RowCols.twoCols}>
+      <Main classNames={['Home']}>
+        <Row cols={RowCols.twoCols}>
           <button onClick={() => setTheme(Theme.dark)}>🌚</button>
           <button onClick={() => setTheme(Theme.light)}>🌞</button>
         </Row>
 
-        <Section theme={theme} classNames={['Home__personalData']}>
-          <Row theme={theme} cols={RowCols.twoCols}>
+        <Section classNames={['Home__personalData']}>
+          <Row cols={RowCols.twoCols}>
             <h1>
               Hello, Im {personalData.firstname} {personalData.lastname}
             </h1>
@@ -50,12 +50,12 @@ const Home = () => {
           </Row>
         </Section>
 
-        <Section theme={theme} classNames={['Home__skills']}>
-          <Row theme={theme}>
+        <Section classNames={['Home__skills']}>
+          <Row>
             <h1>Skills</h1>
           </Row>
 
-          <Row theme={theme} cols={RowCols.fourCols}>
+          <Row cols={RowCols.fourCols}>
             {skills.map(({ title, level, lib, icon }: SkillType) => (
               <Skill
                 key={title}
@@ -63,18 +63,17 @@ const Home = () => {
                 level={level}
                 lib={lib}
                 icon={icon}
-                theme={theme}
               />
             ))}
           </Row>
         </Section>
 
-        <Section theme={theme} classNames={['Home__experiences']}>
-          <Row theme={theme}>
+        <Section classNames={['Home__experiences']}>
+          <Row>
             <h1>Experiences</h1>
           </Row>
 
-          <Row theme={theme} cols={RowCols.fourCols}>
+          <Row cols={RowCols.fourCols}>
             {experiences.map(
               (
                 { title, dateRange, company, details }: ExperienceType,
@@ -87,7 +86,6 @@ const Home = () => {
                   company={company}
                   details={details}
                   current={idx === experiences.length - 1}
-                  theme={theme}
                 />
               )
             )}

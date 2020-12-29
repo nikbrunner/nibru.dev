@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { ThemeContext } from '../context/ThemeContext';
 
 import { GenericComponentProps } from '../types/GenericComponentProps';
 
@@ -16,17 +18,16 @@ interface Props extends GenericComponentProps {
   cols?: RowCols;
 }
 
-const Row = ({
-  classNames,
-  theme,
-  children,
-  cols = RowCols.oneCol
-}: Props) => (
-  <article
-    className={cn('Row', classNames, { [theme]: theme, [cols]: cols })}
-  >
-    {children}
-  </article>
-);
+const Row = ({ classNames, children, cols = RowCols.oneCol }: Props) => {
+  const { theme } = useContext(ThemeContext);
+
+  return (
+    <article
+      className={cn('Row', classNames, { [theme]: theme, [cols]: cols })}
+    >
+      {children}
+    </article>
+  );
+};
 
 export default Row;
