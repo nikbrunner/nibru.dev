@@ -2,27 +2,6 @@
  * This file contains generic application-wide Sass mixins.
  */
 
-/// Event wrapper
-/// @author Harry Roberts
-/// @param {Bool} $self [false] - Whether or not to include current selector
-/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
-@mixin on-event($self: false) {
-  @if $self {
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  } @else {
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  }
-}
-
 /// Make a context based selector a little more friendly
 /// @author Hugo Giraudel
 /// @param {String} $context
@@ -41,25 +20,11 @@
   left: 0;
 }
 
-@mixin shadowAndEffect($theme: 'dark') {
+@mixin default-box-shadow() {
   // TODO Improve FPS with the trick from Kevin Powell
-  box-shadow: 0 3px 9px rgba($color: #000000, $alpha: 0.2);
+  box-shadow: 0 1px 3px rgba($color: $color-dark-grey, $alpha: 0.2);
 
-  @include on-event() {
-    box-shadow: 0 9px 18px rgba($color: #000000, $alpha: 0.2);
-  }
-
-  @if $theme == 'dark' {
-    @include on-event() {
-      background-color: $color-mid-grey;
-      color: $color-accent;
-    }
-  }
-
-  @if $theme == 'light' {
-    @include on-event() {
-      background-color: $color-accent;
-      color: $color-dark-grey;
-    }
+  &:hover {
+    box-shadow: 0 3px 9px rgba($color: $color-dark-grey, $alpha: 0.2);
   }
 }

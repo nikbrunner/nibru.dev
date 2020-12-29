@@ -18,7 +18,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.05s ease-in-out;
 }
 
 /**
@@ -27,7 +27,7 @@ html {
 a {
   text-decoration: none;
 
-  @include on-event {
+  &:hover {
     color: $text-color;
     text-decoration: underline;
   }

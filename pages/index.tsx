@@ -15,6 +15,8 @@ import { Skill as SkillType } from '../types/Skill';
 import profile from '../data/personalData';
 import skills from '../data/skills';
 import experiences from '../data/experiences';
+import Button from '../components/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home = () => {
   const { setTheme } = useContext(ThemeContext);
@@ -28,22 +30,25 @@ const Home = () => {
       </Head>
 
       <Main classNames={['Home']}>
-        <Row cols={RowCols.twoCols}>
-          <button onClick={() => setTheme(Theme.dark)}>🌚</button>
-          <button onClick={() => setTheme(Theme.light)}>🌞</button>
+        <Row>
+          <div className='Home__theme-buttons'>
+            <Button onClick={() => setTheme(Theme.dark)}>
+              <FontAwesomeIcon icon='moon' />
+            </Button>
+
+            <Button onClick={() => setTheme(Theme.light)}>
+              <FontAwesomeIcon icon='lightbulb' />
+            </Button>
+          </div>
         </Row>
 
-        <Section classNames={['Home__personalData']}>
+        <Section classNames={['Home__profile']}>
           <Row cols={RowCols.twoCols}>
             <h1>
               Hello, Im {profile.firstname} {profile.lastname}
             </h1>
 
             <ul>
-              <li>{profile.birthday}</li>
-              <li>{profile.email}</li>
-              <li>{profile.phone}</li>
-              <li>{profile.website}</li>
               <li>{profile.github}</li>
               <li>{profile.linkedin}</li>
             </ul>

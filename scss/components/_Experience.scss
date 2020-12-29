@@ -4,8 +4,6 @@
   padding: $space-m;
 
   &--dark {
-    @include shadowAndEffect('dark');
-
     background: $color-dark-grey;
     color: $color-off-white;
 
@@ -15,8 +13,6 @@
   }
 
   &--light {
-    @include shadowAndEffect('light');
-
     background: $color-off-white;
     color: $color-dark-grey;
 

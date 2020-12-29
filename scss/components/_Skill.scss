@@ -15,10 +15,8 @@
   }
 
   &--dark {
-    @include shadowAndEffect('dark');
   }
 
   &--light {
-    @include shadowAndEffect('light');
   }
 }

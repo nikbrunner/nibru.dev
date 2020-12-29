@@ -1,0 +1,36 @@
+.Button {
+  @include default-box-shadow();
+  @include flex(row nowrap, flex-start, center, center, $inline: true);
+
+  border: none;
+  border-radius: $border-radius;
+  outline: none;
+  padding: $space-s;
+  margin: $space-s;
+  cursor: pointer;
+
+  .svg-inline--fa {
+    width: 2em;
+    height: 1em;
+  }
+
+  &--dark {
+    background: $color-mid-dark-grey;
+    color: $color-off-white;
+    border: 1px solid $color-mid-light-grey;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &--light {
+    background: $color-white;
+    color: $color-dark-grey;
+    border: 1px solid $color-off-white;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
