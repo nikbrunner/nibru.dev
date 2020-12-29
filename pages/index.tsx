@@ -12,7 +12,7 @@ import Experience from '../components/Experience';
 import { Experience as ExperienceType } from '../types/Experience';
 import { Skill as SkillType } from '../types/Skill';
 
-import personalData from '../data/personalData';
+import profile from '../data/personalData';
 import skills from '../data/skills';
 import experiences from '../data/experiences';
 
@@ -36,16 +36,16 @@ const Home = () => {
         <Section classNames={['Home__personalData']}>
           <Row cols={RowCols.twoCols}>
             <h1>
-              Hello, Im {personalData.firstname} {personalData.lastname}
+              Hello, Im {profile.firstname} {profile.lastname}
             </h1>
 
             <ul>
-              <li>{personalData.birthday}</li>
-              <li>{personalData.email}</li>
-              <li>{personalData.phone}</li>
-              <li>{personalData.website}</li>
-              <li>{personalData.github}</li>
-              <li>{personalData.linkedin}</li>
+              <li>{profile.birthday}</li>
+              <li>{profile.email}</li>
+              <li>{profile.phone}</li>
+              <li>{profile.website}</li>
+              <li>{profile.github}</li>
+              <li>{profile.linkedin}</li>
             </ul>
           </Row>
         </Section>

@@ -1,6 +1,7 @@
-export interface PersonalData {
+export interface Profile {
   firstname: string;
   lastname: string;
+  image: string;
   email: string;
   birthday: string;
   phone: string;
