@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { ThemeContext } from '../context/ThemeContext';
 
-import { GenericComponentProps } from '../types/GenericComponentProps';
+import { GenericProps } from '../types/GenericProps';
 import { Skill as SkillType } from '../types/Skill';
 
 import { cn } from '../lib/cn';
 
-type SkillProps = SkillType & GenericComponentProps;
+type SkillProps = SkillType & GenericProps;
 
 const Skill = ({ classNames, title, level, icon, lib }: SkillProps) => {
   const { theme } = useContext(ThemeContext);

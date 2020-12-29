@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import { ThemeContext } from '../context/ThemeContext';
 
-import { GenericComponentProps } from '../types/GenericComponentProps';
+import { GenericProps } from '../types/GenericProps';
 
 import { cn } from '../lib/cn';
 
@@ -13,7 +13,7 @@ export enum RowCols {
   fourCols = 'withFourCols'
 }
 
-interface Props extends GenericComponentProps {
+interface Props extends GenericProps {
   children: React.ReactNode;
   cols?: RowCols;
 }
