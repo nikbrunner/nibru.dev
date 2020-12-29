@@ -1,30 +1,14 @@
 // TODO Write MediaQueries (Mobile first. Stack cols)
 .Row {
   &--withOneCol {
-    @include grid(1fr, 0);
   }
 
   &--withTwoCols {
-    @include grid(1fr, 0, repeat(2, 1fr), $space-m);
-
-    @include mq('xxl') {
-      @include grid(repeat(2, 1fr), $space-m, auto, $space-m);
-    }
   }
 
   &--withThreeCols {
-    @include grid(1fr, 0, repeat(3, 1fr), $space-m);
-
-    @include mq('xxl') {
-      @include grid(repeat(3, 1fr), $space-m, auto, $space-m);
-    }
   }
 
   &--withFourCols {
-    @include grid(1fr, 0, repeat(4, 1fr), $space-m);
-
-    @include mq('xxl') {
-      @include grid(repeat(4, 1fr), $space-m, auto, $space-m);
-    }
   }
 }

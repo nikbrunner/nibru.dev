@@ -1,7 +1,5 @@
 // TODO Write MediaQueries
 .Main {
-  @include grid(1fr, 0, auto, $space-l);
-
   @include mq('l') {
     padding: $space-l;
   }

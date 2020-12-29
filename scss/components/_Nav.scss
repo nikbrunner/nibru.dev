@@ -1,0 +1,16 @@
+.Nav {
+  @include flex(row nowrap, space-between, center, center);
+
+  padding: $space-m;
+
+  &__theme-buttons {
+    @include flex(row nowrap, center, center, center);
+
+    gap: $space-m;
+  }
+
+  &--dark {
+    background: $color-dark-grey;
+    color: $color-off-white;
+  }
+}
