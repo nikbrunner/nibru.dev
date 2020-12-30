@@ -1,7 +1,7 @@
 import { Profile } from '../types/PersonalData';
 
 const profile: Profile = {
-  firstname: 'Nik',
+  firstname: 'Nikolaus',
   lastname: 'Brunner',
   image: '/path/to/img',
   email: 'nikolaus.brunner@protonmail.ch',

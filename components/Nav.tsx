@@ -8,7 +8,7 @@ import { ThemeContext, Theme } from '../context/ThemeContext';
 
 import { cn } from '../lib/cn';
 
-import profile from '../data/personalData';
+import profile from '../data/profile';
 import Row from './Row';
 
 const Nav = () => {
