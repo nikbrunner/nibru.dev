@@ -1,8 +1,8 @@
 .Nav {
   @include flex(row nowrap, space-between, center, center);
+  @include box-shadow-default();
 
   padding: $space-m;
-  border-bottom: $border-default;
   position: fixed;
   top: 0;
   width: 100%;

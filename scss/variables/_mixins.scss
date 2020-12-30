@@ -20,7 +20,7 @@
   left: 0;
 }
 
-@mixin default-box-shadow() {
+@mixin box-shadow-default() {
   // TODO Improve FPS with the trick from Kevin Powell
   box-shadow: 0 1px 3px rgba($color: $color-dark-grey, $alpha: 0.2);
 

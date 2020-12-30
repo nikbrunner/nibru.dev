@@ -1,5 +1,5 @@
 .Button {
-  @include default-box-shadow();
+  @include box-shadow-default();
   @include flex(row nowrap, flex-start, center, center, $inline: true);
 
   border: none;
