@@ -1,0 +1,38 @@
+.Link {
+  color: $color-blue;
+
+  &:hover {
+    color: $color-blue-light;
+  }
+
+  &::before,
+  &::after {
+    position: relative;
+    top: -1px;
+    color: $color-dark-grey;
+  }
+
+  &::before {
+    content: '[[';
+    margin-right: $space-xxs;
+  }
+
+  &::after {
+    content: ']]';
+    margin-left: $space-xxs;
+  }
+
+  &--dark {
+    &::before,
+    &::after {
+      color: $text-color-darkMode;
+    }
+  }
+
+  &--light {
+    &::before,
+    &::after {
+      color: $text-color-lightMode;
+    }
+  }
+}

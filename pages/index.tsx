@@ -17,6 +17,7 @@ import { Skill as SkillType } from '../types/Skill';
 import skills from '../data/skills';
 import experiences from '../data/experiences';
 import profile from '../data/profile';
+import Link from '../components/Link';
 
 const Home = () => (
   <>
@@ -32,20 +33,22 @@ const Home = () => (
       <Section classNames={['Home__profile-section']}>
         <Row>
           <Headline>Hi there. 👋</Headline>
-
           <a href={profile.github}>
             <Button
               icon={<FontAwesomeIcon icon={['fab', 'github']} />}
               label='GitHub'
             />
           </a>
-
           <a href={profile.linkedin}>
             <Button
               icon={<FontAwesomeIcon icon={['fab', 'linkedin']} />}
               label='LinkedIn'
             />
           </a>
+          <Headline>Link component</Headline>
+          This is a Link to <Link href={profile.github}>GitHub</Link>, and
+          this is a link to LinkedIn{' '}
+          <Link href={profile.linkedin}>LinkedIn</Link>.
         </Row>
       </Section>
 

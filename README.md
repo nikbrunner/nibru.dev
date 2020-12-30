@@ -16,17 +16,25 @@ This is my next personal website.
   - [x] Section
   - [x] Row
   - [ ] Cell
-- [ ] Migrate Data
-  - [ ] Personal Data
-  - [ ] Skills
-  - [ ] Experiences
-  - [ ] Projects
+- [x] Migrate Data
+  - [x] Personal Data
+  - [x] Skills
+  - [x] Experiences
+  - [x] Projects
     - Add disclaimer for company projects
     - Only personal projects
 - [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
+- [ ] Light/Dark Mode
+- [ ] Put component scss files in a folder with their `.tsx` counterpart
+- [ ] Component example page
 - [ ] Fonts
 - [ ] Colors
 - [ ] debug mode
+
+### Components
+
+- [ ] Link (Wiki Style)
+- [ ] Light/Dark Toggle
 
 ## Ideas
 

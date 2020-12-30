@@ -1,6 +1,7 @@
 // TODO Write MediaQueries
 .Main {
   padding: $space-m;
+  min-height: 100vh;
 
   &--dark {
     background: $color-dark-grey;
