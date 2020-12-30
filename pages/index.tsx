@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Main from '../components/Main';
 import Section from '../components/Section';
 import Row, { RowCols } from '../components/Row';
+import Button from '../components/Button';
 import Nav from '../components/Nav';
 import Skill from '../components/Skill';
 import Experience from '../components/Experience';
@@ -16,7 +17,6 @@ import { Skill as SkillType } from '../types/Skill';
 import skills from '../data/skills';
 import experiences from '../data/experiences';
 import profile from '../data/profile';
-import Button from '../components/Button';
 
 const Home = () => (
   <>
