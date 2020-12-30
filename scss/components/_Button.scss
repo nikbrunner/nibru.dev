@@ -12,6 +12,12 @@
     height: 1em;
   }
 
+  &--label {
+    .svg-inline--fa {
+      margin-right: $space-s;
+    }
+  }
+
   &--dark {
     background: $color-mid-dark-grey;
     color: $text-color-darkMode;

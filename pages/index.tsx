@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Main from '../components/Main';
 import Section from '../components/Section';
@@ -14,6 +15,8 @@ import { Skill as SkillType } from '../types/Skill';
 
 import skills from '../data/skills';
 import experiences from '../data/experiences';
+import profile from '../data/profile';
+import Button from '../components/Button';
 
 const Home = () => (
   <>
@@ -29,6 +32,20 @@ const Home = () => (
       <Section classNames={['Home__profile-section']}>
         <Row>
           <Headline>Hi there. 👋</Headline>
+
+          <a href={profile.github}>
+            <Button
+              icon={<FontAwesomeIcon icon={['fab', 'github']} />}
+              label='GitHub'
+            />
+          </a>
+
+          <a href={profile.linkedin}>
+            <Button
+              icon={<FontAwesomeIcon icon={['fab', 'linkedin']} />}
+              label='LinkedIn'
+            />
+          </a>
         </Row>
       </Section>
 

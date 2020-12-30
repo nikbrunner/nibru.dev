@@ -11,7 +11,7 @@
   }
 
   &__buttons {
-    @include grid(repeat(4, 1fr), $space-s);
+    @include grid(repeat(2, 1fr), $space-s);
   }
 
   &--dark {

@@ -22,25 +22,15 @@ const Nav = () => {
       </div>
 
       <div className='Nav__buttons'>
-        <a href={profile.github}>
-          <Button>
-            <FontAwesomeIcon icon={['fab', 'github']} />
-          </Button>
-        </a>
+        <Button
+          icon={<FontAwesomeIcon icon='moon' />}
+          onClick={() => setTheme(Theme.dark)}
+        />
 
-        <a href={profile.linkedin}>
-          <Button>
-            <FontAwesomeIcon icon={['fab', 'linkedin']} />
-          </Button>
-        </a>
-
-        <Button onClick={() => setTheme(Theme.dark)}>
-          <FontAwesomeIcon icon='moon' />
-        </Button>
-
-        <Button onClick={() => setTheme(Theme.light)}>
-          <FontAwesomeIcon icon='lightbulb' />
-        </Button>
+        <Button
+          icon={<FontAwesomeIcon icon='lightbulb' />}
+          onClick={() => setTheme(Theme.light)}
+        ></Button>
       </div>
     </nav>
   );

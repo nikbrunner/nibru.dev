@@ -1,3 +1,4 @@
+import { FontawesomeObject } from '@fortawesome/fontawesome-svg-core';
 import React, { useContext } from 'react';
 
 import { ThemeContext } from '../context/ThemeContext';
@@ -13,13 +14,16 @@ export enum ButtonType {
 
 interface Props extends GenericProps {
   type?: ButtonType;
+  icon?: JSX.Element;
+  label?: string;
   onClick?: () => void;
 }
 
 const Button = ({
   classNames,
-  children,
   type = ButtonType.primary,
+  icon,
+  label,
   onClick
 }: Props) => {
   const { theme } = useContext(ThemeContext);
@@ -28,11 +32,13 @@ const Button = ({
     <button
       className={cn('Button', classNames, {
         [theme]: theme,
-        [type]: type
+        [type]: type,
+        label
       })}
       onClick={onClick}
     >
-      {children}
+      {icon && icon}
+      {label}
     </button>
   );
 };
