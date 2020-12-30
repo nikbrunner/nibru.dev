@@ -9,7 +9,7 @@ import Button from '../components/Button';
 import Nav from '../components/Nav';
 import Skill from '../components/Skill';
 import Experience from '../components/Experience';
-import Headline from '../components/Headline';
+import Headline, { HeadlineSize } from '../components/Headline';
 
 import { Experience as ExperienceType } from '../types/Experience';
 import { Skill as SkillType } from '../types/Skill';
@@ -45,7 +45,7 @@ const Home = () => (
               label='LinkedIn'
             />
           </a>
-          <Headline>Link component</Headline>
+          <Headline size={HeadlineSize.h3}>Link component</Headline>
           This is a Link to <Link href={profile.github}>GitHub</Link>, and
           this is a link to LinkedIn{' '}
           <Link href={profile.linkedin}>LinkedIn</Link>.
