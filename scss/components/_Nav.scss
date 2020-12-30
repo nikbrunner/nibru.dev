@@ -16,9 +16,7 @@
   }
 
   &__buttons {
-    .Button {
-      margin-right: $space-s;
-    }
+    @include grid(repeat(4, 1fr), $space-s);
   }
 
   &--dark {
