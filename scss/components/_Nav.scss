@@ -1,6 +1,5 @@
 .Nav {
   @include flex(row nowrap, space-between, center, center);
-  @include box-shadow-default();
 
   padding: $space-m;
   position: fixed;
@@ -8,6 +7,7 @@
   width: 100%;
   height: $height-nav;
   z-index: $zIndex-nav;
+  border-bottom: $border-default;
 
   &__name {
     .Headline {
