@@ -1,8 +1,6 @@
 // TODO Write MediaQueries
 .Main {
-  $padding-top: calc(#{$height-nav} + #{$space-m});
-
-  padding: $padding-top $space-m $space-m $space-m;
+  padding: $space-m;
 
   &--dark {
     background: $color-dark-grey;

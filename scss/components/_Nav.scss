@@ -1,12 +1,7 @@
 .Nav {
   @include flex(row nowrap, space-between, center, center);
 
-  padding: $space-m;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: $height-nav;
-  z-index: $zIndex-nav;
+  padding: $space-m $space-l;
   border-bottom: $border-default;
 
   &__name {

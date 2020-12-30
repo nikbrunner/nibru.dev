@@ -1,5 +1,5 @@
 .Headline {
-  margin: 0 0 0.25em 0;
+  margin: 0 0 0.35em 0;
   line-height: 1.25;
 
   &--dark {
@@ -17,6 +17,7 @@
 
   &--size-h1 {
     font-size: $font-size-h1;
+    border-bottom: $border-default;
   }
 
   // h2
@@ -26,6 +27,7 @@
 
   &--size-h2 {
     font-size: $font-size-h2;
+    border-bottom: $border-default;
   }
 
   // h3
