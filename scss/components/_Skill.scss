@@ -1,22 +1,30 @@
 // TODO Style Experience component
 .Skill {
-  @include flex(column nowrap, flex-start, center, center);
+  @include flex(column nowrap, flex-start, center, center, $inline: true);
+  @include default-box-shadow();
 
   padding: $space-m;
+  border: $border-default;
   border-radius: $border-radius;
 
   svg {
-    height: 50px;
+    height: 25px;
     margin-bottom: $space-m;
   }
 
   progress {
     margin-right: $space-m;
+    margin-bottom: $space-m;
+    border-radius: 0;
+    border: none;
+    height: 10px;
   }
 
   &--dark {
+    color: $text-color-darkMode;
   }
 
   &--light {
+    color: $text-color-lightMode;
   }
 }

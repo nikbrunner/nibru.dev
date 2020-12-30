@@ -2,15 +2,32 @@
   @include flex(row nowrap, space-between, center, center);
 
   padding: $space-m;
+  border-bottom: $border-default;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $height-nav;
+  z-index: $zIndex-nav;
 
-  &__theme-buttons {
-    @include flex(row nowrap, center, center, center);
+  &__name {
+    .Headline {
+      margin: 0;
+    }
+  }
 
-    gap: $space-m;
+  &__buttons {
+    .Button {
+      margin-right: $space-s;
+    }
   }
 
   &--dark {
     background: $color-dark-grey;
-    color: $color-off-white;
+    color: $text-color-darkMode;
+  }
+
+  &--light {
+    background: $color-white;
+    color: $text-color-lightMode;
   }
 }

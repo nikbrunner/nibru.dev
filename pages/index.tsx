@@ -7,11 +7,11 @@ import Row, { RowCols } from '../components/Row';
 import Nav from '../components/Nav';
 import Skill from '../components/Skill';
 import Experience from '../components/Experience';
+import Headline from '../components/Headline';
 
 import { Experience as ExperienceType } from '../types/Experience';
 import { Skill as SkillType } from '../types/Skill';
 
-import profile from '../data/personalData';
 import skills from '../data/skills';
 import experiences from '../data/experiences';
 
@@ -26,25 +26,21 @@ const Home = () => (
     <Nav />
 
     <Main classNames={['Home']}>
-      <Section classNames={['Home__profile']}>
-        <Row cols={RowCols.twoCols}>
-          <h1>
-            Hello, Im {profile.firstname} {profile.lastname}
-          </h1>
-
-          <ul>
-            <li>{profile.github}</li>
-            <li>{profile.linkedin}</li>
-          </ul>
+      <Section classNames={['Home__profile-section']}>
+        <Row>
+          <Headline>Hi there. 👋</Headline>
         </Row>
       </Section>
 
-      <Section classNames={['Home__skills']}>
+      <Section classNames={['Home__skills-section']}>
         <Row>
-          <h1>Skills</h1>
+          <Headline>Skills</Headline>
         </Row>
 
-        <Row cols={RowCols.fourCols}>
+        <Row
+          cols={RowCols.fourCols}
+          classNames={['Home__skills-container']}
+        >
           {skills.map(({ title, level, lib, icon }: SkillType) => (
             <Skill
               key={title}
@@ -57,12 +53,15 @@ const Home = () => (
         </Row>
       </Section>
 
-      <Section classNames={['Home__experiences']}>
+      <Section classNames={['Home__experiences-section']}>
         <Row>
-          <h1>Experiences</h1>
+          <Headline>Experiences</Headline>
         </Row>
 
-        <Row cols={RowCols.fourCols}>
+        <Row
+          cols={RowCols.fourCols}
+          classNames={['Home__experiences-container']}
+        >
           {experiences.map(
             (
               { title, dateRange, company, details }: ExperienceType,

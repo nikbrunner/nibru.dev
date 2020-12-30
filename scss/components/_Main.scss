@@ -1,16 +1,18 @@
 // TODO Write MediaQueries
 .Main {
+  $padding-top: calc(#{$height-nav} + #{$space-m});
+
   @include mq('l') {
-    padding: $space-l;
+    padding: $padding-top $space-m $space-m $space-m;
   }
 
   &--dark {
     background: $color-dark-grey;
-    color: $color-off-white;
+    color: $text-color-darkMode;
   }
 
   &--light {
     background: $color-white;
-    color: $color-dark-grey;
+    color: $text-color-lightMode;
   }
 }

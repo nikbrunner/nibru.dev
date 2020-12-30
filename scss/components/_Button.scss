@@ -15,7 +15,7 @@
 
   &--dark {
     background: $color-mid-dark-grey;
-    color: $color-off-white;
+    color: $text-color-darkMode;
     border: 1px solid $color-mid-light-grey;
 
     &:hover {
@@ -25,7 +25,7 @@
 
   &--light {
     background: $color-white;
-    color: $color-dark-grey;
+    color: $text-color-lightMode;
     border: 1px solid $color-off-white;
 
     &:hover {

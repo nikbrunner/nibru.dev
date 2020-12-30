@@ -13,7 +13,7 @@ export enum ButtonType {
 
 interface Props extends GenericProps {
   type?: ButtonType;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const Button = ({

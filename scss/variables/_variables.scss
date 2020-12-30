@@ -2,17 +2,24 @@
  * This file contains generic application-wide Sass variables.
  */
 
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
-  'Helvetica', 'Arial', sans-serif !default;
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono',
-  'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$text-font-stack: sans-serif !default;
 
+$height-nav: 50px;
+$zIndex-nav: 10;
+
+$border-color: transparentize($color-mid-light-grey, 0.75);
+$border-default: 1px solid $border-color;
 $border-radius: 0.25rem;
 
-$max-width: 1180px !default;
+$font-size-h1: 38px;
+$font-size-h2: 32px;
+$font-size-h3: 28px;
+$font-size-h4: 22px;
+$font-size-h5: 20px;
+$font-size-h6: 18px;
+$font-size-text: 16px;
 
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$transition-speed-fast: 250ms;
+$transition-speed-base: 500ms;
+$transition-speed-slow: 750ms;
+$transition-timing: cubic-bezier(0.16, 1, 0.3, 1);

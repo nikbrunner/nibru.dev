@@ -18,17 +18,9 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  transition: all 0.05s ease-in-out;
+  transition: all $transition-speed-fast $transition-timing;
 }
 
-/**
- * Basic styles for links
- */
 a {
   text-decoration: none;
-
-  &:hover {
-    color: $text-color;
-    text-decoration: underline;
-  }
 }

@@ -1,20 +1,41 @@
 // TODO Style Experience component
 .Experience {
-  border-radius: $border-radius;
+  @include flex(column nowrap, flex-start, center, center, $inline: true);
+  @include default-box-shadow();
+
   padding: $space-m;
+  border: $border-default;
+  border-radius: $border-radius;
+  text-align: center;
+
+  &__title {
+    margin-bottom: $space-m;
+  }
+
+  &__date-range {
+    margin-bottom: $space-m;
+  }
+
+  &__company {
+    font-weight: bold;
+  }
 
   &--dark {
     background: $color-dark-grey;
-    color: $color-off-white;
+    color: $text-color-darkMode;
 
     &.Experience--current {
-      color: $color-accent;
+      .Experience__title,
+      .Experience__date-range,
+      .Experience__company,
+      .Experience__details {
+        color: $color-accent;
+      }
     }
   }
 
   &--light {
-    background: $color-off-white;
-    color: $color-dark-grey;
+    color: $text-color-lightMode;
 
     &.Experience--current {
       color: $color-accent;
