@@ -20,25 +20,22 @@
     font-weight: bold;
   }
 
-  &--dark {
-    background: $color-dark-grey;
-    color: $text-color-darkMode;
-
-    &.Experience--current {
-      .Experience__title,
-      .Experience__date-range,
-      .Experience__company,
-      .Experience__details {
-        color: $color-accent;
-      }
+  &.Experience--current {
+    .Experience__title,
+    .Experience__date-range,
+    .Experience__company,
+    .Experience__details {
+      color: $color-accent;
     }
   }
 
-  &--light {
-    color: $text-color-lightMode;
+  &--dark {
+    background: $color-dark-grey;
+    color: $text-color-darkMode;
+  }
 
-    &.Experience--current {
-      color: $color-accent;
-    }
+  &--light {
+    background: $color-white;
+    color: $text-color-lightMode;
   }
 }
