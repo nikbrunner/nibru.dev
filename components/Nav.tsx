@@ -9,7 +9,6 @@ import { ThemeContext, Theme } from '../context/ThemeContext';
 import { cn } from '../lib/cn';
 
 import profile from '../data/profile';
-import Row from './Row';
 
 const Nav = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -17,7 +16,7 @@ const Nav = () => {
   return (
     <nav className={cn('Nav', [], { [theme]: theme })}>
       <div className='Nav__name'>
-        <Headline tag={HeadlineTag.h1} size={HeadlineSize.h3}>
+        <Headline tag={HeadlineTag.h1} size={HeadlineSize.h5}>
           {profile.firstname} {profile.lastname}
         </Headline>
       </div>
