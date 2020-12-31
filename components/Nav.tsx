@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Button from './Button';
-import Headline, { HeadlineSize, HeadlineTag } from './Headline';
+import Headline from './Headline';
 
 import { ThemeContext, Theme } from '../context/ThemeContext';
 
@@ -16,7 +16,7 @@ const Nav = () => {
   return (
     <nav className={cn('Nav', [], { [theme]: theme })}>
       <div className='Nav__name'>
-        <Headline tag={HeadlineTag.h1} size={HeadlineSize.h5}>
+        <Headline tag={'h1'} size={'h3'}>
           {profile.firstname} {profile.lastname}
         </Headline>
       </div>

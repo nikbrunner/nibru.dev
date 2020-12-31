@@ -9,7 +9,7 @@ import Button from '../components/Button';
 import Nav from '../components/Nav';
 import Skill from '../components/Skill';
 import Experience from '../components/Experience';
-import Headline, { HeadlineSize } from '../components/Headline';
+import Headline from '../components/Headline';
 
 import { Experience as ExperienceType } from '../types/Experience';
 import { Skill as SkillType } from '../types/Skill';
@@ -31,7 +31,26 @@ const Home = () => (
 
     <Main classNames={['Home']}>
       <Section classNames={['Home__profile-section']}>
-        <Headline size={HeadlineSize.h3}>Hi there. 👋</Headline>
+        <Headline tag={'h1'} size={'h1'}>
+          Headline Size H1
+        </Headline>
+        <Headline tag={'h2'} size={'h2'}>
+          Headline Size H2
+        </Headline>
+        <Headline tag={'h3'} size={'h3'}>
+          Headline Size H3
+        </Headline>
+        <Headline tag={'h4'} size={'h4'}>
+          Headline Size H4
+        </Headline>
+        <Headline tag={'h5'} size={'h5'}>
+          Headline Size H5
+        </Headline>
+        <Headline tag={'h6'} size={'h6'}>
+          Headline Size H6
+        </Headline>
+
+        {/* TODO Introduce Text Component */}
 
         <Row>
           <Button
@@ -41,7 +60,7 @@ const Home = () => (
           <Button label='This is a button' />
         </Row>
 
-        <Headline size={HeadlineSize.h3}>Link component</Headline>
+        <Headline size={'h3'}>Link component</Headline>
 
         <Row>
           This is an external link to{' '}

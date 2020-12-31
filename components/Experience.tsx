@@ -6,7 +6,7 @@ import { GenericProps } from '../types/GenericProps';
 import { Experience as ExperienceType } from '../types/Experience';
 
 import { cn } from '../lib/cn';
-import Headline, { HeadlineSize, HeadlineTag } from './Headline';
+import Headline from './Headline';
 
 interface ExperienceProps extends ExperienceType, GenericProps {
   current: boolean;
@@ -26,11 +26,7 @@ const Experience = ({
     <div
       className={cn('Experience', classNames, { [theme]: theme, current })}
     >
-      <Headline
-        classNames={['Experience__title']}
-        tag={HeadlineTag.h3}
-        size={HeadlineSize.h5}
-      >
+      <Headline classNames={['Experience__title']} tag={'h3'} size={'h5'}>
         {title}
       </Headline>
       <p className='Experience__date-range'>{dateRange}</p>
