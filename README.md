@@ -1,35 +1,13 @@
-# nibru.dev 2
+# nibru.dev - next
 
-This is my next personal website.
+This is the next version of my personal website.
 ## Todos
 
-- [x] [Implement Font Awesome](https://dev.to/vuongddang/how-to-use-fontawesome-in-next-js-5bl5)
-- [x] Implement local data as `.ts` file
-- [x] Remove `/api`
-- [x] Remove `NOTES.md`
-- [x] Setup SCSS
-    - [x] No modules
-    - [x] Mixins
-- [x] Import `cn()`
-- [x] Basic components
-  - [x] Main
-  - [x] Section
-  - [x] Row
-  - [ ] Cell
-- [x] Migrate Data
-  - [x] Personal Data
-  - [x] Skills
-  - [x] Experiences
-  - [x] Projects
-    - Add disclaimer for company projects
-    - Only personal projects
-- [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
-- [ ] Light/Dark Mode
 - [ ] Put component scss files in a folder with their `.tsx` counterpart
-- [ ] Component example page
 - [ ] Fonts
 - [ ] Colors
-- [ ] debug mode
+- [ ] Debug mode
+- [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
 
 ### Components
 
