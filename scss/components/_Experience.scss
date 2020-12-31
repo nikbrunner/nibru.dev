@@ -1,6 +1,12 @@
 // TODO Style Experience component
 .Experience {
-  @include flex(column nowrap, flex-start, center, center, $inline: true);
+  @include flex(
+    column nowrap,
+    space-between,
+    center,
+    center,
+    $inline: true
+  );
   @include box-shadow-default();
 
   padding: $space-m;

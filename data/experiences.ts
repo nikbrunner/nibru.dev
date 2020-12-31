@@ -28,7 +28,8 @@ const experiences: Experience[] = [
   },
   {
     dateRange: '2019-01 - 2019-6',
-    title: 'Self-study Web Development'
+    title: 'Self-study Web Development',
+    company: 'Udemy / YouTube'
   },
   {
     dateRange: '2019-7 - 2019-12',
