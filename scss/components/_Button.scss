@@ -1,40 +1,43 @@
 .Button {
   @include flex(row nowrap, flex-start, center, center, $inline: true);
 
+  padding: $space-xs $space-s;
+  height: 35px;
   border: none;
   border-radius: $border-radius;
   outline: none;
-  padding: $space-s;
+  font-size: $font-size-text;
   cursor: pointer;
 
   .svg-inline--fa {
-    width: 1em;
-    height: 1em;
+    height: 75%;
   }
 
-  &--label {
+  &:hover {
+    color: $color-blue;
+  }
+
+  &--withLabel {
     .svg-inline--fa {
       margin-right: $space-s;
     }
+  }
+
+  // When the Button contains an Icon, it somehow shifts to the top
+  &--withIcon {
+    position: relative;
+    top: 0.25rem;
   }
 
   &--dark {
     background: $color-mid-dark-grey;
     color: $text-color-darkMode;
     border: 1px solid $color-mid-light-grey;
-
-    &:hover {
-      color: $color-blue;
-    }
   }
 
   &--light {
     background: $color-white;
     color: $text-color-lightMode;
     border: 1px solid $color-off-white;
-
-    &:hover {
-      color: $color-blue;
-    }
   }
 }

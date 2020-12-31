@@ -22,11 +22,11 @@ const Row = ({ classNames, children, cols = RowCols.oneCol }: Props) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <article
+    <div
       className={cn('Row', classNames, { [theme]: theme, [cols]: cols })}
     >
       {children}
-    </article>
+    </div>
   );
 };
 

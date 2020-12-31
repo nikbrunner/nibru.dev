@@ -31,14 +31,19 @@ const Home = () => (
 
     <Main classNames={['Home']}>
       <Section classNames={['Home__profile-section']}>
+        <Headline size={HeadlineSize.h3}>Hi there. 👋</Headline>
+
         <Row>
-          <Headline>Hi there. 👋</Headline>
           <Button
             icon={<FontAwesomeIcon icon={['fab', 'linkedin']} />}
             label='This is a button with an Icon'
           />
           <Button label='This is a button' />
-          <Headline size={HeadlineSize.h3}>Link component</Headline>
+        </Row>
+
+        <Headline size={HeadlineSize.h3}>Link component</Headline>
+
+        <Row>
           This is an external link to{' '}
           <Link href={profile.github} type={LinkType.external}>
             GitHub

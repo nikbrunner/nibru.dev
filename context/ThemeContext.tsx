@@ -19,7 +19,7 @@ interface Props {
 }
 
 export const ThemeProvider = ({ children }: Props) => {
-  const [theme, setTheme] = useState<Theme>(Theme.light);
+  const [theme, setTheme] = useState<Theme>(Theme.dark);
 
   return (
     <ThemeContext.Provider

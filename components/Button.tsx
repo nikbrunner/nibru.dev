@@ -33,7 +33,8 @@ const Button = ({
       className={cn('Button', classNames, {
         [theme]: theme,
         [type]: type,
-        label
+        withLabel: label,
+        withIcon: icon
       })}
       onClick={onClick}
     >
