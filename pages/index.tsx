@@ -17,7 +17,7 @@ import { Skill as SkillType } from '../types/Skill';
 import skills from '../data/skills';
 import experiences from '../data/experiences';
 import profile from '../data/profile';
-import Link from '../components/Link';
+import Link, { LinkType } from '../components/Link';
 
 const Home = () => (
   <>
@@ -33,22 +33,25 @@ const Home = () => (
       <Section classNames={['Home__profile-section']}>
         <Row>
           <Headline>Hi there. 👋</Headline>
-          <a href={profile.github}>
-            <Button
-              icon={<FontAwesomeIcon icon={['fab', 'github']} />}
-              label='GitHub'
-            />
-          </a>
-          <a href={profile.linkedin}>
-            <Button
-              icon={<FontAwesomeIcon icon={['fab', 'linkedin']} />}
-              label='LinkedIn'
-            />
-          </a>
+          <Button
+            icon={<FontAwesomeIcon icon={['fab', 'linkedin']} />}
+            label='This is a button with an Icon'
+          />
+          <Button label='This is a button' />
           <Headline size={HeadlineSize.h3}>Link component</Headline>
-          This is a Link to <Link href={profile.github}>GitHub</Link>, and
-          this is a link to LinkedIn{' '}
-          <Link href={profile.linkedin}>LinkedIn</Link>.
+          This is an external link to{' '}
+          <Link href={profile.github} type={LinkType.external}>
+            GitHub
+          </Link>
+          , and this is an external link to LinkedIn{' '}
+          <Link href={profile.linkedin} type={LinkType.external}>
+            LinkedIn
+          </Link>
+          . This is an internal Link to the{' '}
+          <Link href='/about' type={LinkType.internal}>
+            About page
+          </Link>
+          .
         </Row>
       </Section>
 

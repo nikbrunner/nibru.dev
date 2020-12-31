@@ -1,38 +1,57 @@
 .Link {
   color: $color-blue;
+  font-size: $font-size-text;
 
   &:hover {
-    color: $color-blue-light;
-  }
+    text-decoration: underline;
 
-  &::before,
-  &::after {
-    position: relative;
-    top: -1px;
-    color: $color-dark-grey;
-  }
-
-  &::before {
-    content: '[[';
-    margin-right: $space-xxs;
-  }
-
-  &::after {
-    content: ']]';
-    margin-left: $space-xxs;
+    &::before,
+    &::after,
+    .svg-inline--fa {
+      color: $color-blue;
+    }
   }
 
   &--dark {
     &::before,
-    &::after {
-      color: $text-color-darkMode;
+    &::after,
+    .svg-inline--fa {
+      color: $color-light-grey;
     }
   }
 
   &--light {
     &::before,
+    &::after,
+    .svg-inline--fa {
+      color: $color-very-light-grey;
+    }
+  }
+
+  &--external {
+    .svg-inline--fa {
+      height: $font-size-text / 1.25;
+      margin-right: $space-xs;
+      position: relative;
+      top: 0.5px;
+    }
+  }
+
+  &--internal {
+    &::before,
     &::after {
-      color: $text-color-lightMode;
+      position: relative;
+      top: -1px;
+    }
+
+    &::before {
+      content: '[[';
+      margin-right: $space-xxs;
+    }
+
+    &::after {
+      content: ']]';
+      margin-left: $space-xxs;
     }
   }
 }
