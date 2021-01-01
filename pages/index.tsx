@@ -51,7 +51,6 @@ const Home = () => (
         </Headline>
 
         {/* TODO Introduce Text Component */}
-
         <Row>
           <Button
             icon={<FontAwesomeIcon icon={['fab', 'linkedin']} />}
@@ -84,7 +83,7 @@ const Home = () => (
           <Headline>Skills</Headline>
         </Row>
 
-        <Row cols={4} classNames={['Home__skills-container']}>
+        <Row cols={'fourCols'} classNames={['Home__skills-container']}>
           {skills.map(({ title, level, lib, icon }: SkillType) => (
             <Skill
               key={title}
@@ -102,7 +101,10 @@ const Home = () => (
           <Headline>Experiences</Headline>
         </Row>
 
-        <Row cols={4} classNames={['Home__experiences-container']}>
+        <Row
+          cols={'fourCols'}
+          classNames={['Home__experiences-container']}
+        >
           {experiences.map(
             (
               { title, dateRange, company, details }: ExperienceType,
