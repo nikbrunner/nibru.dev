@@ -6,19 +6,12 @@ import { GenericProps } from '../types/GenericProps';
 
 import { cn } from '../lib/cn';
 
-export enum RowCols {
-  oneCol = 'withOneCol',
-  twoCols = 'withTwoCols',
-  threeCols = 'withThreeCols',
-  fourCols = 'withFourCols'
-}
-
 interface Props extends GenericProps {
   children: React.ReactNode;
-  cols?: RowCols;
+  cols?: 'oneCol' | 'twoCols' | 'threeCols' | 'fourCols';
 }
 
-const Row = ({ classNames, children, cols = RowCols.oneCol }: Props) => {
+const Row = ({ classNames, children, cols = 'oneCol' }: Props) => {
   const { theme } = useContext(ThemeContext);
 
   return (

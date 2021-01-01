@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Main from '../components/Main';
 import Section from '../components/Section';
-import Row, { RowCols } from '../components/Row';
+import Row from '../components/Row';
 import Button from '../components/Button';
 import Nav from '../components/Nav';
 import Skill from '../components/Skill';
@@ -84,10 +84,7 @@ const Home = () => (
           <Headline>Skills</Headline>
         </Row>
 
-        <Row
-          cols={RowCols.fourCols}
-          classNames={['Home__skills-container']}
-        >
+        <Row cols={4} classNames={['Home__skills-container']}>
           {skills.map(({ title, level, lib, icon }: SkillType) => (
             <Skill
               key={title}
@@ -105,10 +102,7 @@ const Home = () => (
           <Headline>Experiences</Headline>
         </Row>
 
-        <Row
-          cols={RowCols.fourCols}
-          classNames={['Home__experiences-container']}
-        >
+        <Row cols={4} classNames={['Home__experiences-container']}>
           {experiences.map(
             (
               { title, dateRange, company, details }: ExperienceType,
