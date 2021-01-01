@@ -17,7 +17,7 @@ import { Skill as SkillType } from '../types/Skill';
 import skills from '../data/skills';
 import experiences from '../data/experiences';
 import profile from '../data/profile';
-import Link, { LinkType } from '../components/Link';
+import Link from '../components/Link';
 
 const Home = () => (
   <>
@@ -64,15 +64,15 @@ const Home = () => (
 
         <Row>
           This is an external link to{' '}
-          <Link href={profile.github} type={LinkType.external}>
+          <Link href={profile.github} type={'external'}>
             GitHub
           </Link>
           , and this is an external link to LinkedIn{' '}
-          <Link href={profile.linkedin} type={LinkType.external}>
+          <Link href={profile.linkedin} type={'external'}>
             LinkedIn
           </Link>
           . This is an internal Link to the{' '}
-          <Link href='/about' type={LinkType.internal}>
+          <Link href='/about' type={'internal'}>
             About page
           </Link>
           .

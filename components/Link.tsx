@@ -7,13 +7,9 @@ import { GenericProps } from '../types/GenericProps';
 import { cn } from '../lib/cn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export enum LinkType {
-  internal = 'internal',
-  external = 'external'
-}
 interface Props extends GenericProps {
   href: string;
-  type: LinkType;
+  type: 'internal' | 'external';
   openInNewTab?: boolean;
 }
 
@@ -35,7 +31,7 @@ const Link = ({
       href={href}
       target={openInNewTab ? '_blank' : '_self'}
     >
-      {type === LinkType.external && (
+      {type === 'external' && (
         <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
       )}
       {children}
