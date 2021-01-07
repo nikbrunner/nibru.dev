@@ -13,7 +13,7 @@ import Headline from '../components/Headline';
 import Link from '../components/Link';
 import Page from '../components/Page';
 
-import { ThemeContext } from '../context/ThemeContext';
+import { Theme, ThemeContext } from '../context/ThemeContext';
 
 import { Experience as ExperienceType } from '../types/Experience';
 import { Skill as SkillType } from '../types/Skill';
@@ -26,9 +26,9 @@ const Home = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Page pageName='Home' theme={theme}>
+    <Page name='Home'>
       <Head>
-        <title>nibru.dev</title>
+        <title>{theme === Theme.dark ? '🌑' : '🌕'} nibru.dev</title>
 
         <link rel='icon' href='/favicon.ico' />
       </Head>
