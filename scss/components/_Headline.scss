@@ -4,11 +4,11 @@
   line-height: 1.25;
 
   &--dark {
-    color: $text-color-darkMode;
+    color: $fg-color-darkMode;
   }
 
   &--light {
-    color: $text-color-lightMode;
+    color: $fg-color-lightMode;
   }
 
   &--size-h1 {

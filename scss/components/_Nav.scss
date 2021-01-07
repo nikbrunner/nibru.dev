@@ -15,12 +15,12 @@
   }
 
   &--dark {
-    background: $color-dark-grey;
-    color: $text-color-darkMode;
+    background: $color-green--darkest;
+    color: $fg-color-darkMode;
   }
 
   &--light {
     background: $color-white;
-    color: $text-color-lightMode;
+    color: $fg-color-lightMode;
   }
 }

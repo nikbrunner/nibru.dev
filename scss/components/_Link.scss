@@ -1,5 +1,5 @@
 .Link {
-  color: $color-blue;
+  color: $color-orange;
   font-size: $font-size-text;
 
   &:hover {
@@ -8,7 +8,7 @@
     &::before,
     &::after,
     .svg-inline--fa {
-      color: $color-blue;
+      color: $color-orange;
     }
   }
 
@@ -16,7 +16,7 @@
     &::before,
     &::after,
     .svg-inline--fa {
-      color: $color-light-grey;
+      color: $color-orange;
     }
   }
 
@@ -24,7 +24,7 @@
     &::before,
     &::after,
     .svg-inline--fa {
-      color: $color-very-light-grey;
+      color: $color-gray--lightest;
     }
   }
 

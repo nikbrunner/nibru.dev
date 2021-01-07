@@ -1,15 +1,6 @@
 // TODO Write MediaQueries
 .Main {
   padding: $space-m;
-  min-height: 100vh;
-
-  &--dark {
-    background: $color-dark-grey;
-    color: $text-color-darkMode;
-  }
-
-  &--light {
-    background: $color-white;
-    color: $text-color-lightMode;
-  }
+  width: 50vw;
+  margin: 0 auto;
 }

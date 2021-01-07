@@ -18,6 +18,7 @@
 @import 'base/helpers';
 
 // Components
+@import 'components/Page';
 @import 'components/Main';
 @import 'components/Section';
 @import 'components/Row';
@@ -29,7 +30,8 @@
 @import 'components/Experience';
 
 // Page-specific styles
-@import 'pages/home';
+@import 'pages/App';
+@import 'pages/Home';
 
 // Themes
 @import 'themes/default';

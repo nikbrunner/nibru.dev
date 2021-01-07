@@ -14,7 +14,7 @@
   }
 
   &:hover {
-    color: $color-main-accent;
+    color: $color-green;
   }
 
   &--withLabel {
@@ -30,14 +30,14 @@
   }
 
   &--dark {
-    background: $color-mid-dark-grey;
-    color: $text-color-darkMode;
-    border: 1px solid $color-mid-light-grey;
+    background: $color-green--darker;
+    color: $fg-color-darkMode;
+    border: 1px solid $color-gray--lighter;
   }
 
   &--light {
     background: $color-white;
-    color: $text-color-lightMode;
-    border: 1px solid $color-off-white;
+    color: $fg-color-lightMode;
+    border: 1px solid $color-offWhite;
   }
 }
