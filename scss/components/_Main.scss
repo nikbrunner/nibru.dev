@@ -1,6 +1,25 @@
 // TODO Write MediaQueries
 .Main {
-  padding: $space-m;
-  width: 50vw;
+  width: 100vw;
   margin: 0 auto;
+
+  @include mq('m') {
+    width: 75vw;
+  }
+
+  @include mq('l') {
+    width: 65vw;
+  }
+
+  @include mq('xl') {
+    width: 60vw;
+  }
+
+  @include mq('xxl') {
+    width: 55vw;
+  }
+
+  @include mq('xxxl') {
+    width: 45vw;
+  }
 }
