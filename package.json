@@ -7,7 +7,7 @@
     "start": "npm run next -- start",
     "dev": "npm run next -- dev",
     "build": "npm run next -- build",
-    "export": "rm -rf ./.next && rm -rf ./out && npm run build && npm run next -- export"
+    "export": "echo \"Huzi\" && rm -rf ./.next && rm -rf ./out && npm run build && npm run next -- export"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
