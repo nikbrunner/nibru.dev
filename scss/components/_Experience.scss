@@ -26,22 +26,31 @@
     font-weight: bold;
   }
 
-  &.Experience--current {
-    .Experience__title,
-    .Experience__date-range,
-    .Experience__company,
-    .Experience__details {
-      color: $color-green;
-    }
-  }
-
   &--dark {
     background: $color-gray--darker;
-    color: $color-fg-primary-darkMode;
+    color: $color-fg-primary--darkMode;
+
+    &.Experience--current {
+      .Experience__title,
+      .Experience__date-range,
+      .Experience__company,
+      .Experience__details {
+        color: $color-accent-primary--darkMode;
+      }
+    }
   }
 
   &--light {
     background: $color-white;
-    color: $color-fg-primary-lightMode;
+    color: $color-fg-primary--lightMode;
+
+    &.Experience--current {
+      .Experience__title,
+      .Experience__date-range,
+      .Experience__company,
+      .Experience__details {
+        color: $color-accent-primary--lightMode;
+      }
+    }
   }
 }

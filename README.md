@@ -16,6 +16,7 @@ This is the next version of my personal website.
 
 - [x] Link (Wiki Style)
 - [x] Light/Dark Toggle
+- [ ] `<Text />`
 - [ ] `<Grid />`
 - [ ] `<Flex />`
 

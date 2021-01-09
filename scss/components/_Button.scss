@@ -11,15 +11,12 @@
 
   .svg-inline--fa {
     height: 75%;
-  }
-
-  &:hover {
-    color: $color-green;
+    width: $space-l;
   }
 
   &--withLabel {
     .svg-inline--fa {
-      margin-right: $space-s;
+      margin-right: $space-xs;
     }
   }
 
@@ -31,13 +28,21 @@
 
   &--dark {
     background: $color-bg-primary--darkMode;
-    color: $color-fg-primary-darkMode;
+    color: $color-fg-primary--darkMode;
     border: 1px solid $color-gray--lighter;
+
+    &:hover {
+      color: $color-accent-primary--darkMode;
+    }
   }
 
   &--light {
     background: $color-bg-primary--lightMode;
-    color: $color-fg-primary-lightMode;
-    border: 1px solid $color-fg-primary-lightMode;
+    color: $color-fg-primary--lightMode;
+    border: 1px solid $color-fg-primary--lightMode;
+
+    &:hover {
+      color: $color-accent-primary--lightMode;
+    }
   }
 }

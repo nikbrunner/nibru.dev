@@ -19,11 +19,13 @@ import profile from '../data/profile';
 
 const Components = () => (
   <Page name='Components'>
-    <Section classNames={['Components__profile-section']}>
+    <Section>
       <Headline tag={'h1'} size={'h1'}>
         Components
       </Headline>
-
+      <p>This page is just an overview over all components.</p>
+    </Section>
+    <Section classNames={['Components__profile-section']}>
       <Headline tag={'h1'} size={'h1'}>
         Headline Size H1
       </Headline>

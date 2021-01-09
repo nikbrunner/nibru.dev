@@ -6,12 +6,13 @@
 // Color Palette
 $color-black: #0d1117;
 $color-gray: #2b303a;
-$color-green: #3f6634;
-$color-yellow: #deb841;
-$color-orange: #de9e36;
-$color-red: #98473e;
+$color-green: #2f8d47;
+$color-turquoise: #0bc294;
+$color-yellow: #ffc61b;
+$color-orange: #f39d12;
+$color-red: #ff1900;
 $color-cyan: #77a0a9;
-$color-blue: #2d3161;
+$color-blue: #294be6;
 $color-pink: #d6c3c9;
 $color-offWhite: #eee5e9;
 $color-white: #f6f8f9;
@@ -35,7 +36,10 @@ $color-yellow--lightest: lighten($color-yellow, 15%);
 // ...
 
 $color-bg-primary--darkMode: $color-black;
-$color-bg-primary--lightMode: $color-offWhite;
+$color-bg-primary--lightMode: $color-white;
 
-$color-fg-primary-darkMode: $color-offWhite;
-$color-fg-primary-lightMode: $color-gray--darker;
+$color-fg-primary--darkMode: $color-offWhite;
+$color-fg-primary--lightMode: $color-gray--darker;
+
+$color-accent-primary--darkMode: $color-turquoise;
+$color-accent-primary--lightMode: $color-red;
