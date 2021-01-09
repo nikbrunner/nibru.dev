@@ -30,14 +30,14 @@
   }
 
   &--dark {
-    background: $color-green--darker;
-    color: $fg-color-darkMode;
+    background: $color-bg-primary--darkMode;
+    color: $color-fg-primary-darkMode;
     border: 1px solid $color-gray--lighter;
   }
 
   &--light {
-    background: $color-white;
-    color: $fg-color-lightMode;
-    border: 1px solid $color-offWhite;
+    background: $color-bg-primary--lightMode;
+    color: $color-fg-primary-lightMode;
+    border: 1px solid $color-fg-primary-lightMode;
   }
 }

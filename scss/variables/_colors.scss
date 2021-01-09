@@ -2,7 +2,9 @@
  * This file contains color-variables
  */
 
+// TODO Define a good color palette
 // Color Palette
+$color-black: #0d1117;
 $color-gray: #2b303a;
 $color-green: #3f6634;
 $color-yellow: #deb841;
@@ -14,18 +16,26 @@ $color-pink: #d6c3c9;
 $color-offWhite: #eee5e9;
 $color-white: #f6f8f9;
 
+// TODO Define shades
 // Shades
-$color-gray--darkest: darken($color-gray, 25%);
-$color-gray--darker: darken($color-gray, 15%);
-$color-gray--lighter: lighten($color-gray, 50%);
-$color-gray--lightest: lighten($color-gray, 75%);
+$color-gray--darkest: darken($color-gray, 10%);
+$color-gray--darker: darken($color-gray, 5%);
+$color-gray--lighter: lighten($color-gray, 5%);
+$color-gray--lightest: lighten($color-gray, 15%);
 
 $color-green--darkest: darken($color-green, 25%);
 $color-green--darker: darken($color-green, 15%);
+$color-green--lighter: lighten($color-green, 5%);
+$color-green--lightest: lighten($color-green, 15%);
+
+$color-yellow--darkest: darken($color-yellow, 25%);
+$color-yellow--darker: darken($color-yellow, 15%);
+$color-yellow--lighter: lighten($color-yellow, 5%);
+$color-yellow--lightest: lighten($color-yellow, 15%);
 // ...
 
-$bg-color-primary--darkMode: $color-green--darkest;
-$bg-color-primary--lightMode: $color-offWhite;
+$color-bg-primary--darkMode: $color-black;
+$color-bg-primary--lightMode: $color-offWhite;
 
-$fg-color-darkMode: $color-offWhite;
-$fg-color-lightMode: $color-gray--darker;
+$color-fg-primary-darkMode: $color-offWhite;
+$color-fg-primary-lightMode: $color-gray--darker;

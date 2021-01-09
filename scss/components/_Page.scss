@@ -2,12 +2,12 @@
   min-height: 100vh;
 
   &--dark {
-    background: $bg-color-primary--darkMode;
-    color: $fg-color-darkMode;
+    background: $color-bg-primary--darkMode;
+    color: $color-fg-primary-darkMode;
   }
 
   &--light {
-    background: $bg-color-primary--lightMode;
-    color: $fg-color-lightMode;
+    background: $color-bg-primary--lightMode;
+    color: $color-fg-primary-lightMode;
   }
 }

@@ -4,7 +4,7 @@ This is the next version of my personal website.
 ## Todos
 
 - [ ] Fonts
-- [ ] Colors
+- [ ] Setup effective dark/light color maps — [Example](https://codepen.io/BarthyB/pen/EBzxje)
 - [ ] Debug mode
 - [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
 

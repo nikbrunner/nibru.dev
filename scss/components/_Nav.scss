@@ -21,12 +21,12 @@
   }
 
   &--dark {
-    background: $color-green--darkest;
-    color: $fg-color-darkMode;
+    background: $color-bg-primary--darkMode;
+    color: $color-fg-primary-darkMode;
   }
 
   &--light {
-    background: $color-white;
-    color: $fg-color-lightMode;
+    background: $color-bg-primary--lightMode;
+    color: $color-fg-primary-lightMode;
   }
 }
