@@ -1,4 +1,6 @@
 .Page {
+  min-height: 100vh;
+
   &--dark {
     background: $bg-color-primary--darkMode;
     color: $fg-color-darkMode;

@@ -9,6 +9,7 @@ import { ThemeContext, Theme } from '../context/ThemeContext';
 import { cn } from '../lib/cn';
 
 import profile from '../data/profile';
+import Link from './Link';
 
 const Nav = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -21,7 +22,7 @@ const Nav = () => {
         </Headline>
       </div>
 
-      <div className='Nav__buttons'>
+      <div className='Nav__theme-buttons'>
         <Button
           icon={<FontAwesomeIcon icon='moon' />}
           onClick={() => setTheme(Theme.dark)}
@@ -31,6 +32,15 @@ const Nav = () => {
           icon={<FontAwesomeIcon icon='lightbulb' />}
           onClick={() => setTheme(Theme.light)}
         ></Button>
+      </div>
+
+      <div className='Nav__links'>
+        <Link href='/' type='internal'>
+          Home
+        </Link>
+        <Link href='/components' type='internal'>
+          Components
+        </Link>
       </div>
     </nav>
   );

@@ -10,8 +10,14 @@
     }
   }
 
-  &__buttons {
+  &__theme-buttons {
     @include grid(repeat(2, 1fr), $space-s);
+  }
+
+  &__links {
+    *:not(:last-child) {
+      margin-right: $space-s;
+    }
   }
 
   &--dark {

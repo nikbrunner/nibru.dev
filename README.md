@@ -3,7 +3,6 @@
 This is the next version of my personal website.
 ## Todos
 
-- [ ] Put component scss files in a folder with their `.tsx` counterpart
 - [ ] Fonts
 - [ ] Colors
 - [ ] Debug mode
@@ -14,9 +13,11 @@ This is the next version of my personal website.
 - [ ] Fix height problem in Buttons with SVG Icons
 
 ### Components
-H
-- [ ] Link (Wiki Style)
-- [ ] Light/Dark Toggle
+
+- [x] Link (Wiki Style)
+- [x] Light/Dark Toggle
+- [ ] `<Grid />`
+- [ ] `<Flex />`
 
 ## Ideas
 

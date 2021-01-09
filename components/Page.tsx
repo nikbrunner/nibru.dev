@@ -11,7 +11,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import { cn } from '../lib/cn';
 interface Props extends GenericProps {
   name: string;
-  title: string;
+  title?: string;
 }
 
 const Page = ({ children, name, title }: Props) => {
@@ -19,7 +19,7 @@ const Page = ({ children, name, title }: Props) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title ? `nibru.dev:${title}` : `nibru.dev:${name}`}</title>
 
         {/* TODO REplace Favicon */}
         <link rel='icon' href='/favicon.ico' />
