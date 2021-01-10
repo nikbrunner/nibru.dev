@@ -23,7 +23,8 @@
   &--dark {
     color: $color-fg-primary--darkMode;
 
-    progress::-webkit-progress-value {
+    progress::-webkit-progress-value,
+    progress::-moz-progress-bar {
       background: $color-accent-primary--darkMode;
     }
 
@@ -35,7 +36,8 @@
   &--light {
     color: $color-fg-primary--lightMode;
 
-    progress::-webkit-progress-value {
+    progress::-webkit-progress-value,
+    progress::-moz-progress-bar {
       background: $color-accent-primary--lightMode;
     }
 
