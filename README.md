@@ -4,7 +4,8 @@ This is the next version of my personal website.
 ## Todos
 
 - [ ] Fonts
-- [ ] Setup effective dark/light color maps — [Example](https://codepen.io/BarthyB/pen/EBzxje)
+- [x] Light/Dark Toggle
+	- [ ] Setup effective dark/light color maps — [Example](https://codepen.io/BarthyB/pen/EBzxje)
 - [ ] Debug mode
 - [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
 
@@ -14,16 +15,18 @@ This is the next version of my personal website.
 
 ### Components
 
-- [x] Link (Wiki Style)
-- [x] Light/Dark Toggle
+- [x] `<Link />`
 - [ ] `<Text />`
 - [ ] `<Grid />`
 - [ ] `<Flex />`
+- [ ] `<Image />`
+- [ ] `<Cell />`
 
 ## Ideas
 
-- [ ] [Bubble Like Chart for Skills](https://www.npmjs.com/package/@weknow/react-bubble-chart-d3)?
-- [ ] Nord Colors?
+- [Bubble Like Chart for Skills](https://www.npmjs.com/package/@weknow/react-bubble-chart-d3)?
+- Nord Colors?
+- Bauhaus Colors with Cells?
 ## Questions
 
 - Why does the `export` script does not work when opening as a file in browser?
