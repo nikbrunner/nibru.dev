@@ -6,20 +6,8 @@
   }
 
   &__skills-container {
-    @include grid(
-      repeat(auto-fit, minmax(250px, 1fr)),
-      $space-s,
-      auto,
-      $space-s
-    );
   }
 
   &__experiences-container {
-    @include grid(
-      repeat(auto-fit, minmax(250px, 1fr)),
-      $space-s,
-      auto,
-      $space-s
-    );
   }
 }
