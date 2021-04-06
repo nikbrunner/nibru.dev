@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Grid from '../components/Grid';
 import Section from '../components/Section';
 import Row from '../components/Row';
 import Button from '../components/Button';
@@ -23,8 +24,10 @@ const Components = () => (
       <Headline tag={'h1'} size={'h1'}>
         Components
       </Headline>
+
       <p>This page is just an overview over all components.</p>
     </Section>
+
     <Section classNames={['Components__profile-section']}>
       <Headline tag={'h1'} size={'h1'}>
         Headline Size H1
@@ -79,19 +82,24 @@ const Components = () => (
 
     <Section classNames={['Components__skills-section']}>
       <Row>
-        <Headline>Skills</Headline>
+        <Grid cols={2}>
+          <Headline>Skills</Headline>
+          <p>Blub</p>
+        </Grid>
       </Row>
 
       <Row cols={'fourCols'} classNames={['Components__skills-container']}>
-        {skills.map(({ title, level, lib, icon }: SkillType) => (
-          <Skill
-            key={title}
-            title={title}
-            level={level}
-            lib={lib}
-            icon={icon}
-          />
-        ))}
+        <Grid cols={'auto-fit'} colWidth='minmax(250px, 1fr)' gap={10}>
+          {skills.map(({ title, level, lib, icon }: SkillType) => (
+            <Skill
+              key={title}
+              title={title}
+              level={level}
+              lib={lib}
+              icon={icon}
+            />
+          ))}
+        </Grid>
       </Row>
     </Section>
 
@@ -104,21 +112,23 @@ const Components = () => (
         cols={'fourCols'}
         classNames={['Components__experiences-container']}
       >
-        {experiences.map(
-          (
-            { title, dateRange, company, details }: ExperienceType,
-            idx: number
-          ) => (
-            <Experience
-              key={title}
-              title={title}
-              dateRange={dateRange}
-              company={company}
-              details={details}
-              current={idx === experiences.length - 1}
-            />
-          )
-        )}
+        <Grid cols={1} colWidth='1fr 1fr 1fr' gap={10}>
+          {experiences.map(
+            (
+              { title, dateRange, company, details }: ExperienceType,
+              idx: number
+            ) => (
+              <Experience
+                key={title}
+                title={title}
+                dateRange={dateRange}
+                company={company}
+                details={details}
+                current={idx === experiences.length - 1}
+              />
+            )
+          )}
+        </Grid>
       </Row>
     </Section>
   </Page>
