@@ -6,7 +6,8 @@ import { Space } from '../types/Spaces';
 import { cn } from '../lib/cn';
 
 interface Props extends GenericProps {
-  cols: React.CSSProperties['gridTemplateColumns'];
+  cols: number | 'auto-fit';
+  colMinWidth?: string;
   rows?: React.CSSProperties['gridTemplateRows'];
   gap?: Space | '0';
   placeItems?: React.CSSProperties['placeItems'];
@@ -15,7 +16,8 @@ interface Props extends GenericProps {
 const Grid = ({
   classNames,
   children,
-  cols = 'repeat(1, 1fr)',
+  cols = 'auto-fit',
+  colMinWidth = '250px',
   rows = 'auto',
   gap = '0',
   placeItems = 'stretch stretch'
@@ -26,16 +28,16 @@ const Grid = ({
 
   const style: React.CSSProperties = {
     display: 'grid',
-    gridTemplateColumns: cols,
+    gridTemplateColumns: `repeat(${cols}, minmax(${colMinWidth}, 1fr))`,
     gridTemplateRows: rows,
     placeItems
   };
 
-  const spaceMod = `space-${gap}`;
+  const gapMod = `space-${gap}`;
 
   return (
     <div
-      className={cn('Grid', classNames, { [spaceMod]: gap })}
+      className={cn('Grid', classNames, { [gapMod]: gap })}
       style={style}
     >
       {children}

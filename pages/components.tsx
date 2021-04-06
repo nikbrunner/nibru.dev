@@ -87,7 +87,7 @@ const Components = () => (
       </Row>
 
       <Row cols={'fourCols'} classNames={['Components__skills-container']}>
-        <Grid cols='repeat(auto-fit, minmax(250px, 1fr))' gap={Space.m}>
+        <Grid cols='auto-fit' gap={Space.m}>
           {skills.map(({ title, level, lib, icon }: SkillType) => (
             <Skill
               key={title}
@@ -110,7 +110,7 @@ const Components = () => (
         cols={'fourCols'}
         classNames={['Components__experiences-container']}
       >
-        <Grid cols='repeat(auto-fit, minmax(250px, 1fr))' gap={Space.m}>
+        <Grid cols={3} colMinWidth={'100px'} gap={Space.m}>
           {experiences.map(
             (
               { title, dateRange, company, details }: ExperienceType,
