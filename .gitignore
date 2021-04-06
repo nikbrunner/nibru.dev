@@ -2,6 +2,8 @@
 # editors
 .idea
 .vscode
+workspace.vim
+Session.vim
 
 # dependencies
 /node_modules
@@ -35,3 +37,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+
