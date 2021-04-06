@@ -4,11 +4,13 @@ import { ThemeContext } from '../context/ThemeContext';
 
 import { cn } from '../lib/cn';
 
+export type HeadlineSizes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+
 interface Props {
   children: React.ReactNode;
   classNames?: string[];
-  size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
-  tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  size?: HeadlineSizes;
+  tag?: HeadlineSizes;
 }
 
 const Headline = ({
