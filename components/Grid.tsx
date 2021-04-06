@@ -22,9 +22,12 @@ const Grid = ({
   gap = '0',
   placeItems = 'stretch stretch'
 }: Props) => {
-  // TODO Add media query props for cols like `m={3}`
-  // TODO Use `useViewport` to evaluate settings
-  //      ..or via modifier classes
+  // TODO Add media query props for cols
+  // * Prop   `cols-m={2} col-min-width-m="250px"`
+  // * Evaluate current viewport width with `useViewport` and render style object
+  //   * `useViewport` should return based on the breakpoints.ts not the viewport width in pixel,
+  //     rather the already calculated viewport like "xs", "m" etc.
+  // * Render `gridTemplateColumns: `repeat(${cols}, minmax(${colMinWidth}, 1fr))`
 
   const style: React.CSSProperties = {
     display: 'grid',
