@@ -16,6 +16,7 @@ interface Props extends GenericProps {
 
 const Page = ({ children, name, title }: Props) => {
   const { theme } = useContext(ThemeContext);
+
   return (
     <>
       <Head>
