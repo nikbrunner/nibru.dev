@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Button from './Button';
 import Headline from './Headline';
+import Link from './Link';
 
 import { ThemeContext, Theme } from '../context/ThemeContext';
 
 import { cn } from '../lib/cn';
 
 import profile from '../data/profile';
-import Link from './Link';
 
 const Nav = () => {
   const { theme, setTheme } = useContext(ThemeContext);
