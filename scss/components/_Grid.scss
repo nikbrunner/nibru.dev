@@ -1,2 +1,25 @@
 .Grid {
+  &--space {
+    &-xxs {
+      gap: $space-xxs;
+    }
+    &-xs {
+      gap: $space-xs;
+    }
+    &-s {
+      gap: $space-s;
+    }
+    &-m {
+      gap: $space-m;
+    }
+    &-l {
+      gap: $space-l;
+    }
+    &-xl {
+      gap: $space-xl;
+    }
+    &-xxl {
+      gap: $space-xxl;
+    }
+  }
 }
