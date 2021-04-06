@@ -17,6 +17,7 @@ import { Skill as SkillType } from '../types/Skill';
 import skills from '../data/skills';
 import experiences from '../data/experiences';
 import profile from '../data/profile';
+import { Space } from '../types/Spaces';
 
 const Components = () => (
   <Page name='Components'>
@@ -29,27 +30,27 @@ const Components = () => (
     </Section>
 
     <Section classNames={['Components__profile-section']}>
-      <Headline tag={'h1'} size={'h1'}>
+      <Headline tag='h1' size='h1'>
         Headline Size H1
       </Headline>
 
-      <Headline tag={'h2'} size={'h2'}>
+      <Headline tag='h2' size='h2'>
         Headline Size H2
       </Headline>
 
-      <Headline tag={'h3'} size={'h3'}>
+      <Headline tag='h3' size='h3'>
         Headline Size H3
       </Headline>
 
-      <Headline tag={'h4'} size={'h4'}>
+      <Headline tag='h4' size='h4'>
         Headline Size H4
       </Headline>
 
-      <Headline tag={'h5'} size={'h5'}>
+      <Headline tag='h5' size='h5'>
         Headline Size H5
       </Headline>
 
-      <Headline tag={'h6'} size={'h6'}>
+      <Headline tag='h6' size='h6'>
         Headline Size H6
       </Headline>
 
@@ -61,19 +62,19 @@ const Components = () => (
         <Button label='This is a button' />
       </Row>
 
-      <Headline size={'h3'}>Link component</Headline>
+      <Headline size='h3'>Link component</Headline>
 
       <Row>
         This is an external link to{' '}
-        <Link href={profile.github} type={'external'}>
+        <Link href={profile.github} type='external'>
           GitHub
         </Link>
         , and this is an external link to LinkedIn{' '}
-        <Link href={profile.linkedin} type={'external'}>
+        <Link href={profile.linkedin} type='external'>
           LinkedIn
         </Link>
         . This is an internal Link to the{' '}
-        <Link href='/about' type={'internal'}>
+        <Link href='/about' type='internal'>
           About page
         </Link>
         .
