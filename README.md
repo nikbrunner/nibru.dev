@@ -12,6 +12,27 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Stages
+
+### Stage 1
+
+- Landing page
+- Basic info 
+	-	Personal
+	-	Skills
+	-	Experiences
+
+### Stage 2
+
+- NBP Section
+	-	Image Galleries
+
+### Stage 3
+
+- Blog
+	-	NBP
+	-	Dev
+
 ## Tasks
 
 - [x] Light/Dark Toggle
@@ -58,3 +79,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### 21.04.06 — Tuesday
 
 - [x] Clean up commits from last time
+- [x] Progress on `<Grid/>`
