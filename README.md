@@ -14,11 +14,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Tasks
 
-- [ ] Fonts
 - [x] Light/Dark Toggle
 	- [ ] **Research:** Setup effective dark/light color maps — [Example](https://codepen.io/BarthyB/pen/EBzxje)
 	- [ ] **Research:** The 7/1 SCSS has a Themes folder. Look how they intend to solve this
-- [ ] Debug mode
+- [ ] Decide on Fonts
 - [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
 
 ### Bugs
@@ -28,9 +27,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Components
 
 - [x] `<Link />`
-- [ ] `<Text />`
 - [ ] `<Grid />`
+	-	[ ] Setup base props
+	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
 - [ ] `<Flex />`
+	-	[ ] Setup base props
+	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
+- [ ] `<Text />`
 - [ ] `<Image />`
 - [ ] `<Cell />`
 
@@ -38,6 +41,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - [Bubble Like Chart for Skills](https://www.npmjs.com/package/@weknow/react-bubble-chart-d3)?
 - Bauhaus Colors with Cells?
+- A proper image gallery section for NBP
+	- `<GalleryImage description="Arbersee September 2021" meta="Fuji X-H1"/>`
 
 ## Questions
 
@@ -52,11 +57,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### 21.04.06 — Tuesday
 
-- [ ] Clean up commits from last time
-
-### Next time
-
-- [ ] Progress on `<Grid />` component
-	- [ ] Declare breakpoints in a ts file
-	- [ ] Add media query props for cols like `m={3}`
-	- [ ] Use `useViewport` to evaluate settings
+- [x] Clean up commits from last time
