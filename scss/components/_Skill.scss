@@ -1,46 +1,50 @@
-// TODO Style Experience component
 .Skill {
-  @include flex(column nowrap, flex-start, center, center, $inline: true);
+  @include flex(column nowrap, flex-start, center, center);
   @include box-shadow-default();
 
-  padding: $space-m;
-  border: $border-default;
-  border-radius: $border-radius;
+  $skill-border-radius: calc(#{$border-radius} * 2);
 
-  svg {
-    height: 25px;
-    margin-bottom: $space-m;
+  border-radius: 0 0 $skill-border-radius 0;
+  overflow: hidden;
+
+  &__level,
+  &__caption {
+    width: 100%;
   }
 
-  progress {
+  &__level {
+    height: 1rem;
+  }
+
+  &__caption {
+    @include flex(row nowrap, flex-start, flex-start, center);
+
+    padding: $space-m $space-m;
+    position: relative;
+    top: 1px;
+  }
+
+  &__icon {
+    $size: $font-size-h6;
+
+    height: $size;
+    width: $size;
     margin-right: $space-m;
-    margin-bottom: $space-m;
-    border-radius: 0;
-    border: none;
-    height: 10px;
+  }
+
+  &__title {
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
   }
 
   &--dark {
+    border: 1px solid $color-black--lightest;
     color: $color-fg-primary--darkMode;
-
-    progress::-webkit-progress-value {
-      background: $color-accent-primary--darkMode;
-    }
-
-    &:hover {
-      color: $color-accent-primary--darkMode;
-    }
   }
 
   &--light {
+    border: 1px solid $color-gray;
     color: $color-fg-primary--lightMode;
-
-    progress::-webkit-progress-value {
-      background: $color-accent-primary--lightMode;
-    }
-
-    &:hover {
-      color: $color-accent-primary--lightMode;
-    }
   }
 }

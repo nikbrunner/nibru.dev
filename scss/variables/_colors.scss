@@ -11,7 +11,6 @@ $color-turquoise: #0bc294;
 $color-yellow: #ffc61b;
 $color-orange: #f39d12;
 $color-red: #ff1900;
-$color-cyan: #77a0a9;
 $color-blue: #294be6;
 $color-pink: #d6c3c9;
 $color-offWhite: #eee5e9;
@@ -19,6 +18,11 @@ $color-white: #f6f8f9;
 
 // TODO Define shades
 // Shades
+$color-black--darkest: darken($color-black, 5%);
+$color-black--darker: darken($color-black, 2.5%);
+$color-black--lighter: lighten($color-black, 2.5%);
+$color-black--lightest: lighten($color-black, 5%);
+
 $color-gray--darkest: darken($color-gray, 10%);
 $color-gray--darker: darken($color-gray, 5%);
 $color-gray--lighter: lighten($color-gray, 5%);
@@ -42,4 +46,4 @@ $color-fg-primary--darkMode: $color-offWhite;
 $color-fg-primary--lightMode: $color-gray--darker;
 
 $color-accent-primary--darkMode: $color-turquoise;
-$color-accent-primary--lightMode: $color-red;
+$color-accent-primary--lightMode: $color-blue;

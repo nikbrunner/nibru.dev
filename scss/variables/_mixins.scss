@@ -20,11 +20,6 @@
   left: 0;
 }
 
-@mixin box-shadow-default() {
-  // TODO Improve FPS with the trick from Kevin Powell
-  box-shadow: 0 1px 3px rgba($color: $color-gray--darker, $alpha: 0.2);
-
-  &:hover {
-    box-shadow: 0 3px 9px rgba($color: $color-gray--darker, $alpha: 0.2);
-  }
+@mixin box-shadow-default($color: $color-gray--darker) {
+  box-shadow: 0 1px 3px rgba($color, $alpha: 0.2);
 }
