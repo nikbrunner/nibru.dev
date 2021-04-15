@@ -1,4 +1,3 @@
-import { FontawesomeObject } from '@fortawesome/fontawesome-svg-core';
 import React, { useContext } from 'react';
 
 import { ThemeContext } from '../context/ThemeContext';
