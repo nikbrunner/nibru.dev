@@ -43,11 +43,13 @@
 
   &--dark {
     border: 1px solid $color-black--lightest;
+    background-color: $color-bg-secondary--darkMode;
     color: $color-fg-primary--darkMode;
   }
 
   &--light {
     border: 1px solid $color-gray;
+    background-color: $color-bg-secondary--lightMode;
     color: $color-fg-primary--lightMode;
   }
 }
