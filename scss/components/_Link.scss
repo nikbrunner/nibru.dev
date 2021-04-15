@@ -1,12 +1,16 @@
 .Link {
   font-size: $font-size-text;
 
+  svg {
+    height: $font-size-text;
+  }
+
   &--dark {
     color: $color-fg-primary--darkMode;
 
     &::before,
     &::after,
-    .svg-inline--fa {
+    svg {
       color: $color-accent-primary--darkMode;
     }
 
@@ -16,7 +20,7 @@
 
       &::before,
       &::after,
-      .svg-inline--fa {
+      svg {
         color: $color-accent-primary--darkMode;
       }
     }
@@ -27,7 +31,7 @@
 
     &::before,
     &::after,
-    .svg-inline--fa {
+    svg {
       color: $color-accent-primary--lightMode;
     }
 
@@ -37,15 +41,14 @@
 
       &::before,
       &::after,
-      .svg-inline--fa {
+      svg {
         color: $color-accent-primary--lightMode;
       }
     }
   }
 
   &--external {
-    .svg-inline--fa {
-      height: $font-size-text / 1.25;
+    svg {
       margin-right: $space-xs;
       position: relative;
       top: 0.5px;

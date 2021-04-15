@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
+import { GoLinkExternal } from 'react-icons/go';
 
 import { ThemeContext } from '../context/ThemeContext';
 
 import { GenericProps } from '../types/GenericProps';
 
 import { cn } from '../lib/cn';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface Props extends GenericProps {
   href: string;
@@ -31,9 +31,7 @@ const Link = ({
       href={href}
       target={openInNewTab ? '_blank' : '_self'}
     >
-      {type === 'external' && (
-        <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
-      )}
+      {type === 'external' && <GoLinkExternal />}
       {children}
     </a>
   );
