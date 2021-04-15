@@ -1,64 +1,81 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import {
+  SiJavascript,
+  SiTypescript,
+  SiHtml5,
+  SiCss3,
+  SiGnubash,
+  SiAdobephotoshop,
+  SiGraphql
+} from 'react-icons/si';
+import {
+  FaSass,
+  FaGitAlt,
+  FaReact,
+  FaNodeJs,
+  FaFigma
+} from 'react-icons/fa';
+
 import { Skill } from '../types/Skill';
 
 const skills: Skill[] = [
   {
-    icon: <FontAwesomeIcon icon={['fab', 'html5']} />,
+    icon: <SiHtml5 />,
     level: 95,
     title: 'HTML5'
   },
   {
-    icon: <FontAwesomeIcon icon={['fab', 'css3']} />,
+    icon: <SiCss3 />,
     level: 95,
     title: 'CSS3'
   },
   {
-    icon: <FontAwesomeIcon icon={['fab', 'sass']} />,
+    icon: <FaSass />,
     level: 80,
     title: 'SCSS'
   },
   {
-    icon: <FontAwesomeIcon icon={['fab', 'js']} />,
+    icon: <SiJavascript />,
     level: 75,
     title: 'JavaScript'
   },
   {
-    icon: <FontAwesomeIcon icon={['fab', 'js']} />,
+    icon: <SiTypescript />,
     level: 65,
     title: 'TypeScript'
   },
   {
-    icon: <FontAwesomeIcon icon={['fab', 'git']} />,
+    icon: <FaGitAlt />,
     level: 65,
     title: 'Git'
   },
   {
-    icon: <FontAwesomeIcon icon={['fab', 'react']} />,
+    icon: <FaReact />,
     level: 75,
     title: 'React'
   },
   {
-    icon: <FontAwesomeIcon icon={['fab', 'node-js']} />,
+    icon: <FaNodeJs />,
     level: 45,
     title: 'Node'
   },
   {
-    icon: <FontAwesomeIcon icon={['fab', 'linux']} />,
+    icon: <SiGnubash />,
     level: 45,
     title: 'Bash'
   },
   {
-    icon: <FontAwesomeIcon icon={['fab', 'figma']} />,
+    icon: <FaFigma />,
     level: 75,
     title: 'Figma'
   },
   {
-    icon: <FontAwesomeIcon icon={['fas', 'drafting-compass']} />,
+    icon: <SiAdobephotoshop />,
     level: 85,
     title: 'Photoshop'
   },
   {
-    icon: <FontAwesomeIcon icon={['fas', 'code']} />,
+    icon: <SiGraphql />,
     level: 45,
     title: 'GraphQL'
   }

@@ -25,11 +25,14 @@
   }
 
   &__icon {
-    $size: $font-size-h6;
-
-    height: $size;
-    width: $size;
     margin-right: $space-m;
+
+    svg {
+      $size: $font-size-h6;
+
+      height: $size;
+      width: $size;
+    }
   }
 
   &__title {

@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Headline from './Headline';
 
@@ -11,7 +12,6 @@ import { cn } from '../lib/cn';
 
 type SkillProps = SkillType & GenericProps;
 
-// TODO Feed icon as prop so we can also put in images which do not come from FA
 // TODO I'm thinking about some explanatory points for each Skill
 const Skill = ({ classNames, title, level, icon }: SkillProps) => {
   const { theme } = useContext(ThemeContext);
