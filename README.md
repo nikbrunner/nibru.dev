@@ -45,33 +45,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Why does the `export` script does not work when opening as a file in browser?
 - Research how to work with .env Variables for Prod and Deploy
 
-## Log
-
-### 21.01.10 — Sunday
-
-- [x] Setup `<Grid />` component
-
-### 21.04.06 — Tuesday
-
-- [x] Clean up commits from last time
-- [x] Progress on `<Grid/>`
-
-### 21.04.14 — Wednesday
-
-- [x] Progress on styling `<Skill/>`
-
-### 21.04.15 — Thursday
-
-- [x] Finish `<Skill/>` design
-- [x] Setup colors.ts file
-- [x] Setup better Icon lib
-  - [x] Remove FA Lib after
-
 ## Tasks
 
 ### General
 
-- [x] Light/Dark Toggle
 - [ ] Decide on Fonts
 - [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
 - [ ] Put `theme` as `Prop` for simple components ( Diff between components and partials)
@@ -107,4 +84,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `<Image />`
 	- [ ] Setup
 - `<Cell />`
+	- [ ] Setup
+- `<NightDayModeToggle />`
 	- [ ] Setup
