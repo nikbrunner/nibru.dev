@@ -23,12 +23,8 @@ const Nav = () => {
       </div>
 
       <div className='Nav__theme-buttons'>
-        <Button icon={<FiMoon />} onClick={() => setTheme(Theme.dark)} />
-
-        <Button
-          icon={<FiSun />}
-          onClick={() => setTheme(Theme.light)}
-        ></Button>
+        <Button onClick={() => setTheme(Theme.dark)}>Dark</Button>
+        <Button onClick={() => setTheme(Theme.light)}>Light</Button>
       </div>
 
       <div className='Nav__links'>

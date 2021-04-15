@@ -5,71 +5,32 @@
   $button-height-m: 35px;
   $button-height-l: 50px;
 
+  border-radius: $border-radius;
+  font-size: $font-size-text;
   appearance: none;
   border: none;
   outline: none;
-  border-radius: $border-radius;
-  font-size: $font-size-text;
   cursor: pointer;
 
-  &__icon {
-    @include flex(row nowrap, center, center, center, $inline: true);
-
+  svg {
     height: 100%;
-
-    svg {
-      height: 100%;
-    }
-  }
-
-  &__label {
-    position: relative;
-    top: 1px;
-  }
-
-  &--withLabel {
-    .Button__icon {
-      margin-right: $space-s;
-    }
   }
 
   &--m {
     padding: $space-xs $space-s;
     height: $button-height-m;
-    margin-right: $space-m;
 
-    .Button__icon {
-      svg {
-        width: calc(#{$button-height-m} / 2);
-      }
-    }
-
-    &.Button {
-      &--withIcon {
-        // When the Button contains an Icon, it somehow shifts to the top
-        position: relative;
-        top: 0.5rem;
-      }
+    svg {
+      width: calc(#{$button-height-m} / 2);
     }
   }
 
   &--l {
     padding: $space-s $space-m;
     height: $button-height-l;
-    margin-right: $space-m;
 
-    .Button__icon {
-      svg {
-        width: calc(#{$button-height-l} / 2);
-      }
-    }
-
-    &.Button {
-      &--withIcon {
-        // When the Button contains an Icon, it somehow shifts to the top
-        position: relative;
-        top: 0.75rem;
-      }
+    svg {
+      width: calc(#{$button-height-l} / 2);
     }
   }
 
