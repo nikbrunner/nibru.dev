@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Stage 1
 
 - Landing page
-- Basic info 
+- Basic info
 	-	Personal
 	-	Skills
 	-	Experiences
@@ -32,31 +32,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Blog
 	-	NBP
 	-	Dev
-
-## Tasks
-
-- [x] Light/Dark Toggle
-	- [ ] **Research:** Setup effective dark/light color maps — [Example](https://codepen.io/BarthyB/pen/EBzxje)
-	- [ ] **Research:** The 7/1 SCSS has a Themes folder. Look how they intend to solve this
-- [ ] Decide on Fonts
-- [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
-
-### Bugs
-
-- [ ] Fix height problem in Buttons with SVG Icons
-
-### Components
-
-- [x] `<Link />`
-- [ ] `<Grid />`
-	-	[ ] Setup base props
-	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
-- [ ] `<Flex />`
-	-	[ ] Setup base props
-	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
-- [ ] `<Text />`
-- [ ] `<Image />`
-- [ ] `<Cell />`
 
 ## Ideas
 
@@ -80,3 +55,39 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - [x] Clean up commits from last time
 - [x] Progress on `<Grid/>`
+
+### 21.04.14 — Wednesday
+
+- [x] Progress on styling `<Skill/>`
+
+### 21.04.15 — Thursday
+
+- [x] Finish `<Skill/>` design
+- [ ] Setup colors.ts file
+  - [ ] Figure out a way to import SCSS vars into tsx
+- [ ] Setup optional description points for `Skill`
+- [ ] Setup better Icon lib
+  - [ ] Remove FA Lib after
+
+## Tasks
+
+- [x] Light/Dark Toggle
+	- [ ] **Research:** Setup effective dark/light color maps — [Example](https://codepen.io/BarthyB/pen/EBzxje)
+	- [ ] **Research:** The 7/1 SCSS has a Themes folder. Look how they intend to solve this
+	- [ ] Maybe use scss functions for color vars depending on theme
+- [ ] Decide on Fonts
+- [ ] Decide on colors
+- [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
+
+### Components
+
+- [x] `<Link />`
+- [ ] `<Grid />`
+	-	[ ] Setup base props
+	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
+- [ ] `<Flex />`
+	-	[ ] Setup base props
+	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
+- [ ] `<Text />`
+- [ ] `<Image />`
+- [ ] `<Cell />`
