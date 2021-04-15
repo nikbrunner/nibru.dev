@@ -63,34 +63,48 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### 21.04.15 — Thursday
 
 - [x] Finish `<Skill/>` design
-- [ ] Setup colors.ts file
-  - [ ] Figure out a way to import SCSS vars into tsx
-- [ ] Setup optional description points for `Skill`
-- [ ] Setup better Icon lib
-  - [ ] Remove FA Lib after
+- [x] Setup colors.ts file
+- [x] Setup better Icon lib
+  - [x] Remove FA Lib after
 
 ## Tasks
 
+### General
+
 - [x] Light/Dark Toggle
-	- [ ] **Research:** Setup effective dark/light color maps — [Example](https://codepen.io/BarthyB/pen/EBzxje)
-	- [ ] **Research:** The 7/1 SCSS has a Themes folder. Look how they intend to solve this
-	- [ ] Maybe use scss functions for color vars depending on theme
 - [ ] Decide on Fonts
-- [ ] Decide on colors
 - [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
-- [ ] Put component `.scss` files into a folder together with the `.tsx`
 - [ ] Put `theme` as `Prop` for simple components ( Diff between components and partials)
+
+### SCSS
+
+- [ ] Figure out a way to import SCSS vars into tsx
+- [ ] Put component `.scss` files into a folder together with the `.tsx`
+- [ ] Decide on colors
+  - [ ] Setup all shades
+  - [ ] Dry up with functions
 
 ### Components
 
 -  `<Link />`
    - [ ] Dry up SCSS
+   - [ ] Better underline
+-  `<Skill />`
+	- [ ] Setup optional description points for `Skill`
+	- [ ] Replace hardcoded color values
 -  `<Grid />`
 	-	[ ] Setup base props
 	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
 - `<Flex />`
 	-	[ ] Setup base props
 	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
+- `<Button />`
+  - [ ] `label` as `children`
+- `<Section />`
+  - [ ] Add `id` and `hash` functionality
 - `<Text />`
+	- [ ] Setup
 - `<Image />`
+	- [ ] Setup
 - `<Cell />`
+	- [ ] Setup
