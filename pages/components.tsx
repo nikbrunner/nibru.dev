@@ -61,20 +61,19 @@ const Components = () => (
       <Headline size='h1'>Button component</Headline>
 
       <Row>
-        <Button
-          icon={<FaLinkedin />}
-          label='This is a button with an Icon'
-        />
-        <Button label='This is a button without an Icon' />
+        <Button icon={<FaLinkedin />}>
+          This is a button with an Icon
+        </Button>
+
+        <Button>This is a button without an Icon</Button>
       </Row>
 
       <Row>
-        <Button
-          icon={<FaLinkedin />}
-          label='This is a big button with an Icon'
-          size='l'
-        />
-        <Button label='This is a big button without an Icon' size='l' />
+        <Button icon={<FaLinkedin />} size='l'>
+          This is a big button with an Icon
+        </Button>
+
+        <Button size='l'>This is a big button without an Icon</Button>
       </Row>
 
       <Row>This is a Button without a label</Row>

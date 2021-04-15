@@ -7,7 +7,6 @@ import { GenericProps } from '../types/GenericProps';
 
 interface Props extends GenericProps {
   icon?: JSX.Element;
-  label?: string;
   size?: 'm' | 'l';
   onClick?: () => void;
 }
@@ -15,7 +14,7 @@ interface Props extends GenericProps {
 const Button = ({
   classNames,
   icon,
-  label,
+  children,
   size = 'm',
   onClick
 }: Props) => {
@@ -26,13 +25,13 @@ const Button = ({
       className={cn('Button', classNames, {
         [theme]: theme,
         [size]: size,
-        withLabel: label,
+        withLabel: children,
         withIcon: icon
       })}
       onClick={onClick}
     >
       {icon && <div className='Button__icon'>{icon}</div>}
-      {label && <span className='Button__label'>{label}</span>}
+      <span className='Button__label'>{children}</span>
     </button>
   );
 };

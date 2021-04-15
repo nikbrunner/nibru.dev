@@ -5,9 +5,10 @@
   $button-height-m: 35px;
   $button-height-l: 50px;
 
+  appearance: none;
   border: none;
-  border-radius: $border-radius;
   outline: none;
+  border-radius: $border-radius;
   font-size: $font-size-text;
   cursor: pointer;
 
