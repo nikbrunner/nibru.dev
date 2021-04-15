@@ -1,5 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaLinkedin } from 'react-icons/fa';
 
 import Grid from '../components/Grid';
 import Section from '../components/Section';
@@ -13,23 +13,25 @@ import Page from '../components/Page';
 
 import { Experience as ExperienceType } from '../types/Experience';
 import { Skill as SkillType } from '../types/Skill';
+import { Space } from '../types/Spaces';
 
 import skills from '../data/skills';
 import experiences from '../data/experiences';
 import profile from '../data/profile';
-import { Space } from '../types/Spaces';
 
 const Components = () => (
   <Page name='Components'>
     <Section>
-      <Headline tag={'h1'} size={'h1'}>
-        Components
+      <Headline tag='h1' size='h1'>
+        Components Overview
       </Headline>
 
       <p>This page is just an overview over all components.</p>
     </Section>
 
-    <Section classNames={['Components__profile-section']}>
+    <Section>
+      <Headline size='h1'>Headline component</Headline>
+
       <Headline tag='h1' size='h1'>
         Headline Size H1
       </Headline>
@@ -53,16 +55,38 @@ const Components = () => (
       <Headline tag='h6' size='h6'>
         Headline Size H6
       </Headline>
+    </Section>
+
+    <Section>
+      <Headline size='h1'>Button component</Headline>
 
       <Row>
         <Button
-          icon={<FontAwesomeIcon icon={['fab', 'linkedin']} />}
+          icon={<FaLinkedin />}
           label='This is a button with an Icon'
         />
-        <Button label='This is a button' />
+        <Button label='This is a button without an Icon' />
       </Row>
 
-      <Headline size='h3'>Link component</Headline>
+      <Row>
+        <Button
+          icon={<FaLinkedin />}
+          label='This is a big button with an Icon'
+          size='l'
+        />
+        <Button label='This is a big button without an Icon' size='l' />
+      </Row>
+
+      <Row>This is a Button without a label</Row>
+
+      <Row>
+        <Button icon={<FaLinkedin />} />
+        <Button icon={<FaLinkedin />} size='l' />
+      </Row>
+    </Section>
+
+    <Section>
+      <Headline size='h2'>Link component</Headline>
 
       <Row>
         This is an external link to{' '}
@@ -81,29 +105,23 @@ const Components = () => (
       </Row>
     </Section>
 
-    <Section classNames={['Components__skills-section']}>
+    <Section>
       <Row>
-        <Headline>Skills</Headline>
+        <Headline>Skill component</Headline>
       </Row>
 
       <Row cols={'fourCols'} classNames={['Components__skills-container']}>
         <Grid cols='auto-fit' gap={Space.m}>
-          {skills.map(({ title, level, lib, icon }: SkillType) => (
-            <Skill
-              key={title}
-              title={title}
-              level={level}
-              lib={lib}
-              icon={icon}
-            />
+          {skills.map(({ title, level, icon }: SkillType) => (
+            <Skill key={title} title={title} level={level} icon={icon} />
           ))}
         </Grid>
       </Row>
     </Section>
 
-    <Section classNames={['Components__experiences-section']}>
+    <Section>
       <Row>
-        <Headline>Experiences</Headline>
+        <Headline>Experience component</Headline>
       </Row>
 
       <Row

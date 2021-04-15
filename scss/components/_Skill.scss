@@ -19,7 +19,7 @@
   &__caption {
     @include flex(row nowrap, flex-start, flex-start, center);
 
-    padding: $space-m $space-m;
+    padding: $space-m $space-l;
     position: relative;
     top: 1px;
   }

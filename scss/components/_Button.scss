@@ -1,33 +1,79 @@
 .Button {
-  @include flex(row nowrap, flex-start, center, center, $inline: true);
+  @include flex(row nowrap, center, center, center, $inline: true);
+  @include box-shadow-default();
 
-  padding: $space-xs $space-s;
-  height: 35px;
+  $button-height-m: 35px;
+  $button-height-l: 50px;
+
   border: none;
   border-radius: $border-radius;
   outline: none;
   font-size: $font-size-text;
   cursor: pointer;
 
-  .svg-inline--fa {
-    height: 75%;
-    width: $space-l;
-  }
+  &__icon {
+    @include flex(row nowrap, center, center, center, $inline: true);
 
-  &--withLabel {
-    .svg-inline--fa {
-      margin-right: $space-xs;
+    height: 100%;
+
+    svg {
+      height: 100%;
     }
   }
 
-  // When the Button contains an Icon, it somehow shifts to the top
-  &--withIcon {
+  &__label {
     position: relative;
-    top: 0.25rem;
+    top: 1px;
+  }
+
+  &--withLabel {
+    .Button__icon {
+      margin-right: $space-s;
+    }
+  }
+
+  &--m {
+    padding: $space-xs $space-s;
+    height: $button-height-m;
+    margin-right: $space-m;
+
+    .Button__icon {
+      svg {
+        width: calc(#{$button-height-m} / 2);
+      }
+    }
+
+    &.Button {
+      &--withIcon {
+        // When the Button contains an Icon, it somehow shifts to the top
+        position: relative;
+        top: 0.5rem;
+      }
+    }
+  }
+
+  &--l {
+    padding: $space-s $space-m;
+    height: $button-height-l;
+    margin-right: $space-m;
+
+    .Button__icon {
+      svg {
+        width: calc(#{$button-height-l} / 2);
+      }
+    }
+
+    &.Button {
+      &--withIcon {
+        // When the Button contains an Icon, it somehow shifts to the top
+        position: relative;
+        top: 0.75rem;
+      }
+    }
   }
 
   &--dark {
-    background: $color-bg-primary--darkMode;
+    background: $color-bg-secondary--darkMode;
     color: $color-fg-primary--darkMode;
     border: 1px solid $color-gray--lighter;
 
@@ -37,7 +83,7 @@
   }
 
   &--light {
-    background: $color-bg-primary--lightMode;
+    background: $color-bg-secondary--lightMode;
     color: $color-fg-primary--lightMode;
     border: 1px solid $color-fg-primary--lightMode;
 

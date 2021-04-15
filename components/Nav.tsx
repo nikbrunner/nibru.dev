@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FiSun, FiMoon } from 'react-icons/fi';
 
 import Button from './Button';
 import Headline from './Headline';
@@ -23,13 +23,10 @@ const Nav = () => {
       </div>
 
       <div className='Nav__theme-buttons'>
-        <Button
-          icon={<FontAwesomeIcon icon='moon' />}
-          onClick={() => setTheme(Theme.dark)}
-        />
+        <Button icon={<FiMoon />} onClick={() => setTheme(Theme.dark)} />
 
         <Button
-          icon={<FontAwesomeIcon icon='lightbulb' />}
+          icon={<FiSun />}
           onClick={() => setTheme(Theme.light)}
         ></Button>
       </div>

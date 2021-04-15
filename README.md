@@ -78,16 +78,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [ ] Decide on Fonts
 - [ ] Decide on colors
 - [ ] [Implement Markdown import](http://geekhmer.github.io/blog/2018/03/29/import-markdown-files-and-serve-its-content-in-next-dot-js/)
+- [ ] Put component `.scss` files into a folder together with the `.tsx`
+- [ ] Put `theme` as `Prop` for simple components ( Diff between components and partials)
 
 ### Components
 
-- [x] `<Link />`
-- [ ] `<Grid />`
+-  `<Link />`
+   - [ ] Dry up SCSS
+-  `<Grid />`
 	-	[ ] Setup base props
 	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
-- [ ] `<Flex />`
+- `<Flex />`
 	-	[ ] Setup base props
 	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
-- [ ] `<Text />`
-- [ ] `<Image />`
-- [ ] `<Cell />`
+- `<Text />`
+- `<Image />`
+- `<Cell />`

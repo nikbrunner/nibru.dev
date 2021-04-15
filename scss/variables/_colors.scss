@@ -37,10 +37,17 @@ $color-yellow--darkest: darken($color-yellow, 25%);
 $color-yellow--darker: darken($color-yellow, 15%);
 $color-yellow--lighter: lighten($color-yellow, 5%);
 $color-yellow--lightest: lighten($color-yellow, 15%);
-// ...
+
+$color-white--darkest: darken($color-white, 5%);
+$color-white--darker: darken($color-white, 2.5%);
+$color-white--lighter: lighten($color-white, 2.5%);
+$color-white--lightest: lighten($color-white, 5%);
 
 $color-bg-primary--darkMode: $color-black;
 $color-bg-primary--lightMode: $color-white;
+
+$color-bg-secondary--darkMode: $color-black--lighter;
+$color-bg-secondary--lightMode: $color-white--darker;
 
 $color-fg-primary--darkMode: $color-offWhite;
 $color-fg-primary--lightMode: $color-gray--darker;
