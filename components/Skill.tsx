@@ -12,7 +12,6 @@ import { cn } from '../lib/cn';
 
 type SkillProps = SkillType & GenericProps;
 
-// TODO I'm thinking about some explanatory points for each Skill
 const Skill = ({ classNames, title, level, icon }: SkillProps) => {
   const { theme } = useContext(ThemeContext);
 
