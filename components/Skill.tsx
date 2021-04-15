@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Headline from './Headline';
 
@@ -25,8 +24,8 @@ const Skill = ({ classNames, title, level, icon }: SkillProps) => {
   )`
       : `linear-gradient(
     135deg,
-    #000000 0%,
-    #000000 ${level}%,
+    #294be6 0%,
+    #294be6 ${level}%,
     rgba(0, 0, 0, 0) 0%
   )`;
 
