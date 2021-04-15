@@ -77,6 +77,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
 - `<Button />`
   - [x] `label` as `children`
+  - [ ] Icons for Button
 - `<Section />`
   - [ ] Add `id` and `hash` functionality
 - `<Text />`
