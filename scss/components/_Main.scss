@@ -1,25 +1,25 @@
 // TODO Write MediaQueries
 .Main {
-  width: 100vw;
+  max-width: 100vw;
   margin: 0 auto;
 
   @include mq('m') {
-    width: 75vw;
+    max-width: 75vw;
   }
 
   @include mq('l') {
-    width: 65vw;
+    max-width: 65vw;
   }
 
   @include mq('xl') {
-    width: 60vw;
+    max-width: 55vw;
   }
 
   @include mq('xxl') {
-    width: 55vw;
+    max-width: 40vw;
   }
 
   @include mq('xxxl') {
-    width: 45vw;
+    max-width: 35vw;
   }
 }
