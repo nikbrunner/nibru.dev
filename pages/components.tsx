@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa';
 
 import Grid from '../components/Grid';
 import Section from '../components/Section';
@@ -10,6 +9,7 @@ import Experience from '../components/Experience';
 import Headline from '../components/Headline';
 import Link from '../components/Link';
 import Page from '../components/Page';
+import Text from '../components/Text';
 
 import { Experience as ExperienceType } from '../types/Experience';
 import { Skill as SkillType } from '../types/Skill';
@@ -26,7 +26,7 @@ const Components = () => (
         Components Overview
       </Headline>
 
-      <p>This page is just an overview over all components.</p>
+      <Text>This page is just an overview over all components.</Text>
     </Section>
 
     <Section>
@@ -55,6 +55,51 @@ const Components = () => (
       <Headline tag='h6' size='h6'>
         Headline Size H6
       </Headline>
+    </Section>
+
+    <Section>
+      <Headline size='h1'>Text component</Headline>
+      <Text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Interdum posuere
+        <Link href='/about' type='internal'>
+          lorem ipsum
+        </Link>
+        dolor sit amet. Viverra vitae congue eu consequat ac felis donec
+        et. Tempor id eu nisl nunc. Hac habitasse platea dictumst quisque
+        sagittis purus sit amet volutpat. Nibh cras pulvinar mattis nunc
+        sed. Nec feugiat in fermentum posuere urna. Interdum velit laoreet
+        id donec ultrices tincidunt arcu. Quam vulputate dignissim
+        suspendisse in. Feugiat sed lectus vestibulum mattis.
+      </Text>
+
+      <Text>
+        Vitae tempus quam pellentesque nec nam. Praesent semper feugiat
+        nibh sed pulvinar proin gravida hendrerit lectus. Ipsum dolor sit
+        amet consectetur adipiscing elit duis tristique sollicitudin. Nisi
+        quis eleifend quam adipiscing vitae. Posuere sollicitudin aliquam
+        ultrices sagittis orci. Vitae suscipit tellus mauris a. Proin
+        sagittis nisl rhoncus mattis. Viverra vitae congue eu consequat ac
+        felis donec. Diam maecenas ultricies mi eget mauris pharetra. Donec
+        pretium vulputate sapien nec sagittis aliquam malesuada.
+      </Text>
+
+      <Text>
+        Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
+        lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
+        ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
+        sodales neque sodales ut etiam. Urna molestie at elementum eu.
+        Risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet
+        porttitor lacus luctus accumsan. Eget arcu dictum varius duis at
+        consectetur lorem donec. Malesuada nunc vel risus commodo. Sed
+        egestas egestas fringilla phasellus faucibus scelerisque eleifend
+        donec. Vel eros donec ac odio tempor orci dapibus. Ut morbi
+        tincidunt augue interdum velit euismod in. Ipsum consequat nisl vel
+        pretium. Id porta nibh venenatis cras sed felis eget. Non
+        consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
+        urna neque viverra justo.
+      </Text>
     </Section>
 
     <Section>
