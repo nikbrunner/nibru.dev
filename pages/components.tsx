@@ -62,10 +62,10 @@ const Components = () => (
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Interdum posuere
-        <Link href='/about' type='internal'>
+        Interdum posuere{' '}
+        <Link href='/home' type='internal'>
           lorem ipsum
-        </Link>
+        </Link>{' '}
         dolor sit amet. Viverra vitae congue eu consequat ac felis donec
         et. Tempor id eu nisl nunc. Hac habitasse platea dictumst quisque
         sagittis purus sit amet volutpat. Nibh cras pulvinar mattis nunc
@@ -74,16 +74,28 @@ const Components = () => (
         suspendisse in. Feugiat sed lectus vestibulum mattis.
       </Text>
 
+      <Headline tag='h3' size='h3'>
+        Headline Size H3
+      </Headline>
+
       <Text>
-        Vitae tempus quam pellentesque nec nam. Praesent semper feugiat
-        nibh sed pulvinar proin gravida hendrerit lectus. Ipsum dolor sit
-        amet consectetur adipiscing elit duis tristique sollicitudin. Nisi
-        quis eleifend quam adipiscing vitae. Posuere sollicitudin aliquam
-        ultrices sagittis orci. Vitae suscipit tellus mauris a. Proin
-        sagittis nisl rhoncus mattis. Viverra vitae congue eu consequat ac
-        felis donec. Diam maecenas ultricies mi eget mauris pharetra. Donec
-        pretium vulputate sapien nec sagittis aliquam malesuada.
+        Vitae tempus quam{' '}
+        <Link href='https://google.com' type='external'>
+          Pellentesque
+        </Link>{' '}
+        nec nam. Praesent semper feugiat nibh sed pulvinar proin gravida
+        hendrerit lectus. Ipsum dolor sit amet consectetur adipiscing elit
+        duis tristique sollicitudin. Nisi quis eleifend quam adipiscing
+        vitae. Posuere sollicitudin aliquam ultrices sagittis orci. Vitae
+        suscipit tellus mauris a. Proin sagittis nisl rhoncus mattis.
+        Viverra vitae congue eu consequat ac felis donec. Diam maecenas
+        ultricies mi eget mauris pharetra. Donec pretium vulputate sapien
+        nec sagittis aliquam malesuada.
       </Text>
+
+      <Headline tag='h4' size='h4'>
+        Headline Size H4
+      </Headline>
 
       <Text>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur

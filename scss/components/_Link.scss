@@ -1,8 +1,35 @@
 .Link {
   font-size: $font-size-text;
+  font-weight: $font-weight-bold;
 
   svg {
     height: $font-size-text;
+  }
+
+  &--external {
+    svg {
+      margin-right: $space-xxs;
+      position: relative;
+      top: 2.5px;
+    }
+  }
+
+  &--internal {
+    &::before,
+    &::after {
+      position: relative;
+      top: -1px;
+    }
+
+    &::before {
+      content: '[[';
+      margin-right: $space-xxs;
+    }
+
+    &::after {
+      content: ']]';
+      margin-left: $space-xxs;
+    }
   }
 
   &--dark {
@@ -15,7 +42,6 @@
     }
 
     &:hover {
-      text-decoration: underline;
       color: $color-accent-primary--darkMode;
 
       &::before,
@@ -36,7 +62,6 @@
     }
 
     &:hover {
-      text-decoration: underline;
       color: $color-accent-primary--lightMode;
 
       &::before,
@@ -44,32 +69,6 @@
       svg {
         color: $color-accent-primary--lightMode;
       }
-    }
-  }
-
-  &--external {
-    svg {
-      margin-right: $space-xs;
-      position: relative;
-      top: 0.5px;
-    }
-  }
-
-  &--internal {
-    &::before,
-    &::after {
-      position: relative;
-      top: -1px;
-    }
-
-    &::before {
-      content: '[[';
-      margin-right: $space-xxs;
-    }
-
-    &::after {
-      content: ']]';
-      margin-left: $space-xxs;
     }
   }
 }
