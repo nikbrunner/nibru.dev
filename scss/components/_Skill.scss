@@ -17,7 +17,7 @@
   }
 
   &__caption {
-    @include flex(row nowrap, flex-start, flex-start, center);
+    @include flex(row nowrap, flex-start, center, center);
 
     padding: $space-m $space-l;
     position: relative;
@@ -26,6 +26,7 @@
 
   &__icon {
     margin-right: $space-m;
+    @include flex(row nowrap, center, center, center);
 
     svg {
       $size: $font-size-h6;
@@ -39,6 +40,8 @@
     font-weight: 100;
     margin: 0;
     padding: 0;
+    position: relative;
+    top: 2px;
   }
 
   &--dark {
