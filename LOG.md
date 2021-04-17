@@ -19,3 +19,7 @@
 - [x] Setup colors.ts file
 - [x] Setup better Icon lib
   - [x] Remove FA Lib after
+
+### 21.04.17 - Saturday
+
+- [x] `Text` component
