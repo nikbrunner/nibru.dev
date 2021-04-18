@@ -22,4 +22,8 @@
   @include mq('xxxl') {
     max-width: 35vw;
   }
+
+  @include mq('xxxxl') {
+    max-width: 25vw;
+  }
 }
