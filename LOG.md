@@ -23,3 +23,8 @@
 ### 21.04.17 - Saturday
 
 - [x] `Text` component
+
+### 21.04.18 - Sunday
+
+- [ ] Implement `Galdeano` as font
+- [ ] Optimize typography with [this](https://www.cssfontstack.com/candara)
