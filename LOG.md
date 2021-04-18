@@ -26,5 +26,5 @@
 
 ### 21.04.18 - Sunday
 
-- [ ] Implement `Galdeano` as font
+- [x] Implement `Galdeano` as font
 - [ ] Optimize typography with [this](https://www.cssfontstack.com/candara)

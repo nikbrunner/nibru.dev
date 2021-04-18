@@ -1,8 +1,7 @@
 /*
  * This file contains generic application-wide Sass variables.
  */
-
-$text-font-stack: sans-serif !default;
+$text-font-stack: 'Galdeano', sans-serif !default;
 
 $border-color: transparentize($color-gray--lighter, 0.75);
 $border-default: 1px solid $border-color;
