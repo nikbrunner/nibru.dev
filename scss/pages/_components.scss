@@ -1,7 +1,11 @@
 .Components {
-  &__profile-section {
-    .Button {
-      margin-right: $space-s;
+  .Section {
+    &--light {
+      border-bottom: 3px solid $color-accent-primary--lightMode;
+    }
+
+    &--dark {
+      border-bottom: 3px solid $color-accent-primary--darkMode;
     }
   }
 }

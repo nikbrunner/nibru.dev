@@ -1,3 +1,5 @@
 .Text {
+  @include typo-text-default();
+
   margin-bottom: $space-m;
 }

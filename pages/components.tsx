@@ -30,8 +30,28 @@ const Components = () => (
     </Section>
 
     <Section>
-      <Headline size='h1'>Headline component</Headline>
+      <Headline size='h2'>Link component</Headline>
 
+      <Row>
+        <Text>
+          This is an external link to{' '}
+          <Link href={profile.github} type='external'>
+            GitHub
+          </Link>
+          , and this is an external link to LinkedIn{' '}
+          <Link href={profile.linkedin} type='external'>
+            LinkedIn
+          </Link>
+          . This is an internal Link to the{' '}
+          <Link href='/about' type='internal'>
+            About page
+          </Link>
+          .
+        </Text>
+      </Row>
+    </Section>
+
+    <Section>
       <Headline tag='h1' size='h1'>
         Headline Size H1
       </Headline>
@@ -64,7 +84,7 @@ const Components = () => (
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Interdum posuere{' '}
         <Link href='/home' type='internal'>
-          lorem ipsum
+          home
         </Link>{' '}
         dolor sit amet. Viverra vitae congue eu consequat ac felis donec
         et. Tempor id eu nisl nunc. Hac habitasse platea dictumst quisque
@@ -74,8 +94,57 @@ const Components = () => (
         suspendisse in. Feugiat sed lectus vestibulum mattis.
       </Text>
 
+      <Text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Interdum posuere{' '}
+        <Link href='/home' type='internal'>
+          home
+        </Link>{' '}
+        dolor sit amet. Viverra vitae congue eu consequat ac felis donec
+        et. Tempor id eu nisl nunc. Hac habitasse platea dictumst quisque
+        sagittis purus sit amet volutpat. Nibh cras pulvinar mattis nunc
+        sed. Nec feugiat in fermentum posuere urna. Interdum velit laoreet
+        id donec ultrices tincidunt arcu. Quam vulputate dignissim
+        suspendisse in. Feugiat sed lectus vestibulum mattis.
+      </Text>
+    </Section>
+
+    <Section>
+      <Headline tag='h1' size='h1'>
+        Lorem ipsum dolor sit amet.
+      </Headline>
+
+      <Text>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+        aperiam voluptas explicabo, similique sunt provident quis beatae ab
+        blanditiis veritatis! Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Ad, laboriosam. Molestias accusamus, mollitia
+        cumque quos omnis nostrum aliquam ducimus fugiat qui architecto
+        totam vel hic doloribus corrupti a, eaque laudantium officiis
+        asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
+        necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo
+        modi totam!
+      </Text>
+
+      <Headline tag='h2' size='h2'>
+        Lorem, ipsum dolor.
+      </Headline>
+
+      <Text>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+        aperiam voluptas explicabo, similique sunt provident quis beatae ab
+        blanditiis veritatis! Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Ad, laboriosam. Molestias accusamus, mollitia
+        cumque quos omnis nostrum aliquam ducimus fugiat qui architecto
+        totam vel hic doloribus corrupti a, eaque laudantium officiis
+        asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
+        necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo
+        modi totam!
+      </Text>
+
       <Headline tag='h3' size='h3'>
-        Headline Size H3
+        Lorem ipsum dolor sit amet.
       </Headline>
 
       <Text>
@@ -94,7 +163,47 @@ const Components = () => (
       </Text>
 
       <Headline tag='h4' size='h4'>
-        Headline Size H4
+        Lorem ipsum dolor sit.
+      </Headline>
+
+      <Text>
+        Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
+        lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
+        ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
+        sodales neque sodales ut etiam. Urna molestie at elementum eu.
+        Risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet
+        porttitor lacus luctus accumsan. Eget arcu dictum varius duis at
+        consectetur lorem donec. Malesuada nunc vel risus commodo. Sed
+        egestas egestas fringilla phasellus faucibus scelerisque eleifend
+        donec. Vel eros donec ac odio tempor orci dapibus. Ut morbi
+        tincidunt augue interdum velit euismod in. Ipsum consequat nisl vel
+        pretium. Id porta nibh venenatis cras sed felis eget. Non
+        consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
+        urna neque viverra justo.
+      </Text>
+
+      <Headline tag='h5' size='h5'>
+        Lorem ipsum dolor sit amet consectetur.
+      </Headline>
+
+      <Text>
+        Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
+        lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
+        ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
+        sodales neque sodales ut etiam. Urna molestie at elementum eu.
+        Risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet
+        porttitor lacus luctus accumsan. Eget arcu dictum varius duis at
+        consectetur lorem donec. Malesuada nunc vel risus commodo. Sed
+        egestas egestas fringilla phasellus faucibus scelerisque eleifend
+        donec. Vel eros donec ac odio tempor orci dapibus. Ut morbi
+        tincidunt augue interdum velit euismod in. Ipsum consequat nisl vel
+        pretium. Id porta nibh venenatis cras sed felis eget. Non
+        consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
+        urna neque viverra justo.
+      </Text>
+
+      <Headline tag='h6' size='h6'>
+        Lorem ipsum dolor sit.
       </Headline>
 
       <Text>
@@ -113,7 +222,6 @@ const Components = () => (
         urna neque viverra justo.
       </Text>
     </Section>
-
     <Section>
       <Headline size='h1'>Button component</Headline>
 
@@ -123,26 +231,6 @@ const Components = () => (
 
       <Row>
         <Button size='l'>This is a big button without an Icon</Button>
-      </Row>
-    </Section>
-
-    <Section>
-      <Headline size='h2'>Link component</Headline>
-
-      <Row>
-        This is an external link to{' '}
-        <Link href={profile.github} type='external'>
-          GitHub
-        </Link>
-        , and this is an external link to LinkedIn{' '}
-        <Link href={profile.linkedin} type='external'>
-          LinkedIn
-        </Link>
-        . This is an internal Link to the{' '}
-        <Link href='/about' type='internal'>
-          About page
-        </Link>
-        .
       </Row>
     </Section>
 

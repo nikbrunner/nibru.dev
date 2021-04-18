@@ -1,6 +1,27 @@
 .Headline {
-  margin: 0.5em 0em;
-  line-height: 1.25;
+  &--size-h1 {
+    @include typo-h1-default();
+  }
+
+  &--size-h2 {
+    @include typo-h2-default();
+  }
+
+  &--size-h3 {
+    @include typo-h3-default();
+  }
+
+  &--size-h4 {
+    @include typo-h4-default();
+  }
+
+  &--size-h5 {
+    @include typo-h5-default();
+  }
+
+  &--size-h6 {
+    @include typo-h6-default();
+  }
 
   &--dark {
     color: $color-fg-primary--darkMode;
@@ -8,33 +29,5 @@
 
   &--light {
     color: $color-fg-primary--lightMode;
-  }
-
-  &--size-h1 {
-    font-size: $font-size-h1;
-    padding: 0 0 0.25em 0;
-    border-bottom: $border-default;
-  }
-
-  &--size-h2 {
-    font-size: $font-size-h2;
-    padding: 0 0 0.25em 0;
-    border-bottom: $border-default;
-  }
-
-  &--size-h3 {
-    font-size: $font-size-h3;
-  }
-
-  &--size-h4 {
-    font-size: $font-size-h4;
-  }
-
-  &--size-h5 {
-    font-size: $font-size-h5;
-  }
-
-  &--size-h6 {
-    font-size: $font-size-h6;
   }
 }

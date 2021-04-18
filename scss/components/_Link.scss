@@ -1,6 +1,7 @@
 .Link {
-  font-size: $font-size-text;
-  font-weight: $font-weight-bold;
+  @include typo-text-default() {
+    font-weight: $font-weight-bold;
+  }
 
   svg {
     height: $font-size-text;

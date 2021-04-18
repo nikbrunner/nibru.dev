@@ -1,12 +1,12 @@
 .Button {
   @include flex(row nowrap, center, center, center, $inline: true);
   @include box-shadow-default();
+  @include typo-text-default();
 
   $button-height-m: 35px;
   $button-height-l: 50px;
 
   border-radius: $border-radius;
-  font-size: $font-size-text;
   appearance: none;
   border: none;
   outline: none;
