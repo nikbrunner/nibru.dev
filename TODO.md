@@ -11,7 +11,6 @@
 - TailwindCSS
   - If TailwindCSS proves to be good, it would streamline some problems
 
-
 ## Theme
 
 - [ ] Implement better dark mode
@@ -24,8 +23,9 @@
 
 I originally wanted to use `Candara` but it is a payed font. `Galdeano` is a good Google Fonts alternative.
 
-- [ ] Implement `Galdeano` as font
-- [ ] Optimize typography with [this](https://www.cssfontstack.com/candara)
+- [x] Implement `Galdeano` as font
+- [x] Optimize typography with [this](https://www.cssfontstack.com/candara)
+- [ ] media queries for font-sizes
 
 ## SCSS
 
@@ -34,31 +34,51 @@ I originally wanted to use `Candara` but it is a payed font. `Galdeano` is a goo
 - [ ] Decide on colors
   - [ ] Setup all shades
   - [ ] Dry up with functions
+- [ ] Convert `xxxl` for `mq()` to `3xl` and so on
 
 ## Components
 
--  `<Link />`
-   - [ ] Dry up SCSS
-   - [ ] Better underline
--  `<Skill />`
-	- [ ] Setup optional description points for `Skill`
-	- [ ] Replace hardcoded color values
--  `<Grid />`
-	-	[ ] Setup base props
-	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
--  `<Row />`
-  - [ ] Refactor cols
-- `<Flex />`
-	-	[ ] Setup base props
-	-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
-- `<Button />`
-  - [x] `label` as `children`
-  - [ ] Icons for Button
-- `<Section />`
-  - [ ] Add `id` and `hash` functionality
-- `<Text />`
-	- [x] Setup
-- `<Image />`
-	- [ ] Setup
-- `<Cell />`
-	- [ ] Setup
+### `<Link />`
+- [ ] Dry up SCSS
+- [ ] Better underline
+
+### `<Skill />`
+
+- [ ] Setup optional description points for `Skill`
+- [ ] Replace hardcoded color values
+- [ ] Implement functionality to display experiences with Libraries and Services
+
+### `<Grid />`
+
+-	[ ] Setup base props
+-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
+
+### `<Row />`
+
+- [ ] Refactor cols
+
+### `<Flex />`
+
+-	[ ] Setup base props
+-	[ ] Implement responsive props `cols-m={2} col-min-width-m="250px"`
+
+### `<Button />`
+
+- [x] `label` as `children`
+- [ ] Icons for Button
+
+###  `<Section />`
+
+- [ ] Add `id` and `hash` functionality
+
+### `<Text />`
+
+- [x] Setup
+
+### `<Image />`
+
+- [ ] Setup
+
+### `<Cell />`
+
+- [ ] Setup

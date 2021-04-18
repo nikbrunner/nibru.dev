@@ -2,29 +2,33 @@
 
 ### 21.01.10 — Sunday
 
-- [x] Setup `<Grid />` component
+- Setup `<Grid />` component
 
 ### 21.04.06 — Tuesday
 
-- [x] Clean up commits from last time
-- [x] Progress on `<Grid/>`
+- Clean up commits from last time
+- Progress on `<Grid/>`
 
 ### 21.04.14 — Wednesday
 
-- [x] Progress on styling `<Skill/>`
+- Progress on styling `<Skill/>`
 
 ### 21.04.15 — Thursday
 
-- [x] Finish `<Skill/>` design
-- [x] Setup colors.ts file
-- [x] Setup better Icon lib
-  - [x] Remove FA Lib after
+- Finish `<Skill/>` design
+- Setup colors.ts file
+- Setup better Icon lib
+  - Remove FA Lib after
 
 ### 21.04.17 - Saturday
 
-- [x] `Text` component
+- `Text` component
 
 ### 21.04.18 - Sunday
 
-- [x] Implement `Galdeano` as font
-- [ ] Optimize typography with [this](https://www.cssfontstack.com/candara)
+- Implement `Galdeano` as font
+- Optimize typography with [this](https://www.cssfontstack.com/candara)
+
+Next time:
+
+- Tailwind/DarkMode Refactor
