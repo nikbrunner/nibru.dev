@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { FiSun, FiMoon } from 'react-icons/fi';
 
 import Button from './Button';
 import Headline from './Headline';
