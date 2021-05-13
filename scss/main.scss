@@ -22,7 +22,6 @@
 @import 'base/helpers';
 
 // Components
-@import 'components/Page';
 @import '../components/Main/Main';
 @import 'components/Section';
 @import 'components/Row';
@@ -34,6 +33,9 @@
 @import 'components/Skill';
 @import 'components/Text';
 @import '../components/Experience/Experience';
+
+// Partials
+@import '../partials/Page/Page';
 
 // Page-specific styles
 @import 'pages/app';

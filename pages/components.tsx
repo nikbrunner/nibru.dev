@@ -8,7 +8,7 @@ import Skill from '../components/Skill';
 import Experience from '../components/Experience/Experience';
 import Headline from '../components/Headline/Headline';
 import Link from '../components/Link/Link';
-import Page from '../components/Page';
+import Page from '../partials/Page/Page';
 import Text from '../components/Text';
 
 import { Experience as ExperienceType } from '../types/Experience';

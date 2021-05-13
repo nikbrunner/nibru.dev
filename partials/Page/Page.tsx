@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import Head from 'next/head';
 
-import Main from './Main/Main';
-import Nav from './Nav/Nav';
+import Main from '../../components/Main/Main';
+import Nav from '../../components/Nav/Nav';
 
-import { GenericProps } from '../types/GenericProps';
+import { GenericProps } from '../../types/GenericProps';
 
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 
-import { cn } from '../lib/cn';
+import { cn } from '../../lib/cn';
 interface Props extends GenericProps {
   name: string;
   title?: string;

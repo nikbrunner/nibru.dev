@@ -2,7 +2,7 @@ import React from 'react';
 
 import Section from '../components/Section';
 import Headline from '../components/Headline/Headline';
-import Page from '../components/Page';
+import Page from '../partials/Page/Page';
 import Text from '../components/Text';
 
 const Home = () => {
