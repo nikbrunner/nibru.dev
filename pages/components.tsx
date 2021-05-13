@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Grid from '../components/Grid/Grid';
-import Section from '../components/Section';
+import Section from '../components/Section/Section';
 import Row from '../partials/Row/Row';
 import Button from '../components/Button/Button';
 import Skill from '../components/Skill';

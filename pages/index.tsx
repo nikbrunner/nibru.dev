@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from '../components/Section';
+import Section from '../components/Section/Section';
 import Headline from '../components/Headline/Headline';
 import Page from '../partials/Page/Page';
 import Text from '../components/Text';
