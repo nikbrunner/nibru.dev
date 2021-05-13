@@ -6,7 +6,12 @@
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "style": "npx stylelint \"**/*.scss\"",
+    "style:check": "npx stylelint \"**/*.scss\" --fix",
+    "format": "prettier --write \"{components,containers,context,data,pages,partials,scripts,styles,types,utils}/**/*.{ts,tsx,js,jsx,json,scss}\" \"./*.{js,ts}\"",
+    "format:check": "prettier --list-different \"{components,containers,context,data,pages,partials,scripts,styles,types,utils}/**/*.{ts,tsx,js,jsx,json,scss}\"  \"./*.{js,ts}\"",
+    "check": "npm run format:check && npm run style:check && npm run build"
   },
   "dependencies": {
     "next": "10.2.0",
@@ -21,6 +26,9 @@
     "postcss": "^8.2.13",
     "prettier": "^2.2.1",
     "sass": "^1.32.12",
+    "stylelint": "^13.13.1",
+    "stylelint-scss": "^3.19.0",
+    "stylelint-config-standard": "^22.0.0",
     "tailwindcss": "^2.1.2",
     "typescript": "^4.2.4"
   }
