@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 
-import { GenericProps } from '../types/GenericProps';
-import { Experience as ExperienceType } from '../types/Experience';
+import { GenericProps } from '../../types/GenericProps';
+import { Experience as ExperienceType } from '../../types/Experience';
 
-import { cn } from '../lib/cn';
-import Headline from './Headline';
+import { cn } from '../../lib/cn';
+import Headline from '../Headline';
 
 interface ExperienceProps extends ExperienceType, GenericProps {
   current: boolean;
