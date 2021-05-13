@@ -1,56 +1,34 @@
 .Button {
   @include flex(row nowrap, center, center, center, $inline: true);
-  @include box-shadow-default();
   @include typo-text-default();
 
-  $button-height-m: 35px;
-  $button-height-l: 50px;
+  @apply shadow-lg rounded-md;
 
-  border-radius: $border-radius;
   appearance: none;
   border: none;
   outline: none;
   cursor: pointer;
 
-  svg {
-    height: 100%;
-  }
-
   &--m {
-    padding: $space-xs $space-s;
-    height: $button-height-m;
-
-    svg {
-      width: calc(#{$button-height-m} / 2);
-    }
+    @apply p-2;
   }
 
   &--l {
-    padding: $space-s $space-m;
-    height: $button-height-l;
-
-    svg {
-      width: calc(#{$button-height-l} / 2);
-    }
+    @apply p-4;
   }
 
+  // TODO Remove after TW DarkMode
   &--dark {
-    background: $color-bg-secondary--darkMode;
-    color: $color-fg-primary--darkMode;
-    border: 1px solid $color-gray--lighter;
-
-    &:hover {
-      color: $color-accent-primary--darkMode;
-    }
+    @apply text-gray-50 bg-gray-900;
+    @apply border border-solid border-gray-600;
+    @apply hover:text-green-300;
+    @apply hover:border-green-300;
   }
 
   &--light {
-    background: $color-bg-secondary--lightMode;
-    color: $color-fg-primary--lightMode;
-    border: 1px solid $color-fg-primary--lightMode;
-
-    &:hover {
-      color: $color-accent-primary--lightMode;
-    }
+    @apply text-gray-900 bg-gray-50;
+    @apply border border-solid border-gray-500;
+    @apply hover:text-blue-600;
+    @apply hover:border-blue-600;
   }
 }

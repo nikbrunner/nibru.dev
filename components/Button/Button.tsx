@@ -10,12 +10,18 @@ interface Props extends GenericProps {
   onClick?: () => void;
 }
 
-const Button = ({ classNames, children, size = 'm', onClick }: Props) => {
+const Button = ({
+  classNames = [],
+  tailwind = '',
+  size = 'm',
+  children,
+  onClick
+}: Props) => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <button
-      className={cn('Button', classNames, {
+      className={cn('Button', [...classNames, tailwind], {
         [theme]: theme,
         [size]: size
       })}
