@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Head from 'next/head';
 
-import Main from './Main';
+import Main from './Main/Main';
 import Nav from './Nav';
 
 import { GenericProps } from '../types/GenericProps';
