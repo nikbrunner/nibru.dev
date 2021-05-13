@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 
-import { GenericProps } from '../types/GenericProps';
+import { GenericProps } from '../../types/GenericProps';
 
-import { cn } from '../lib/cn';
+import { cn } from '../../lib/cn';
 
 interface Props extends GenericProps {}
 
