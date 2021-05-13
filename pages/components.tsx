@@ -3,7 +3,7 @@ import React from 'react';
 import Grid from '../components/Grid';
 import Section from '../components/Section';
 import Row from '../components/Row';
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 import Skill from '../components/Skill';
 import Experience from '../components/Experience';
 import Headline from '../components/Headline';

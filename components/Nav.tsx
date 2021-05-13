@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import Button from './Button';
+import Button from './Button/Button';
 import Headline from './Headline';
 import Link from './Link';
 
