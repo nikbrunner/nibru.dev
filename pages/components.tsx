@@ -4,7 +4,7 @@ import Grid from '../components/Grid/Grid';
 import Section from '../components/Section/Section';
 import Row from '../partials/Row/Row';
 import Button from '../components/Button/Button';
-import Skill from '../components/Skill';
+import Skill from '../components/Skill/Skill';
 import Experience from '../components/Experience/Experience';
 import Headline from '../components/Headline/Headline';
 import Link from '../components/Link/Link';
