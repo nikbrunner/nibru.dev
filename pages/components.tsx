@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Grid from '../components/Grid';
+import Grid from '../components/Grid/Grid';
 import Section from '../components/Section';
 import Row from '../components/Row';
 import Button from '../components/Button/Button';
