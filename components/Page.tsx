@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Head from 'next/head';
 
 import Main from './Main/Main';
-import Nav from './Nav';
+import Nav from './Nav/Nav';
 
 import { GenericProps } from '../types/GenericProps';
 

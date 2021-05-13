@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 
-import Button from './Button/Button';
-import Headline from './Headline/Headline';
-import Link from './Link/Link';
+import Button from '../Button/Button';
+import Headline from '../Headline/Headline';
+import Link from '../Link/Link';
 
-import { ThemeContext, Theme } from '../context/ThemeContext';
+import { ThemeContext, Theme } from '../../context/ThemeContext';
 
-import { cn } from '../lib/cn';
+import { cn } from '../../lib/cn';
 
-import profile from '../data/profile';
+import profile from '../../data/profile';
 
 const Nav = () => {
   const { theme, setTheme } = useContext(ThemeContext);
