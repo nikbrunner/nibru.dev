@@ -24,7 +24,6 @@
 // Components
 @import '../components/Main/Main';
 @import 'components/Section';
-@import 'components/Row';
 @import '../components/Grid/Grid';
 @import '../components/Button/Button';
 @import '../components/Headline/Headline';
@@ -36,6 +35,7 @@
 
 // Partials
 @import '../partials/Page/Page';
+@import '../partials/Row/Row';
 
 // Page-specific styles
 @import 'pages/app';

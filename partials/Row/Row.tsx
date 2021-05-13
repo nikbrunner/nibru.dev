@@ -1,16 +1,17 @@
 import React, { useContext } from 'react';
 
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 
-import { GenericProps } from '../types/GenericProps';
+import { GenericProps } from '../../types/GenericProps';
 
-import { cn } from '../lib/cn';
+import { cn } from '../../lib/cn';
 
 interface Props extends GenericProps {
   children: React.ReactNode;
   cols?: 'oneCol' | 'twoCols' | 'threeCols' | 'fourCols';
 }
 
+// TODO This should be a partial based on a <Flex /> component
 const Row = ({ classNames, children, cols = 'oneCol' }: Props) => {
   const { theme } = useContext(ThemeContext);
 
