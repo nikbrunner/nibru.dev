@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import Button from './Button/Button';
-import Headline from './Headline';
+import Headline from './Headline/Headline';
 import Link from './Link';
 
 import { ThemeContext, Theme } from '../context/ThemeContext';

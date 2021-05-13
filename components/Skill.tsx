@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import Headline from './Headline';
+import Headline from './Headline/Headline';
 
 import { Theme, ThemeContext } from '../context/ThemeContext';
 

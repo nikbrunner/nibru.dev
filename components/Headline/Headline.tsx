@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 
-import { cn } from '../lib/cn';
+import { cn } from '../../lib/cn';
 
 export type HeadlineSizes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Section from '../components/Section';
-import Headline from '../components/Headline';
+import Headline from '../components/Headline/Headline';
 import Page from '../components/Page';
 import Text from '../components/Text';
 

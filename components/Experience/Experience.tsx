@@ -6,7 +6,7 @@ import { GenericProps } from '../../types/GenericProps';
 import { Experience as ExperienceType } from '../../types/Experience';
 
 import { cn } from '../../lib/cn';
-import Headline from '../Headline';
+import Headline from '../Headline/Headline';
 
 interface ExperienceProps extends ExperienceType, GenericProps {
   current: boolean;
