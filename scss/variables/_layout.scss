@@ -31,7 +31,9 @@
 ) {
   @if $inline {
     display: inline-flex;
-  } @else {
+  }
+
+  @else {
     display: flex;
   }
 
