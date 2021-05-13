@@ -7,7 +7,7 @@ import Button from '../components/Button/Button';
 import Skill from '../components/Skill';
 import Experience from '../components/Experience/Experience';
 import Headline from '../components/Headline/Headline';
-import Link from '../components/Link';
+import Link from '../components/Link/Link';
 import Page from '../components/Page';
 import Text from '../components/Text';
 
