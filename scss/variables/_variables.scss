@@ -6,6 +6,7 @@ $border-color: transparentize($color-gray--lighter, 0.75);
 $border-default: 1px solid $border-color;
 $border-radius: 5px;
 
+$transition-speed-very-fast: 125ms;
 $transition-speed-fast: 250ms;
 $transition-speed-base: 500ms;
 $transition-speed-slow: 750ms;

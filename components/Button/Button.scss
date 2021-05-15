@@ -1,34 +1,27 @@
 .Button {
   @include flex(row nowrap, center, center, center, $inline: true);
   @include typo-text-default();
+  @include box-shadow-default();
 
-  @apply shadow-lg rounded-md;
-
+  background-color: var(--bg-primary);
+  color: var(--fg-primary);
+  border: 1px solid var(--bg-secondary);
+  border-radius: $border-radius;
+  transition: all $transition-speed-very-fast $transition-timing;
   appearance: none;
-  border: none;
   outline: none;
   cursor: pointer;
 
+  &:hover {
+    border: 1px solid var(--accent-primary);
+    color: var(--accent-primary);
+  }
+
   &--m {
-    @apply p-2;
+    padding: $space-s $space-m;
   }
 
   &--l {
-    @apply p-4;
-  }
-
-  // TODO Remove after TW DarkMode
-  &--dark {
-    @apply text-gray-50 bg-gray-900;
-    @apply border border-solid border-gray-600;
-    @apply hover:text-green-300;
-    @apply hover:border-green-300;
-  }
-
-  &--light {
-    @apply text-gray-900 bg-gray-50;
-    @apply border border-solid border-gray-500;
-    @apply hover:text-blue-600;
-    @apply hover:border-blue-600;
+    padding: $space-m $space-l;
   }
 }

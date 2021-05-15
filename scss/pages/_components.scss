@@ -1,11 +1,5 @@
 .Components {
   .Section {
-    &--light {
-      border-bottom: 3px solid $color-accent-primary--lightMode;
-    }
-
-    &--dark {
-      border-bottom: 3px solid $color-accent-primary--darkMode;
-    }
+    border-bottom: 3px solid var(--accent-primary);
   }
 }

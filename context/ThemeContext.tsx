@@ -21,24 +21,6 @@ interface Props {
 export const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState<Theme>(Theme.dark);
 
-  // Listen for preferred color scheme
-  useEffect(() => {
-    const prefersDarkMode: MediaQueryList = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    );
-
-    prefersDarkMode.addEventListener(
-      'change',
-      (event: MediaQueryListEvent): void => {
-        if (event.matches) {
-          setTheme(Theme.dark);
-        } else if (!event.matches) {
-          setTheme(Theme.light);
-        }
-      }
-    );
-  }, []);
-
   // Read local storage
   useEffect(() => {
     if (localStorage.getItem('theme') === Theme.dark) {
@@ -64,6 +46,32 @@ export const ThemeProvider = ({ children }: Props) => {
       html.classList.remove(Theme.dark);
     }
   }, [theme]);
+
+  // Listen for preferred color scheme
+  useEffect(() => {
+    const prefersDarkMode: MediaQueryList = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    );
+
+    // Initially read the preferred color-scheme
+    if (prefersDarkMode.matches) {
+      setTheme(Theme.dark);
+    } else {
+      setTheme(Theme.light);
+    }
+
+    // Listen for changes for the preferred color-scheme
+    prefersDarkMode.addEventListener(
+      'change',
+      (event: MediaQueryListEvent): void => {
+        if (event.matches) {
+          setTheme(Theme.dark);
+        } else {
+          setTheme(Theme.light);
+        }
+      }
+    );
+  }, []);
 
   return (
     <ThemeContext.Provider

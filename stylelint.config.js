@@ -6,14 +6,7 @@ module.exports = {
     'scss/at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: [
-          'tailwind',
-          'apply',
-          'variants',
-          'responsive',
-          'screen',
-          'include'
-        ]
+        ignoreAtRules: ['include']
       }
     ],
     'no-invalid-position-at-import-rule': null,
