@@ -38,7 +38,7 @@ const Components = () => (
           <Link href={profile.github} type='external'>
             GitHub
           </Link>
-          , and this is an external link to LinkedIn{' '}
+          , and this is an external link to{' '}
           <Link href={profile.linkedin} type='external'>
             LinkedIn
           </Link>
