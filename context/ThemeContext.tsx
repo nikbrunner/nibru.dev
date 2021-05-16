@@ -7,12 +7,13 @@ export enum Theme {
 
 export type ThemeContextType = {
   theme: Theme;
-  setTheme: React.Dispatch<React.SetStateAction<Theme>>;
+  setTheme: React.Dispatch<React.SetStateAction<Theme>> | (() => void);
 };
 
-export const ThemeContext: React.Context<ThemeContextType | null> = createContext(
-  null
-);
+export const ThemeContext = createContext<ThemeContextType>({
+  theme: Theme.dark,
+  setTheme: () => {}
+});
 
 interface Props {
   children: React.ReactNode;

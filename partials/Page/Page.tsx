@@ -14,11 +14,11 @@ interface Props extends GenericProps {
 }
 
 const Page = ({ children, name, title }: Props) => (
-  <Head>
+  <>
     <Head>
       <title>{title ? `nibru.dev:${title}` : `nibru.dev:${name}`}</title>
 
-      {/* TODO REplace Favicon */}
+      {/* TODO Replace Favicon */}
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
@@ -27,7 +27,7 @@ const Page = ({ children, name, title }: Props) => (
     <div className={cn('Page', [name], {})}>
       <Main>{children}</Main>
     </div>
-  </Head>
+  </>
 );
 
 export default Page;
