@@ -2,13 +2,10 @@
   @include flex(column nowrap, flex-start, flex-start, center);
   @include box-shadow-default();
 
-  $skill-border-radius: calc(#{$border-radius} * 2);
-
   background-color: var(--color-bg-secondary);
+  border: 1px dashed var(--color-bg-ternary);
   color: var(--color-fg-primary);
-  border-radius: $skill-border-radius;
   overflow: hidden;
-  // border: $border-default;
 
   &__level,
   &__caption {
@@ -16,7 +13,7 @@
   }
 
   &__level {
-    border-radius: 0 $skill-border-radius $skill-border-radius 0;
+    background: var(--color-accent-primary);
     height: 1rem;
   }
 
