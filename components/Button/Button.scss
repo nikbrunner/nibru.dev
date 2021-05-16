@@ -3,18 +3,17 @@
   @include typo-text-default();
   @include box-shadow-default();
 
-  background-color: var(--bg-primary);
-  color: var(--fg-primary);
-  border: 1px solid var(--bg-secondary);
-  border-radius: $border-radius;
-  transition: all $transition-speed-very-fast $transition-timing;
   appearance: none;
   outline: none;
   cursor: pointer;
+  background-color: var(--color-bg-primary);
+  color: var(--color-fg-primary);
+  border: 1px solid var(--color-bg-primary-alt);
+  border-radius: $border-radius;
+  transition: bord $transition-speed-base $transition-timing;
 
   &:hover {
-    border: 1px solid var(--accent-primary);
-    color: var(--accent-primary);
+    border: 1px solid var(--color-accent-primary);
   }
 
   &--m {

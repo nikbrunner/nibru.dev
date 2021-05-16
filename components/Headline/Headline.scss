@@ -1,4 +1,6 @@
 .Headline {
+  color: var(--color-fg-primary);
+
   &--size-h1 {
     @include typo-h1-default();
   }
@@ -21,13 +23,5 @@
 
   &--size-h6 {
     @include typo-h6-default();
-  }
-
-  &--dark {
-    color: $color-fg-primary--darkMode;
-  }
-
-  &--light {
-    color: $color-fg-primary--lightMode;
   }
 }

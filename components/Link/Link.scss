@@ -3,8 +3,20 @@
     font-weight: $font-weight-bold;
   }
 
+  color: var(--color-fg-primary);
+
   svg {
     height: $font-size-text;
+  }
+
+  &::before,
+  &::after,
+  svg {
+    color: var(--color-accent-primary);
+  }
+
+  &:hover {
+    color: var(--color-accent-primary);
   }
 
   &--external {
@@ -30,46 +42,6 @@
     &::after {
       content: ']]';
       margin-left: $space-xxs;
-    }
-  }
-
-  &--dark {
-    color: $color-fg-primary--darkMode;
-
-    &::before,
-    &::after,
-    svg {
-      color: $color-accent-primary--darkMode;
-    }
-
-    &:hover {
-      color: $color-accent-primary--darkMode;
-
-      &::before,
-      &::after,
-      svg {
-        color: $color-accent-primary--darkMode;
-      }
-    }
-  }
-
-  &--light {
-    color: $color-fg-primary--lightMode;
-
-    &::before,
-    &::after,
-    svg {
-      color: $color-accent-primary--lightMode;
-    }
-
-    &:hover {
-      color: $color-accent-primary--lightMode;
-
-      &::before,
-      &::after,
-      svg {
-        color: $color-accent-primary--lightMode;
-      }
     }
   }
 }

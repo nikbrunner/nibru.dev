@@ -1,6 +1,4 @@
-import React, { useContext } from 'react';
-
-import { ThemeContext } from '../../context/ThemeContext';
+import React from 'react';
 
 import { GenericProps } from '../../types/GenericProps';
 
@@ -12,16 +10,8 @@ interface Props extends GenericProps {
 }
 
 // TODO This should be a partial based on a <Flex /> component
-const Row = ({ classNames, children, cols = 'oneCol' }: Props) => {
-  const { theme } = useContext(ThemeContext);
-
-  return (
-    <div
-      className={cn('Row', classNames, { [theme]: theme, [cols]: cols })}
-    >
-      {children}
-    </div>
-  );
-};
+const Row = ({ classNames, children, cols = 'oneCol' }: Props) => (
+  <div className={cn('Row', classNames, { [cols]: cols })}>{children}</div>
+);
 
 export default Row;

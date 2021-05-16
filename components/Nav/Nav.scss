@@ -3,6 +3,12 @@
 
   padding: $space-m $space-l;
   border-bottom: $border-default;
+  background: var(--color-bg-primary);
+  color: var(--color-fg-primary);
+
+  @include mq('m') {
+    @include flex(row nowrap, space-between, center, center);
+  }
 
   &__name {
     .Headline {
@@ -26,19 +32,5 @@
     *:not(:last-child) {
       margin-right: $space-s;
     }
-  }
-
-  @include mq('m') {
-    @include flex(row nowrap, space-between, center, center);
-  }
-
-  &--dark {
-    background: $color-bg-primary--darkMode;
-    color: $color-fg-primary--darkMode;
-  }
-
-  &--light {
-    background: $color-bg-primary--lightMode;
-    color: $color-fg-primary--lightMode;
   }
 }

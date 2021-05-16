@@ -1,5 +1,6 @@
 // TODO Style Experience component
 .Experience {
+  @include box-shadow-default();
   @include flex(
     column nowrap,
     space-between,
@@ -7,12 +8,24 @@
     center,
     $inline: true
   );
-  @include box-shadow-default();
 
-  padding: $space-m;
-  border: $border-default;
-  border-radius: $border-radius;
   text-align: center;
+  padding: $space-m;
+  border: 1px solid var(--color-bg-ternary);
+  border-radius: $border-radius;
+  background: var(--color-bg-secondary);
+  color: var(--color-fg-primary);
+
+  &.Experience--current {
+    background: var(--color-bg-secondary);
+
+    .Experience__title,
+    .Experience__date-range,
+    .Experience__company,
+    .Experience__details {
+      color: var(--color-accent-primary);
+    }
+  }
 
   &__title {
     margin-bottom: $space-m;
@@ -24,33 +37,5 @@
 
   &__company {
     font-weight: bold;
-  }
-
-  &--dark {
-    background: $color-gray--darker;
-    color: $color-fg-primary--darkMode;
-
-    &.Experience--current {
-      .Experience__title,
-      .Experience__date-range,
-      .Experience__company,
-      .Experience__details {
-        color: $color-accent-primary--darkMode;
-      }
-    }
-  }
-
-  &--light {
-    background: $color-white;
-    color: $color-fg-primary--lightMode;
-
-    &.Experience--current {
-      .Experience__title,
-      .Experience__date-range,
-      .Experience__company,
-      .Experience__details {
-        color: $color-accent-primary--lightMode;
-      }
-    }
   }
 }

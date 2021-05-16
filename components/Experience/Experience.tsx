@@ -1,6 +1,4 @@
-import React, { useContext } from 'react';
-
-import { ThemeContext } from '../../context/ThemeContext';
+import React from 'react';
 
 import { GenericProps } from '../../types/GenericProps';
 import { Experience as ExperienceType } from '../../types/Experience';
@@ -19,24 +17,18 @@ const Experience = ({
   company,
   details,
   current
-}: ExperienceProps) => {
-  const { theme } = useContext(ThemeContext);
+}: ExperienceProps) => (
+  <div className={cn('Experience', classNames, { current })}>
+    <Headline classNames={['Experience__title']} tag={'h3'} size={'h5'}>
+      {title}
+    </Headline>
 
-  return (
-    <div
-      className={cn('Experience', classNames, { [theme]: theme, current })}
-    >
-      <Headline classNames={['Experience__title']} tag={'h3'} size={'h5'}>
-        {title}
-      </Headline>
+    <p className='Experience__date-range'>{dateRange}</p>
 
-      <p className='Experience__date-range'>{dateRange}</p>
+    {company && <p className='Experience__company'>{company}</p>}
 
-      {company && <p className='Experience__company'>{company}</p>}
-
-      {details && <p className='Experience__details'>{details}</p>}
-    </div>
-  );
-};
+    {details && <p className='Experience__details'>{details}</p>}
+  </div>
+);
 
 export default Experience;

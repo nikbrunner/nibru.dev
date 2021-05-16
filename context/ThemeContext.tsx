@@ -10,7 +10,7 @@ export type ThemeContextType = {
   setTheme: React.Dispatch<React.SetStateAction<Theme>>;
 };
 
-export const ThemeContext: React.Context<ThemeContextType> = createContext(
+export const ThemeContext: React.Context<ThemeContextType | null> = createContext(
   null
 );
 
@@ -20,32 +20,6 @@ interface Props {
 
 export const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState<Theme>(Theme.dark);
-
-  // Read local storage
-  useEffect(() => {
-    if (localStorage.getItem('theme') === Theme.dark) {
-      setTheme(Theme.dark);
-    } else if (localStorage.getItem('theme') === Theme.light) {
-      setTheme(Theme.light);
-    } else if (localStorage.getItem('theme') === null) {
-      setTheme(Theme.dark);
-    }
-  }, []);
-
-  // Write localStorage & set class to html element
-  useEffect(() => {
-    const html = document.documentElement;
-
-    if (theme === Theme.dark) {
-      localStorage.setItem('theme', Theme.dark);
-      html.classList.add(Theme.dark);
-      html.classList.remove(Theme.light);
-    } else if (theme === Theme.light) {
-      localStorage.setItem('theme', Theme.light);
-      html.classList.add(Theme.light);
-      html.classList.remove(Theme.dark);
-    }
-  }, [theme]);
 
   // Listen for preferred color scheme
   useEffect(() => {
@@ -72,6 +46,32 @@ export const ThemeProvider = ({ children }: Props) => {
       }
     );
   }, []);
+
+  // Read local storage
+  useEffect(() => {
+    if (localStorage.getItem('theme') === Theme.dark) {
+      setTheme(Theme.dark);
+    } else if (localStorage.getItem('theme') === Theme.light) {
+      setTheme(Theme.light);
+    } else if (localStorage.getItem('theme') === null) {
+      setTheme(Theme.dark);
+    }
+  }, []);
+
+  // Write localStorage & set class to html element
+  useEffect(() => {
+    const html = document.documentElement;
+
+    if (theme === Theme.dark) {
+      localStorage.setItem('theme', Theme.dark);
+      html.classList.add(Theme.dark);
+      html.classList.remove(Theme.light);
+    } else if (theme === Theme.light) {
+      localStorage.setItem('theme', Theme.light);
+      html.classList.add(Theme.light);
+      html.classList.remove(Theme.dark);
+    }
+  }, [theme]);
 
   return (
     <ThemeContext.Provider

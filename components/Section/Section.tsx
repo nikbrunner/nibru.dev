@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
 
-import { ThemeContext } from '../../context/ThemeContext';
-
 import { GenericProps } from '../../types/GenericProps';
 
 import { cn } from '../../lib/cn';
@@ -26,41 +24,34 @@ const Section = ({
   backgroundVideo = false,
   backgroundOverlay = false,
   backgroundBlur = false
-}: Props) => {
-  const { theme } = useContext(ThemeContext);
+}: Props) => (
+  <section
+    className={cn('Section', classNames, {
+      debug,
+      backgroundImage,
+      backgroundVideo,
+      backgroundOverlay,
+      backgroundBlur
+    })}
+    id={id}
+    style={
+      backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}
+    }
+  >
+    {backgroundBlur && <div className='Section__backgroundBlur' />}
 
-  return (
-    <section
-      className={cn('Section', classNames, {
-        [theme]: theme,
-        debug,
-        backgroundImage,
-        backgroundVideo,
-        backgroundOverlay,
-        backgroundBlur
-      })}
-      id={id}
-      style={
-        backgroundImage
-          ? { backgroundImage: `url(${backgroundImage})` }
-          : {}
-      }
-    >
-      {backgroundBlur && <div className='Section__backgroundBlur' />}
+    {backgroundOverlay && <div className='Section__backgroundOverlay' />}
 
-      {backgroundOverlay && <div className='Section__backgroundOverlay' />}
+    {backgroundVideo && (
+      <div className='Section__backgroundVideo'>
+        <video muted loop autoPlay>
+          <source src={backgroundVideo} type='video/mp4' />
+        </video>
+      </div>
+    )}
 
-      {backgroundVideo && (
-        <div className='Section__backgroundVideo'>
-          <video muted loop autoPlay>
-            <source src={backgroundVideo} type='video/mp4' />
-          </video>
-        </div>
-      )}
-
-      <article className='Section__content'>{children}</article>
-    </section>
-  );
-};
+    <article className='Section__content'>{children}</article>
+  </section>
+);
 
 export default Section;

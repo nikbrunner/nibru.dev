@@ -2,7 +2,7 @@
   --color-black: #010409;
   --color-white: #f0f6fc;
   --color-gray-0: #f0f6fc;
-  --color-gray-1: #c9d1d9;
+  --color-gray-1: #e8eaec;
   --color-gray-2: #b1bac4;
   --color-gray-3: #8b949e;
   --color-gray-4: #6e7681;
@@ -41,16 +41,16 @@
   --color-turquoise-7: #0f533c;
   --color-turquoise-8: #033a28;
   --color-turquoise-9: #04261b;
-  --color-yellow-0: #f8e3a1;
-  --color-yellow-1: #f2cc60;
-  --color-yellow-2: #e3b341;
-  --color-yellow-3: #d29922;
-  --color-yellow-4: #bb8009;
-  --color-yellow-5: #9e6a03;
-  --color-yellow-6: #845306;
-  --color-yellow-7: #693e00;
-  --color-yellow-8: #4b2900;
-  --color-yellow-9: #341a00;
+  --color-yellow-0: #fef1cd;
+  --color-yellow-1: #fee39b;
+  --color-yellow-2: #fdd668;
+  --color-yellow-3: #fdc836;
+  --color-yellow-4: #fcba04;
+  --color-yellow-5: #e3a704;
+  --color-yellow-6: #ca9503;
+  --color-yellow-7: #977002;
+  --color-yellow-8: #654a02;
+  --color-yellow-9: #322501;
   --color-orange-0: #ffdfb6;
   --color-orange-1: #ffc680;
   --color-orange-2: #ffa657;
@@ -94,68 +94,32 @@
 }
 
 .dark {
-  --bg-primary: var(--color-gray-9);
-  --bg-secondary: var(--color-gray-8);
-  --fg-primary: var(--color-gray-0);
-  --accent-primary: var(--color-turquoise-3);
+  --color-bg-primary: var(--color-gray-9);
+  --color-bg-primary-alt: var(--color-gray-0);
+  --color-bg-secondary: var(--color-gray-8);
+  --color-bg-secondary-alt: var(--color-gray-1);
+  --color-bg-ternary: var(--color-gray-7);
+  --color-bg-ternary-alt: var(--color-gray-2);
+  --color-fg-primary: var(--color-gray-0);
+  --color-fg-primary-alt: var(--color-gray-9);
+  --color-fg-secondary: var(--color-gray-1);
+  --color-fg-secondary-alt: var(--color-gray-8);
+  --color-accent-primary: var(--color-yellow-4);
+  --color-accent-secondary: var(--color-yellow-3);
 }
 
 .light {
-  --bg-primary: var(--color-gray-0);
-  --bg-secondary: var(--color-gray-1);
-  --fg-primary: var(--color-gray-9);
-  --accent-primary: var(--color-blue-5);
+  --color-bg-primary: var(--color-gray-0);
+  --color-bg-primary-alt: var(--color-gray-9);
+  --color-bg-secondary: var(--color-gray-1);
+  --color-bg-secondary-alt: var(--color-gray-8);
+  --color-bg-ternary: var(--color-gray-2);
+  --color-bg-ternary-alt: var(--color-gray-7);
+  --color-fg-primary: var(--color-gray-9);
+  --color-fg-primary-alt: var(--color-gray-0);
+  --color-fg-secondary: var(--color-gray-8);
+  --color-fg-secondary-alt: var(--color-gray-1);
+  --color-accent-primary: var(--color-blue-5);
+  --color-accent-secondary: var(--color-blue-4);
+  --color-accent-ternary: var(--color-blue-3);
 }
-
-// TODO Remove and convert to custom vars
-// Color Palette
-$color-black: #0d1117;
-$color-gray: #2b303a;
-$color-green: #2f8d47;
-$color-turquoise: #0bc294;
-$color-yellow: #ffc61b;
-$color-orange: #f39d12;
-$color-red: #ff1900;
-$color-blue: #294be6;
-$color-pink: #d6c3c9;
-$color-offWhite: #eee5e9;
-$color-white: #f6f8f9;
-
-// TODO Remove and convert to custom vars
-// Shades
-$color-black--darkest: darken($color-black, 5%);
-$color-black--darker: darken($color-black, 2.5%);
-$color-black--lighter: lighten($color-black, 2.5%);
-$color-black--lightest: lighten($color-black, 5%);
-
-$color-gray--darkest: darken($color-gray, 10%);
-$color-gray--darker: darken($color-gray, 5%);
-$color-gray--lighter: lighten($color-gray, 5%);
-$color-gray--lightest: lighten($color-gray, 15%);
-
-$color-green--darkest: darken($color-green, 25%);
-$color-green--darker: darken($color-green, 15%);
-$color-green--lighter: lighten($color-green, 5%);
-$color-green--lightest: lighten($color-green, 15%);
-
-$color-yellow--darkest: darken($color-yellow, 25%);
-$color-yellow--darker: darken($color-yellow, 15%);
-$color-yellow--lighter: lighten($color-yellow, 5%);
-$color-yellow--lightest: lighten($color-yellow, 15%);
-
-$color-white--darkest: darken($color-white, 5%);
-$color-white--darker: darken($color-white, 2.5%);
-$color-white--lighter: lighten($color-white, 2.5%);
-$color-white--lightest: lighten($color-white, 5%);
-
-$color-bg-primary--darkMode: $color-black;
-$color-bg-primary--lightMode: $color-white;
-
-$color-bg-secondary--darkMode: $color-black--lighter;
-$color-bg-secondary--lightMode: $color-white--darker;
-
-$color-fg-primary--darkMode: $color-offWhite;
-$color-fg-primary--lightMode: $color-gray--darker;
-
-$color-accent-primary--darkMode: $color-turquoise;
-$color-accent-primary--lightMode: $color-blue;

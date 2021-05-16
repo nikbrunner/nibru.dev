@@ -1,11 +1,14 @@
 .Skill {
-  @include flex(column nowrap, flex-start, center, center);
+  @include flex(column nowrap, flex-start, flex-start, center);
   @include box-shadow-default();
 
   $skill-border-radius: calc(#{$border-radius} * 2);
 
-  border-radius: 0 0 $skill-border-radius 0;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-fg-primary);
+  border-radius: $skill-border-radius;
   overflow: hidden;
+  // border: $border-default;
 
   &__level,
   &__caption {
@@ -13,7 +16,8 @@
   }
 
   &__level {
-    height: 0.75rem;
+    border-radius: 0 $skill-border-radius $skill-border-radius 0;
+    height: 1rem;
   }
 
   &__caption {
@@ -45,17 +49,5 @@
 
     margin: 0;
     padding: 0;
-  }
-
-  &--dark {
-    border: 1px solid $color-black--lightest;
-    background-color: $color-bg-secondary--darkMode;
-    color: $color-fg-primary--darkMode;
-  }
-
-  &--light {
-    border: 1px solid $color-gray;
-    background-color: $color-bg-secondary--lightMode;
-    color: $color-fg-primary--lightMode;
   }
 }

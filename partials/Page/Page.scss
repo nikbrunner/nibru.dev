@@ -1,15 +1,5 @@
 .Page {
   min-height: 100vh;
-  background: var(--bg-primary);
-  color: var(--fg-primary);
-
-  // &--dark {
-  //   background: $color-bg-primary--darkMode;
-  //   color: $color-fg-primary--dark4ode;
-  // }
-
-  // &--light {
-  //   background: $color-bg-primary--lightMode;
-  //   color: $color-fg-primary--lightMode;
-  // }
+  background: var(--color-bg-primary);
+  color: var(--color-fg-primary);
 }

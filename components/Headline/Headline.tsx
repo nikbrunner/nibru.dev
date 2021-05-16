@@ -1,6 +1,4 @@
-import React, { useContext } from 'react';
-
-import { ThemeContext } from '../../context/ThemeContext';
+import React from 'react';
 
 import { cn } from '../../lib/cn';
 
@@ -18,19 +16,15 @@ const Headline = ({
   classNames = [],
   size = 'h2',
   tag = 'h2'
-}: Props) => {
-  const { theme } = useContext(ThemeContext);
-
-  return React.createElement(
+}: Props) =>
+  React.createElement(
     tag,
     {
       className: cn('Headline', classNames, {
-        [`size-${size}`]: size,
-        [theme]: theme
+        [`size-${size}`]: size
       })
     },
     children
   );
-};
 
 export default Headline;

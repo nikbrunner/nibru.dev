@@ -2,7 +2,7 @@
  * This file contains generic application-wide Sass variables.
  */
 
-$border-color: transparentize($color-gray--lighter, 0.75);
+$border-color: var(--color-bg-ternary);
 $border-default: 1px solid $border-color;
 $border-radius: 5px;
 
