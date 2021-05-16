@@ -22,19 +22,23 @@ const Skill = ({ classNames, title, level, icon }: SkillProps) => {
 
   // On mount seek and set accent color for skill level
   useEffect(() => {
-    const styleSheets = document.styleSheets[0];
+    const styleSheet = document.styleSheets[0];
     const accentCustomCSSVariable: string = '--color-accent-primary';
-    const darkModeAccentValue = styleSheets.cssRules[1].style.getPropertyValue(
-      accentCustomCSSVariable
-    );
-    const lightModeAccentValue = styleSheets.cssRules[2].style.getPropertyValue(
-      accentCustomCSSVariable
-    );
 
-    const darkModeAccentColor = styleSheets.cssRules[0].style.getPropertyValue(
+    // TODO Remove any
+    // I am really annoyed by the need of "any".
+    // TS says style does not exist on type CSSRule, but it literally does.
+    const darkModeAccentValue = (styleSheet
+      .cssRules[1] as any).style.getPropertyValue(accentCustomCSSVariable);
+    const lightModeAccentValue = (styleSheet
+      .cssRules[2] as any).style.getPropertyValue(accentCustomCSSVariable);
+
+    const darkModeAccentColor = (styleSheet
+      .cssRules[0] as any).style.getPropertyValue(
       stripValueFromCustomCSSVarString(darkModeAccentValue)
     );
-    const lightModeAccentColor = styleSheets.cssRules[0].style.getPropertyValue(
+    const lightModeAccentColor = (styleSheet
+      .cssRules[0] as any).style.getPropertyValue(
       stripValueFromCustomCSSVarString(lightModeAccentValue)
     );
 
