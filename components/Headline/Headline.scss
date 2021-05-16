@@ -24,4 +24,8 @@
   &--size-h6 {
     @include typo-h6-default();
   }
+
+  &--noBorder {
+    border: none;
+  }
 }

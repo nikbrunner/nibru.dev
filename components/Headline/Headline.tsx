@@ -9,19 +9,22 @@ interface Props {
   classNames?: string[];
   size?: HeadlineSizes;
   tag?: HeadlineSizes;
+  noBorder?: boolean;
 }
 
 const Headline = ({
   children,
   classNames = [],
   size = 'h2',
-  tag = 'h2'
+  tag = 'h2',
+  noBorder = false
 }: Props) =>
   React.createElement(
     tag,
     {
       className: cn('Headline', classNames, {
-        [`size-${size}`]: size
+        [`size-${size}`]: size,
+        noBorder
       })
     },
     children
