@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { FiLink } from 'react-icons/fi';
 
 import { GenericProps } from '../../types/GenericProps';
@@ -6,6 +6,7 @@ import { GenericProps } from '../../types/GenericProps';
 import { cn } from '../../lib/cn';
 
 interface Props extends GenericProps {
+  children: ReactNode;
   href: string;
   type: 'internal' | 'external';
   hideIcon?: boolean;

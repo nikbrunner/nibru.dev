@@ -1,13 +1,14 @@
 .Link {
   @include typo-text-default() {
     font-weight: $font-weight-bold;
+    font-size: inherit;
   }
 
   color: var(--color-fg-primary);
   white-space: nowrap;
 
   svg {
-    height: calc(#{$font-size-text} / 1.1);
+    height: 100%;
   }
 
   &::before,
@@ -22,7 +23,7 @@
 
   &--external {
     svg {
-      margin-right: $space-xxs;
+      margin-right: $space-xs;
       position: relative;
       top: 2.5px;
     }
