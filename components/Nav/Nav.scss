@@ -2,8 +2,7 @@
   @include flex(column nowrap, space-between, center, center);
 
   padding: $space-m $space-l;
-  border-bottom: $border-default;
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
   color: var(--color-fg-primary);
 
   @include mq('m') {

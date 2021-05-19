@@ -1,54 +1,68 @@
 import React from 'react';
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 
 import Section from '../components/Section/Section';
 import Headline from '../components/Headline/Headline';
 import Page from '../partials/Page/Page';
 import Text from '../components/Text/Text';
+import Link from '../components/Link/Link';
+import { FaXing } from 'react-icons/fa';
 
 const Home = () => {
   return (
     <Page name='Home' title='Home'>
       <Section classNames={['Home__profile-section']}>
-        <Headline tag='h1' size='h1'>
-          Hello there.
+        <Headline tag='h1' size='h1' noBorder>
+          Hi there.
         </Headline>
 
         <Text>
-          My Name is Nik. I was born in 1984, am engaged to my
-          long-standing girlfriend and living in Landshut, Bavaria,
-          Germany.I have several years of experience in event technology
-          and event planing, professional studio sound engineering and
-          photography.I worked in several five star hotels, expensive
-          studios and in nature.
+          My Name is Nikolaus Brunner, and I am a Web Developer since 2019.
+          <br /> I mainly work with{' '}
+          <Link href='https://reactjs.org/' type='external'>
+            React
+          </Link>{' '}
+          with{' '}
+          <Link href='https://www.typescriptlang.org/' type='external'>
+            TypeScript
+          </Link>{' '}
+          and{' '}
+          <Link href='https://sass-lang.com/' type='external'>
+            SCSS
+          </Link>
+          .
+          <br /> This Website is in the process of being rebuilt.
         </Text>
 
         <Text>
-          But in January 2019, I decided to take my life on a new route.A
-          long time before, I got bored and unsatisfied with my
-          occupation.I wanted to pursue a profession that would allow me to
-          be creative, to tinker and to use my self-organization and high
-          ability to concentrate.
-        </Text>
-
-        <Text>
-          I was always interested in programming and computers.It was by
-          far my best subject when we wrote small programs with Visual
-          Basic in middle school 20 years ago.Since I am also an avid and
-          engaged software user due to my job history but also as private
-          person for many years, and with web applications on the rise i
-          decided to learn Web Development.
-        </Text>
-
-        <Text>
-          Learning Web Development everyday, is exactly what I have done
-          since January 2019.
-        </Text>
-
-        <Text>
-          I created this page as a living CV, which I will update as
-          needed.It should serve to display fast and clear my data.There
-          are also references from my past employers and some certificates
-          of education available to download here.
+          <Link
+            href='https://github.com/nikbrunner'
+            type='external'
+            hideIcon
+          >
+            <FiGithub />
+          </Link>{' '}
+          <Link
+            href='mailto:nikolaus.brunner@protonmail.ch'
+            type='external'
+            hideIcon
+          >
+            <FiMail />
+          </Link>{' '}
+          <Link
+            href='https://www.xing.com/profile/Nikolaus_Brunner4/cv'
+            type='external'
+            hideIcon
+          >
+            <FaXing />
+          </Link>{' '}
+          <Link
+            href='https://www.linkedin.com/in/nikolaus-brunner-30847798/'
+            type='external'
+            hideIcon
+          >
+            <FiLinkedin />
+          </Link>
         </Text>
       </Section>
     </Page>

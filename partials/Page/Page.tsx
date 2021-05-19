@@ -22,7 +22,7 @@ const Page = ({ children, name, title }: Props) => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-    <Nav />
+    {/* <Nav /> */}
 
     <div className={cn('Page', [name], {})}>
       <Main>{children}</Main>

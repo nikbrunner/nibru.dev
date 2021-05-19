@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 
 import Button from '../Button/Button';
 import Headline from '../Headline/Headline';
-import Link from '../Link/Link';
 
 import { ThemeContext, Theme } from '../../context/ThemeContext';
 
@@ -19,20 +18,6 @@ const Nav = () => {
         <Headline tag={'h1'} size={'h3'} noBorder>
           {profile.firstname} {profile.lastname}
         </Headline>
-      </div>
-
-      <div className='Nav__theme-buttons'>
-        <Button onClick={() => setTheme(Theme.dark)}>Dark</Button>
-        <Button onClick={() => setTheme(Theme.light)}>Light</Button>
-      </div>
-
-      <div className='Nav__links'>
-        <Link href='/' type='internal'>
-          Home
-        </Link>
-        <Link href='/components' type='internal'>
-          Components
-        </Link>
       </div>
     </nav>
   );

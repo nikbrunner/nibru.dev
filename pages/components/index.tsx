@@ -1,23 +1,23 @@
 import React from 'react';
 
-import Grid from '../components/Grid/Grid';
-import Section from '../components/Section/Section';
-import Row from '../partials/Row/Row';
-import Button from '../components/Button/Button';
-import Skill from '../components/Skill/Skill';
-import Experience from '../components/Experience/Experience';
-import Headline from '../components/Headline/Headline';
-import Link from '../components/Link/Link';
-import Page from '../partials/Page/Page';
-import Text from '../components/Text/Text';
+import Grid from '../../components/Grid/Grid';
+import Section from '../../components/Section/Section';
+import Row from '../../partials/Row/Row';
+import Button from '../../components/Button/Button';
+import Skill from '../../components/Skill/Skill';
+import Experience from '../../components/Experience/Experience';
+import Headline from '../../components/Headline/Headline';
+import Link from '../../components/Link/Link';
+import Page from '../../partials/Page/Page';
+import Text from '../../components/Text/Text';
 
-import { Experience as ExperienceType } from '../types/Experience';
-import { Skill as SkillType } from '../types/Skill';
-import { Space } from '../types/Spaces';
+import { Experience as ExperienceType } from '../../types/Experience';
+import { Skill as SkillType } from '../../types/Skill';
+import { Space } from '../../types/Spaces';
 
-import skills from '../data/skills';
-import experiences from '../data/experiences';
-import profile from '../data/profile';
+import skills from '../../data/skills';
+import experiences from '../../data/experiences';
+import profile from '../../data/profile';
 
 const Components = () => (
   <Page name='Components'>
