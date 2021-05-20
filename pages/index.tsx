@@ -10,7 +10,7 @@ import Link from '../components/Link/Link';
 
 const Home = () => {
   return (
-    <Page name='Home' title='Home'>
+    <Page name='Home' title='Hi there. 👋'>
       <Section classNames={['Home__intro']}>
         <Headline tag='h1' size='h1' noBorder>
           Hi there.
@@ -43,7 +43,7 @@ const Home = () => {
 
         <Text maxWidth='30rem'>
           This website is in the process of being rebuilt.
-          <br /> You can visit my old page{' '}
+          <br /> You can visit my old website{' '}
           <Link href='/archive/index.html' type='internal'>
             here
           </Link>
