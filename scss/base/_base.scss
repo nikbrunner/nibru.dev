@@ -4,6 +4,8 @@
 
 html {
   box-sizing: border-box;
+  background-color: #000000;
+  transition: background-color $transition-speed-base $transition-timing;
 }
 
 /**

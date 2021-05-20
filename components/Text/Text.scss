@@ -1,5 +1,6 @@
 .Text {
   @include typo-text-default();
 
+  color: var(--color-fg-primary);
   margin-bottom: $space-m;
 }
