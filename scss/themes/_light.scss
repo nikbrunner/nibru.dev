@@ -1,15 +1,15 @@
 .light {
-  --color-bg-primary: var(--color-gray-0);
+  --color-bg-primary: var(--color-gray-1);
   --color-bg-primary-alt: var(--color-gray-9);
-  --color-bg-secondary: var(--color-gray-1);
+  --color-bg-secondary: var(--color-gray-2);
   --color-bg-secondary-alt: var(--color-gray-8);
   --color-bg-ternary: var(--color-gray-2);
   --color-bg-ternary-alt: var(--color-gray-7);
-  --color-fg-primary: var(--color-gray-9);
-  --color-fg-primary-alt: var(--color-gray-0);
+  --color-fg-primary: var(--color-gray-7);
+  --color-fg-primary-alt: var(--color-gray-2);
   --color-fg-secondary: var(--color-gray-8);
-  --color-fg-secondary-alt: var(--color-gray-1);
-  --color-accent-primary: var(--color-blue-6);
-  --color-accent-secondary: var(--color-blue-5);
-  --color-accent-ternary: var(--color-blue-4);
+  --color-fg-secondary-alt: var(--color-gray-3);
+  --color-accent-primary: var(--color-blue-5);
+  --color-accent-secondary: var(--color-blue-4);
+  --color-accent-ternary: var(--color-blue-3);
 }
