@@ -11,7 +11,7 @@ import Link from '../components/Link/Link';
 const Home = () => {
   return (
     <Page name='Home' title='Home'>
-      <Section classNames={['Home__profile-section']}>
+      <Section classNames={['Home__intro']}>
         <Headline tag='h1' size='h1' noBorder>
           Hi there.
         </Headline>
@@ -19,25 +19,35 @@ const Home = () => {
         <Text maxWidth='25rem'>
           My name is Nikolaus Brunner,
           <br />
-          and I am a Web Developer since 2019.
+          or short just <em>Nik</em>.
         </Text>
 
-        <Text maxWidth='25rem'>
-          Currently I am a Software Engineer at{' '}
+        <Text maxWidth='30rem'>
+          I am working as a Software Engineer
+          <br /> for{' '}
           <Link href='https://bike.center' type='external'>
             DealerCenter Digital
+          </Link>
+          .
+          <br /> Previously I worked for{' '}
+          <Link href='https://https://www.diva-e.com/de/' type='external'>
+            diva-e
           </Link>
           .
         </Text>
 
         <Text maxWidth='25rem'>
-          I mainly work with <strong>React</strong>,{' '}
-          <strong>TypeScript</strong>
-          <br /> and <strong>SCSS</strong>.
+          I mainly work with <strong>React</strong>, <br />
+          <strong>TypeScript</strong> and <strong>SCSS</strong>.
         </Text>
 
-        <Text maxWidth='20rem'>
+        <Text maxWidth='30rem'>
           This website is in the process of being rebuilt.
+          <br /> You can visit my old page{' '}
+          <Link href='/archive/index.html' type='internal'>
+            here
+          </Link>
+          .
         </Text>
 
         <Text style={{ fontSize: '2rem' }}>
