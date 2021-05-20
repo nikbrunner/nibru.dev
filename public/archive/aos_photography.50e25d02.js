@@ -7,3 +7,4 @@ var e,t=arguments[3];!function(t,n){"object"==typeof exports&&"undefined"!=typeo
 },{}],"D6fS":[function(require,module,exports) {
 "use strict";var e=t(require("aos")),a=require("./clientFunctions");function t(e){return e&&e.__esModule?e:{default:e}}(0,a.animateWithAOS)({multiple:!0,target:'[data-fancybox="gallery"]',type:"fade-up"}),e.default.init({disable:!1,startEvent:"DOMContentLoaded",initClassName:"aos-init",animatedClassName:"aos-animate",useClassNames:!1,disableMutationObserver:!1,debounceDelay:50,throttleDelay:99,offset:120,delay:0,duration:500,easing:"ease",once:!1,mirror:!1,anchorPlacement:"top-bottom"});
 },{"aos":"RKkx","./clientFunctions":"XO1f"}]},{},["D6fS"], null)
+//# sourceMappingURL=aos_photography.50e25d02.js.map

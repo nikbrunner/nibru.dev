@@ -7,3 +7,4 @@ var e,t=arguments[3];!function(t,n){"object"==typeof exports&&"undefined"!=typeo
 },{}],"PgTD":[function(require,module,exports) {
 "use strict";var e=a(require("aos")),t=require("./clientFunctions");function a(e){return e&&e.__esModule?e:{default:e}}(0,t.animateWithAOS)({target:".releaseBox",multiple:!0,type:"fade-up",once:!0}),e.default.init({disable:!1,startEvent:"DOMContentLoaded",initClassName:"aos-init",animatedClassName:"aos-animate",useClassNames:!1,disableMutationObserver:!1,debounceDelay:50,throttleDelay:99,offset:120,delay:0,duration:1e3,easing:"ease",once:!0,mirror:!1,anchorPlacement:"top-bottom"});
 },{"aos":"RKkx","./clientFunctions":"XO1f"}]},{},["PgTD"], null)
+//# sourceMappingURL=aos_music.b9bb7810.js.map

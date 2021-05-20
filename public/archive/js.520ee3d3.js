@@ -16,3 +16,4 @@ var o=document.querySelector("#scrollToTopBtn"),t=100;o.addEventListener("click"
 },{"../js/btn_scrollToTop":"U4vx"}],"QvaY":[function(require,module,exports) {
 "use strict";var e=t(require("simple-scrollspy/dist/simple-scrollspy.min"));function t(e){return e&&e.__esModule?e:{default:e}}require("./particles-config"),require("./navigation"),window.addEventListener("DOMContentLoaded",function(t){document.body.classList.remove("opacity0"),document.body.classList.add("opacity1"),(0,e.default)("#nav--desktop",{offset:250,menuActiveTarget:".nav__item--desktop",sectionClass:".scrollspy",activeClass:"active",hrefAttribute:"data-scrollspy"})});
 },{"simple-scrollspy/dist/simple-scrollspy.min":"s0i1","./particles-config":"NoN9","./navigation":"qr24"}]},{},["QvaY"], null)
+//# sourceMappingURL=js.520ee3d3.js.map
