@@ -57,6 +57,14 @@ const Home = () => {
             .
           </Text>
 
+          <Text maxWidth='25rem'>
+            Developing{' '}
+            <Link href='https://sonder.haus' type='external'>
+              Sonderhaus
+            </Link>
+            .
+          </Text>
+
           <Text style={{ fontSize: '2rem' }}>
             <Link
               href='https://github.com/nikbrunner'
