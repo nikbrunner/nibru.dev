@@ -59,10 +59,9 @@ const Home = () => {
 
           <Text maxWidth='25rem'>
             Developing{' '}
-            <Link href='https://sonder.haus' type='external'>
-              Sonderhaus
+            <Link href='https://dotnotes.io' type='external'>
+              dotnotes.io
             </Link>
-            .
           </Text>
 
           <Text style={{ fontSize: '2rem' }}>

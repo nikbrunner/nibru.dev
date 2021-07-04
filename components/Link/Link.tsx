@@ -28,8 +28,8 @@ const Link = ({
     href={href}
     target={type === 'external' || openInNewTab ? '_blank' : '_self'}
   >
-    {type === 'external' && !hideIcon && <FiLink />}
     {children}
+    {type === 'external' && !hideIcon && <FiLink />}
   </a>
 );
 
