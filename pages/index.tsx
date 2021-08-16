@@ -7,16 +7,23 @@ import Headline from '../components/Headline/Headline';
 import Page from '../partials/Page/Page';
 import Text from '../components/Text/Text';
 import Link from '../components/Link/Link';
+import Grid from '../components/Grid/Grid';
+import { Box } from '../components/Box/Box';
 
-const Home = () => {
-  return (
-    <Page name='Home' title='Hi there. 👋'>
-      <Section classNames={['Home__intro']}>
-        <div className='Home__intro-image'>
-          <img src='/images/nb.jpg' />
-        </div>
+const Home = () => (
+  <Page name='Home' title='Hi there. 👋'>
+    <Section classNames={['Home__intro']}>
+      <Grid>
+        <Box classNames={['Home__intro-image']}>
+          <img
+            src='/images/nb.jpg'
+            width='100%'
+            height='100%'
+            style={{ objectFit: 'cover' }}
+          />
+        </Box>
 
-        <div className='Home__intro-text'>
+        <Box classNames={['Home__intro-text']} style={{ padding: '2rem' }}>
           <Headline tag='h1' size='h1' noBorder>
             Hi there.
           </Headline>
@@ -94,10 +101,10 @@ const Home = () => {
               <FiLinkedin />
             </Link>
           </Text>
-        </div>
-      </Section>
-    </Page>
-  );
-};
+        </Box>
+      </Grid>
+    </Section>
+  </Page>
+);
 
 export default Home;
