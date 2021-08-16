@@ -1,5 +1,6 @@
 # TODO
 - [x] Convert all components to named exports
+- [ ] Sort imports
 - [ ] Convert path aliases
 - [ ] Manual dark mode toggle
 
@@ -23,3 +24,6 @@ Partials should compose of components, but with no own styling
 ## Styling System
 Generic, but responsive styling system for all components.
 Take [Styled System](https://styled-system.com/) as Inspiration.
+
+- [ ] Plan out system
+    - `useResponsiveStyles`
