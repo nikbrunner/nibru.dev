@@ -1,8 +1,7 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
 
-import Main from '../../components/Main/Main';
-import Nav from '../../components/Nav/Nav';
+import Main from '../../components/layout/Main/Main';
 
 import { GenericProps } from '../../types/GenericProps';
 

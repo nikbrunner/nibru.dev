@@ -1,16 +1,15 @@
 import React, { useContext } from 'react';
 
-import Button from '../Button/Button';
-import Headline from '../Headline/Headline';
+import Headline from '../../ui/Headline/Headline';
 
-import { ThemeContext, Theme } from '../../context/ThemeContext';
+import { ThemeContext } from '../../../context/ThemeContext';
 
-import { cn } from '../../lib/cn';
+import { cn } from '../../../lib/cn';
 
-import profile from '../../data/profile';
+import profile from '../../../data/profile';
 
 const Nav = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <nav className={cn('Nav', [], { [theme]: theme })}>
