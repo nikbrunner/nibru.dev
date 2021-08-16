@@ -4,7 +4,7 @@ import { RiXingLine } from 'react-icons/ri';
 
 import Section from '../components/layout/Section/Section';
 import Headline from '../components/ui/Headline/Headline';
-import Page from '../partials/Page/Page';
+import Page from '../components/layout/Page/Page';
 import Text from '../components/ui/Text/Text';
 import Link from '../components/ui/Link/Link';
 import Grid from '../components/layout/Grid/Grid';

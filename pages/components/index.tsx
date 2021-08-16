@@ -2,13 +2,13 @@ import React from 'react';
 
 import Grid from '../../components/layout/Grid/Grid';
 import Section from '../../components/layout/Section/Section';
-import Row from '../../partials/Row/Row';
+import Row from '../../components/layout/Row/Row';
 import Button from '../../components/ui/Button/Button';
 import Skill from '../../components/profile/Skill/Skill';
 import Experience from '../../components/profile/Experience/Experience';
 import Headline from '../../components/ui/Headline/Headline';
 import Link from '../../components/ui/Link/Link';
-import Page from '../../partials/Page/Page';
+import Page from '../../components/layout/Page/Page';
 import Text from '../../components/ui/Text/Text';
 
 import { Experience as ExperienceType } from '../../types/profile/Experience';

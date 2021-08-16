@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
 
-import Main from '../../components/layout/Main/Main';
+import Main from '../Main/Main';
 
-import { GenericProps } from '../../types/GenericProps';
+import { GenericProps } from '../../../types/GenericProps';
 
-import { cn } from '../../lib/cn';
+import { cn } from '../../../lib/cn';
 
 interface Props extends GenericProps {
   children: ReactNode;
