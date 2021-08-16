@@ -9,7 +9,7 @@ interface Props extends GenericProps {
   maxWidth?: CSSProperties['maxWidth'];
 }
 
-const Text = ({
+export const Text = ({
   children,
   classNames = [],
   style = {},
@@ -25,5 +25,3 @@ const Text = ({
     {children}
   </p>
 );
-
-export default Text;

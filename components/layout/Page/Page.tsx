@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
 
-import Main from '../Main/Main';
+import { Main } from '../Main/Main';
 
 import { GenericProps } from '../../../types/GenericProps';
 
@@ -13,7 +13,7 @@ interface Props extends GenericProps {
   title?: string;
 }
 
-const Page = ({ children, name, title }: Props) => (
+export const Page = ({ children, name, title }: Props) => (
   <>
     <Head>
       <title>
@@ -24,12 +24,8 @@ const Page = ({ children, name, title }: Props) => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-    {/* <Nav /> */}
-
     <div className={cn('Page', [name], {})}>
       <Main>{children}</Main>
     </div>
   </>
 );
-
-export default Page;

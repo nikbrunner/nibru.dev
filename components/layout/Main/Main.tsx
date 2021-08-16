@@ -8,8 +8,6 @@ interface Props extends GenericProps {
   children: React.ReactNode;
 }
 
-const Main = ({ classNames, children }: Props) => (
+export const Main = ({ classNames, children }: Props) => (
   <main className={cn('Main', classNames)}>{children}</main>
 );
-
-export default Main;

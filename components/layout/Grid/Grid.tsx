@@ -14,7 +14,7 @@ interface Props extends GenericProps {
   placeItems?: React.CSSProperties['placeItems'];
 }
 
-const Grid = ({
+export const Grid = ({
   classNames,
   children,
   cols = 'auto-fit',
@@ -41,5 +41,3 @@ const Grid = ({
     </div>
   );
 };
-
-export default Grid;

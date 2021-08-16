@@ -13,7 +13,7 @@ interface Props extends GenericProps {
   openInNewTab?: boolean;
 }
 
-const Link = ({
+export const Link = ({
   classNames,
   children,
   href,
@@ -32,5 +32,3 @@ const Link = ({
     {type === 'external' && !hideIcon && <FiLink />}
   </a>
 );
-
-export default Link;

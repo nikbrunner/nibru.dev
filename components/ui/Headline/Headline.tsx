@@ -13,7 +13,7 @@ interface Props {
   noBorder?: boolean;
 }
 
-const Headline = ({
+export const Headline = ({
   children,
   classNames = [],
   size = 'h2',
@@ -30,5 +30,3 @@ const Headline = ({
     },
     children
   );
-
-export default Headline;

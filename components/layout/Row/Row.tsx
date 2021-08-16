@@ -6,12 +6,8 @@ import { cn } from '../../../lib/cn';
 
 interface Props extends GenericProps {
   children: React.ReactNode;
-  cols?: 'oneCol' | 'twoCols' | 'threeCols' | 'fourCols';
 }
 
-// TODO This should be a partial based on a <Flex /> component
-const Row = ({ classNames, children, cols = 'oneCol' }: Props) => (
-  <div className={cn('Row', classNames, { [cols]: cols })}>{children}</div>
+export const Row = ({ classNames, children }: Props) => (
+  <div className={cn('Row', classNames)}>{children}</div>
 );
-
-export default Row;

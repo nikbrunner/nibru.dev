@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import Headline from '../../ui/Headline/Headline';
+import { Headline } from '../../ui/Headline/Headline';
 
 import { ThemeContext } from '../../../context/ThemeContext';
 
@@ -11,7 +11,7 @@ import { cn } from '../../../lib/cn';
 
 type SkillProps = SkillType & GenericProps;
 
-const Skill = ({ classNames, title, level, icon }: SkillProps) => {
+export const Skill = ({ classNames, title, level, icon }: SkillProps) => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -33,5 +33,3 @@ const Skill = ({ classNames, title, level, icon }: SkillProps) => {
     </div>
   );
 };
-
-export default Skill;

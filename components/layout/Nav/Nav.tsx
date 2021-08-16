@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import Headline from '../../ui/Headline/Headline';
+import { Headline } from '../../ui/Headline/Headline';
 
 import { ThemeContext } from '../../../context/ThemeContext';
 
@@ -8,7 +8,7 @@ import { cn } from '../../../lib/cn';
 
 import profile from '../../../data/profile';
 
-const Nav = () => {
+export const Nav = () => {
   const { theme } = useContext(ThemeContext);
 
   return (

@@ -4,13 +4,13 @@ import { GenericProps } from '../../../types/GenericProps';
 import { Experience as ExperienceType } from '../../../types/profile/Experience';
 
 import { cn } from '../../../lib/cn';
-import Headline from '../../ui/Headline/Headline';
+import { Headline } from '../../ui/Headline/Headline';
 
 interface ExperienceProps extends ExperienceType, GenericProps {
   current: boolean;
 }
 
-const Experience = ({
+export const Experience = ({
   classNames,
   title,
   dateRange,
@@ -30,5 +30,3 @@ const Experience = ({
     {details && <p className='Experience__details'>{details}</p>}
   </div>
 );
-
-export default Experience;

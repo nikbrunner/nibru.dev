@@ -10,7 +10,7 @@ interface Props extends GenericProps {
   onClick?: () => void;
 }
 
-const Button = ({
+export const Button = ({
   classNames = [],
   size = 'm',
   children,
@@ -25,5 +25,3 @@ const Button = ({
     {children}
   </button>
 );
-
-export default Button;
