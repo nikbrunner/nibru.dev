@@ -11,8 +11,8 @@ import Link from '../../components/ui/Link/Link';
 import Page from '../../partials/Page/Page';
 import Text from '../../components/ui/Text/Text';
 
-import { Experience as ExperienceType } from '../../types/Experience';
-import { Skill as SkillType } from '../../types/Skill';
+import { Experience as ExperienceType } from '../../types/profile/Experience';
+import { Skill as SkillType } from '../../types/profile/Skill';
 import { Space } from '../../types/Spaces';
 
 import skills from '../../data/skills';

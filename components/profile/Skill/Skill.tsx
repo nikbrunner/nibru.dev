@@ -5,7 +5,7 @@ import Headline from '../../ui/Headline/Headline';
 import { ThemeContext } from '../../../context/ThemeContext';
 
 import { GenericProps } from '../../../types/GenericProps';
-import { Skill as SkillType } from '../../../types/Skill';
+import { Skill as SkillType } from '../../../types/profile/Skill';
 
 import { cn } from '../../../lib/cn';
 

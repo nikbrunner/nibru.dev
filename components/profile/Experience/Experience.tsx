@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { GenericProps } from '../../../types/GenericProps';
-import { Experience as ExperienceType } from '../../../types/Experience';
+import { Experience as ExperienceType } from '../../../types/profile/Experience';
 
 import { cn } from '../../../lib/cn';
 import Headline from '../../ui/Headline/Headline';
