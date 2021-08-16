@@ -1,15 +1,15 @@
 import React, { CSSProperties, ReactNode } from 'react';
 
-import { GenericProps } from '../../types/GenericProps';
+import { GenericProps } from '../../../types/GenericProps';
 
-import { cn } from '../../lib/cn';
+import { cn } from '../../../lib/cn';
 
 interface Props extends GenericProps {
   children: ReactNode;
   maxWidth?: CSSProperties['maxWidth'];
 }
 
-const Text = ({
+export const Text = ({
   children,
   classNames = [],
   style = {},
@@ -25,5 +25,3 @@ const Text = ({
     {children}
   </p>
 );
-
-export default Text;

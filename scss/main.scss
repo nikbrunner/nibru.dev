@@ -16,21 +16,20 @@
 @import 'base/helpers';
 
 // Components
-@import '../components/Main/Main';
-@import '../components/Box/Box';
-@import '../components/Section/Section';
-@import '../components/Grid/Grid';
-@import '../components/Button/Button';
-@import '../components/Headline/Headline';
-@import '../components/Link/Link';
-@import '../components/Nav/Nav';
-@import '../components/Skill/Skill';
-@import '../components/Text/Text';
-@import '../components/Experience/Experience';
+@import '../components/layout/Main/Main';
+@import '../components/layout/Box/Box';
+@import '../components/layout/Section/Section';
+@import '../components/layout/Grid/Grid';
+@import '../components/layout/Nav/Nav';
+@import '../components/layout/Page/Page';
 
-// Partials
-@import '../partials/Page/Page';
-@import '../partials/Row/Row';
+@import '../components/ui/Button/Button';
+@import '../components/ui/Headline/Headline';
+@import '../components/ui/Link/Link';
+@import '../components/ui/Text/Text';
+
+@import '../components/profile/Skill/Skill';
+@import '../components/profile/Experience/Experience';
 
 // Page-specific styles
 @import 'pages/app';

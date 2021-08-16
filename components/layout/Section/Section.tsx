@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { GenericProps } from '../../types/GenericProps';
+import { GenericProps } from '../../../types/GenericProps';
 
-import { cn } from '../../lib/cn';
+import { cn } from '../../../lib/cn';
 
 interface Props extends GenericProps {
   children: React.ReactNode;
@@ -15,7 +15,7 @@ interface Props extends GenericProps {
   backgroundBlur?: boolean;
 }
 
-const Section = ({
+export const Section = ({
   children,
   id,
   classNames = [],
@@ -53,5 +53,3 @@ const Section = ({
     <article className='Section__content'>{children}</article>
   </section>
 );
-
-export default Section;

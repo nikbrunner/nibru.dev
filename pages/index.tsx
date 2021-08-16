@@ -2,13 +2,13 @@ import React from 'react';
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import { RiXingLine } from 'react-icons/ri';
 
-import Section from '../components/Section/Section';
-import Headline from '../components/Headline/Headline';
-import Page from '../partials/Page/Page';
-import Text from '../components/Text/Text';
-import Link from '../components/Link/Link';
-import Grid from '../components/Grid/Grid';
-import { Box } from '../components/Box/Box';
+import { Section } from '../components/layout/Section/Section';
+import { Headline } from '../components/ui/Headline/Headline';
+import { Page } from '../components/layout/Page/Page';
+import { Text } from '../components/ui/Text/Text';
+import { Link } from '../components/ui/Link/Link';
+import { Grid } from '../components/layout/Grid/Grid';
+import { Box } from '../components/layout/Box/Box';
 
 const Home = () => (
   <Page name='Home' title='Hi there. 👋'>

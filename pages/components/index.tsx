@@ -1,18 +1,18 @@
 import React from 'react';
 
-import Grid from '../../components/Grid/Grid';
-import Section from '../../components/Section/Section';
-import Row from '../../partials/Row/Row';
-import Button from '../../components/Button/Button';
-import Skill from '../../components/Skill/Skill';
-import Experience from '../../components/Experience/Experience';
-import Headline from '../../components/Headline/Headline';
-import Link from '../../components/Link/Link';
-import Page from '../../partials/Page/Page';
-import Text from '../../components/Text/Text';
+import { Grid } from '../../components/layout/Grid/Grid';
+import { Section } from '../../components/layout/Section/Section';
+import { Row } from '../../components/layout/Row/Row';
+import { Button } from '../../components/ui/Button/Button';
+import { Skill } from '../../components/profile/Skill/Skill';
+import { Experience } from '../../components/profile/Experience/Experience';
+import { Headline } from '../../components/ui/Headline/Headline';
+import { Link } from '../../components/ui/Link/Link';
+import { Page } from '../../components/layout/Page/Page';
+import { Text } from '../../components/ui/Text/Text';
 
-import { Experience as ExperienceType } from '../../types/Experience';
-import { Skill as SkillType } from '../../types/Skill';
+import { Experience as ExperienceType } from '../../types/profile/Experience';
+import { Skill as SkillType } from '../../types/profile/Skill';
 import { Space } from '../../types/Spaces';
 
 import skills from '../../data/skills';
@@ -239,7 +239,7 @@ const Components = () => (
         <Headline>Skill component</Headline>
       </Row>
 
-      <Row cols={'fourCols'} classNames={['Components__skills-container']}>
+      <Row classNames={['Components__skills-container']}>
         <Grid cols='auto-fit' gap={Space.m}>
           {skills.map(({ title, level, icon }: SkillType) => (
             <Skill key={title} title={title} level={level} icon={icon} />
@@ -253,10 +253,7 @@ const Components = () => (
         <Headline>Experience component</Headline>
       </Row>
 
-      <Row
-        cols={'fourCols'}
-        classNames={['Components__experiences-container']}
-      >
+      <Row classNames={['Components__experiences-container']}>
         <Grid cols={3} colMinWidth={'100px'} gap={Space.m}>
           {experiences.map(
             (

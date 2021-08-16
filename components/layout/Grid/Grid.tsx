@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 
-import { GenericProps } from '../../types/GenericProps';
-import { Space } from '../../types/Spaces';
+import { GenericProps } from '../../../types/GenericProps';
+import { Space } from '../../../types/Spaces';
 
-import { cn } from '../../lib/cn';
+import { cn } from '../../../lib/cn';
 
 interface Props extends GenericProps {
   children: ReactNode;
@@ -14,7 +14,7 @@ interface Props extends GenericProps {
   placeItems?: React.CSSProperties['placeItems'];
 }
 
-const Grid = ({
+export const Grid = ({
   classNames,
   children,
   cols = 'auto-fit',
@@ -41,5 +41,3 @@ const Grid = ({
     </div>
   );
 };
-
-export default Grid;

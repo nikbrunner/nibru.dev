@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 import { FiLink } from 'react-icons/fi';
 
-import { GenericProps } from '../../types/GenericProps';
+import { GenericProps } from '../../../types/GenericProps';
 
-import { cn } from '../../lib/cn';
+import { cn } from '../../../lib/cn';
 
 interface Props extends GenericProps {
   children: ReactNode;
@@ -13,7 +13,7 @@ interface Props extends GenericProps {
   openInNewTab?: boolean;
 }
 
-const Link = ({
+export const Link = ({
   classNames,
   children,
   href,
@@ -32,5 +32,3 @@ const Link = ({
     {type === 'external' && !hideIcon && <FiLink />}
   </a>
 );
-
-export default Link;
