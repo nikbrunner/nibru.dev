@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 
-import { GenericProps } from '../../../types/GenericProps';
-import { Space } from '../../../types/Spaces';
+import { GenericProps } from '@typings/GenericProps';
+import { Space } from '@typings/Spaces';
 
-import { cn } from '../../../lib/cn';
+import { cn } from '@lib/cn';
 
 interface Props extends GenericProps {
   children: ReactNode;

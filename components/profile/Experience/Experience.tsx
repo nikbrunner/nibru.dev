@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { GenericProps } from '../../../types/GenericProps';
-import { Experience as ExperienceType } from '../../../types/profile/Experience';
+import { Headline } from '@components/ui/Headline/Headline';
 
-import { cn } from '../../../lib/cn';
-import { Headline } from '../../ui/Headline/Headline';
+import { GenericProps } from '@typings/GenericProps';
+import { Experience as ExperienceType } from '@typings/profile/Experience';
+
+import { cn } from '@lib/cn';
 
 interface ExperienceProps extends ExperienceType, GenericProps {
   current: boolean;

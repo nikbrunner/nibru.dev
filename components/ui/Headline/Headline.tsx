@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { cn } from '../../../lib/cn';
+import { cn } from '@lib/cn';
 
 // TODO Outsource
 export type HeadlineSizes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';

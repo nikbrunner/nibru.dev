@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 
-import { Headline } from '../../ui/Headline/Headline';
+import { Headline } from '@components/ui/Headline/Headline';
 
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '@context/ThemeContext';
 
-import { GenericProps } from '../../../types/GenericProps';
-import { Skill as SkillType } from '../../../types/profile/Skill';
+import { GenericProps } from '@typings/GenericProps';
+import { Skill as SkillType } from '@typings/profile/Skill';
 
-import { cn } from '../../../lib/cn';
+import { cn } from '@lib/cn';
 
 type SkillProps = SkillType & GenericProps;
 
