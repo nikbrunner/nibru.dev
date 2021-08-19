@@ -4,14 +4,15 @@
 - [x] Setup path aliases
 - [x] Sort imports
 - [x] Rename `types` to `typings`
-- [ ] Manual dark mode toggle
 
 ## Styling
 
-- [ ] Rename `scss` to `style`
+- [x] Rename `scss` to `style`
 - [ ] Clean out and simplify `.scss` files
 
 ## Components
+
+- [ ] Manual dark mode toggle
 
 ### `Image`
 

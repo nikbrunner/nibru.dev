@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ThemeProvider } from '@context/ThemeContext';
 
-import '../scss/main.scss';
+import '../style/main.scss';
 
 const App = ({ Component, pageProps }) => (
   <div className='App'>

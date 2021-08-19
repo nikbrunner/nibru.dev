@@ -20,7 +20,7 @@
       "@context/*": ["context/*"],
       "@data/*": ["data/*"],
       "@lib/*": ["lib/*"],
-      "@style/*": ["scss/*"],
+      "@style/*": ["style/*"],
       "@typings/*": ["typings/*"]
     }
   },
