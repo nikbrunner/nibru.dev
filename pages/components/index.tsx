@@ -224,6 +224,7 @@ const Components = () => (
         urna neque viverra justo.
       </Text>
     </Section>
+
     <Section>
       <Headline size='h1'>Button component</Headline>
 
@@ -234,6 +235,50 @@ const Components = () => (
       <Row>
         <Button size='l'>This is a big button without an Icon</Button>
       </Row>
+    </Section>
+
+    <Section>
+      <Row>
+        <Headline size='h1'>Grid</Headline>
+      </Row>
+
+      <Grid cols={2} gap={Space.l}>
+        <div>
+          <Headline tag='h2' size='h2'>
+            Left column
+          </Headline>
+
+          <Text>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+            aperiam voluptas explicabo, similique sunt provident quis
+            beatae ab blanditiis veritatis! Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Ad, laboriosam. Molestias
+            accusamus, mollitia cumque quos omnis nostrum aliquam ducimus
+            fugiat qui architecto totam vel hic doloribus corrupti a, eaque
+            laudantium officiis asperiores fuga quae eos quisquam! Fugit
+            amet, delectus rem quia necessitatibus molestiae, aliquid quam
+            dignissimos doloribus, nemo modi totam!
+          </Text>
+        </div>
+
+        <div>
+          <Headline tag='h2' size='h2'>
+            Right column
+          </Headline>
+
+          <Text>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+            aperiam voluptas explicabo, similique sunt provident quis
+            beatae ab blanditiis veritatis! Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Ad, laboriosam. Molestias
+            accusamus, mollitia cumque quos omnis nostrum aliquam ducimus
+            fugiat qui architecto totam vel hic doloribus corrupti a, eaque
+            laudantium officiis asperiores fuga quae eos quisquam! Fugit
+            amet, delectus rem quia necessitatibus molestiae, aliquid quam
+            dignissimos doloribus, nemo modi totam!
+          </Text>
+        </div>
+      </Grid>
     </Section>
 
     <Section>
