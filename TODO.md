@@ -3,12 +3,12 @@
 - [x] Convert all components to named exports
 - [x] Setup path aliases
 - [x] Sort imports
+- [x] Rename `types` to `typings`
 - [ ] Manual dark mode toggle
-- [ ] Rename `scss` to `style`
-- [ ] Rename `types` to `typings`
 
 ## Styling
 
+- [ ] Rename `scss` to `style`
 - [ ] Clean out and simplify `.scss` files
 
 ## Components
