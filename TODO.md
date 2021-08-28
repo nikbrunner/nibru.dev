@@ -31,6 +31,9 @@ Also this would be a good practice in Problem Solving and TypeScript
 ## Components
 
 - [ ] Manual dark mode toggle
+- [ ] Better Layout Components
+  - [ ] Improve `Grid`
+  - [x] Introduce `Flex`
 
 ### `Image`
 

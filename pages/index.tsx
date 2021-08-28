@@ -5,7 +5,7 @@ import { RiXingLine } from 'react-icons/ri';
 import { Section } from '@components/layout/Section/Section';
 import { Page } from '@components/layout/Page/Page';
 import { Grid } from '@components/layout/Grid/Grid';
-import { Box } from '@components/layout/Box/Box';
+import { Flex } from '@components/layout/Flex/Flex';
 
 import { Headline } from '@components/ui/Headline/Headline';
 import { Text } from '@components/ui/Text/Text';
@@ -15,16 +15,20 @@ const Home = () => (
   <Page name='Home' title='Hi there. 👋'>
     <Section classNames={['Home__intro']}>
       <Grid>
-        <Box classNames={['Home__intro-image']}>
+        <Flex classNames={['Home__intro-image']}>
           <img
             src='/images/nb.jpg'
             width='100%'
             height='100%'
             style={{ objectFit: 'cover' }}
           />
-        </Box>
+        </Flex>
 
-        <Box classNames={['Home__intro-text']} style={{ padding: '2rem' }}>
+        <Flex
+          classNames={['Home__intro-text']}
+          style={{ padding: '2rem' }}
+          flexDirection='column'
+        >
           <Headline tag='h1' size='h1' noBorder>
             Hi there.
           </Headline>
@@ -102,7 +106,7 @@ const Home = () => (
               <FiLinkedin />
             </Link>
           </Text>
-        </Box>
+        </Flex>
       </Grid>
     </Section>
   </Page>
