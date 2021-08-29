@@ -27,7 +27,7 @@ const Home = () => (
         <Flex
           classNames={['Home__intro-text']}
           style={{ padding: '2rem' }}
-          flexDirection='column'
+          flexDirection={['column']}
         >
           <Headline tag='h1' size='h1' noBorder>
             Hi there.

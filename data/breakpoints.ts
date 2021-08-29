@@ -1,11 +1,11 @@
-import { Breakpoints } from '@typings/Breakpoints';
+import { Breakpoints } from '@typings/ResponsiveDesign';
 
-export const breakpoints: Breakpoints = {
-  xs: 320,
-  s: 414,
-  m: 768,
-  l: 1024,
-  xl: 1280,
-  xxl: 1440,
-  xxxl: 1920
-};
+export const breakpoints: Breakpoints = [
+  320,
+  414,
+  768,
+  1024,
+  1280,
+  1440,
+  1920
+];
