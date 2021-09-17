@@ -40,7 +40,7 @@ const Home = () => (
           </Text>
 
           <Text maxWidth="30rem">
-            I am working as a Software Engineer for the{" "}
+            I am working as a Software Engineer for{" "}
             <Link href="https://bike.center" type="external">
               DealerCenter Digital
             </Link>
@@ -65,6 +65,14 @@ const Home = () => (
             <br /> You can visit my old website{" "}
             <Link href="/archive/index.html" type="internal">
               here
+            </Link>
+            .
+          </Text>
+
+          <Text maxWidth="30rem">
+            Developing{" "}
+            <Link href="https://sonder.haus" type="external">
+              sonder.haus
             </Link>
             .
           </Text>
