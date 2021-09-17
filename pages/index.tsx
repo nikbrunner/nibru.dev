@@ -27,7 +27,7 @@ const Home = () => (
         <Flex
           classNames={['Home__intro-text']}
           style={{ padding: '2rem' }}
-          flexDirection={['column']}
+          flexDirection='column'
         >
           <Headline tag='h1' size='h1' noBorder>
             Hi there.
@@ -67,13 +67,6 @@ const Home = () => (
               here
             </Link>
             .
-          </Text>
-
-          <Text maxWidth='25rem'>
-            Developing{' '}
-            <Link href='https://dotnotes.io' type='external'>
-              dotnotes.io
-            </Link>
           </Text>
 
           <Text style={{ fontSize: '2rem' }}>
