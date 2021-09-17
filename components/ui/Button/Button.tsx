@@ -1,23 +1,23 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
-import { cn } from '@lib/cn';
+import { cn } from "@lib/cn";
 
-import { GenericProps } from '@typings/GenericProps';
+import { GenericProps } from "@typings/GenericProps";
 
 interface Props extends GenericProps {
   children: ReactNode;
-  size?: 'm' | 'l';
+  size?: "m" | "l";
   onClick?: () => void;
 }
 
 export const Button = ({
   classNames = [],
-  size = 'm',
+  size = "m",
   children,
   onClick
 }: Props) => (
   <button
-    className={cn('Button', classNames, {
+    className={cn("Button", classNames, {
       [size]: size
     })}
     onClick={onClick}

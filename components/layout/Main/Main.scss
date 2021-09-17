@@ -3,27 +3,27 @@
   max-width: 100vw;
   margin: 0 auto;
 
-  @include mq('m') {
+  @include mq("m") {
     max-width: 75vw;
   }
 
-  @include mq('l') {
+  @include mq("l") {
     max-width: 65vw;
   }
 
-  @include mq('xl') {
+  @include mq("xl") {
     max-width: 55vw;
   }
 
-  @include mq('xxl') {
+  @include mq("xxl") {
     max-width: 40vw;
   }
 
-  @include mq('xxxl') {
+  @include mq("xxxl") {
     max-width: 35vw;
   }
 
-  @include mq('xxxxl') {
+  @include mq("xxxxl") {
     max-width: 25vw;
   }
 }

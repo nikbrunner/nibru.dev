@@ -22,7 +22,15 @@
       "@lib/*": ["lib/*"],
       "@style/*": ["style/*"],
       "@typings/*": ["typings/*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "lint": {
+          "validProperties": ["label"]
+        }
+      }
+    ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

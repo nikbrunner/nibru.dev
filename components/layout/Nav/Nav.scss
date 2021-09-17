@@ -5,7 +5,7 @@
   background: var(--color-bg-secondary);
   color: var(--color-fg-primary);
 
-  @include mq('m') {
+  @include mq("m") {
     @include flex(row nowrap, space-between, center, center);
   }
 
@@ -22,7 +22,7 @@
       margin-right: $space-s;
     }
 
-    @include mq('m') {
+    @include mq("m") {
       margin-bottom: 0;
     }
   }

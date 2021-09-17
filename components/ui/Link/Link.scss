@@ -7,10 +7,6 @@
   color: var(--color-fg-primary);
   white-space: nowrap;
 
-  svg {
-    height: 100%;
-  }
-
   &::before,
   &::after,
   svg {
@@ -37,12 +33,12 @@
     }
 
     &::before {
-      content: '[[';
+      content: "[[";
       margin-right: $space-xxs;
     }
 
     &::after {
-      content: ']]';
+      content: "]]";
       margin-left: $space-xxs;
     }
   }

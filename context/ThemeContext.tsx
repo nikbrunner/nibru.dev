@@ -1,8 +1,8 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from "react";
 
 export enum Theme {
-  dark = 'dark',
-  light = 'light'
+  dark = "dark",
+  light = "light"
 }
 
 export type ThemeContextType = {
@@ -25,7 +25,7 @@ export const ThemeProvider = ({ children }: Props) => {
   // Listen for preferred color scheme
   useEffect(() => {
     const prefersDarkMode: MediaQueryList = window.matchMedia(
-      '(prefers-color-scheme: dark)'
+      "(prefers-color-scheme: dark)"
     );
 
     // Initially read the preferred color-scheme
@@ -37,7 +37,7 @@ export const ThemeProvider = ({ children }: Props) => {
 
     // Listen for changes for the preferred color-scheme
     prefersDarkMode.addEventListener(
-      'change',
+      "change",
       (event: MediaQueryListEvent): void => {
         if (event.matches) {
           setTheme(Theme.dark);
