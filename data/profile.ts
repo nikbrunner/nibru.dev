@@ -1,4 +1,4 @@
-import { Profile } from '../types/profile/PersonalData';
+import { Profile } from '@typings/profile/PersonalData';
 
 const profile: Profile = {
   firstname: 'Nikolaus',

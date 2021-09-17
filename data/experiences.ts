@@ -1,4 +1,4 @@
-import { Experience } from '../types/profile/Experience';
+import { Experience } from '@typings/profile/Experience';
 
 const experiences: Experience[] = [
   {

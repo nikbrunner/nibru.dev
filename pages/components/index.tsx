@@ -20,7 +20,6 @@ import { Space } from '@typings/Spaces';
 import skills from '@data/skills';
 import experiences from '@data/experiences';
 import profile from '@data/profile';
-import { Flex } from '@components/layout/Flex/Flex';
 
 const Components = () => (
   <Page name='Components'>

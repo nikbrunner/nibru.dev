@@ -16,7 +16,7 @@ import {
   FaFigma
 } from 'react-icons/fa';
 
-import { Skill } from '../types/profile/Skill';
+import { Skill } from '@typings/profile/Skill';
 
 const skills: Skill[] = [
   {
