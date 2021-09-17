@@ -1,4 +1,4 @@
-import { Project } from "../types/profile/Project";
+import { Project } from "@typings/profile/Project";
 
 const projects: Project[] = [
   {
