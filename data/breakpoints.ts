@@ -1,4 +1,4 @@
-import { Breakpoints } from '@typings/Breakpoints';
+import { Breakpoints } from "@typings/Breakpoints";
 
 export const breakpoints: Breakpoints = {
   xs: 320,

@@ -1,30 +1,30 @@
-import React from 'react';
+import React from "react";
 
-import { Grid } from '@components/layout/Grid/Grid';
-import { Section } from '@components/layout/Section/Section';
-import { Row } from '@components/layout/Row/Row';
-import { Page } from '@components/layout/Page/Page';
+import { Grid } from "@components/layout/Grid/Grid";
+import { Section } from "@components/layout/Section/Section";
+import { Row } from "@components/layout/Row/Row";
+import { Page } from "@components/layout/Page/Page";
 
-import { Button } from '@components/ui/Button/Button';
-import { Headline } from '@components/ui/Headline/Headline';
-import { Link } from '@components/ui/Link/Link';
-import { Text } from '@components/ui/Text/Text';
+import { Button } from "@components/ui/Button/Button";
+import { Headline } from "@components/ui/Headline/Headline";
+import { Link } from "@components/ui/Link/Link";
+import { Text } from "@components/ui/Text/Text";
 
-import { Skill } from '@components/profile/Skill/Skill';
-import { Experience } from '@components/profile/Experience/Experience';
+import { Skill } from "@components/profile/Skill/Skill";
+import { Experience } from "@components/profile/Experience/Experience";
 
-import { Experience as ExperienceType } from '@typings/profile/Experience';
-import { Skill as SkillType } from '@typings/profile/Skill';
-import { Space } from '@typings/Spaces';
+import { Experience as ExperienceType } from "@typings/profile/Experience";
+import { Skill as SkillType } from "@typings/profile/Skill";
+import { Space } from "@typings/Spaces";
 
-import skills from '@data/skills';
-import experiences from '@data/experiences';
-import profile from '@data/profile';
+import skills from "@data/skills";
+import experiences from "@data/experiences";
+import profile from "@data/profile";
 
 const Components = () => (
-  <Page name='Components'>
+  <Page name="Components">
     <Section>
-      <Headline tag='h1' size='h1'>
+      <Headline tag="h1" size="h1">
         Components Overview
       </Headline>
 
@@ -32,20 +32,20 @@ const Components = () => (
     </Section>
 
     <Section>
-      <Headline size='h2'>Link component</Headline>
+      <Headline size="h2">Link component</Headline>
 
       <Row>
         <Text>
-          This is an external link to{' '}
-          <Link href={profile.github} type='external'>
+          This is an external link to{" "}
+          <Link href={profile.github} type="external">
             GitHub
           </Link>
-          , and this is an external link to{' '}
-          <Link href={profile.linkedin} type='external'>
+          , and this is an external link to{" "}
+          <Link href={profile.linkedin} type="external">
             LinkedIn
           </Link>
-          . This is an internal Link to the{' '}
-          <Link href='/about' type='internal'>
+          . This is an internal Link to the{" "}
+          <Link href="/about" type="internal">
             About page
           </Link>
           .
@@ -54,40 +54,40 @@ const Components = () => (
     </Section>
 
     <Section>
-      <Headline tag='h1' size='h1'>
+      <Headline tag="h1" size="h1">
         Headline Size H1
       </Headline>
 
-      <Headline tag='h2' size='h2'>
+      <Headline tag="h2" size="h2">
         Headline Size H2
       </Headline>
 
-      <Headline tag='h3' size='h3'>
+      <Headline tag="h3" size="h3">
         Headline Size H3
       </Headline>
 
-      <Headline tag='h4' size='h4'>
+      <Headline tag="h4" size="h4">
         Headline Size H4
       </Headline>
 
-      <Headline tag='h5' size='h5'>
+      <Headline tag="h5" size="h5">
         Headline Size H5
       </Headline>
 
-      <Headline tag='h6' size='h6'>
+      <Headline tag="h6" size="h6">
         Headline Size H6
       </Headline>
     </Section>
 
     <Section>
-      <Headline size='h1'>Text component</Headline>
+      <Headline size="h1">Text component</Headline>
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Interdum posuere{' '}
-        <Link href='/home' type='internal'>
+        Interdum posuere{" "}
+        <Link href="/home" type="internal">
           home
-        </Link>{' '}
+        </Link>{" "}
         dolor sit amet. Viverra vitae congue eu consequat ac felis donec
         et. Tempor id eu nisl nunc. Hac habitasse platea dictumst quisque
         sagittis purus sit amet volutpat. Nibh cras pulvinar mattis nunc
@@ -99,10 +99,10 @@ const Components = () => (
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Interdum posuere{' '}
-        <Link href='/home' type='internal'>
+        Interdum posuere{" "}
+        <Link href="/home" type="internal">
           home
-        </Link>{' '}
+        </Link>{" "}
         dolor sit amet. Viverra vitae congue eu consequat ac felis donec
         et. Tempor id eu nisl nunc. Hac habitasse platea dictumst quisque
         sagittis purus sit amet volutpat. Nibh cras pulvinar mattis nunc
@@ -113,7 +113,7 @@ const Components = () => (
     </Section>
 
     <Section>
-      <Headline tag='h1' size='h1'>
+      <Headline tag="h1" size="h1">
         Lorem ipsum dolor sit amet.
       </Headline>
 
@@ -129,7 +129,7 @@ const Components = () => (
         modi totam!
       </Text>
 
-      <Headline tag='h2' size='h2'>
+      <Headline tag="h2" size="h2">
         Lorem, ipsum dolor.
       </Headline>
 
@@ -145,15 +145,15 @@ const Components = () => (
         modi totam!
       </Text>
 
-      <Headline tag='h3' size='h3'>
+      <Headline tag="h3" size="h3">
         Lorem ipsum dolor sit amet.
       </Headline>
 
       <Text>
-        Vitae tempus quam{' '}
-        <Link href='https://google.com' type='external'>
+        Vitae tempus quam{" "}
+        <Link href="https://google.com" type="external">
           Pellentesque
-        </Link>{' '}
+        </Link>{" "}
         nec nam. Praesent semper feugiat nibh sed pulvinar proin gravida
         hendrerit lectus. Ipsum dolor sit amet consectetur adipiscing elit
         duis tristique sollicitudin. Nisi quis eleifend quam adipiscing
@@ -164,7 +164,7 @@ const Components = () => (
         nec sagittis aliquam malesuada.
       </Text>
 
-      <Headline tag='h4' size='h4'>
+      <Headline tag="h4" size="h4">
         Lorem ipsum dolor sit.
       </Headline>
 
@@ -184,7 +184,7 @@ const Components = () => (
         urna neque viverra justo.
       </Text>
 
-      <Headline tag='h5' size='h5'>
+      <Headline tag="h5" size="h5">
         Lorem ipsum dolor sit amet consectetur.
       </Headline>
 
@@ -204,7 +204,7 @@ const Components = () => (
         urna neque viverra justo.
       </Text>
 
-      <Headline tag='h6' size='h6'>
+      <Headline tag="h6" size="h6">
         Lorem ipsum dolor sit.
       </Headline>
 
@@ -226,25 +226,25 @@ const Components = () => (
     </Section>
 
     <Section>
-      <Headline size='h1'>Button component</Headline>
+      <Headline size="h1">Button component</Headline>
 
       <Row>
         <Button>This is a button without an Icon</Button>
       </Row>
 
       <Row>
-        <Button size='l'>This is a big button without an Icon</Button>
+        <Button size="l">This is a big button without an Icon</Button>
       </Row>
     </Section>
 
     <Section>
       <Row>
-        <Headline size='h1'>Grid</Headline>
+        <Headline size="h1">Grid</Headline>
       </Row>
 
       <Grid cols={2} gap={Space.l}>
         <div>
-          <Headline tag='h2' size='h2'>
+          <Headline tag="h2" size="h2">
             Left column
           </Headline>
 
@@ -262,7 +262,7 @@ const Components = () => (
         </div>
 
         <div>
-          <Headline tag='h2' size='h2'>
+          <Headline tag="h2" size="h2">
             Right column
           </Headline>
 
@@ -286,8 +286,8 @@ const Components = () => (
         <Headline>Skill component</Headline>
       </Row>
 
-      <Row classNames={['Components__skills-container']}>
-        <Grid cols='auto-fit' gap={Space.m}>
+      <Row classNames={["Components__skills-container"]}>
+        <Grid cols="auto-fit" gap={Space.m}>
           {skills.map(({ title, level, icon }: SkillType) => (
             <Skill key={title} title={title} level={level} icon={icon} />
           ))}
@@ -300,8 +300,8 @@ const Components = () => (
         <Headline>Experience component</Headline>
       </Row>
 
-      <Row classNames={['Components__experiences-container']}>
-        <Grid cols={3} colMinWidth={'100px'} gap={Space.m}>
+      <Row classNames={["Components__experiences-container"]}>
+        <Grid cols={3} colMinWidth={"100px"} gap={Space.m}>
           {experiences.map(
             (
               { title, dateRange, company, details }: ExperienceType,

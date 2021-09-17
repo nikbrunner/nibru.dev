@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { GenericProps } from '@typings/GenericProps';
+import { GenericProps } from "@typings/GenericProps";
 
-import { cn } from '@lib/cn';
+import { cn } from "@lib/cn";
 
 interface Props extends GenericProps {
   children: React.ReactNode;
@@ -26,7 +26,7 @@ export const Section = ({
   backgroundBlur = false
 }: Props) => (
   <section
-    className={cn('Section', classNames, {
+    className={cn("Section", classNames, {
       debug,
       backgroundImage,
       backgroundVideo,
@@ -38,18 +38,18 @@ export const Section = ({
       backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}
     }
   >
-    {backgroundBlur && <div className='Section__backgroundBlur' />}
+    {backgroundBlur && <div className="Section__backgroundBlur" />}
 
-    {backgroundOverlay && <div className='Section__backgroundOverlay' />}
+    {backgroundOverlay && <div className="Section__backgroundOverlay" />}
 
     {backgroundVideo && (
-      <div className='Section__backgroundVideo'>
+      <div className="Section__backgroundVideo">
         <video muted loop autoPlay>
-          <source src={backgroundVideo} type='video/mp4' />
+          <source src={backgroundVideo} type="video/mp4" />
         </video>
       </div>
     )}
 
-    <article className='Section__content'>{children}</article>
+    <article className="Section__content">{children}</article>
   </section>
 );

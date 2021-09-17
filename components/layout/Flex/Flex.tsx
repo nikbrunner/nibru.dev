@@ -1,17 +1,17 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties } from "react";
 
-import { cn } from '@lib/cn';
+import { cn } from "@lib/cn";
 
-import { GenericProps } from '@typings/GenericProps';
+import { GenericProps } from "@typings/GenericProps";
 
 interface Props extends GenericProps {
   children: React.ReactNode;
-  justifyContent?: CSSProperties['justifyContent'];
-  alignContent?: CSSProperties['alignContent'];
-  alignItems?: CSSProperties['alignItems'];
-  flexDirection?: CSSProperties['flexDirection'];
-  flexWrap?: CSSProperties['flexWrap'];
-  placeItems?: CSSProperties['placeItems'];
+  justifyContent?: CSSProperties["justifyContent"];
+  alignContent?: CSSProperties["alignContent"];
+  alignItems?: CSSProperties["alignItems"];
+  flexDirection?: CSSProperties["flexDirection"];
+  flexWrap?: CSSProperties["flexWrap"];
+  placeItems?: CSSProperties["placeItems"];
 }
 
 export const Flex = ({
@@ -35,7 +35,7 @@ export const Flex = ({
       flexWrap,
       placeItems
     }}
-    className={cn('Flex', classNames)}
+    className={cn("Flex", classNames)}
   >
     {children}
   </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   SiJavascript,
   SiTypescript,
@@ -7,77 +7,77 @@ import {
   SiGnubash,
   SiAdobephotoshop,
   SiGraphql
-} from 'react-icons/si';
+} from "react-icons/si";
 import {
   FaSass,
   FaGitAlt,
   FaReact,
   FaNodeJs,
   FaFigma
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
-import { Skill } from '@typings/profile/Skill';
+import { Skill } from "@typings/profile/Skill";
 
 const skills: Skill[] = [
   {
     icon: <SiHtml5 />,
     level: 95,
-    title: 'HTML5'
+    title: "HTML5"
   },
   {
     icon: <SiCss3 />,
     level: 95,
-    title: 'CSS3'
+    title: "CSS3"
   },
   {
     icon: <FaSass />,
     level: 80,
-    title: 'SCSS'
+    title: "SCSS"
   },
   {
     icon: <SiJavascript />,
     level: 75,
-    title: 'JavaScript'
+    title: "JavaScript"
   },
   {
     icon: <SiTypescript />,
     level: 65,
-    title: 'TypeScript'
+    title: "TypeScript"
   },
   {
     icon: <FaGitAlt />,
     level: 65,
-    title: 'Git'
+    title: "Git"
   },
   {
     icon: <FaReact />,
     level: 75,
-    title: 'React'
+    title: "React"
   },
   {
     icon: <FaNodeJs />,
     level: 45,
-    title: 'Node'
+    title: "Node"
   },
   {
     icon: <SiGnubash />,
     level: 45,
-    title: 'Bash'
+    title: "Bash"
   },
   {
     icon: <FaFigma />,
     level: 75,
-    title: 'Figma'
+    title: "Figma"
   },
   {
     icon: <SiAdobephotoshop />,
     level: 85,
-    title: 'Photoshop'
+    title: "Photoshop"
   },
   {
     icon: <SiGraphql />,
     level: 45,
-    title: 'GraphQL'
+    title: "GraphQL"
   }
 ];
 

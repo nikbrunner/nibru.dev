@@ -1,30 +1,30 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
-import { GenericProps } from '@typings/GenericProps';
-import { Space } from '@typings/Spaces';
+import { GenericProps } from "@typings/GenericProps";
+import { Space } from "@typings/Spaces";
 
-import { cn } from '@lib/cn';
+import { cn } from "@lib/cn";
 
 interface Props extends GenericProps {
   children: ReactNode;
-  cols?: number | 'auto-fit';
+  cols?: number | "auto-fit";
   colMinWidth?: string;
-  rows?: React.CSSProperties['gridTemplateRows'];
-  gap?: Space | '0';
-  placeItems?: React.CSSProperties['placeItems'];
+  rows?: React.CSSProperties["gridTemplateRows"];
+  gap?: Space | "0";
+  placeItems?: React.CSSProperties["placeItems"];
 }
 
 export const Grid = ({
   classNames,
   children,
-  cols = 'auto-fit',
-  colMinWidth = '250px',
-  rows = 'auto',
-  gap = '0',
-  placeItems = 'stretch stretch'
+  cols = "auto-fit",
+  colMinWidth = "250px",
+  rows = "auto",
+  gap = "0",
+  placeItems = "stretch stretch"
 }: Props) => {
   const style: React.CSSProperties = {
-    display: 'grid',
+    display: "grid",
     gridTemplateColumns: `repeat(${cols}, minmax(${colMinWidth}, 1fr))`,
     gridTemplateRows: rows,
     placeItems
@@ -34,7 +34,7 @@ export const Grid = ({
 
   return (
     <div
-      className={cn('Grid', classNames, { [gapMod]: gap })}
+      className={cn("Grid", classNames, { [gapMod]: gap })}
       style={style}
     >
       {children}
