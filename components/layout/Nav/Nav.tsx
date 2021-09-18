@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 
 import { Headline } from "@components/ui/Headline/Headline";
+import { NavLink } from "@components/ui/NavLink/NavLink";
 
 import { ThemeContext } from "@context/ThemeContext";
 
@@ -14,9 +15,14 @@ export const Nav = () => {
   return (
     <nav className={cn("Nav", [], { [theme]: theme })}>
       <div className="Nav__name">
-        <Headline tag={"h1"} size={"h3"} noBorder>
+        <Headline tag="h1" size="h3" noBorder>
           {profile.firstname} {profile.lastname}
         </Headline>
+      </div>
+
+      <div className="Nav__links">
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/books">Books</NavLink>
       </div>
     </nav>
   );

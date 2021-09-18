@@ -1,0 +1,13 @@
+.NavLink {
+  @include typo-text-default() {
+    font-weight: $font-weight-semi-bold;
+    font-size: inherit;
+  }
+
+  color: var(--color-fg-primary);
+  white-space: nowrap;
+
+  &--isActive {
+    color: var(--color-accent-primary);
+  }
+}

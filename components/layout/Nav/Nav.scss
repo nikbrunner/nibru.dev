@@ -15,18 +15,6 @@
     }
   }
 
-  &__theme-buttons {
-    margin-bottom: $space-m;
-
-    *:not(:last-child) {
-      margin-right: $space-s;
-    }
-
-    @include mq("m") {
-      margin-bottom: 0;
-    }
-  }
-
   &__links {
     *:not(:last-child) {
       margin-right: $space-s;

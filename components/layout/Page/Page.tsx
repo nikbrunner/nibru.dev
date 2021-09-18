@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Head from "next/head";
 
 import { Main } from "@components/layout/Main/Main";
+import { Nav } from "@components/layout/Nav/Nav";
 
 import { IGenericProps } from "@typings/GenericProps";
 
@@ -25,6 +26,7 @@ export const Page = ({ children, name, title }: IProps) => (
     </Head>
 
     <div className={cn("Page", [name], {})}>
+      <Nav />
       <Main>{children}</Main>
     </div>
   </>
