@@ -7,13 +7,11 @@ import {
 } from "@typings/Readwise";
 
 const READWISE_API_BASE_URL = "https://readwise.io/api/v2";
+const BOOKS_SUBPATH = "books";
+const HIGHLIGHTS_SUBPATH = "highlights";
 
 export const READWISE_TOKEN =
   "U2IRL7criWWBACdptxm2Itmi5rNFBCvZO2jMpYrCblOeC3P1ig";
-
-const authHeader = (token: string): IReadwiseAuthorizationHeader => ({
-  Authorization: `Token ${token}`
-});
 
 export const ignoredReadwiseBooks: TIgnoredReadwiseBooks = [
   "How to Use Readwise",
@@ -21,86 +19,49 @@ export const ignoredReadwiseBooks: TIgnoredReadwiseBooks = [
   "Paradox"
 ];
 
-export const getBooks = async (
-  {
-    readwiseApiUrl = READWISE_API_BASE_URL,
-    token = READWISE_TOKEN
-  }: {
-    readwiseApiUrl?: string;
-    token?: string;
-  } = {
-    readwiseApiUrl: READWISE_API_BASE_URL,
-    token: READWISE_TOKEN
-  }
-): Promise<IReadwiseBooks> => {
-  const res = await fetch(`${readwiseApiUrl}/books`, {
-    headers: {
-      ...authHeader(token)
-    }
-  });
+const fetchFromReadwiseAPI = async (
+  subpath: string
+): Promise<Response> => {
+  const authorizationHeader: IReadwiseAuthorizationHeader = {
+    Authorization: `Token ${READWISE_TOKEN}`
+  };
 
-  const books: IReadwiseBooks = (res.json() as unknown) as IReadwiseBooks;
-
-  return books;
-};
-
-export const getBook = async ({
-  readwiseApiUrl = READWISE_API_BASE_URL,
-  token = READWISE_TOKEN,
-  bookId
-}: {
-  readwiseApiUrl?: string;
-  token?: string;
-  bookId: string;
-}): Promise<IReadwiseBook> => {
-  const res = await fetch(`${readwiseApiUrl}/books/${bookId}`, {
-    headers: {
-      ...authHeader(token)
-    }
-  });
-
-  const book: IReadwiseBook = (res.json() as unknown) as IReadwiseBook;
-
-  return book;
-};
-
-export const getHighlights = async ({
-  readwiseApiUrl = READWISE_API_BASE_URL,
-  token = READWISE_TOKEN
-}: {
-  readwiseApiUrl?: string;
-  token?: string;
-}): Promise<IReadwiseHighlights> => {
-  const res = await fetch(`${readwiseApiUrl}/highlights`, {
-    headers: {
-      ...authHeader(token)
-    }
-  });
-
-  const highlights: IReadwiseHighlights = (res.json() as unknown) as IReadwiseHighlights;
-
-  return highlights;
-};
-
-export const getHighlightsForBook = async ({
-  readwiseApiUrl = READWISE_API_BASE_URL,
-  token = READWISE_TOKEN,
-  bookId
-}: {
-  readwiseApiUrl?: string;
-  token?: string;
-  bookId: string;
-}): Promise<IReadwiseHighlights> => {
-  const res = await fetch(
-    `${readwiseApiUrl}/highlights/?book_id=${bookId}`,
+  const res: Response = await fetch(
+    `${READWISE_API_BASE_URL}/${subpath}`,
     {
       headers: {
-        ...authHeader(token)
+        ...authorizationHeader
       }
     }
   );
 
-  const highlightsForBookId: IReadwiseHighlights = (res.json() as unknown) as IReadwiseHighlights;
+  return res;
+};
 
-  return highlightsForBookId;
+export const getBooks = async (): Promise<IReadwiseBooks> => {
+  const res = await fetchFromReadwiseAPI(BOOKS_SUBPATH);
+  const books = (res.json() as unknown) as IReadwiseBooks;
+  return books;
+};
+
+export const getBook = async (bookId: string): Promise<IReadwiseBook> => {
+  const subpath = `${BOOKS_SUBPATH}/${bookId}`;
+  const res = await fetchFromReadwiseAPI(subpath);
+  const book = (res.json() as unknown) as IReadwiseBook;
+  return book;
+};
+
+export const getHighlights = async (): Promise<IReadwiseHighlights> => {
+  const res = await fetchFromReadwiseAPI(HIGHLIGHTS_SUBPATH);
+  const highlights = (res.json() as unknown) as IReadwiseHighlights;
+  return highlights;
+};
+
+export const getHighlightsForBook = async (
+  bookId: string
+): Promise<IReadwiseHighlights> => {
+  const subpath = `${HIGHLIGHTS_SUBPATH}/?book_id=${bookId}`;
+  const res = await fetchFromReadwiseAPI(subpath);
+  const highlightsForBook = (res.json() as unknown) as IReadwiseHighlights;
+  return highlightsForBook;
 };

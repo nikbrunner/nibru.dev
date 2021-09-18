@@ -1,4 +1,5 @@
 import {
+  IReadwiseAuthorizationHeader,
   IReadwiseBook,
   IReadwiseBooks,
   TIgnoredReadwiseBooks

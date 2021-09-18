@@ -22,7 +22,7 @@ const Book = ({ book, highlightsForBook }: Props): JSX.Element => (
     <img src={book.cover_image_url} alt={`Cover for ${book.title}`} />
 
     <ul>
-      {highlightsForBook.results.map(highlight => (
+      {highlightsForBook?.results?.map(highlight => (
         <li key={highlight.id}>{highlight.text}</li>
       ))}
     </ul>
@@ -47,12 +47,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const bookId: string = params.bookId.toString();
+  const bookId = params.bookId.toString();
 
-  const book: IReadwiseBook = await getBook({ bookId });
-  const highlightsForBook: IReadwiseHighlights = await getHighlightsForBook(
-    { bookId }
-  );
+  const book = await getBook(bookId);
+  const highlightsForBook = await getHighlightsForBook(bookId);
 
   const props: Props = {
     book,
