@@ -15,7 +15,9 @@ const READWISE_TOKEN: string = process.env.READWISE_TOKEN || "";
 export const ignoredReadwiseBooks: TIgnoredReadwiseBooks = [
   "How to Use Readwise",
   "App Development With Swift",
-  "Paradox"
+  "Paradox",
+  "A Game of Thrones",
+  "Die Zwölf"
 ];
 
 export const filterReadwiseBooks = (

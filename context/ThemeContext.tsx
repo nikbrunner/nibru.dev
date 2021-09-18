@@ -20,7 +20,7 @@ interface IProps {
 }
 
 export const ThemeProvider = ({ children }: IProps) => {
-  const [theme, setTheme] = useState<ETheme>(ETheme.dark);
+  const [theme, setTheme] = useState<ETheme>(ETheme.light);
 
   // Listen for preferred color scheme
   useEffect(() => {
@@ -30,7 +30,7 @@ export const ThemeProvider = ({ children }: IProps) => {
 
     // Initially read the preferred color-scheme
     if (prefersDarkMode.matches) {
-      setTheme(ETheme.dark);
+      // setTheme(ETheme.dark);
     } else {
       setTheme(ETheme.light);
     }

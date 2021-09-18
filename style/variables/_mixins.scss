@@ -20,6 +20,6 @@
   left: 0;
 }
 
-@mixin box-shadow-default($color: var(--color-gray-8)) {
-  box-shadow: 0 1px 3px rgba($color, $alpha: 0.2);
+@mixin box-shadow-default() {
+  box-shadow: 0 15px 30px rgba($color: #010409, $alpha: 0.15);
 }
