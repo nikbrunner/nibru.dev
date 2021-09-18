@@ -32,6 +32,9 @@
 @import "../components/profile/Skill/Skill";
 @import "../components/profile/Experience/Experience";
 
+@import "../components/books/BookCard/BookCard";
+@import "../components/books/BookLayout/BookLayout";
+
 // Page-specific styles
 @import "pages/app";
 @import "pages/home";

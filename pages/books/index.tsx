@@ -1,13 +1,14 @@
 import React from "react";
 import { GetStaticProps } from "next";
-import Link from "next/link";
 
 import { IReadwiseBooks } from "@typings/Readwise";
 
 import { Page } from "@components/layout/Page/Page";
 import { Section } from "@components/layout/Section/Section";
-import { Flex } from "@components/layout/Flex/Flex";
 import { Headline } from "@components/ui/Headline/Headline";
+import { Paragraph } from "@components/ui/Paragraph/Paragraph";
+import { BookCard } from "@components/books/BookCard/BookCard";
+import { BookLayout } from "@components/books/BookLayout/BookLayout";
 
 import {
   filterReadwiseBooks,
@@ -26,29 +27,16 @@ const Books = ({ books }: IProps) => {
     <Page name="Books" title="What I read..">
       <Section classNames={["Home__intro"]}>
         <Headline>Books</Headline>
-        <Flex flexWrap="wrap" style={{ gap: "1rem" }}>
+
+        <Paragraph style={{ marginBottom: "1rem" }}>
+          These are some of my Books I have read, studied and highlighted.
+        </Paragraph>
+
+        <BookLayout>
           {filteredBooks?.map(book => (
-            <Link href={`/books/${book.id}`} key={book.id}>
-              <a>
-                <div
-                  className="Book"
-                  style={{
-                    padding: "1rem",
-                    maxWidth: "15rem",
-                    border: "1px solid gray"
-                  }}
-                >
-                  <img src={book.cover_image_url} height="200px" />
-                  <p>
-                    <strong>{book.title}</strong>
-                  </p>
-                  <p>{book.author}</p>
-                  <p>Highlights: {book.num_highlights}</p>
-                </div>
-              </a>
-            </Link>
+            <BookCard book={book} />
           ))}
-        </Flex>
+        </BookLayout>
       </Section>
     </Page>
   );
