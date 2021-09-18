@@ -15,11 +15,11 @@ import {
   ignoredReadwiseBooks
 } from "@lib/readwise";
 
-interface Props {
+interface IProps {
   books: IReadwiseBooks;
 }
 
-const Books = ({ books }: Props) => {
+const Books = ({ books }: IProps) => {
   const filteredBooks = filterReadwiseBooks(books, ignoredReadwiseBooks);
 
   return (
@@ -27,7 +27,7 @@ const Books = ({ books }: Props) => {
       <Section classNames={["Home__intro"]}>
         <Headline>Books</Headline>
         <Flex flexWrap="wrap" style={{ gap: "1rem" }}>
-          {filteredBooks.map(book => (
+          {filteredBooks?.map(book => (
             <Link href={`/books/${book.id}`} key={book.id}>
               <a>
                 <div
@@ -57,7 +57,7 @@ const Books = ({ books }: Props) => {
 export const getStaticProps: GetStaticProps = async () => {
   const books = await getBooks();
 
-  const props: Props = {
+  const props: IProps = {
     books
   };
 

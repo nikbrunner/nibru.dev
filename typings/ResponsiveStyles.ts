@@ -1,8 +1,8 @@
-import { Breakpoints } from './Breakpoints';
+import { IBreakpoints } from "./Breakpoints";
 
 // TODO Connect this type to CSSProperties and Breakpoints somehow
-export type DynamicCSSProperty<T> = T[];
+export type TDynamicCSSProperty<T> = T[];
 
-export type ResponsiveStyle<CSSProperty> = {
-  [Breakpoint in keyof Breakpoints]?: CSSProperty;
+export type TResponsiveStyle<CSSProperty> = {
+  [Breakpoint in keyof IBreakpoints]?: CSSProperty;
 };

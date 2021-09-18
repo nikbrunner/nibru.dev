@@ -13,9 +13,9 @@ import { Text } from "@components/ui/Text/Text";
 import { Skill } from "@components/profile/Skill/Skill";
 import { Experience } from "@components/profile/Experience/Experience";
 
-import { Experience as ExperienceType } from "@typings/profile/Experience";
-import { Skill as SkillType } from "@typings/profile/Skill";
-import { Space } from "@typings/Spaces";
+import { IExperience as ExperienceType } from "@typings/profile/Experience";
+import { ISkill as SkillType } from "@typings/profile/Skill";
+import { ESpace } from "@typings/Spaces";
 
 import skills from "@data/skills";
 import experiences from "@data/experiences";
@@ -242,7 +242,7 @@ const Components = () => (
         <Headline size="h1">Grid</Headline>
       </Row>
 
-      <Grid cols={2} gap={Space.l}>
+      <Grid cols={2} gap={ESpace.l}>
         <div>
           <Headline tag="h2" size="h2">
             Left column
@@ -287,7 +287,7 @@ const Components = () => (
       </Row>
 
       <Row classNames={["Components__skills-container"]}>
-        <Grid cols="auto-fit" gap={Space.m}>
+        <Grid cols="auto-fit" gap={ESpace.m}>
           {skills.map(({ title, level, icon }: SkillType) => (
             <Skill key={title} title={title} level={level} icon={icon} />
           ))}
@@ -301,7 +301,7 @@ const Components = () => (
       </Row>
 
       <Row classNames={["Components__experiences-container"]}>
-        <Grid cols={3} colMinWidth={"100px"} gap={Space.m}>
+        <Grid cols={3} colMinWidth={"100px"} gap={ESpace.m}>
           {experiences.map(
             (
               { title, dateRange, company, details }: ExperienceType,

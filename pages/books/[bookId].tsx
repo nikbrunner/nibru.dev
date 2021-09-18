@@ -10,12 +10,12 @@ import {
 import { Page } from "@components/layout/Page/Page";
 import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
 
-interface Props {
+interface IProps {
   book: IReadwiseBook;
   highlightsForBook: IReadwiseHighlights;
 }
 
-const Book = ({ book, highlightsForBook }: Props): JSX.Element => (
+const Book = ({ book, highlightsForBook }: IProps): JSX.Element => (
   <Page name="Book" title="jo">
     <h1>{book.title}</h1>
     <img src={book.cover_image_url} alt={`Cover for ${book.title}`} />
@@ -47,7 +47,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const book = await getBook(bookId);
   const highlightsForBook = await getHighlightsForBook(bookId);
 
-  const props: Props = {
+  const props: IProps = {
     book,
     highlightsForBook
   };

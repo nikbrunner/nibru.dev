@@ -1,6 +1,6 @@
-import { Profile } from "@typings/profile/PersonalData";
+import { IProfile } from "@typings/profile/PersonalData";
 
-const profile: Profile = {
+const profile: IProfile = {
   firstname: "Nikolaus",
   lastname: "Brunner",
   image: "/path/to/img",

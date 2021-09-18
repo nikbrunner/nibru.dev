@@ -1,6 +1,6 @@
-import React, { ReactNode, CSSProperties } from 'react';
+import { CSSProperties } from "react";
 
-export interface GenericProps {
+export interface IGenericProps {
   classNames?: string[];
   style?: CSSProperties;
 }

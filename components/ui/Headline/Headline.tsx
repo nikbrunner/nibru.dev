@@ -1,15 +1,17 @@
 import React from "react";
 
+import { IGenericProps } from "@typings/GenericProps";
+
 import { cn } from "@lib/cn";
 
 // TODO Outsource
-export type HeadlineSizes = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+export type THeadlineSizes = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
-interface Props {
+interface IProps extends IGenericProps {
   children: React.ReactNode;
   classNames?: string[];
-  size?: HeadlineSizes;
-  tag?: HeadlineSizes;
+  size?: THeadlineSizes;
+  tag?: THeadlineSizes;
   noBorder?: boolean;
 }
 
@@ -19,7 +21,7 @@ export const Headline = ({
   size = "h2",
   tag = "h2",
   noBorder = false
-}: Props) =>
+}: IProps) =>
   React.createElement(
     tag,
     {

@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 import { FiLink } from "react-icons/fi";
 
-import { GenericProps } from "@typings/GenericProps";
+import { IGenericProps } from "@typings/GenericProps";
 
 import { cn } from "@lib/cn";
 
-interface Props extends GenericProps {
+interface IProps extends IGenericProps {
   children: ReactNode;
   href: string;
   type: "internal" | "external";
@@ -20,7 +20,7 @@ export const Link = ({
   type,
   openInNewTab = false,
   hideIcon = false
-}: Props) => (
+}: IProps) => (
   <a
     className={cn("Link", classNames, {
       [type]: type

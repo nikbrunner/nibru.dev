@@ -3,17 +3,17 @@ import Head from "next/head";
 
 import { Main } from "@components/layout/Main/Main";
 
-import { GenericProps } from "@typings/GenericProps";
+import { IGenericProps } from "@typings/GenericProps";
 
 import { cn } from "@lib/cn";
 
-interface Props extends GenericProps {
+interface IProps extends IGenericProps {
   children: ReactNode;
   name: string;
   title?: string;
 }
 
-export const Page = ({ children, name, title }: Props) => (
+export const Page = ({ children, name, title }: IProps) => (
   <>
     <Head>
       <title>

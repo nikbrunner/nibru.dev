@@ -1,26 +1,26 @@
 import React, { createContext, useEffect, useState } from "react";
 
-export enum Theme {
+export enum ETheme {
   dark = "dark",
   light = "light"
 }
 
-export type ThemeContextType = {
-  theme: Theme;
-  setTheme: React.Dispatch<React.SetStateAction<Theme>> | (() => void);
+export type TThemeContext = {
+  theme: ETheme;
+  setTheme: React.Dispatch<React.SetStateAction<ETheme>> | (() => void);
 };
 
-export const ThemeContext = createContext<ThemeContextType>({
-  theme: Theme.dark,
+export const ThemeContext = createContext<TThemeContext>({
+  theme: ETheme.dark,
   setTheme: () => {}
 });
 
-interface Props {
+interface IProps {
   children: React.ReactNode;
 }
 
-export const ThemeProvider = ({ children }: Props) => {
-  const [theme, setTheme] = useState<Theme>(Theme.dark);
+export const ThemeProvider = ({ children }: IProps) => {
+  const [theme, setTheme] = useState<ETheme>(ETheme.dark);
 
   // Listen for preferred color scheme
   useEffect(() => {
@@ -30,9 +30,9 @@ export const ThemeProvider = ({ children }: Props) => {
 
     // Initially read the preferred color-scheme
     if (prefersDarkMode.matches) {
-      setTheme(Theme.dark);
+      setTheme(ETheme.dark);
     } else {
-      setTheme(Theme.light);
+      setTheme(ETheme.light);
     }
 
     // Listen for changes for the preferred color-scheme
@@ -40,9 +40,9 @@ export const ThemeProvider = ({ children }: Props) => {
       "change",
       (event: MediaQueryListEvent): void => {
         if (event.matches) {
-          setTheme(Theme.dark);
+          setTheme(ETheme.dark);
         } else {
-          setTheme(Theme.light);
+          setTheme(ETheme.light);
         }
       }
     );
@@ -63,14 +63,14 @@ export const ThemeProvider = ({ children }: Props) => {
   useEffect(() => {
     const html = document.documentElement;
 
-    if (theme === Theme.dark) {
+    if (theme === ETheme.dark) {
       // localStorage.setItem('theme', Theme.dark);
-      html.classList.add(Theme.dark);
-      html.classList.remove(Theme.light);
-    } else if (theme === Theme.light) {
+      html.classList.add(ETheme.dark);
+      html.classList.remove(ETheme.light);
+    } else if (theme === ETheme.light) {
       // localStorage.setItem('theme', Theme.light);
-      html.classList.add(Theme.light);
-      html.classList.remove(Theme.dark);
+      html.classList.add(ETheme.light);
+      html.classList.remove(ETheme.dark);
     }
   }, [theme]);
 

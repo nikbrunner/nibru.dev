@@ -1,4 +1,4 @@
-export interface Breakpoints {
+export interface IBreakpoints {
   xs: number;
   s: number;
   m: number;

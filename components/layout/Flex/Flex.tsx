@@ -2,9 +2,9 @@ import React, { CSSProperties } from "react";
 
 import { cn } from "@lib/cn";
 
-import { GenericProps } from "@typings/GenericProps";
+import { IGenericProps } from "@typings/GenericProps";
 
-interface Props extends GenericProps {
+interface IProps extends IGenericProps {
   children: React.ReactNode;
   justifyContent?: CSSProperties["justifyContent"];
   alignContent?: CSSProperties["alignContent"];
@@ -24,7 +24,7 @@ export const Flex = ({
   flexDirection,
   flexWrap,
   placeItems
-}: Props) => (
+}: IProps) => (
   <div
     style={{
       ...style,

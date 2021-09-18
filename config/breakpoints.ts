@@ -1,6 +1,6 @@
-import { Breakpoints } from "@typings/Breakpoints";
+import { IBreakpoints } from "@typings/Breakpoints";
 
-export const breakpoints: Breakpoints = {
+export const breakpoints: IBreakpoints = {
   xs: 320,
   s: 414,
   m: 768,

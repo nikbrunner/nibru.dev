@@ -1,16 +1,16 @@
 import React, { ReactNode } from "react";
 
-import { GenericProps } from "@typings/GenericProps";
-import { Space } from "@typings/Spaces";
+import { IGenericProps } from "@typings/GenericProps";
+import { ESpace } from "@typings/Spaces";
 
 import { cn } from "@lib/cn";
 
-interface Props extends GenericProps {
+interface IProps extends IGenericProps {
   children: ReactNode;
   cols?: number | "auto-fit";
   colMinWidth?: string;
   rows?: React.CSSProperties["gridTemplateRows"];
-  gap?: Space | "0";
+  gap?: ESpace | "0";
   placeItems?: React.CSSProperties["placeItems"];
 }
 
@@ -22,7 +22,7 @@ export const Grid = ({
   rows = "auto",
   gap = "0",
   placeItems = "stretch stretch"
-}: Props) => {
+}: IProps) => {
   const style: React.CSSProperties = {
     display: "grid",
     gridTemplateColumns: `repeat(${cols}, minmax(${colMinWidth}, 1fr))`,

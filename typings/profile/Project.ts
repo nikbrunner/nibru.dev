@@ -1,5 +1,4 @@
-// TODO Project Description with Markdown?
-export interface Project {
+export interface IProject {
   title: string;
   description: string;
 }

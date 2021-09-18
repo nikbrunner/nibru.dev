@@ -1,10 +1,10 @@
 import React, { CSSProperties, ReactNode } from "react";
 
-import { GenericProps } from "@typings/GenericProps";
+import { IGenericProps } from "@typings/GenericProps";
 
 import { cn } from "@lib/cn";
 
-interface Props extends GenericProps {
+interface IProps extends IGenericProps {
   children: ReactNode;
   maxWidth?: CSSProperties["maxWidth"];
 }
@@ -14,7 +14,7 @@ export const Text = ({
   classNames = [],
   style = {},
   maxWidth
-}: Props) => (
+}: IProps) => (
   <p
     className={cn("Text", classNames)}
     style={{

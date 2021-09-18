@@ -1,6 +1,6 @@
-import { Project } from "@typings/profile/Project";
+import { IProject } from "@typings/profile/Project";
 
-const projects: Project[] = [
+const projects: IProject[] = [
   {
     title: "BlubbiProject",
     description:
