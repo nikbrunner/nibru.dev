@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import { Breakpoints } from '@typings/Breakpoints';
-import { ResponsiveStyle } from '@typings/ResponsiveStyles';
+import { Breakpoints } from "@typings/Breakpoints";
+import { ResponsiveStyle } from "@typings/ResponsiveStyles";
 
-import { breakpoints as defaultBreakpoints } from '@data/breakpoints';
+import { breakpoints as defaultBreakpoints } from "@config/breakpoints";
 
-import { useViewport } from './useViewport';
+import { useViewport } from "./useViewport";
 
 // TODO Test and Improve
 export const useResponsiveStyle = <StyleProperty>(
