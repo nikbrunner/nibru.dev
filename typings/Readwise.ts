@@ -2,6 +2,9 @@ export interface IReadwiseAuthorizationHeader {
   Authorization: string;
 }
 
+// This must be the book.title
+export type TIgnoredReadwiseBooks = string[];
+
 export interface IReadwiseBooks {
   count: number;
   next: null;

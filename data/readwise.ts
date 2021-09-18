@@ -2,7 +2,8 @@ import {
   IReadwiseBook,
   IReadwiseBooks,
   IReadwiseHighlights,
-  IReadwiseAuthorizationHeader
+  IReadwiseAuthorizationHeader,
+  TIgnoredReadwiseBooks
 } from "@typings/Readwise";
 
 const READWISE_API_BASE_URL = "https://readwise.io/api/v2";
@@ -13,6 +14,12 @@ export const READWISE_TOKEN =
 const authHeader = (token: string): IReadwiseAuthorizationHeader => ({
   Authorization: `Token ${token}`
 });
+
+export const ignoredReadwiseBooks: TIgnoredReadwiseBooks = [
+  "How to Use Readwise",
+  "App Development With Swift",
+  "Paradox"
+];
 
 export const getBooks = async (
   {
