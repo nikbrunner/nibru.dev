@@ -10,8 +10,7 @@ const READWISE_API_BASE_URL: string = "https://readwise.io/api/v2";
 const BOOKS_SUBPATH: string = "books";
 const HIGHLIGHTS_SUBPATH: string = "highlights";
 
-const READWISE_TOKEN: string =
-  "U2IRL7criWWBACdptxm2Itmi5rNFBCvZO2jMpYrCblOeC3P1ig";
+const READWISE_TOKEN: string = process.env.READWISE_TOKEN || "";
 
 export const ignoredReadwiseBooks: TIgnoredReadwiseBooks = [
   "How to Use Readwise",
