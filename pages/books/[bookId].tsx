@@ -8,8 +8,7 @@ import {
 } from "@typings/Readwise";
 
 import { Page } from "@components/layout/Page/Page";
-
-import { getBook, getBooks, getHighlightsForBook } from "@data/readwise";
+import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
 
 interface Props {
   book: IReadwiseBook;
@@ -30,13 +29,9 @@ const Book = ({ book, highlightsForBook }: Props): JSX.Element => (
 );
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const books: IReadwiseBooks = await getBooks();
+  const books = await getBooks();
 
-  const paths: {
-    params: {
-      bookId: string;
-    };
-  }[] = books?.results?.map(book => ({
+  const paths = books?.results?.map(book => ({
     params: { bookId: book.id.toString() }
   }));
 

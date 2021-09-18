@@ -2,15 +2,18 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Link from "next/link";
 
-import { IReadwiseBook, IReadwiseBooks } from "@typings/Readwise";
+import { IReadwiseBooks } from "@typings/Readwise";
 
 import { Page } from "@components/layout/Page/Page";
 import { Section } from "@components/layout/Section/Section";
 import { Flex } from "@components/layout/Flex/Flex";
 import { Headline } from "@components/ui/Headline/Headline";
 
-import { ignoredReadwiseBooks, getBooks } from "@data/readwise";
-import { filterReadwiseBooks } from "@lib/readwise";
+import {
+  filterReadwiseBooks,
+  getBooks,
+  ignoredReadwiseBooks
+} from "@lib/readwise";
 
 interface Props {
   books: IReadwiseBooks;
