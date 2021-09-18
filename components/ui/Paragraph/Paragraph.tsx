@@ -9,7 +9,7 @@ interface IProps extends IGenericProps {
   maxWidth?: CSSProperties["maxWidth"];
 }
 
-export const Text = ({
+export const Paragraph = ({
   children,
   classNames = [],
   style = {},

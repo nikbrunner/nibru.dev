@@ -8,7 +8,7 @@ import { Page } from "@components/layout/Page/Page";
 import { Button } from "@components/ui/Button/Button";
 import { Headline } from "@components/ui/Headline/Headline";
 import { Link } from "@components/ui/Link/Link";
-import { Text } from "@components/ui/Text/Text";
+import { Paragraph } from "@components/ui/Paragraph/Paragraph";
 
 import { Skill } from "@components/profile/Skill/Skill";
 import { Experience } from "@components/profile/Experience/Experience";
@@ -28,14 +28,16 @@ const Components = () => (
         Components Overview
       </Headline>
 
-      <Text>This page is just an overview over all components.</Text>
+      <Paragraph>
+        This page is just an overview over all components.
+      </Paragraph>
     </Section>
 
     <Section>
       <Headline size="h2">Link component</Headline>
 
       <Row>
-        <Text>
+        <Paragraph>
           This is an external link to{" "}
           <Link href={profile.github} type="external">
             GitHub
@@ -49,7 +51,7 @@ const Components = () => (
             About page
           </Link>
           .
-        </Text>
+        </Paragraph>
       </Row>
     </Section>
 
@@ -81,7 +83,7 @@ const Components = () => (
 
     <Section>
       <Headline size="h1">Text component</Headline>
-      <Text>
+      <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Interdum posuere{" "}
@@ -94,9 +96,9 @@ const Components = () => (
         sed. Nec feugiat in fermentum posuere urna. Interdum velit laoreet
         id donec ultrices tincidunt arcu. Quam vulputate dignissim
         suspendisse in. Feugiat sed lectus vestibulum mattis.
-      </Text>
+      </Paragraph>
 
-      <Text>
+      <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Interdum posuere{" "}
@@ -109,7 +111,7 @@ const Components = () => (
         sed. Nec feugiat in fermentum posuere urna. Interdum velit laoreet
         id donec ultrices tincidunt arcu. Quam vulputate dignissim
         suspendisse in. Feugiat sed lectus vestibulum mattis.
-      </Text>
+      </Paragraph>
     </Section>
 
     <Section>
@@ -117,7 +119,7 @@ const Components = () => (
         Lorem ipsum dolor sit amet.
       </Headline>
 
-      <Text>
+      <Paragraph>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
         aperiam voluptas explicabo, similique sunt provident quis beatae ab
         blanditiis veritatis! Lorem ipsum dolor, sit amet consectetur
@@ -127,13 +129,13 @@ const Components = () => (
         asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
         necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo
         modi totam!
-      </Text>
+      </Paragraph>
 
       <Headline tag="h2" size="h2">
         Lorem, ipsum dolor.
       </Headline>
 
-      <Text>
+      <Paragraph>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
         aperiam voluptas explicabo, similique sunt provident quis beatae ab
         blanditiis veritatis! Lorem ipsum dolor, sit amet consectetur
@@ -143,13 +145,13 @@ const Components = () => (
         asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
         necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo
         modi totam!
-      </Text>
+      </Paragraph>
 
       <Headline tag="h3" size="h3">
         Lorem ipsum dolor sit amet.
       </Headline>
 
-      <Text>
+      <Paragraph>
         Vitae tempus quam{" "}
         <Link href="https://google.com" type="external">
           Pellentesque
@@ -162,13 +164,13 @@ const Components = () => (
         Viverra vitae congue eu consequat ac felis donec. Diam maecenas
         ultricies mi eget mauris pharetra. Donec pretium vulputate sapien
         nec sagittis aliquam malesuada.
-      </Text>
+      </Paragraph>
 
       <Headline tag="h4" size="h4">
         Lorem ipsum dolor sit.
       </Headline>
 
-      <Text>
+      <Paragraph>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
         lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
         ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
@@ -182,13 +184,13 @@ const Components = () => (
         pretium. Id porta nibh venenatis cras sed felis eget. Non
         consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
         urna neque viverra justo.
-      </Text>
+      </Paragraph>
 
       <Headline tag="h5" size="h5">
         Lorem ipsum dolor sit amet consectetur.
       </Headline>
 
-      <Text>
+      <Paragraph>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
         lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
         ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
@@ -202,13 +204,13 @@ const Components = () => (
         pretium. Id porta nibh venenatis cras sed felis eget. Non
         consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
         urna neque viverra justo.
-      </Text>
+      </Paragraph>
 
       <Headline tag="h6" size="h6">
         Lorem ipsum dolor sit.
       </Headline>
 
-      <Text>
+      <Paragraph>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
         lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
         ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
@@ -222,7 +224,7 @@ const Components = () => (
         pretium. Id porta nibh venenatis cras sed felis eget. Non
         consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
         urna neque viverra justo.
-      </Text>
+      </Paragraph>
     </Section>
 
     <Section>
@@ -248,7 +250,7 @@ const Components = () => (
             Left column
           </Headline>
 
-          <Text>
+          <Paragraph>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
             aperiam voluptas explicabo, similique sunt provident quis
             beatae ab blanditiis veritatis! Lorem ipsum dolor, sit amet
@@ -258,7 +260,7 @@ const Components = () => (
             laudantium officiis asperiores fuga quae eos quisquam! Fugit
             amet, delectus rem quia necessitatibus molestiae, aliquid quam
             dignissimos doloribus, nemo modi totam!
-          </Text>
+          </Paragraph>
         </div>
 
         <div>
@@ -266,7 +268,7 @@ const Components = () => (
             Right column
           </Headline>
 
-          <Text>
+          <Paragraph>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
             aperiam voluptas explicabo, similique sunt provident quis
             beatae ab blanditiis veritatis! Lorem ipsum dolor, sit amet
@@ -276,7 +278,7 @@ const Components = () => (
             laudantium officiis asperiores fuga quae eos quisquam! Fugit
             amet, delectus rem quia necessitatibus molestiae, aliquid quam
             dignissimos doloribus, nemo modi totam!
-          </Text>
+          </Paragraph>
         </div>
       </Grid>
     </Section>

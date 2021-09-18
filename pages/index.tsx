@@ -8,7 +8,7 @@ import { Grid } from "@components/layout/Grid/Grid";
 import { Flex } from "@components/layout/Flex/Flex";
 
 import { Headline } from "@components/ui/Headline/Headline";
-import { Text } from "@components/ui/Text/Text";
+import { Paragraph } from "@components/ui/Paragraph/Paragraph";
 import { Link } from "@components/ui/Link/Link";
 
 const Home = () => (
@@ -33,13 +33,13 @@ const Home = () => (
             Hi there.
           </Headline>
 
-          <Text maxWidth="25rem">
+          <Paragraph maxWidth="25rem">
             My name is Nikolaus Brunner,
             <br />
             or short just <em>Nik</em>.
-          </Text>
+          </Paragraph>
 
-          <Text maxWidth="30rem">
+          <Paragraph maxWidth="30rem">
             I am working as a Software Engineer for{" "}
             <Link href="https://bike.center" type="external">
               DealerCenter Digital
@@ -53,31 +53,31 @@ const Home = () => (
               diva-e
             </Link>
             .
-          </Text>
+          </Paragraph>
 
-          <Text maxWidth="25rem">
+          <Paragraph maxWidth="25rem">
             I mainly work with <strong>React</strong>, <wbr />
             <strong>TypeScript</strong> and <strong>SCSS</strong>.
-          </Text>
+          </Paragraph>
 
-          <Text maxWidth="30rem">
+          <Paragraph maxWidth="30rem">
             This website is being rebuilt.
             <br /> You can visit my old website{" "}
             <Link href="/archive/index.html" type="internal">
               here
             </Link>
             .
-          </Text>
+          </Paragraph>
 
-          <Text maxWidth="30rem">
+          <Paragraph maxWidth="30rem">
             Developing{" "}
             <Link href="https://sonder.haus" type="external">
               sonder.haus
             </Link>
             .
-          </Text>
+          </Paragraph>
 
-          <Text style={{ fontSize: "2rem" }}>
+          <Paragraph style={{ fontSize: "2rem" }}>
             <Link
               href="https://github.com/nikbrunner"
               type="external"
@@ -106,7 +106,7 @@ const Home = () => (
             >
               <FiLinkedin />
             </Link>
-          </Text>
+          </Paragraph>
         </Flex>
       </Grid>
     </Section>
