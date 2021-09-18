@@ -18,7 +18,7 @@ import {
 
 import { ISkill } from "@typings/profile/Skill";
 
-const skills: ISkill[] = [
+export const skills: ISkill[] = [
   {
     icon: <SiHtml5 />,
     level: 95,
@@ -80,5 +80,3 @@ const skills: ISkill[] = [
     title: "GraphQL"
   }
 ];
-
-export default skills;

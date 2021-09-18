@@ -17,9 +17,9 @@ import { IExperience as ExperienceType } from "@typings/profile/Experience";
 import { ISkill as SkillType } from "@typings/profile/Skill";
 import { ESpace } from "@typings/Spaces";
 
-import skills from "@data/skills";
-import experiences from "@data/experiences";
-import profile from "@data/profile";
+import { skills } from "@data/skills";
+import { experiences } from "@data/experiences";
+import { profile } from "@data/profile";
 
 const Components = () => (
   <Page name="Components">
