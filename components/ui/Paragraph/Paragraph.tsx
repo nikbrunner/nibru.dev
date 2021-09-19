@@ -11,10 +11,12 @@ interface IProps extends IGenericProps {
   maxWidth?: CSSProperties["maxWidth"];
 }
 
-export const Paragraph = ({ children, maxWidth }: IProps) => (
+export const Paragraph = ({ classNames, children, maxWidth }: IProps) => (
   <p
     className={cn({
-      block: componentName
+      block: componentName,
+      utils: [],
+      others: classNames
     })}
     style={{
       maxWidth
