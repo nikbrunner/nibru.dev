@@ -1,14 +1,11 @@
 import React from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 
-import {
-  IReadwiseBook,
-  IReadwiseBooks,
-  IReadwiseHighlights
-} from "@typings/Readwise";
+import { IReadwiseBook, IReadwiseHighlights } from "@typings/Readwise";
 
 import { Page } from "@components/layout/Page/Page";
 import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
+import { BookHighlight } from "@components/books/BookHighlight/BookHighlight";
 
 interface IProps {
   book: IReadwiseBook;
@@ -17,12 +14,16 @@ interface IProps {
 
 const Book = ({ book, highlightsForBook }: IProps): JSX.Element => (
   <Page name="Book" title="jo">
-    <h1>{book.title}</h1>
-    <img src={book.cover_image_url} alt={`Cover for ${book.title}`} />
+    <h1 className="text-center pb-8 mb-8">{book.title}</h1>
+    <img
+      className="mb-7 mx-auto"
+      src={book.cover_image_url}
+      alt={`Cover for ${book.title}`}
+    />
 
     <ul>
       {highlightsForBook?.results?.map(highlight => (
-        <li key={highlight.id}>{highlight.text}</li>
+        <BookHighlight highlight={highlight} key={highlight.id} />
       ))}
     </ul>
   </Page>

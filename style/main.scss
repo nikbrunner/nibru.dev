@@ -1,4 +1,6 @@
-@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 // Configuration and helpers
 @import "variables/colors";
@@ -31,9 +33,6 @@
 
 @import "../components/profile/Skill/Skill";
 @import "../components/profile/Experience/Experience";
-
-@import "../components/books/BookCard/BookCard";
-@import "../components/books/BookLayout/BookLayout";
 
 // Page-specific styles
 @import "pages/app";

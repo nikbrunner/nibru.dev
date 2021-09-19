@@ -7,5 +7,14 @@ interface IProps extends IGenericProps {
 }
 
 export const BookLayout = ({ children }: IProps) => (
-  <div className="BookLayout">{children}</div>
+  <div
+    className={`
+    BookLayout
+    grid
+    gap-3
+    md:grid-cols-2
+  `}
+  >
+    {children}
+  </div>
 );
