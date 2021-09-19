@@ -19,15 +19,13 @@ export const BookHighlight = ({
     className={cn({
       block: componentName,
       utils: [
-        "bg-gray-100",
-        "mb-10",
+        "bg-gray-50",
         "p-7",
         "border-t-4",
         "border-gray-300",
         "flex",
         "flex-col",
-        "items-center",
-        "shadow-lg"
+        "items-center"
       ]
     })}
   >
@@ -40,6 +38,7 @@ export const BookHighlight = ({
     >
       {text}
     </p>
+
     <small
       className={cn({
         block: componentName,

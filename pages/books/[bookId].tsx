@@ -7,21 +7,30 @@ import { Page } from "@components/layout/Page/Page";
 import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
 import { BookHighlight } from "@components/books/BookHighlight/BookHighlight";
 
+import { cn } from "@lib/cn";
+
 interface IProps {
   book: IReadwiseBook;
   highlightsForBook: IReadwiseHighlights;
 }
 
-const Book = ({ book, highlightsForBook }: IProps): JSX.Element => (
+const Book = ({
+  book: { title, cover_image_url },
+  highlightsForBook
+}: IProps): JSX.Element => (
   <Page name="Book" title="jo">
-    <h1 className="text-center pb-8 mb-8">{book.title}</h1>
+    <h1 className="text-center pb-8 mb-8">{title}</h1>
     <img
       className="mb-7 mx-auto"
-      src={book.cover_image_url}
-      alt={`Cover for ${book.title}`}
+      src={cover_image_url}
+      alt={`Cover for ${title}`}
     />
 
-    <ul>
+    <ul
+      className={cn({
+        utils: ["grid", "gap-8", "md:grid-cols-2", "lg:grid-cols-3"]
+      })}
+    >
       {highlightsForBook?.results?.map(highlight => (
         <BookHighlight highlight={highlight} key={highlight.id} />
       ))}
