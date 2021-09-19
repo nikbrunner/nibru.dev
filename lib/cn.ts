@@ -25,8 +25,8 @@ export const cn = ({
 
   return [
     ...[blockClassName],
-    utils.join(" "),
-    others.join(" "),
+    utils.filter(Boolean).join(" "),
+    others.filter(Boolean).join(" "),
     mods.map(value => `${blockClassName}--${value[0]}`).join(" ")
   ].join(" ");
 };

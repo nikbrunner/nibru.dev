@@ -22,9 +22,7 @@ export const NavLink = ({ href, children }: IProps): JSX.Element => {
       <a
         className={cn({
           block: componentName,
-          modifiers: {
-            isActive
-          }
+          utils: [isActive && "text-blue-500"]
         })}
       >
         {children}
