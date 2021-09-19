@@ -4,36 +4,29 @@ import { RiXingLine } from "react-icons/ri";
 
 import { Section } from "@components/layout/Section/Section";
 import { Page } from "@components/layout/Page/Page";
-import { Grid } from "@components/layout/Grid/Grid";
-import { Flex } from "@components/layout/Flex/Flex";
 
 import { Headline } from "@components/ui/Headline/Headline";
 import { Paragraph } from "@components/ui/Paragraph/Paragraph";
 import { Link } from "@components/ui/Link/Link";
+import { cn } from "@lib/cn";
 
 const Home = () => (
   <Page name="Home" title="Hi there. 👋">
     <Section classNames={["Home__intro"]}>
-      <Grid>
-        <Flex classNames={["Home__intro-image"]}>
+      <div>
+        <div>
           <img
             src="/images/nb.jpg"
-            width="100%"
-            height="100%"
+            width="300px"
+            height="auto"
             style={{ objectFit: "cover" }}
           />
-        </Flex>
+        </div>
 
-        <Flex
-          classNames={["Home__intro-text"]}
-          style={{ padding: "2rem" }}
-          flexDirection="column"
-        >
-          <Headline tag="h1" size="h1" noBorder>
-            Hi there.
-          </Headline>
+        <div>
+          <h2 className={cn({ utils: ["text-3xl"] })}>Hi there.</h2>
 
-          <Paragraph maxWidth="25rem">
+          <Paragraph>
             My name is Nikolaus Brunner,
             <br />
             or short just <em>Nik</em>.
@@ -45,7 +38,10 @@ const Home = () => (
               DealerCenter Digital
             </Link>
             .
-            <br /> Previously I worked for{" "}
+          </Paragraph>
+
+          <Paragraph>
+            Previously I worked for{" "}
             <Link
               href="https://https://www.diva-e.com/de/"
               type="external"
@@ -107,8 +103,8 @@ const Home = () => (
               <FiLinkedin />
             </Link>
           </Paragraph>
-        </Flex>
-      </Grid>
+        </div>
+      </div>
     </Section>
   </Page>
 );

@@ -4,6 +4,8 @@ import { cn } from "@lib/cn";
 
 import { IGenericProps } from "@typings/GenericProps";
 
+const componentName: string = "Button";
+
 interface IProps extends IGenericProps {
   children: ReactNode;
   size?: "m" | "l";
@@ -11,14 +13,17 @@ interface IProps extends IGenericProps {
 }
 
 export const Button = ({
-  classNames = [],
   size = "m",
   children,
   onClick
-}: IProps) => (
+}: IProps): JSX.Element => (
   <button
-    className={cn("Button", classNames, {
-      [size]: size
+    className={cn({
+      block: componentName,
+      utils: [],
+      modifiers: {
+        size
+      }
     })}
     onClick={onClick}
   >

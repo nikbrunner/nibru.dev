@@ -1,29 +1,37 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import { Headline } from "@components/ui/Headline/Headline";
 import { NavLink } from "@components/ui/NavLink/NavLink";
-
-import { ThemeContext } from "@context/ThemeContext";
 
 import { cn } from "@lib/cn";
 
 import { profile } from "@data/profile";
 
-export const Nav = () => {
-  const { theme } = useContext(ThemeContext);
+const componentName: string = "Nav";
 
-  return (
-    <nav className={cn("Nav", [], { [theme]: theme })}>
-      <div className="Nav__name">
-        <Headline tag="h1" size="h3" noBorder>
-          {profile.firstname} {profile.lastname}
-        </Headline>
-      </div>
+export const Nav = (): JSX.Element => (
+  <nav
+    className={cn({
+      block: componentName,
+      utils: ["bg-white"]
+    })}
+  >
+    <h1
+      className={cn({
+        block: componentName,
+        element: "title"
+      })}
+    >
+      {profile.firstname} {profile.lastname}
+    </h1>
 
-      <div className="Nav__links">
-        <NavLink href="/">Home</NavLink>
-        <NavLink href="/books">Books</NavLink>
-      </div>
-    </nav>
-  );
-};
+    <div
+      className={cn({
+        block: componentName,
+        element: "links"
+      })}
+    >
+      <NavLink href="/">Home</NavLink>
+      <NavLink href="/books">Books</NavLink>
+    </div>
+  </nav>
+);

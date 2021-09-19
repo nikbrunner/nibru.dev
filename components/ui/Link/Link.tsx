@@ -5,6 +5,8 @@ import { IGenericProps } from "@typings/GenericProps";
 
 import { cn } from "@lib/cn";
 
+const componentName: string = "Link";
+
 interface IProps extends IGenericProps {
   children: ReactNode;
   href: string;
@@ -14,7 +16,6 @@ interface IProps extends IGenericProps {
 }
 
 export const Link = ({
-  classNames,
   children,
   href,
   type,
@@ -22,13 +23,23 @@ export const Link = ({
   hideIcon = false
 }: IProps) => (
   <a
-    className={cn("Link", classNames, {
-      [type]: type
+    className={cn({
+      block: componentName
     })}
     href={href}
     target={type === "external" || openInNewTab ? "_blank" : "_self"}
   >
     {children}
-    {type === "external" && !hideIcon && <FiLink />}
+
+    <span
+      className={cn({
+        block: componentName,
+        element: "icon"
+      })}
+    >
+      {type === "external" && !hideIcon && (
+        <FiLink style={{ display: "inline" }} />
+      )}
+    </span>
   </a>
 );

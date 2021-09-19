@@ -9,27 +9,49 @@ import { ISkill } from "@typings/profile/Skill";
 
 import { cn } from "@lib/cn";
 
+const componentName: string = "Skill";
+
 interface IProps extends ISkill, IGenericProps {}
 
-export const Skill = ({ classNames, title, level, icon }: IProps) => {
-  const { theme } = useContext(ThemeContext);
+export const Skill = ({ title, level, icon }: IProps): JSX.Element => (
+  <div
+    className={cn({
+      block: componentName
+    })}
+  >
+    <div
+      className={cn({
+        block: componentName,
+        element: "level"
+      })}
+      style={{
+        width: `${level}%`
+      }}
+    />
 
-  return (
-    <div className={cn("Skill", classNames, { [theme]: theme })}>
+    <div
+      className={cn({
+        block: componentName,
+        element: "caption"
+      })}
+    >
       <div
-        className="Skill__level"
-        style={{
-          width: `${level}%`
-        }}
-      />
-
-      <div className="Skill__caption">
-        <div className="Skill__icon">{icon}</div>
-
-        <Headline tag="h2" size="h6" classNames={["Skill__title"]}>
-          {title}
-        </Headline>
+        className={cn({
+          block: componentName,
+          element: "icon"
+        })}
+      >
+        {icon}
       </div>
+
+      <h2
+        className={cn({
+          block: componentName,
+          element: "title"
+        })}
+      >
+        {title}
+      </h2>
     </div>
-  );
-};
+  </div>
+);

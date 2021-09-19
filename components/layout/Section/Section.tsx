@@ -1,55 +1,44 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 import { IGenericProps } from "@typings/GenericProps";
 
 import { cn } from "@lib/cn";
 
+const componentName: string = "Section";
+
 interface IProps extends IGenericProps {
-  children: React.ReactNode;
-  classNames?: string[];
+  children: ReactNode;
+  name?: string;
   id?: string;
-  debug?: boolean;
-  backgroundImage?: string | false;
-  backgroundVideo?: string | false;
-  backgroundOverlay?: boolean;
-  backgroundBlur?: boolean;
+  backgroundImage?: string;
 }
 
 export const Section = ({
   children,
-  id,
-  classNames = [],
-  debug = false,
-  backgroundImage = false,
-  backgroundVideo = false,
-  backgroundOverlay = false,
-  backgroundBlur = false
-}: IProps) => (
+  id = "",
+  name = "",
+  backgroundImage = ""
+}: IProps): JSX.Element => (
   <section
-    className={cn("Section", classNames, {
-      debug,
-      backgroundImage,
-      backgroundVideo,
-      backgroundOverlay,
-      backgroundBlur
-    })}
     id={id}
+    className={cn({
+      block: componentName,
+      others: [name],
+      modifiers: {
+        backgroundImage
+      }
+    })}
     style={
       backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}
     }
   >
-    {backgroundBlur && <div className="Section__backgroundBlur" />}
-
-    {backgroundOverlay && <div className="Section__backgroundOverlay" />}
-
-    {backgroundVideo && (
-      <div className="Section__backgroundVideo">
-        <video muted loop autoPlay>
-          <source src={backgroundVideo} type="video/mp4" />
-        </video>
-      </div>
-    )}
-
-    <article className="Section__content">{children}</article>
+    <article
+      className={cn({
+        block: componentName,
+        element: "children"
+      })}
+    >
+      {children}
+    </article>
   </section>
 );
