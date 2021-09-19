@@ -15,6 +15,7 @@ interface IProps extends IGenericProps {
 
 export const Section = ({
   children,
+  classNames,
   id = "",
   name = "",
   backgroundImage = ""
@@ -23,7 +24,7 @@ export const Section = ({
     id={id}
     className={cn({
       block: componentName,
-      others: [name],
+      others: classNames,
       modifiers: {
         backgroundImage
       }
