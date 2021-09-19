@@ -12,7 +12,15 @@ export const Nav = (): JSX.Element => (
   <nav
     className={cn({
       block: componentName,
-      utils: ["bg-white"]
+      utils: [
+        "bg-white",
+        "py-3",
+        "mb-5",
+        "border-b-2",
+        "border-gray-300",
+        "flex",
+        "justify-between"
+      ]
     })}
   >
     <h1
@@ -27,7 +35,8 @@ export const Nav = (): JSX.Element => (
     <div
       className={cn({
         block: componentName,
-        element: "links"
+        element: "links",
+        utils: ["flex", "gap-3"]
       })}
     >
       <NavLink href="/">Home</NavLink>
