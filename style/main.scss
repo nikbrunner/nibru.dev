@@ -8,12 +8,14 @@
 
 @import "components/components";
 
-@import "./fonts";
+@layer base {
+  body {
+    @apply antialiased;
 
-body {
-  &::-webkit-scrollbar {
-    display: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    scrollbar-width: none;
   }
-
-  scrollbar-width: none;
 }
