@@ -13,8 +13,7 @@ interface IProps extends IGenericProps {
 export const Main = ({ children }: IProps): JSX.Element => (
   <main
     className={cn({
-      block: componentName,
-      utils: ["container", "mx-auto"]
+      block: componentName
     })}
   >
     {children}

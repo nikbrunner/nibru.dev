@@ -28,7 +28,8 @@ export const Page = ({ children, name, title }: IProps): JSX.Element => (
 
     <div
       className={cn({
-        block: componentName
+        block: componentName,
+        utils: ["container", "mx-auto"]
       })}
     >
       <Nav />
