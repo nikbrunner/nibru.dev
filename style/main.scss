@@ -9,3 +9,11 @@
 @import "components/components";
 
 @import "./fonts";
+
+body {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+}
