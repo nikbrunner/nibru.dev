@@ -1,8 +1,4 @@
-import React, { useContext } from "react";
-
-import { Headline } from "@components/ui/Headline/Headline";
-
-import { ThemeContext } from "@context/ThemeContext";
+import React from "react";
 
 import { IGenericProps } from "@typings/GenericProps";
 import { ISkill } from "@typings/profile/Skill";

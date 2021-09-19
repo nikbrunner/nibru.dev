@@ -1,8 +1,6 @@
 import React from "react";
 
-import { Grid } from "@components/layout/Grid/Grid";
 import { Section } from "@components/layout/Section/Section";
-import { Row } from "@components/layout/Row/Row";
 import { Page } from "@components/layout/Page/Page";
 
 import { Button } from "@components/ui/Button/Button";
@@ -24,9 +22,7 @@ import { profile } from "@data/profile";
 const Components = () => (
   <Page name="Components">
     <Section>
-      <Headline tag="h1" size="h1">
-        Components Overview
-      </Headline>
+      <Headline tag="h1">Components Overview</Headline>
 
       <Paragraph>
         This page is just an overview over all components.
@@ -34,9 +30,9 @@ const Components = () => (
     </Section>
 
     <Section>
-      <Headline size="h2">Link component</Headline>
+      <Headline>Link component</Headline>
 
-      <Row>
+      <div>
         <Paragraph>
           This is an external link to{" "}
           <Link href={profile.github} type="external">
@@ -52,37 +48,21 @@ const Components = () => (
           </Link>
           .
         </Paragraph>
-      </Row>
+      </div>
     </Section>
 
     <Section>
-      <Headline tag="h1" size="h1">
-        Headline Size H1
-      </Headline>
-
-      <Headline tag="h2" size="h2">
-        Headline Size H2
-      </Headline>
-
-      <Headline tag="h3" size="h3">
-        Headline Size H3
-      </Headline>
-
-      <Headline tag="h4" size="h4">
-        Headline Size H4
-      </Headline>
-
-      <Headline tag="h5" size="h5">
-        Headline Size H5
-      </Headline>
-
-      <Headline tag="h6" size="h6">
-        Headline Size H6
-      </Headline>
+      <Headline tag="h1">Headline Size H1</Headline>
+      <Headline tag="h2">Headline Size H2</Headline>
+      <Headline tag="h3">Headline Size H3</Headline>
+      <Headline tag="h4">Headline Size H4</Headline>
+      <Headline tag="h5">Headline Size H5</Headline>
+      <Headline tag="h6">Headline Size H6</Headline>
     </Section>
 
     <Section>
-      <Headline size="h1">Text component</Headline>
+      <Headline>Text component</Headline>
+
       <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -115,9 +95,7 @@ const Components = () => (
     </Section>
 
     <Section>
-      <Headline tag="h1" size="h1">
-        Lorem ipsum dolor sit amet.
-      </Headline>
+      <Headline tag="h1">Lorem ipsum dolor sit amet.</Headline>
 
       <Paragraph>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
@@ -131,9 +109,7 @@ const Components = () => (
         modi totam!
       </Paragraph>
 
-      <Headline tag="h2" size="h2">
-        Lorem, ipsum dolor.
-      </Headline>
+      <Headline tag="h2">Lorem, ipsum dolor.</Headline>
 
       <Paragraph>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
@@ -147,9 +123,7 @@ const Components = () => (
         modi totam!
       </Paragraph>
 
-      <Headline tag="h3" size="h3">
-        Lorem ipsum dolor sit amet.
-      </Headline>
+      <Headline tag="h3">Lorem ipsum dolor sit amet.</Headline>
 
       <Paragraph>
         Vitae tempus quam{" "}
@@ -166,9 +140,7 @@ const Components = () => (
         nec sagittis aliquam malesuada.
       </Paragraph>
 
-      <Headline tag="h4" size="h4">
-        Lorem ipsum dolor sit.
-      </Headline>
+      <Headline tag="h4">Lorem ipsum dolor sit.</Headline>
 
       <Paragraph>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
@@ -186,9 +158,7 @@ const Components = () => (
         urna neque viverra justo.
       </Paragraph>
 
-      <Headline tag="h5" size="h5">
-        Lorem ipsum dolor sit amet consectetur.
-      </Headline>
+      <Headline tag="h5">Lorem ipsum dolor sit amet consectetur.</Headline>
 
       <Paragraph>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
@@ -206,9 +176,7 @@ const Components = () => (
         urna neque viverra justo.
       </Paragraph>
 
-      <Headline tag="h6" size="h6">
-        Lorem ipsum dolor sit.
-      </Headline>
+      <Headline tag="h6">Lorem ipsum dolor sit.</Headline>
 
       <Paragraph>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
@@ -228,27 +196,25 @@ const Components = () => (
     </Section>
 
     <Section>
-      <Headline size="h1">Button component</Headline>
+      <Headline>Button component</Headline>
 
-      <Row>
+      <div>
         <Button>This is a button without an Icon</Button>
-      </Row>
+      </div>
 
-      <Row>
+      <div>
         <Button size="l">This is a big button without an Icon</Button>
-      </Row>
+      </div>
     </Section>
 
     <Section>
-      <Row>
-        <Headline size="h1">Grid</Headline>
-      </Row>
+      <div>
+        <Headline>Grid</Headline>
+      </div>
 
-      <Grid cols={2} gap={ESpace.l}>
+      <div>
         <div>
-          <Headline tag="h2" size="h2">
-            Left column
-          </Headline>
+          <Headline tag="h2">Left column</Headline>
 
           <Paragraph>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
@@ -264,9 +230,7 @@ const Components = () => (
         </div>
 
         <div>
-          <Headline tag="h2" size="h2">
-            Right column
-          </Headline>
+          <Headline tag="h2">Right column</Headline>
 
           <Paragraph>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
@@ -280,30 +244,30 @@ const Components = () => (
             dignissimos doloribus, nemo modi totam!
           </Paragraph>
         </div>
-      </Grid>
+      </div>
     </Section>
 
     <Section>
-      <Row>
+      <div>
         <Headline>Skill component</Headline>
-      </Row>
+      </div>
 
-      <Row classNames={["Components__skills-container"]}>
-        <Grid cols="auto-fit" gap={ESpace.m}>
+      <div className="Components__skills-container">
+        <div>
           {skills.map(({ title, level, icon }: SkillType) => (
             <Skill key={title} title={title} level={level} icon={icon} />
           ))}
-        </Grid>
-      </Row>
+        </div>
+      </div>
     </Section>
 
     <Section>
-      <Row>
+      <div>
         <Headline>Experience component</Headline>
-      </Row>
+      </div>
 
-      <Row classNames={["Components__experiences-container"]}>
-        <Grid cols={3} colMinWidth={"100px"} gap={ESpace.m}>
+      <div className="Components__experiences-container">
+        <div>
           {experiences.map(
             (
               { title, dateRange, company, details }: ExperienceType,
@@ -319,8 +283,8 @@ const Components = () => (
               />
             )
           )}
-        </Grid>
-      </Row>
+        </div>
+      </div>
     </Section>
   </Page>
 );

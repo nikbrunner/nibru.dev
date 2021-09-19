@@ -4,10 +4,9 @@ import { RiXingLine } from "react-icons/ri";
 
 import { Section } from "@components/layout/Section/Section";
 import { Page } from "@components/layout/Page/Page";
-
-import { Headline } from "@components/ui/Headline/Headline";
 import { Paragraph } from "@components/ui/Paragraph/Paragraph";
 import { Link } from "@components/ui/Link/Link";
+
 import { cn } from "@lib/cn";
 
 const Home = () => (
