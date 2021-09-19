@@ -2,43 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-// Configuration and helpers
-// @import "variables/colors";
-// @import "variables/layout";
+@import "variables/layout";
 @import "variables/mixins";
-// @import "variables/responsive-design";
-// @import "variables/uni-space";
-// @import "variables/variables";
+@import "variables/responsive-design";
 
-// // Base stuff
-// @import "base/base";
-// @import "base/normalize";
-// @import "base/fonts";
-// @import "base/typography";
-// @import "base/helpers";
+@import "components/components";
 
-// // Components
-// @import "../components/layout/Main/Main";
-// @import "../components/layout/Flex/Flex";
-// @import "../components/layout/Section/Section";
-// @import "../components/layout/Grid/Grid";
-// @import "../components/layout/Nav/Nav";
-// @import "../components/layout/Page/Page";
-
-// @import "../components/ui/Button/Button";
-// @import "../components/ui/Headline/Headline";
-// @import "../components/ui/Link/Link";
-// @import "../components/ui/NavLink/NavLink";
-// @import "../components/ui/Paragraph/Paragraph";
-
-// @import "../components/profile/Skill/Skill";
-// @import "../components/profile/Experience/Experience";
-
-// // Page-specific styles
-// @import "pages/app";
-// @import "pages/home";
-// @import "pages/components";
-
-// // Themes
-// @import "themes/dark";
-// @import "themes/light";
+@import "./fonts";
