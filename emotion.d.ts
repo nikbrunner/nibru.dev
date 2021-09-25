@@ -1,14 +1,20 @@
 import "@emotion/react";
-import { ITheme } from "./context/ThemeProvider";
+import { ITheme } from "./theme/ThemeProvider";
 
 declare module "@emotion/react" {
   export interface Theme {
-    fg_primary: string;
-    fg_secondary: string;
+    fg: {
+      primary: string;
+      secondary: string;
+      ternary: string;
+      accent: string;
+    };
 
-    bg_primary: string;
-    bg_secondary: string;
-
-    fg_accent: string;
+    bg: {
+      primary: string;
+      secondary: string;
+      ternary: string;
+      accent: string;
+    };
   }
 }

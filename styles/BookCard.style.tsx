@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
 
+import { border } from "./mixins";
+
 export const SBookCard = styled.div`
   label: BookCard;
 
-  padding: 5rem;
-  /* border-radius: 1rem; */
-  background-color: ${({ theme }) => theme.bg_primary};
-  border: 2px solid ${({ theme }) => theme.bg_secondary};
-  box-shadow: 10px 10px ${({ theme }) => theme.bg_secondary};
+  padding: 3rem;
+  ${({ theme }) => border.thin(theme.bg.ternary)}
+  background-color: ${({ theme }) => theme.bg.secondary};
+  color: ${({ theme }) => theme.fg.primary};
 
   .cover {
     margin-bottom: 1rem;
@@ -15,7 +16,5 @@ export const SBookCard = styled.div`
 
   .title {
     max-width: 10rem;
-    text-align: center;
-    color: ${({ theme }) => theme.fg_primary};
   }
 `;

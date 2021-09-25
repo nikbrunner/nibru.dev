@@ -1,14 +1,24 @@
 import { useState } from "react";
 
 import { SGlobal } from "@styles/Global.style";
-import { ThemeProvider, TTheme } from "@context/ThemeProvider";
+import { ThemeProvider } from "@theme/ThemeProvider";
+import { ETheme } from "@theme/themes";
+import { css } from "@emotion/react";
 
 const App = ({ Component, pageProps }) => {
-  const [theme, setTheme] = useState<TTheme>("light");
+  const [theme, setTheme] = useState<ETheme>(ETheme.Light);
+
   return (
     <div className="App">
-      <button onClick={() => setTheme("light")}>Light</button>
-      <button onClick={() => setTheme("dark")}>Dark</button>
+      <button
+        css={css`
+          margin-right: 1rem;
+        `}
+        onClick={() => setTheme(ETheme.Light)}
+      >
+        Light
+      </button>
+      <button onClick={() => setTheme(ETheme.Dark)}>Dark</button>
 
       <ThemeProvider theme={theme}>
         <SGlobal />
