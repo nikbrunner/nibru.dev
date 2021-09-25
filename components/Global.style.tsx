@@ -1,6 +1,6 @@
 import { Global, css, useTheme, Theme } from "@emotion/react";
 
-import { transition } from "./mixins";
+import { transition } from "@config/mixins";
 
 const genGlobalStyles = (theme: Theme) =>
   css`

@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
-import { mq } from "./media-queries";
+
+import { mq } from "@config/media-queries";
 
 export const SNav = styled.nav`
   label: Nav;

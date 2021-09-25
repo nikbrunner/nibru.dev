@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { css } from "@emotion/react";
 
-import { NavLink } from "@components/ui/NavLink";
+import { NavLink } from "@components/ui/NavLink/NavLink";
 
 import { ThemeContext } from "@theme/ThemeProvider";
 import { ETheme } from "@theme/themes";
 
-import { SNav } from "@styles/Nav.style";
+import { SNav } from "@components/layout/Nav/Nav.style";
 
 import { profile } from "@data/profile";
 

@@ -3,9 +3,9 @@ import { GetStaticPaths, GetStaticProps } from "next";
 
 import { IReadwiseBook, IReadwiseHighlights } from "@typings/Readwise";
 
-import { Page } from "@components/layout/Page";
+import { Page } from "@components/layout/Page/Page";
 import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
-import { BookHighlight } from "@components/books/BookHighlight";
+import { BookHighlight } from "@components/books/BookHighlight/BookHighlight";
 
 import { cn } from "@lib/cn";
 

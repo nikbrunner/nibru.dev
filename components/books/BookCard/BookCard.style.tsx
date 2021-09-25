@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-import { border } from "./mixins";
+import { border } from "@config/mixins";
 
 export const SBookCard = styled.div`
   label: BookCard;

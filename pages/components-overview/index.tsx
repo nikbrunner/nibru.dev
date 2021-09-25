@@ -1,19 +1,18 @@
 import React from "react";
 
-import { Section } from "@components/layout/Section";
-import { Page } from "@components/layout/Page";
+import { Section } from "@components/layout/Section/Section";
+import { Page } from "@components/layout/Page/Page";
 
-import { Button } from "@components/ui/Button";
-import { Headline } from "@components/ui/Headline";
-import { Link } from "@components/ui/Link";
-import { Paragraph } from "@components/ui/Paragraph";
+import { Button } from "@components/ui/Button/Button";
+import { Headline } from "@components/ui/Headline/Headline";
+import { Link } from "@components/ui/Link/Link";
+import { Paragraph } from "@components/ui/Paragraph/Paragraph";
 
-import { Skill } from "@components/profile/Skill";
-import { Experience } from "@components/profile/Experience";
+import { Skill } from "@components/profile/Skill/Skill";
+import { Experience } from "@components/profile/Experience/Experience";
 
 import { IExperience as ExperienceType } from "@typings/profile/Experience";
 import { ISkill as SkillType } from "@typings/profile/Skill";
-import { ESpace } from "@typings/Spaces";
 
 import { skills } from "@data/skills";
 import { experiences } from "@data/experiences";

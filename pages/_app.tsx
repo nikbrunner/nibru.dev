@@ -1,4 +1,4 @@
-import { SGlobal } from "@styles/Global.style";
+import { SGlobal } from "@components/Global.style";
 import { ThemeProvider } from "@theme/ThemeProvider";
 
 const App = ({ Component, pageProps }) => {

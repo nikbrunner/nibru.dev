@@ -5,7 +5,7 @@ import { IGenericProps } from "@typings/GenericProps";
 import { IReadwiseBook } from "@typings/Readwise";
 
 import { formatDate } from "@lib/date";
-import { SBookCard } from "../../styles/BookCard.style";
+import { SBookCard } from "./BookCard.style";
 
 interface IProps extends IGenericProps {
   book: IReadwiseBook;
