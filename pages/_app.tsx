@@ -1,11 +1,21 @@
-import React from "react";
+import { useState } from "react";
 
-import "../style/main.scss";
+import { SGlobal } from "@styles/Global.style";
+import { ThemeProvider, TTheme } from "@context/ThemeProvider";
 
-const App = ({ Component, pageProps }) => (
-  <div className="App">
-    <Component {...pageProps} />
-  </div>
-);
+const App = ({ Component, pageProps }) => {
+  const [theme, setTheme] = useState<TTheme>("light");
+  return (
+    <div className="App">
+      <button onClick={() => setTheme("light")}>Light</button>
+      <button onClick={() => setTheme("dark")}>Dark</button>
+
+      <ThemeProvider theme={theme}>
+        <SGlobal />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </div>
+  );
+};
 
 export default App;

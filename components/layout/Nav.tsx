@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavLink } from "@components/ui/NavLink/NavLink";
+import { NavLink } from "@components/ui/NavLink";
 
 import { cn } from "@lib/cn";
 

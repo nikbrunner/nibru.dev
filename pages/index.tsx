@@ -2,10 +2,10 @@ import React from "react";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { RiXingLine } from "react-icons/ri";
 
-import { Section } from "@components/layout/Section/Section";
-import { Page } from "@components/layout/Page/Page";
-import { Paragraph } from "@components/ui/Paragraph/Paragraph";
-import { Link } from "@components/ui/Link/Link";
+import { Section } from "@components/layout/Section";
+import { Page } from "@components/layout/Page";
+import { Paragraph } from "@components/ui/Paragraph";
+import { Link } from "@components/ui/Link";
 
 import { cn } from "@lib/cn";
 
