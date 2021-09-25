@@ -1,16 +1,31 @@
+import { createContext, Dispatch, SetStateAction, useState } from "react";
 import { ThemeProvider as EmotionThemeProvider } from "@emotion/react";
 
-import { darkTheme, ETheme, lightTheme } from "@theme/themes";
+import { lightTheme, darkTheme, ETheme } from "@theme/themes";
 
-interface Props {
+interface IProps {
   children: React.ReactNode;
-  theme: ETheme;
 }
 
-export const ThemeProvider = ({ children, theme }: Props) => (
-  <EmotionThemeProvider
-    theme={theme === ETheme.Light ? lightTheme : darkTheme}
-  >
-    {children}
-  </EmotionThemeProvider>
+interface IThemeContext {
+  theme: ETheme;
+  setTheme: Dispatch<SetStateAction<ETheme>>;
+}
+
+export const ThemeContext = createContext<IThemeContext>(
+  {} as IThemeContext
 );
+
+export const ThemeProvider = ({ children }: IProps) => {
+  const [theme, setTheme] = useState<ETheme>(ETheme.Light);
+
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <EmotionThemeProvider
+        theme={theme === ETheme.Light ? lightTheme : darkTheme}
+      >
+        {children}
+      </EmotionThemeProvider>
+    </ThemeContext.Provider>
+  );
+};

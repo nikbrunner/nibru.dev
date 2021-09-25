@@ -1,4 +1,3 @@
-import React from "react";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { RiXingLine } from "react-icons/ri";
 
