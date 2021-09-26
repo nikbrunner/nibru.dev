@@ -1,13 +1,26 @@
-import { css } from "@emotion/react";
+import { css, SerializedStyles } from "@emotion/react";
+
+export const flex = (
+  flow:
+    | "row wrap"
+    | "row nowrap"
+    | "column wrap"
+    | "column nowrap" = "row wrap",
+  placeItems: string
+): SerializedStyles => css`
+  display: flex;
+  flex-flow: ${flow};
+  place-items: ${placeItems};
+`;
 
 export const border = {
-  thin: (color: string) => css`
+  thin: (color: string): SerializedStyles => css`
     border: 1px solid ${color};
   `,
-  default: (color: string) => css`
+  default: (color: string): SerializedStyles => css`
     border: 2px solid ${color};
   `,
-  thick: (color: string) => css`
+  thick: (color: string): SerializedStyles => css`
     border: 4px solid ${color};
   `
 };
@@ -15,21 +28,22 @@ export const border = {
 const transitionEase = "cubic-bezier(0.445, 0.05, 0.55, 0.95)";
 
 export const transition = {
-  fast: (property: string) => css`
+  fast: (property: string): SerializedStyles => css`
     transition: ${property} 0.25s ${transitionEase};
   `,
-  default: (property: string) => css`
+  default: (property: string): SerializedStyles => css`
     transition: ${property} 0.5s ${transitionEase};
   `,
-  slow: (property: string) => css`
+  slow: (property: string): SerializedStyles => css`
     transition: ${property} 0.75s ${transitionEase};
   `,
-  extraSlow: (property: string) => css`
+  extraSlow: (property: string): SerializedStyles => css`
     transition: ${property} 1s ${transitionEase};
   `
 };
 
 export const mixins = {
   border,
-  transition
+  transition,
+  flex
 };
