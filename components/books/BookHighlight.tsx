@@ -19,14 +19,14 @@ const SBookHighlight = styled.div`
   ${flex("column nowrap", "start start")}
 
   ${({ theme }) => text.color.primary(theme)}
-
   ${border.thin(colors.gray)}
 
   padding: ${space.xxxl};
 
   .text {
+    ${text.lineHeight.l}
+
     margin-top: 0;
-    line-height: 1.75;
     flex: 1;
   }
 
