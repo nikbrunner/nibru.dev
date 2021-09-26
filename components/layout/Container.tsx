@@ -1,8 +1,13 @@
+import { ReactNode } from "react";
 import styled from "@emotion/styled";
 
 import { mq } from "@config/media-queries";
 
-export const SContainer = styled.div`
+interface IProps {
+  children: ReactNode;
+}
+
+const SContainer = styled.div`
   max-width: 100vw;
   margin: 0 auto;
 
@@ -26,3 +31,7 @@ export const SContainer = styled.div`
     max-width: 55vw;
   }
 `;
+
+export const Container = ({ children }: IProps) => (
+  <SContainer>{children}</SContainer>
+);

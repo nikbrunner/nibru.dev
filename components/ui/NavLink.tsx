@@ -1,17 +1,23 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import Link from "next/link";
 import { NextRouter, useRouter } from "next/router";
 
 import { IGenericProps } from "@typings/GenericProps";
 
-import { cn } from "@lib/cn";
-
-const componentName: string = "Page";
+import styled from "@emotion/styled";
+import { fg } from "@config/mixins";
 
 interface IProps extends IGenericProps {
   href: string;
   children: ReactNode;
 }
+
+const SNavLink = styled.a<{ isActive: boolean }>`
+  ${({ theme, isActive }) =>
+    isActive ? fg.accent(theme) : fg.primary(theme)}
+
+  cursor: pointer;
+`;
 
 export const NavLink = ({ href, children }: IProps): JSX.Element => {
   const router: NextRouter = useRouter();
@@ -19,14 +25,7 @@ export const NavLink = ({ href, children }: IProps): JSX.Element => {
 
   return (
     <Link href={href}>
-      <a
-        className={cn({
-          block: componentName,
-          utils: [isActive && "text-blue-500"]
-        })}
-      >
-        {children}
-      </a>
+      <SNavLink isActive={isActive}>{children}</SNavLink>
     </Link>
   );
 };

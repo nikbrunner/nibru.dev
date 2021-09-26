@@ -3,12 +3,12 @@ import { GetStaticProps } from "next";
 
 import { IReadwiseBooks } from "@typings/Readwise";
 
-import { Page } from "@components/layout/Page/Page";
-import { Section } from "@components/layout/Section/Section";
-import { Headline } from "@components/ui/Headline/Headline";
-import { Paragraph } from "@components/ui/Paragraph/Paragraph";
-import { BookCard } from "@components/books/BookCard/BookCard";
-import { BooksLayout } from "@components/books/BookLayout/BookLayout";
+import { Page } from "@components/layout/Page";
+import { Section } from "@components/layout/Section";
+import { Headline } from "@components/ui/Headline";
+import { Paragraph } from "@components/ui/Paragraph";
+import { BookCard } from "@components/books/BookCard";
+import { BooksLayout } from "@components/books/BookLayout";
 
 import {
   filterReadwiseBooks,
@@ -24,7 +24,7 @@ const Books = ({ books }: IProps) => {
   const filteredBooks = filterReadwiseBooks(books, ignoredReadwiseBooks);
 
   return (
-    <Page name="Books" title="What I read..">
+    <Page title="Books">
       <Section classNames={["Home__intro"]}>
         <Headline>Books</Headline>
 

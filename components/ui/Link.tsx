@@ -1,11 +1,8 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
+import styled from "@emotion/styled";
 import { FiLink } from "react-icons/fi";
 
 import { IGenericProps } from "@typings/GenericProps";
-
-import { cn } from "@lib/cn";
-
-const componentName: string = "Link";
 
 interface IProps extends IGenericProps {
   children: ReactNode;
@@ -15,6 +12,10 @@ interface IProps extends IGenericProps {
   openInNewTab?: boolean;
 }
 
+const SLink = styled.a`
+  text-decoration: underline;
+`;
+
 export const Link = ({
   children,
   href,
@@ -22,24 +23,16 @@ export const Link = ({
   openInNewTab = false,
   hideIcon = false
 }: IProps) => (
-  <a
-    className={cn({
-      block: componentName
-    })}
+  <SLink
     href={href}
     target={type === "external" || openInNewTab ? "_blank" : "_self"}
   >
     {children}
 
-    <span
-      className={cn({
-        block: componentName,
-        element: "icon"
-      })}
-    >
+    <span className="icon">
       {type === "external" && !hideIcon && (
         <FiLink style={{ display: "inline" }} />
       )}
     </span>
-  </a>
+  </SLink>
 );

@@ -1,14 +1,32 @@
 import Link from "next/link";
+import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
 import { IReadwiseBook } from "@typings/Readwise";
 
 import { formatDate } from "@lib/date";
-import { SBookCard } from "./BookCard.style";
+
+import { bg, border, fg } from "@config/mixins";
 
 interface IProps extends IGenericProps {
   book: IReadwiseBook;
 }
+
+const SBookCard = styled.div`
+  ${({ theme }) => border.thin(theme.bg.ternary)}
+  ${({ theme }) => bg.secondary(theme)}
+  ${({ theme }) => fg.primary(theme)}
+
+  padding: 3rem;
+
+  .cover {
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    max-width: 10rem;
+  }
+`;
 
 export const BookCard = ({
   book: { id, title, cover_image_url, author, num_highlights, updated }

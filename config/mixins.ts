@@ -9,6 +9,9 @@ export const bg = {
   `,
   ternary: (theme: Theme) => css`
     background-color: ${theme.bg.ternary};
+  `,
+  accent: (theme: Theme) => css`
+    background-color: ${theme.bg.accent};
   `
 };
 
@@ -21,6 +24,9 @@ export const fg = {
   `,
   ternary: (theme: Theme) => css`
     color: ${theme.fg.ternary};
+  `,
+  accent: (theme: Theme) => css`
+    color: ${theme.fg.accent};
   `
 };
 
