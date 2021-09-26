@@ -1,17 +1,28 @@
-import { css, SerializedStyles } from "@emotion/react";
+import { css, SerializedStyles, Theme } from "@emotion/react";
 
-export const flex = (
-  flow:
-    | "row wrap"
-    | "row nowrap"
-    | "column wrap"
-    | "column nowrap" = "row wrap",
-  placeItems: string
-): SerializedStyles => css`
-  display: flex;
-  flex-flow: ${flow};
-  place-items: ${placeItems};
-`;
+export const bg = {
+  primary: (theme: Theme) => css`
+    background-color: ${theme.bg.primary};
+  `,
+  secondary: (theme: Theme) => css`
+    background-color: ${theme.bg.secondary};
+  `,
+  ternary: (theme: Theme) => css`
+    background-color: ${theme.bg.ternary};
+  `
+};
+
+export const fg = {
+  primary: (theme: Theme) => css`
+    color: ${theme.fg.primary};
+  `,
+  secondary: (theme: Theme) => css`
+    color: ${theme.fg.secondary};
+  `,
+  ternary: (theme: Theme) => css`
+    color: ${theme.fg.ternary};
+  `
+};
 
 export const border = {
   thin: (color: string): SerializedStyles => css`
@@ -42,7 +53,22 @@ export const transition = {
   `
 };
 
+export const flex = (
+  flow:
+    | "row wrap"
+    | "row nowrap"
+    | "column wrap"
+    | "column nowrap" = "row wrap",
+  placeItems: string
+): SerializedStyles => css`
+  display: flex;
+  flex-flow: ${flow};
+  place-items: ${placeItems};
+`;
+
 export const mixins = {
+  bg,
+  fg,
   border,
   transition,
   flex
