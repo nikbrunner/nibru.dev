@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 import { IGenericProps } from "@typings/GenericProps";
@@ -14,9 +13,9 @@ interface IProps extends IGenericProps {
 export const BookCard = ({
   book: { id, title, cover_image_url, author, num_highlights, updated }
 }: IProps): JSX.Element => (
-  <SBookCard>
-    <Link href={`/books/${id}`} key={id}>
-      <a>
+  <Link href={`/books/${id}`} key={id}>
+    <a>
+      <SBookCard>
         <img className="cover" src={cover_image_url} />
 
         <h3 className="title">{title}</h3>
@@ -30,7 +29,7 @@ export const BookCard = ({
         <p className="update">
           Updated: <span>{formatDate(updated)}</span>
         </p>
-      </a>
-    </Link>
-  </SBookCard>
+      </SBookCard>
+    </a>
+  </Link>
 );
