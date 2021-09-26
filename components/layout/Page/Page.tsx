@@ -1,14 +1,10 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import Head from "next/head";
 
-import { Main } from "@components/layout/Main/Main";
 import { Nav } from "@components/layout/Nav/Nav";
+import { SContainer } from "@components/layout/Container/Container.style";
 
 import { IGenericProps } from "@typings/GenericProps";
-
-import { cn } from "@lib/cn";
-
-const componentName: string = "Page";
 
 interface IProps extends IGenericProps {
   children: ReactNode;
@@ -26,17 +22,10 @@ export const Page = ({ children, name, title }: IProps): JSX.Element => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <div
-      className={cn({
-        block: componentName,
-        utils: ["container", "mx-auto"]
-      })}
-    >
-      <Nav />
+    <Nav />
 
-      <div className={cn({ block: componentName, element: "children" })}>
-        <Main>{children}</Main>
-      </div>
+    <div className="content">
+      <SContainer>{children}</SContainer>
     </div>
   </>
 );
