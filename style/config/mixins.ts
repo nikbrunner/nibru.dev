@@ -37,8 +37,11 @@ export const border = {
   default: (color: string): SerializedStyles => css`
     border: 2px solid ${color};
   `,
-  thick: (color: string): SerializedStyles => css`
+  thicc: (color: string): SerializedStyles => css`
     border: 4px solid ${color};
+  `,
+  extraThicc: (color: string): SerializedStyles => css`
+    border: 6px solid ${color};
   `
 };
 
@@ -65,7 +68,7 @@ export const flex = (
     | "row nowrap"
     | "column wrap"
     | "column nowrap" = "row wrap",
-  placeItems: string
+  placeItems: string = "normal legacy"
 ): SerializedStyles => css`
   display: flex;
   flex-flow: ${flow};

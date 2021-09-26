@@ -7,13 +7,18 @@ import { Container } from "@components/layout/Container";
 
 import { IGenericProps } from "@typings/GenericProps";
 import { config } from "@config/config";
+import { space } from "@style/config/space";
 
 interface IProps extends IGenericProps {
   children: ReactNode;
   title: string;
 }
 
-const SPage = styled.main``;
+const SPage = styled.main`
+  .content {
+    padding: ${space.l};
+  }
+`;
 
 export const Page = ({ children, title }: IProps): JSX.Element => (
   <>

@@ -1,3 +1,4 @@
+import { css } from "@emotion/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 
 import { IReadwiseBook, IReadwiseHighlights } from "@typings/Readwise";
@@ -5,8 +6,9 @@ import { IReadwiseBook, IReadwiseHighlights } from "@typings/Readwise";
 import { Page } from "@components/layout/Page";
 import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
 import { BookHighlight } from "@components/books/BookHighlight";
-
-import { cn } from "@lib/cn";
+import { BookHighlights } from "@components/books/BookHighlights";
+import { flex } from "@style/config/mixins";
+import { BookDetailTitle } from "@components/books/BookDetailTitle";
 
 interface IProps {
   book: IReadwiseBook;
@@ -14,26 +16,21 @@ interface IProps {
 }
 
 const Book = ({
-  book: { title, cover_image_url },
+  book: { title, cover_image_url, author },
   highlightsForBook
 }: IProps): JSX.Element => (
   <Page title="Book">
-    <h1 className="text-center pb-8 mb-8">{title}</h1>
-    <img
-      className="mb-7 mx-auto"
-      src={cover_image_url}
-      alt={`Cover for ${title}`}
+    <BookDetailTitle
+      coverImageUrl={cover_image_url}
+      title={title}
+      author={author}
     />
 
-    <ul
-      className={cn({
-        utils: ["grid", "gap-8", "md:grid-cols-2", "lg:grid-cols-3"]
-      })}
-    >
+    <BookHighlights>
       {highlightsForBook?.results?.map(highlight => (
         <BookHighlight highlight={highlight} key={highlight.id} />
       ))}
-    </ul>
+    </BookHighlights>
   </Page>
 );
 
