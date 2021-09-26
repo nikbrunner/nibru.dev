@@ -17,32 +17,11 @@ const Home = () => (
         })}
       >
         <div>
-          <img
-            className={cn({
-              utils: [
-                "mx-auto",
-                "max-w-full",
-                "sm:max-w-4xl",
-                "md:max-w-full",
-                "object-cover"
-              ]
-            })}
-            src="/images/nb.jpg"
-          />
+          <img src="/images/nb.jpg" />
         </div>
 
-        <div
-          className={cn({
-            utils: ["space-y-1", "p-4"]
-          })}
-        >
-          <h2
-            className={cn({
-              utils: ["text-7xl", "font-black", "mb-3"]
-            })}
-          >
-            Hi there.
-          </h2>
+        <div>
+          <h2>Hi there.</h2>
 
           <Paragraph>
             My name is Nikolaus Brunner,
@@ -92,11 +71,7 @@ const Home = () => (
             .
           </Paragraph>
 
-          <div
-            className={cn({
-              utils: ["flex", "space-x-3"]
-            })}
-          >
+          <div>
             <Link
               href="https://github.com/nikbrunner"
               type="external"
