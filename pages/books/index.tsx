@@ -8,7 +8,7 @@ import { Section } from "@components/layout/Section";
 import { Headline } from "@components/ui/Headline";
 import { Paragraph } from "@components/ui/Paragraph";
 import { BookCard } from "@components/books/BookCard";
-import { BooksLayout } from "@components/books/BookLayout";
+import { BooksLayout } from "@components/books/BooksLayout";
 
 import {
   filterReadwiseBooks,
