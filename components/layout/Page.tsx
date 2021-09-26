@@ -16,7 +16,7 @@ interface IProps extends IGenericProps {
 
 const SPage = styled.main`
   .content {
-    ${padding.l}
+    ${padding.top.l}
   }
 `;
 

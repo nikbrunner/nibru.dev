@@ -8,6 +8,8 @@ import { mq } from "@style/config/media-queries";
 import { margin } from "@style/mixins/spacing";
 import { space } from "@style/config/space";
 import { flex } from "@style/mixins/layout";
+import { border } from "@style/mixins/border";
+import { colors } from "@style/config/colors";
 
 interface IProps {
   title: string;
@@ -19,23 +21,24 @@ export const SNav = styled.nav`
     justifyContent: "center",
     alignContent: "center"
   })}
-
-  ${mq.m} {
-    ${flex({
-      flexflow: "row nowrap",
-      justifyContent: "space-between",
-      alignContent: "center"
-    })}
-  }
+  ${margin.bottom.xl}
 
   .title {
-    ${margin.zero}
+    ${margin.top.zero}
+    ${margin.bottom.s}
   }
 
-  .controls,
-  .theme-buttons,
   .nav-links {
     ${flex({
+      flexflow: "row nowrap",
+      gap: space.m
+    })}
+    ${margin.bottom.s}
+  }
+
+  .controls {
+    ${flex({
+      flexflow: "column nowrap",
       justifyContent: "center",
       alignItems: "center",
       gap: space.m
@@ -44,18 +47,18 @@ export const SNav = styled.nav`
 `;
 
 export const Nav = ({ title = "nibru.dev" }: IProps): JSX.Element => (
-  <Container>
-    <SNav>
+  <SNav>
+    <Container>
       <h1 className="title">{title}</h1>
 
-      <div className="controls">
-        <ThemeToggle />
-
-        <div className="nav-links">
-          <NavLink href="/">Home</NavLink>
-          <NavLink href="/books">Books</NavLink>
-        </div>
+      <div className="nav-links">
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/books">Books</NavLink>
       </div>
-    </SNav>
-  </Container>
+
+      <div className="theme-toggle">
+        <ThemeToggle />
+      </div>
+    </Container>
+  </SNav>
 );
