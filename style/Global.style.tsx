@@ -8,6 +8,11 @@ const genGlobalStyles = (theme: Theme) =>
       ${fg.primary(theme)}
       ${transition.fast("background")}
       ${transition.fast("color")}
+
+      font-family: "Lora", serif;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     a {

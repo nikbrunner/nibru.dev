@@ -1,3 +1,5 @@
+import { css } from "@emotion/react";
+
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { RiXingLine } from "react-icons/ri";
 
@@ -10,7 +12,14 @@ const Home = () => (
   <Page title="Hi there. 👋">
     <Section>
       <div>
-        <h2>Hi there.</h2>
+        <h2
+          css={css`
+            font-size: 5rem;
+            font-style: italic;
+          `}
+        >
+          Hi there.
+        </h2>
 
         <Paragraph>
           My name is Nikolaus Brunner,
