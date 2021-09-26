@@ -4,9 +4,12 @@ import { IReadwiseHighlight } from "@typings/Readwise";
 import { IGenericProps } from "@typings/GenericProps";
 
 import { formatDate } from "@lib/date";
-import { bg, border, fg, flex } from "@style/config/mixins";
+
 import { space } from "@style/config/space";
 import { colors } from "@style/config/colors";
+import { flex } from "@style/mixins/layout";
+import { text } from "@style/mixins/text";
+import { border } from "@style/mixins/border";
 
 interface IProps extends IGenericProps {
   highlight: IReadwiseHighlight;
@@ -15,7 +18,7 @@ interface IProps extends IGenericProps {
 const SBookHighlight = styled.div`
   ${flex("column nowrap", "start start")}
 
-  ${({ theme }) => fg.primary(theme)}
+  ${({ theme }) => text.color.primary(theme)}
 
   ${border.thin(colors.gray)}
 

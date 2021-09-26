@@ -4,8 +4,7 @@ import { NextRouter, useRouter } from "next/router";
 import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
-
-import { fg } from "@style/config/mixins";
+import { text } from "@style/mixins/text";
 
 interface IProps extends IGenericProps {
   href: string;
@@ -14,7 +13,7 @@ interface IProps extends IGenericProps {
 
 const SNavLink = styled.a<{ isActive: boolean }>`
   ${({ theme, isActive }) =>
-    isActive ? fg.accent(theme) : fg.primary(theme)}
+    isActive ? text.color.accent(theme) : text.color.primary(theme)}
 
   cursor: pointer;
 `;

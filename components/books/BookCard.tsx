@@ -4,8 +4,10 @@ import styled from "@emotion/styled";
 import { IGenericProps } from "@typings/GenericProps";
 import { IReadwiseBook } from "@typings/Readwise";
 
+import { text } from "@style/mixins/text";
+import { bg } from "@style/mixins/bg";
+import { border } from "@style/mixins/border";
 import { formatDate } from "@lib/date";
-import { bg, border, fg } from "@style/config/mixins";
 
 interface IProps extends IGenericProps {
   book: IReadwiseBook;
@@ -13,8 +15,8 @@ interface IProps extends IGenericProps {
 
 const SBookCard = styled.div`
   ${({ theme }) => border.thin(theme.bg.ternary)}
-  ${({ theme }) => bg.secondary(theme)}
-  ${({ theme }) => fg.primary(theme)}
+  ${({ theme }) => bg.color.secondary(theme)}
+  ${({ theme }) => text.color.primary(theme)}
 
   padding: 3rem;
 

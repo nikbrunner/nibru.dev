@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import { mq } from "@style/config/media-queries";
 
-import { flex } from "@style/config/mixins";
 import { space } from "@style/config/space";
+import { flex } from "@style/mixins/layout";
 
 interface IProps {
   coverImageUrl: string;

@@ -1,4 +1,3 @@
-import { css } from "@emotion/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 
 import { IReadwiseBook, IReadwiseHighlights } from "@typings/Readwise";
@@ -7,7 +6,6 @@ import { Page } from "@components/layout/Page";
 import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
 import { BookHighlight } from "@components/books/BookHighlight";
 import { BookHighlights } from "@components/books/BookHighlights";
-import { flex } from "@style/config/mixins";
 import { BookDetailTitle } from "@components/books/BookDetailTitle";
 
 interface IProps {

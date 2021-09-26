@@ -4,7 +4,8 @@ import { FiMoon, FiSun } from "react-icons/fi";
 
 import { ThemeContext } from "@theme/ThemeProvider";
 import { ETheme } from "@theme/themes";
-import { fg, flex } from "@style/config/mixins";
+import { flex } from "@style/mixins/layout";
+import { text } from "@style/mixins/text";
 
 const SThemeToggle = styled.div`
   ${flex("row nowrap", "center center")}
@@ -12,7 +13,7 @@ const SThemeToggle = styled.div`
 
 const SButton = styled.button<{ isActive: boolean }>`
   ${({ isActive, theme }) =>
-    isActive ? fg.accent(theme) : fg.primary(theme)};
+    isActive ? text.color.accent(theme) : text.color.primary(theme)};
 
   ${flex("row nowrap", "center center")};
 
