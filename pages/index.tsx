@@ -9,17 +9,13 @@ import { Link } from "@components/ui/Link";
 import { cn } from "@lib/cn";
 
 const Home = () => (
-  <Page title="Home" title="Hi there. 👋">
+  <Page title="Hi there. 👋">
     <Section classNames={["Home__intro"]}>
       <div
         className={cn({
           utils: ["grid", "gap-5", "md:grid-cols-2"]
         })}
       >
-        <div>
-          <img src="/images/nb.jpg" />
-        </div>
-
         <div>
           <h2>Hi there.</h2>
 

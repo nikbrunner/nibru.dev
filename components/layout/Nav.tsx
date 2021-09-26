@@ -7,8 +7,7 @@ import { Container } from "@components/layout/Container";
 
 import { ThemeContext } from "@theme/ThemeProvider";
 import { ETheme } from "@theme/themes";
-
-import { mq } from "@config/media-queries";
+import { mq } from "@style/config/media-queries";
 
 interface IProps {
   title: string;

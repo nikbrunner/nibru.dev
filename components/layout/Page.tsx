@@ -13,9 +13,7 @@ interface IProps extends IGenericProps {
   title: string;
 }
 
-const SPage = styled.main`
-  border: 1px solid red;
-`;
+const SPage = styled.main``;
 
 export const Page = ({ children, title }: IProps): JSX.Element => (
   <>

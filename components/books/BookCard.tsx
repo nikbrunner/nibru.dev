@@ -5,8 +5,7 @@ import { IGenericProps } from "@typings/GenericProps";
 import { IReadwiseBook } from "@typings/Readwise";
 
 import { formatDate } from "@lib/date";
-
-import { bg, border, fg } from "@config/mixins";
+import { bg, border, fg } from "@style/config/mixins";
 
 interface IProps extends IGenericProps {
   book: IReadwiseBook;

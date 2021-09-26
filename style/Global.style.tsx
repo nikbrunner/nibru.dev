@@ -1,19 +1,18 @@
 import { Global, css, useTheme, Theme } from "@emotion/react";
-
-import { transition } from "@config/mixins";
+import { bg, fg, transition } from "./config/mixins";
 
 const genGlobalStyles = (theme: Theme) =>
   css`
     body {
-      background-color: ${theme.bg.primary};
-      color: ${theme.fg.primary};
+      ${bg.primary(theme)}
+      ${fg.primary(theme)}
       ${transition.fast("background")}
       ${transition.fast("color")}
     }
 
     a {
       text-decoration: none;
-      color: ${theme.fg.primary};
+      ${fg.primary(theme)}
     }
   `;
 

@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import styled from "@emotion/styled";
 
-import { mq } from "@config/media-queries";
+import { mq } from "@style/config/media-queries";
 
 interface IProps {
   children: ReactNode;

@@ -4,7 +4,7 @@ import { IReadwiseHighlight } from "@typings/Readwise";
 import { IGenericProps } from "@typings/GenericProps";
 
 import { formatDate } from "@lib/date";
-import { bg, fg } from "@config/mixins";
+import { bg, fg } from "@style/config/mixins";
 
 interface IProps extends IGenericProps {
   highlight: IReadwiseHighlight;

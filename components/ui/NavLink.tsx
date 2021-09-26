@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 import Link from "next/link";
 import { NextRouter, useRouter } from "next/router";
+import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
 
-import styled from "@emotion/styled";
-import { fg } from "@config/mixins";
+import { fg } from "@style/config/mixins";
 
 interface IProps extends IGenericProps {
   href: string;
