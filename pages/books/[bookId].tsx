@@ -17,7 +17,7 @@ const Book = ({
   book: { title, cover_image_url },
   highlightsForBook
 }: IProps): JSX.Element => (
-  <Page name="Book" title="jo">
+  <Page title="Book">
     <h1 className="text-center pb-8 mb-8">{title}</h1>
     <img
       className="mb-7 mx-auto"

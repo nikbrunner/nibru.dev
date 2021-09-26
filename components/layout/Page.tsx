@@ -6,6 +6,7 @@ import { Nav } from "@components/layout/Nav";
 import { Container } from "@components/layout/Container";
 
 import { IGenericProps } from "@typings/GenericProps";
+import { config } from "@config/config";
 
 interface IProps extends IGenericProps {
   children: ReactNode;
@@ -16,22 +17,19 @@ const SPage = styled.main`
   border: 1px solid red;
 `;
 
-export const Page = ({ children, title }: IProps): JSX.Element => {
-  const moddedTitle = `nibru.dev / ${title}`;
+export const Page = ({ children, title }: IProps): JSX.Element => (
+  <>
+    <Head>
+      <title>{`${config.siteTitle} / ${title}`}</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
 
-  return (
     <SPage>
-      <Head>
-        <title>{moddedTitle}</title>
-
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Nav title="nibru.dev" />
+      <Nav title={config.siteTitle} />
 
       <div className="content">
         <Container>{children}</Container>
       </div>
     </SPage>
-  );
-};
+  </>
+);

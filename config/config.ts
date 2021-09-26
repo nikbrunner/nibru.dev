@@ -1,11 +1,13 @@
 import { IBreakpoints } from "@typings/Breakpoints";
 
 export interface IConfig {
+  siteTitle: string;
   dateFormat: string; // For dayjs
   breakpoints: IBreakpoints;
 }
 
 export const config: IConfig = {
+  siteTitle: "nibru.dev",
   dateFormat: "YY.MM.DD",
   breakpoints: {
     xs: 320,

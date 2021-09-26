@@ -17,7 +17,7 @@ import { experiences } from "@data/experiences";
 import { profile } from "@data/profile";
 
 const Components = () => (
-  <Page name="Components">
+  <Page title="Components">
     <Section>
       <Headline tag="h1">Components Overview</Headline>
 

@@ -9,7 +9,7 @@ import { Link } from "@components/ui/Link";
 import { cn } from "@lib/cn";
 
 const Home = () => (
-  <Page name="Home" title="Hi there. 👋">
+  <Page title="Home" title="Hi there. 👋">
     <Section classNames={["Home__intro"]}>
       <div
         className={cn({
