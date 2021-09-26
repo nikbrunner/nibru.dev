@@ -8,6 +8,7 @@ import { text } from "@style/mixins/text";
 import { bg } from "@style/mixins/bg";
 import { border } from "@style/mixins/border";
 import { formatDate } from "@lib/date";
+import { margin, padding } from "@style/mixins/spacing";
 
 interface IProps extends IGenericProps {
   book: IReadwiseBook;
@@ -18,10 +19,10 @@ const SBookCard = styled.div`
   ${({ theme }) => bg.color.secondary(theme)}
   ${({ theme }) => text.color.primary(theme)}
 
-  padding: 3rem;
+  ${padding["3xl"]}
 
   .cover {
-    margin-bottom: 1rem;
+    ${margin.bottom.l}
   }
 
   .title {

@@ -8,18 +8,26 @@ import { flex } from "@style/mixins/layout";
 import { text } from "@style/mixins/text";
 
 const SThemeToggle = styled.div`
-  ${flex("row nowrap", "center center")}
+  ${flex({
+    flexflow: "row nowrap",
+    justifyContent: "center",
+    alignItems: "center"
+  })}
 `;
 
 const SButton = styled.button<{ isActive: boolean }>`
   ${({ isActive, theme }) =>
     isActive ? text.color.accent(theme) : text.color.primary(theme)};
 
-  ${flex("row nowrap", "center center")};
+  ${flex({
+    flexflow: "row nowrap",
+    justifyContent: "center",
+    alignItems: "center"
+  })}
 
+  ${text.size.l}
   background-color: transparent;
   border: none;
-  font-size: 18px;
   cursor: pointer;
 `;
 

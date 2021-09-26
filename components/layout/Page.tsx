@@ -7,7 +7,7 @@ import { Container } from "@components/layout/Container";
 
 import { IGenericProps } from "@typings/GenericProps";
 import { config } from "@config/config";
-import { space } from "@style/config/space";
+import { padding } from "@style/mixins/spacing";
 
 interface IProps extends IGenericProps {
   children: ReactNode;
@@ -16,7 +16,7 @@ interface IProps extends IGenericProps {
 
 const SPage = styled.main`
   .content {
-    padding: ${space.l};
+    ${padding.l}
   }
 `;
 

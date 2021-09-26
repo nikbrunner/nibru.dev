@@ -1,8 +1,9 @@
 import styled from "@emotion/styled";
 import { mq } from "@style/config/media-queries";
 
-import { space } from "@style/config/space";
 import { flex } from "@style/mixins/layout";
+import { margin, padding } from "@style/mixins/spacing";
+import { text } from "@style/mixins/text";
 
 interface IProps {
   coverImageUrl: string;
@@ -11,27 +12,29 @@ interface IProps {
 }
 
 const SBookDetailTitle = styled.header`
-  ${flex("column nowrap")}
+  ${flex({ flexflow: "column nowrap" })}
 
   ${mq.m} {
-    ${flex("row nowrap")}
+    ${flex({ flexflow: "row nowrap" })}
   }
 
-  margin-bottom: ${space.xxl};
+  ${margin.bottom.xxl}
 
   .image {
-    margin-right: ${space.xxl};
+    ${margin.right.xxl}
   }
 
   .title {
-    font-size: 5rem;
-    line-height: 1;
-    margin: 0;
+    ${text.lineHeight.xs}
+    ${margin.zero}
   }
 
   .author {
     font-weight: 700;
-    padding-left: ${space.xxxl};
+
+    ${mq.m} {
+      ${padding.left["3xl"]}
+    }
   }
 `;
 

@@ -5,28 +5,31 @@ import { IGenericProps } from "@typings/GenericProps";
 
 import { formatDate } from "@lib/date";
 
-import { space } from "@style/config/space";
 import { colors } from "@style/config/colors";
 import { flex } from "@style/mixins/layout";
 import { text } from "@style/mixins/text";
 import { border } from "@style/mixins/border";
+import { margin, padding } from "@style/mixins/spacing";
 
 interface IProps extends IGenericProps {
   highlight: IReadwiseHighlight;
 }
 
 const SBookHighlight = styled.div`
-  ${flex("column nowrap", "start start")}
+  ${flex({
+    flexflow: "column nowrap",
+    justifyContent: "flex-start",
+    alignItems: "flex-start"
+  })}
 
   ${({ theme }) => text.color.primary(theme)}
   ${border.thin(colors.gray)}
-
-  padding: ${space.xxxl};
+  ${padding["3xl"]}
 
   .text {
     ${text.lineHeight.l}
+    ${margin.top.zero}
 
-    margin-top: 0;
     flex: 1;
   }
 

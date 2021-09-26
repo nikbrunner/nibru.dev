@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import styled from "@emotion/styled";
 
 import { mq } from "@style/config/media-queries";
+import { margin } from "@style/mixins/spacing";
 
 interface IProps {
   children: ReactNode;
@@ -9,7 +10,7 @@ interface IProps {
 
 const SContainer = styled.div`
   max-width: 100vw;
-  margin: 0 auto;
+  ${margin.x.center}
 
   ${mq.m} {
     max-width: 90vw;
