@@ -3,10 +3,10 @@ import styled from "@emotion/styled";
 import { FiMoon, FiSun } from "react-icons/fi";
 
 import { NavLink } from "@components/ui/NavLink";
+import { ThemeToggle } from "@components/ui/ThemeToggle";
 import { Container } from "@components/layout/Container";
 
 import { ThemeContext } from "@theme/ThemeProvider";
-import { ETheme } from "@theme/themes";
 import { mq } from "@style/config/media-queries";
 
 interface IProps {
@@ -54,14 +54,7 @@ export const Nav = ({ title = "nibru.dev" }: IProps): JSX.Element => {
         <h1 className="title">{title}</h1>
 
         <div className="controls">
-          <div className="theme-buttons">
-            <button onClick={() => setTheme(ETheme.Light)}>
-              <FiSun />
-            </button>
-            <button onClick={() => setTheme(ETheme.Dark)}>
-              <FiMoon />
-            </button>
-          </div>
+          <ThemeToggle />
 
           <div className="nav-links">
             <NavLink href="/">Home</NavLink>
