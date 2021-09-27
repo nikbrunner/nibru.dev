@@ -14,18 +14,15 @@ const Home = () => (
       <div>
         <h2
           css={css`
+            margin: 0.5em 0 0.75em 0;
             font-size: 5rem;
             font-style: italic;
           `}
         >
-          Hi there.
+          hi
         </h2>
 
-        <Paragraph>
-          My name is Nikolaus Brunner,
-          <br />
-          or short just <em>Nik</em>.
-        </Paragraph>
+        <Paragraph>My name is Nik.</Paragraph>
 
         <Paragraph>
           I am working as a Software Engineer for{" "}
@@ -65,37 +62,6 @@ const Home = () => (
           </Link>
           .
         </Paragraph>
-
-        <div>
-          <Link
-            href="https://github.com/nikbrunner"
-            type="external"
-            hideIcon
-          >
-            <FiGithub />
-          </Link>
-          <Link
-            href="mailto:nikolaus.brunner@protonmail.ch"
-            type="external"
-            hideIcon
-          >
-            <FiMail />
-          </Link>
-          <Link
-            href="https://www.xing.com/profile/Nikolaus_Brunner4/cv"
-            type="external"
-            hideIcon
-          >
-            <RiXingLine />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/nikolaus-brunner-30847798/"
-            type="external"
-            hideIcon
-          >
-            <FiLinkedin />
-          </Link>
-        </div>
       </div>
     </Section>
   </Page>

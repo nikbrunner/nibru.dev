@@ -12,10 +12,13 @@ const genGlobalStyles = (theme: Theme) =>
       ${transition.fast("background")}
       ${transition.fast("color")}
 
+margin: 0;
+      padding: 0;
       font-family: "Lora", serif;
       font-size: 18px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
     }
 
     a {

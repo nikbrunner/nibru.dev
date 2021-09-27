@@ -4,6 +4,7 @@ import Head from "next/head";
 
 import { Nav } from "@components/layout/Nav";
 import { Container } from "@components/layout/Container";
+import { Footer } from "@components/layout/Footer";
 
 import { IGenericProps } from "@typings/GenericProps";
 import { config } from "@config/config";
@@ -15,8 +16,13 @@ interface IProps extends IGenericProps {
 }
 
 const SPage = styled.main`
-  .content {
-    ${padding.top.l}
+  label: Page;
+
+  ${padding.top.xs};
+  ${padding.bottom["5xl"]};
+
+  .children {
+    ${padding.y.l};
   }
 `;
 
@@ -30,9 +36,11 @@ export const Page = ({ children, title }: IProps): JSX.Element => (
     <SPage>
       <Nav title={config.siteTitle} />
 
-      <div className="content">
-        <Container>{children}</Container>
-      </div>
+      <Container>
+        <main className="children">{children}</main>
+      </Container>
+
+      <Footer />
     </SPage>
   </>
 );

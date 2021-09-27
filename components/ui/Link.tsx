@@ -1,8 +1,10 @@
 import { ReactNode } from "react";
 import styled from "@emotion/styled";
-import { FiLink } from "react-icons/fi";
+import { FiLink2 } from "react-icons/fi";
 
 import { IGenericProps } from "@typings/GenericProps";
+import { margin } from "@style/mixins/spacing";
+import { text } from "@style/mixins/text";
 
 interface IProps extends IGenericProps {
   children: ReactNode;
@@ -13,7 +15,13 @@ interface IProps extends IGenericProps {
 }
 
 const SLink = styled.a`
-  text-decoration: underline;
+  ${({ theme }) => text.color.accent(theme)};
+
+  .icon {
+    position: relative;
+    top: 0.25rem;
+    ${margin.left.xs};
+  }
 `;
 
 export const Link = ({
@@ -31,7 +39,7 @@ export const Link = ({
 
     <span className="icon">
       {type === "external" && !hideIcon && (
-        <FiLink style={{ display: "inline" }} />
+        <FiLink2 style={{ display: "inline" }} />
       )}
     </span>
   </SLink>
