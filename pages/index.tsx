@@ -1,8 +1,5 @@
 import { css } from "@emotion/react";
 
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-import { RiXingLine } from "react-icons/ri";
-
 import { Section } from "@components/layout/Section";
 import { Page } from "@components/layout/Page";
 import { Paragraph } from "@components/ui/Paragraph";
@@ -22,7 +19,9 @@ const Home = () => (
           hi
         </h2>
 
-        <Paragraph>My name is Nik.</Paragraph>
+        <Paragraph>
+          This is my little space on the internet. <br /> My name is Nik.
+        </Paragraph>
 
         <Paragraph>
           I am working as a Software Engineer for{" "}
@@ -44,15 +43,6 @@ const Home = () => (
           I mainly work with <strong className="font-bold">React</strong>
           , <wbr />
           <strong>TypeScript</strong> and <strong>SCSS</strong>.
-        </Paragraph>
-
-        <Paragraph>
-          This website is being rebuilt.
-          <br /> You can visit my old website{" "}
-          <Link href="/archive/index.html" type="internal">
-            here
-          </Link>
-          .
         </Paragraph>
 
         <Paragraph>

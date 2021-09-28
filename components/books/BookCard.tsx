@@ -16,10 +16,11 @@ interface IProps extends IGenericProps {
 
 const SBookCard = styled.div`
   ${({ theme }) => border.thin(theme.bg.ternary)}
-  ${({ theme }) => bg.color.secondary(theme)}
+  ${({ theme }) => bg.color.primary(theme)}
   ${({ theme }) => text.color.primary(theme)}
 
   ${padding["3xl"]}
+  height: 100%;
 
   .cover {
     ${margin.bottom.l}

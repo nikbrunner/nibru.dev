@@ -15,6 +15,7 @@ import {
   getBooks,
   ignoredReadwiseBooks
 } from "@lib/readwise";
+import { css } from "@emotion/react";
 
 interface IProps {
   books: IReadwiseBooks;
@@ -25,8 +26,16 @@ const Books = ({ books }: IProps) => {
 
   return (
     <Page title="Books">
-      <Section classNames={["Home__intro"]}>
-        <Headline>Books</Headline>
+      <Section>
+        <h1
+          className="header"
+          css={css`
+            margin-top: 0;
+            font-size: 5rem;
+          `}
+        >
+          Books
+        </h1>
 
         <Paragraph style={{ marginBottom: "1rem" }}>
           These are some of my Books I have read and highlighted.
