@@ -44,14 +44,6 @@ const Home = () => (
           , <wbr />
           <strong>TypeScript</strong> and <strong>SCSS</strong>.
         </Paragraph>
-
-        <Paragraph>
-          Developing{" "}
-          <Link href="https://sonder.haus" type="external">
-            sonder.haus
-          </Link>
-          .
-        </Paragraph>
       </div>
     </Section>
   </Page>
