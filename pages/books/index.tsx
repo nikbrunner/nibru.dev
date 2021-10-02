@@ -1,11 +1,10 @@
-import React from "react";
 import { GetStaticProps } from "next";
+import { css } from "@emotion/react";
 
 import { IReadwiseBooks } from "@typings/Readwise";
 
 import { Page } from "@components/layout/Page";
 import { Section } from "@components/layout/Section";
-import { Headline } from "@components/ui/Headline";
 import { Paragraph } from "@components/ui/Paragraph";
 import { BookCard } from "@components/books/BookCard";
 import { BooksLayout } from "@components/books/BooksLayout";
@@ -15,7 +14,6 @@ import {
   getBooks,
   ignoredReadwiseBooks
 } from "@lib/readwise";
-import { css } from "@emotion/react";
 
 interface IProps {
   books: IReadwiseBooks;

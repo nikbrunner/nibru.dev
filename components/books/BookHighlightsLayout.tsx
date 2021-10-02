@@ -9,7 +9,7 @@ interface IProps {
   children: ReactNode;
 }
 
-const SBookHighlights = styled.ul`
+const SBookHighlightsLayout = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: ${space.xxl};
@@ -20,6 +20,6 @@ const SBookHighlights = styled.ul`
   }
 `;
 
-export const BookHighlights = ({ children }: IProps) => (
-  <SBookHighlights>{children}</SBookHighlights>
+export const BookHighlightsLayout = ({ children }: IProps) => (
+  <SBookHighlightsLayout>{children}</SBookHighlightsLayout>
 );

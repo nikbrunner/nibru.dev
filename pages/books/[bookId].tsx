@@ -5,7 +5,7 @@ import { IReadwiseBook, IReadwiseHighlights } from "@typings/Readwise";
 import { Page } from "@components/layout/Page";
 import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
 import { BookHighlight } from "@components/books/BookHighlight";
-import { BookHighlights } from "@components/books/BookHighlights";
+import { BookHighlightsLayout } from "@components/books/BookHighlightsLayout";
 import { BookDetailTitle } from "@components/books/BookDetailTitle";
 
 interface IProps {
@@ -24,11 +24,11 @@ const Book = ({
       author={author}
     />
 
-    <BookHighlights>
+    <BookHighlightsLayout>
       {highlightsForBook?.results?.map(highlight => (
         <BookHighlight highlight={highlight} key={highlight.id} />
       ))}
-    </BookHighlights>
+    </BookHighlightsLayout>
   </Page>
 );
 
