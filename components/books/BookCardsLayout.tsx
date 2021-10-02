@@ -9,12 +9,12 @@ interface IProps extends IGenericProps {
   children: ReactNode;
 }
 
-const SBooksLayout = styled.div`
+const SBookCardsLayout = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: ${space.xxl};
 `;
 
-export const BooksLayout = ({ children }: IProps): JSX.Element => (
-  <SBooksLayout>{children}</SBooksLayout>
+export const BookCardsLayout = ({ children }: IProps): JSX.Element => (
+  <SBookCardsLayout>{children}</SBookCardsLayout>
 );

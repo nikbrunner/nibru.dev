@@ -7,7 +7,7 @@ import { Page } from "@components/layout/Page";
 import { Section } from "@components/layout/Section";
 import { Paragraph } from "@components/ui/Paragraph";
 import { BookCard } from "@components/books/BookCard";
-import { BooksLayout } from "@components/books/BooksLayout";
+import { BookCardsLayout } from "@components/books/BookCardsLayout";
 
 import {
   filterReadwiseBooks,
@@ -39,11 +39,11 @@ const Books = ({ books }: IProps) => {
           These are some of my Books I have read and highlighted.
         </Paragraph>
 
-        <BooksLayout>
+        <BookCardsLayout>
           {filteredBooks?.map(book => (
             <BookCard book={book} key={book.id} />
           ))}
-        </BooksLayout>
+        </BookCardsLayout>
       </Section>
     </Page>
   );
