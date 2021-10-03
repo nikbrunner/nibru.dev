@@ -1,7 +1,42 @@
-import { css } from "@emotion/react";
-import { space } from "@style/config/space";
+import { css, SerializedStyles } from "@emotion/react";
 
-export const margin = {
+import { space } from "./space";
+
+export interface ISpacingLevel {
+  zero: () => SerializedStyles;
+  xxs: () => SerializedStyles;
+  xs: () => SerializedStyles;
+  s: () => SerializedStyles;
+  m: () => SerializedStyles;
+  l: () => SerializedStyles;
+  xl: () => SerializedStyles;
+  xxl: () => SerializedStyles;
+  "3xl": () => SerializedStyles;
+  "4xl": () => SerializedStyles;
+  "5xl": () => SerializedStyles;
+}
+
+export interface IMargin extends ISpacingLevel {
+  top: ISpacingLevel;
+  right: ISpacingLevel;
+  bottom: ISpacingLevel;
+  left: ISpacingLevel;
+  x: ISpacingLevel & {
+    center: () => SerializedStyles;
+  };
+  y: ISpacingLevel;
+}
+
+export interface IPadding extends ISpacingLevel {
+  top: ISpacingLevel;
+  right: ISpacingLevel;
+  bottom: ISpacingLevel;
+  left: ISpacingLevel;
+  x: ISpacingLevel;
+  y: ISpacingLevel;
+}
+
+export const margin: IMargin = {
   zero: () => css`
     margin: 0;
   `,
@@ -272,7 +307,7 @@ export const margin = {
   }
 };
 
-export const padding = {
+export const padding: IPadding = {
   zero: () => css`
     padding: 0;
   `,

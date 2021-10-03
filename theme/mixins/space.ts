@@ -1,6 +1,19 @@
 const unit = "rem";
 
-export const space = {
+export interface ISpace {
+  xxs: string;
+  xs: string;
+  s: string;
+  m: string;
+  l: string;
+  xl: string;
+  xxl: string;
+  "3xl": string;
+  "4xl": string;
+  "5xl": string;
+}
+
+export const space: ISpace = {
   xxs: `0.15${unit}`,
   xs: `0.25${unit}`,
   s: `0.5${unit}`,

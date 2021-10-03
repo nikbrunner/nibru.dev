@@ -4,11 +4,11 @@ import styled from "@emotion/styled";
 import { IGenericProps } from "@typings/GenericProps";
 import { IReadwiseBook } from "@typings/Readwise";
 
-import { text } from "@style/mixins/text";
-import { bg } from "@style/mixins/bg";
-import { border } from "@style/mixins/border";
+import { text } from "@theme/mixins/text";
+import { bg } from "@theme/mixins/bg";
+import { border } from "@theme/mixins/border";
 import { formatDate } from "@lib/date";
-import { margin, padding } from "@style/mixins/spacing";
+import { margin, padding } from "@theme/mixins/spacing";
 
 interface IProps extends IGenericProps {
   book: IReadwiseBook;

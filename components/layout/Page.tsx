@@ -7,8 +7,8 @@ import { Container } from "@components/layout/Container";
 import { Footer } from "@components/layout/Footer";
 
 import { IGenericProps } from "@typings/GenericProps";
+import { padding } from "@theme/mixins/spacing";
 import { config } from "@config/config";
-import { padding } from "@style/mixins/spacing";
 
 interface IProps extends IGenericProps {
   children: ReactNode;

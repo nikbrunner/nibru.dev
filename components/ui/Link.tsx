@@ -3,8 +3,8 @@ import styled from "@emotion/styled";
 import { FiLink2 } from "react-icons/fi";
 
 import { IGenericProps } from "@typings/GenericProps";
-import { margin } from "@style/mixins/spacing";
-import { text } from "@style/mixins/text";
+import { margin } from "@theme/mixins/spacing";
+import { text } from "@theme/mixins/text";
 
 interface IProps extends IGenericProps {
   children: ReactNode;

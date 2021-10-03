@@ -6,11 +6,11 @@ import { Link } from "@components/ui/Link";
 import { Container } from "@components/layout/Container";
 import { ThemeToggle } from "@components/ui/ThemeToggle";
 
-import { margin, padding } from "@style/mixins/spacing";
-import { bg } from "@style/mixins/bg";
-import { flex } from "@style/mixins/layout";
-import { space } from "@style/config/space";
-import { text } from "@style/mixins/text";
+import { margin, padding } from "@theme/mixins/spacing";
+import { bg } from "@theme/mixins/bg";
+import { flex } from "@theme/mixins/layout";
+import { space } from "@theme/mixins/space";
+import { text } from "@theme/mixins/text";
 
 const SFooter = styled.footer`
   position: fixed;

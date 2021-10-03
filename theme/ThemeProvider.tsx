@@ -1,7 +1,7 @@
 import { createContext, Dispatch, SetStateAction, useState } from "react";
 import { ThemeProvider as EmotionThemeProvider } from "@emotion/react";
 
-import { lightTheme, darkTheme, ETheme } from "@theme/themes";
+import { lightTheme, darkTheme, ETheme } from "@theme/theme";
 
 interface IProps {
   children: React.ReactNode;

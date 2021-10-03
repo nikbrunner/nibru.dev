@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import styled from "@emotion/styled";
 
-import { mq } from "@style/config/media-queries";
-import { margin } from "@style/mixins/spacing";
+import { mq } from "@theme/mixins/media-queries";
+import { margin } from "@theme/mixins/spacing";
 
 interface IProps {
   children: ReactNode;

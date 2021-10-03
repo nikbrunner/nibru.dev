@@ -6,12 +6,12 @@ import { IGenericProps } from "@typings/GenericProps";
 
 import { formatDate } from "@lib/date";
 
-import { colors } from "@style/config/colors";
-import { flex } from "@style/mixins/layout";
-import { text } from "@style/mixins/text";
-import { border } from "@style/mixins/border";
-import { margin, padding } from "@style/mixins/spacing";
-import { mq } from "@style/config/media-queries";
+import { colors } from "@theme/mixins/colors";
+import { flex } from "@theme/mixins/layout";
+import { text } from "@theme/mixins/text";
+import { border } from "@theme/mixins/border";
+import { margin, padding } from "@theme/mixins/spacing";
+import { mq } from "@theme/mixins/media-queries";
 
 interface IProps extends IGenericProps {
   highlight: IReadwiseHighlight;

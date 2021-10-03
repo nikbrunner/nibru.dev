@@ -3,9 +3,9 @@ import styled from "@emotion/styled";
 import { FiMoon, FiSun } from "react-icons/fi";
 
 import { ThemeContext } from "@theme/ThemeProvider";
-import { ETheme } from "@theme/themes";
-import { flex } from "@style/mixins/layout";
-import { text } from "@style/mixins/text";
+import { ETheme } from "@theme/theme";
+import { flex } from "@theme/mixins/layout";
+import { text } from "@theme/mixins/text";
 
 const SThemeToggle = styled.div`
   ${flex({

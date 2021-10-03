@@ -3,9 +3,9 @@ import styled from "@emotion/styled";
 import { NavLink } from "@components/ui/NavLink";
 import { Container } from "@components/layout/Container";
 
-import { margin } from "@style/mixins/spacing";
-import { space } from "@style/config/space";
-import { flex } from "@style/mixins/layout";
+import { margin } from "@theme/mixins/spacing";
+import { space } from "@theme/mixins/space";
+import { flex } from "@theme/mixins/layout";
 
 interface IProps {
   title: string;

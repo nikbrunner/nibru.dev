@@ -4,7 +4,7 @@ import { NextRouter, useRouter } from "next/router";
 import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
-import { text } from "@style/mixins/text";
+import { text } from "@theme/mixins/text";
 
 interface IProps extends IGenericProps {
   href: string;

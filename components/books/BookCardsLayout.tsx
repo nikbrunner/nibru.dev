@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
 
-import { space } from "@style/config/space";
+import { space } from "@theme/mixins/space";
 
 interface IProps extends IGenericProps {
   children: ReactNode;

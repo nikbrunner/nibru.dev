@@ -1,8 +1,8 @@
 import { Global, css, useTheme, Theme } from "@emotion/react";
 
-import { bg } from "./mixins/bg";
-import { text } from "./mixins/text";
-import { transition } from "./mixins/transition";
+import { bg } from "../theme/mixins/bg";
+import { text } from "../theme/mixins/text";
+import { transition } from "../theme/mixins/transition";
 
 const genGlobalStyles = (theme: Theme) =>
   css`
