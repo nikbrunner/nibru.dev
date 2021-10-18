@@ -17,7 +17,8 @@ export const ignoredReadwiseBooks: TIgnoredReadwiseBooks = [
   "App Development With Swift",
   "Paradox",
   "A Game of Thrones",
-  "Die Zwölf"
+  "Die Zwölf",
+  "Using Spaced Repetition and Active Recall to Hack Your Brain"
 ];
 
 export const filterReadwiseBooks = (
@@ -53,20 +54,20 @@ const fetchFromReadwiseAPI = async (
 
 export const getBooks = async (): Promise<IReadwiseBooks> => {
   const res = await fetchFromReadwiseAPI(BOOKS_SUBPATH);
-  const books = (res.json() as unknown) as IReadwiseBooks;
+  const books = res.json() as unknown as IReadwiseBooks;
   return books;
 };
 
 export const getBook = async (bookId: string): Promise<IReadwiseBook> => {
   const subpath = `${BOOKS_SUBPATH}/${bookId}`;
   const res = await fetchFromReadwiseAPI(subpath);
-  const book = (res.json() as unknown) as IReadwiseBook;
+  const book = res.json() as unknown as IReadwiseBook;
   return book;
 };
 
 export const getHighlights = async (): Promise<IReadwiseHighlights> => {
   const res = await fetchFromReadwiseAPI(HIGHLIGHTS_SUBPATH);
-  const highlights = (res.json() as unknown) as IReadwiseHighlights;
+  const highlights = res.json() as unknown as IReadwiseHighlights;
   return highlights;
 };
 
@@ -75,6 +76,6 @@ export const getHighlightsForBook = async (
 ): Promise<IReadwiseHighlights> => {
   const subpath = `${HIGHLIGHTS_SUBPATH}/?book_id=${bookId}`;
   const res = await fetchFromReadwiseAPI(subpath);
-  const highlightsForBook = (res.json() as unknown) as IReadwiseHighlights;
+  const highlightsForBook = res.json() as unknown as IReadwiseHighlights;
   return highlightsForBook;
 };
