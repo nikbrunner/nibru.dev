@@ -16,12 +16,12 @@ const Home = () => (
             font-style: italic;
           `}
         >
-          hi
+          Hi.
         </h2>
 
-        <Paragraph>
-          This is my little space on the internet. <br /> My name is Nik.
-        </Paragraph>
+        <Paragraph>My name is Nik.</Paragraph>
+
+        <Paragraph>This is my little space on the internet.</Paragraph>
 
         <Paragraph>
           I am working as a Software Engineer for{" "}
