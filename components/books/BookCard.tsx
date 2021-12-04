@@ -24,6 +24,9 @@ const SBookCard = styled.div`
 
   .cover {
     ${margin.bottom.l}
+    width: 133px;
+    height: 200px;
+    object-fit: contain;
   }
 
   .title {
