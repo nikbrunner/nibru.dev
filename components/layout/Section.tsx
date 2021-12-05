@@ -7,7 +7,10 @@ interface IProps extends IGenericProps {
   id?: string;
 }
 
-export const Section = ({ children, id = "" }: IProps): JSX.Element => (
+export const Section: React.FC<IProps> = ({
+  children,
+  id = ""
+}): JSX.Element => (
   <section id={id}>
     <article>{children}</article>
   </section>

@@ -9,7 +9,11 @@ const SSkill = styled.div`
   background-color: aqua;
 `;
 
-export const Skill = ({ title, level, icon }: IProps): JSX.Element => (
+export const Skill: React.FC<IProps> = ({
+  title,
+  level,
+  icon
+}): JSX.Element => (
   <SSkill>
     <div
       className="level"

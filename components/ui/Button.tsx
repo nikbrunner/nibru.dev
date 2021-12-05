@@ -12,11 +12,11 @@ interface IProps extends IGenericProps {
   onClick?: () => void;
 }
 
-export const Button = ({
+export const Button: React.FC<IProps> = ({
   size = "m",
   children,
   onClick
-}: IProps): JSX.Element => (
+}): JSX.Element => (
   <button
     className={cn({
       block: componentName,

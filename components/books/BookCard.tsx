@@ -34,9 +34,9 @@ const SBookCard = styled.div`
   }
 `;
 
-export const BookCard = ({
+export const BookCard: React.FC<IProps> = ({
   book: { id, title, cover_image_url, author, num_highlights, updated }
-}: IProps): JSX.Element => (
+}): JSX.Element => (
   <Link href={`/books/${id}`} key={id}>
     <a>
       <SBookCard>

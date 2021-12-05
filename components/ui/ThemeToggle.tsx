@@ -32,7 +32,7 @@ const SButton = styled.button<{ isActive: boolean }>`
   cursor: pointer;
 `;
 
-export const ThemeToggle = () => {
+export const ThemeToggle: React.FC = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (

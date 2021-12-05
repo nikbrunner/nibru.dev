@@ -11,13 +11,13 @@ const SExperience = styled.div<Partial<IProps>>`
   background-color: ${({ current }) => (current ? "green" : "white")};
 `;
 
-export const Experience = ({
+export const Experience: React.FC<IProps> = ({
   title,
   dateRange,
   company,
   details,
   current
-}: IProps) => (
+}): JSX.Element => (
   <SExperience current={current}>
     <h3 className="title">{title}</h3>
 

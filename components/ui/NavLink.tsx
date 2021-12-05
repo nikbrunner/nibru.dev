@@ -18,7 +18,10 @@ const SNavLink = styled.a<{ isActive: boolean }>`
   cursor: pointer;
 `;
 
-export const NavLink = ({ href, children }: IProps): JSX.Element => {
+export const NavLink: React.FC<IProps> = ({
+  href,
+  children
+}): JSX.Element => {
   const router: NextRouter = useRouter();
   const isActive: boolean = router.pathname === href;
 

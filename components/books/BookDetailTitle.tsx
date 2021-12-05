@@ -46,11 +46,11 @@ const SBookDetailTitle = styled.header`
   }
 `;
 
-export const BookDetailTitle = ({
+export const BookDetailTitle: React.FC<IProps> = ({
   coverImageUrl,
   title,
   author
-}: IProps) => (
+}) => (
   <SBookDetailTitle>
     <div className="image">
       <img src={coverImageUrl} alt={`Cover for ${title}`} />

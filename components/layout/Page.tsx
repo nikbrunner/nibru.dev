@@ -26,7 +26,10 @@ const SPage = styled.main`
   }
 `;
 
-export const Page = ({ children, title }: IProps): JSX.Element => (
+export const Page: React.FC<IProps> = ({
+  children,
+  title
+}): JSX.Element => (
   <>
     <Head>
       <title>{`${config.siteTitle} / ${title}`}</title>

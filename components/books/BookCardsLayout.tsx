@@ -15,6 +15,6 @@ const SBookCardsLayout = styled.div`
   gap: ${space.xxl};
 `;
 
-export const BookCardsLayout = ({ children }: IProps): JSX.Element => (
-  <SBookCardsLayout>{children}</SBookCardsLayout>
-);
+export const BookCardsLayout: React.FC<IProps> = ({
+  children
+}): JSX.Element => <SBookCardsLayout>{children}</SBookCardsLayout>;

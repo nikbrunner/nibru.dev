@@ -20,6 +20,6 @@ const SBookHighlightsLayout = styled.ul`
   }
 `;
 
-export const BookHighlightsLayout = ({ children }: IProps) => (
+export const BookHighlightsLayout: React.FC<IProps> = ({ children }) => (
   <SBookHighlightsLayout>{children}</SBookHighlightsLayout>
 );

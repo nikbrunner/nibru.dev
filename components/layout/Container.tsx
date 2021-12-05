@@ -34,6 +34,6 @@ const SContainer = styled.div`
   }
 `;
 
-export const Container = ({ children }: IProps) => (
+export const Container: React.FC<IProps> = ({ children }) => (
   <SContainer>{children}</SContainer>
 );

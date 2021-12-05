@@ -64,9 +64,9 @@ const SBookHighlight = styled.div`
   }
 `;
 
-export const BookHighlight = ({
+export const BookHighlight: React.FC<IProps> = ({
   highlight: { text, updated }
-}: IProps): JSX.Element => (
+}): JSX.Element => (
   <SBookHighlight>
     <div className="icon">
       <FaQuoteLeft />

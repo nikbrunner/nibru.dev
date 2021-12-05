@@ -40,7 +40,7 @@ const SFooter = styled.footer`
   }
 `;
 
-export const Footer = () => (
+export const Footer: React.FC = () => (
   <SFooter>
     <Container>
       <div className="inner-wrapper">

@@ -24,13 +24,13 @@ const SLink = styled.a`
   }
 `;
 
-export const Link = ({
+export const Link: React.FC<IProps> = ({
   children,
   href,
   type,
   openInNewTab = false,
   hideIcon = false
-}: IProps) => (
+}) => (
   <SLink
     href={href}
     target={type === "external" || openInNewTab ? "_blank" : "_self"}
