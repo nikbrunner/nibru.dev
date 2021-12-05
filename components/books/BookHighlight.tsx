@@ -54,8 +54,8 @@ const SBookHighlight = styled.div`
     ${text.lineHeight.base}
     ${margin.top.zero}
 
+    font-family: "Vollkorn", serif;
     max-width: 60ch;
-    font-style: italic;
   }
 
   .date {

@@ -4,8 +4,10 @@ import { bg } from "../theme/mixins/bg";
 import { text } from "../theme/mixins/text";
 import { transition } from "../theme/mixins/transition";
 
-const genGlobalStyles = (theme: Theme) =>
+const globalStyles = (theme: Theme) =>
   css`
+    @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&family=Work+Sans:ital,wght@0,200;0,300;0,400;1,800&display=swap");
+
     * {
       box-sizing: border-box;
     }
@@ -16,9 +18,9 @@ const genGlobalStyles = (theme: Theme) =>
       ${transition.fast("background")}
       ${transition.fast("color")}
 
-margin: 0;
+      margin: 0;
       padding: 0;
-      font-family: "Lora", serif;
+      font-family: "Work Sans", sans-serif;
       font-size: 18px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -43,5 +45,5 @@ margin: 0;
 export const SGlobal = () => {
   const theme = useTheme();
 
-  return <Global styles={genGlobalStyles(theme)} />;
+  return <Global styles={globalStyles(theme)} />;
 };
