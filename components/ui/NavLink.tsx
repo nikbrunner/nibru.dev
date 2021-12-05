@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
 import { text } from "@theme/mixins/text";
+import { transition } from "@theme/mixins/transition";
 
 interface IProps extends IGenericProps {
   href: string;
@@ -15,7 +16,13 @@ const SNavLink = styled.a<{ isActive: boolean }>`
   ${({ theme, isActive }) =>
     isActive ? text.color.accent(theme) : text.color.primary(theme)}
 
+  ${transition.fast("color")}
+
   cursor: pointer;
+
+  &:hover {
+    ${({ theme }) => text.color.accent(theme)}
+  }
 `;
 
 export const NavLink: React.FC<IProps> = ({

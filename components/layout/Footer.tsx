@@ -19,7 +19,7 @@ const SFooter = styled.footer`
   ${margin.top["xxl"]};
 
   ${({ theme }) => bg.color.primary(theme)};
-  border-top: 3px solid ${({ theme }) => theme.bg.ternary};
+  border-top: 10px solid ${({ theme }) => theme.bg.secondary};
 
   .inner-wrapper {
     ${padding.y.m};
