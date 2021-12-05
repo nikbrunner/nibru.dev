@@ -24,14 +24,13 @@ export const ignoredReadwiseBooks: TIgnoredReadwiseBooks = [
 export const filterReadwiseBooks = (
   books: IReadwiseBooks,
   ignoredBooks: TIgnoredReadwiseBooks
-): IReadwiseBook[] => {
-  return books
+): IReadwiseBook[] =>
+  books
     ? books.results?.filter(
         book =>
           !ignoredBooks.includes(book.title) && book.num_highlights > 0
       )
     : [];
-};
 
 const fetchFromReadwiseAPI = async (
   subpath: string
