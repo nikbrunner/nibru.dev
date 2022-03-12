@@ -1,5 +1,6 @@
 import { Theme } from "@emotion/react";
 
+// TODO Update colors to use GitHub's colors
 export const lightTheme: Theme = {
   fg: {
     primary: "#0f0f0f",

@@ -12,13 +12,17 @@ const HIGHLIGHTS_SUBPATH: string = "highlights";
 
 const READWISE_TOKEN: string = process.env.READWISE_TOKEN || "";
 
+// TODO: This should work via a `publish` tag via Readwise
+// Otherwise this gets a little messy
 export const ignoredReadwiseBooks: TIgnoredReadwiseBooks = [
   "How to Use Readwise",
   "App Development With Swift",
   "Paradox",
   "A Game of Thrones",
   "Die Zwölf",
-  "Using Spaced Repetition and Active Recall to Hack Your Brain"
+  "Using Spaced Repetition and Active Recall to Hack Your Brain",
+  "Liked Tweets",
+  "A Hundred Things I Learn..."
 ];
 
 export const filterReadwiseBooks = (
