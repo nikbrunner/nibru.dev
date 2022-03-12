@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import { GetServerSideProps } from "next";
 import { css } from "@emotion/react";
 
 import { IReadwiseBooks } from "@typings/Readwise";
@@ -45,7 +45,7 @@ const Books = ({ books }: IProps) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const books = await getBooks();
 
   const props: IProps = {
