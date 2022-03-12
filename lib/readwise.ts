@@ -2,8 +2,7 @@ import {
   IReadwiseAuthorizationHeader,
   IReadwiseBook,
   IReadwiseBooks,
-  IReadwiseHighlights,
-  TIgnoredReadwiseBooks
+  IReadwiseHighlights
 } from "@typings/Readwise";
 
 const READWISE_API_BASE_URL: string = "https://readwise.io/api/v2";
@@ -12,29 +11,16 @@ const HIGHLIGHTS_SUBPATH: string = "highlights";
 
 const READWISE_TOKEN: string = process.env.READWISE_TOKEN || "";
 
-// TODO: This should work via a `publish` tag via Readwise
-// Otherwise this gets a little messy
-export const ignoredReadwiseBooks: TIgnoredReadwiseBooks = [
-  "How to Use Readwise",
-  "App Development With Swift",
-  "Paradox",
-  "A Game of Thrones",
-  "Die Zwölf",
-  "Using Spaced Repetition and Active Recall to Hack Your Brain",
-  "Liked Tweets",
-  "A Hundred Things I Learn..."
-];
-
-export const filterReadwiseBooks = (
+export const filterBooksByTag = (
   books: IReadwiseBooks,
-  ignoredBooks: TIgnoredReadwiseBooks
-): IReadwiseBook[] =>
-  books
+  tagName: string
+) => {
+  return books
     ? books.results?.filter(
-        book =>
-          !ignoredBooks.includes(book.title) && book.num_highlights > 0
+        ({ tags }) => tags.filter(tag => tag.name === tagName).length > 0
       )
     : [];
+};
 
 const fetchFromReadwiseAPI = async (
   subpath: string

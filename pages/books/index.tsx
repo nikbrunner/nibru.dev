@@ -9,18 +9,14 @@ import { Paragraph } from "@components/ui/Paragraph";
 import { BookCard } from "@components/books/BookCard";
 import { BookCardsLayout } from "@components/books/BookCardsLayout";
 
-import {
-  filterReadwiseBooks,
-  getBooks,
-  ignoredReadwiseBooks
-} from "@lib/readwise";
+import { filterBooksByTag, getBooks } from "@lib/readwise";
 
 interface IProps {
   books: IReadwiseBooks;
 }
 
 const Books = ({ books }: IProps) => {
-  const filteredBooks = filterReadwiseBooks(books, ignoredReadwiseBooks);
+  const publicBooks = filterBooksByTag(books, "public");
 
   return (
     <Page title="Books">
@@ -40,7 +36,7 @@ const Books = ({ books }: IProps) => {
         </Paragraph>
 
         <BookCardsLayout>
-          {filteredBooks?.map(book => (
+          {publicBooks?.map(book => (
             <BookCard book={book} key={book.id} />
           ))}
         </BookCardsLayout>

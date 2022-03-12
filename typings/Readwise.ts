@@ -2,9 +2,6 @@ export interface IReadwiseAuthorizationHeader {
   Authorization: string;
 }
 
-// This must be the book.title
-export type TIgnoredReadwiseBooks = string[];
-
 export interface IReadwiseBooks {
   count: number;
   next: null;
@@ -24,7 +21,11 @@ export interface IReadwiseBook {
   highlights_url: string;
   source_url: string;
   asin: string | null;
-  tags: string[];
+  tags: {
+    id: number;
+    user_book: number;
+    name: string;
+  }[];
 }
 
 export enum EReadwiseBookCategory {
