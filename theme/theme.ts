@@ -1,33 +1,33 @@
 import { Theme } from "@emotion/react";
+import { colors } from "./mixins/colors";
 
-// TODO Update colors to use GitHub's colors
 export const lightTheme: Theme = {
   fg: {
-    primary: "#0f0f0f",
-    secondary: "#1f1f1f",
-    ternary: "#353535",
-    accent: "#274de6"
+    primary: colors.black,
+    secondary: colors.gray[9],
+    ternary: colors.gray[8],
+    accent: colors.blue[5],
   },
   bg: {
-    primary: "#ffffff",
-    secondary: "#f4f4f4",
-    ternary: "#dedede",
-    accent: "#274de6"
+    primary: colors.white,
+    secondary: colors.gray[0],
+    ternary: colors.gray[1],
+    accent: colors.blue[5],
   }
 };
 
 export const darkTheme: Theme = {
   fg: {
-    primary: "#ffffff",
-    secondary: "#f4f4f4",
-    ternary: "#dedede",
-    accent: "#27e67d"
+    primary: colors.white,
+    secondary: colors.gray[0],
+    ternary: colors.gray[1],
+    accent: colors.green[3],
   },
   bg: {
-    primary: "#0f0f0f",
-    secondary: "#1f1f1f",
-    ternary: "#3a3a3a",
-    accent: "#27e67d"
+    primary: colors.gray[9],
+    secondary: colors.gray[8],
+    ternary: colors.gray[7],
+    accent: colors.green[3],
   }
 };
 

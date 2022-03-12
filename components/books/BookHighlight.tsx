@@ -6,12 +6,12 @@ import { IGenericProps } from "@typings/GenericProps";
 
 import { formatDate } from "@lib/date";
 
-import { colors } from "@theme/mixins/colors";
 import { flex } from "@theme/mixins/layout";
 import { text } from "@theme/mixins/text";
 import { border } from "@theme/mixins/border";
 import { margin, padding } from "@theme/mixins/spacing";
 import { mq } from "@theme/mixins/media-queries";
+import { bg } from "@theme/mixins/bg";
 
 interface IProps extends IGenericProps {
   highlight: IReadwiseHighlight;
@@ -35,10 +35,11 @@ const SBookHighlight = styled.div`
   }
 
   ${({ theme }) => text.color.primary(theme)}
-  ${border.thin(colors.gray)}
+  ${({ theme }) => border.thin(theme.bg.ternary)}
   ${padding["3xl"]}
 
   .icon {
+    color: ${({ theme }) => theme.bg.ternary};
     ${padding.bottom["xxl"]}
     ${text.size.xl}
 
@@ -48,6 +49,14 @@ const SBookHighlight = styled.div`
       position: relative;
       top: 0.5rem;
     }
+  }
+
+  .meta {
+    ${flex({
+      flexflow: "column nowrap",
+      justifyContent: "space-between"
+    })}
+    height: 100%;
   }
 
   .text {
@@ -60,7 +69,6 @@ const SBookHighlight = styled.div`
 
   .date {
     align-self: flex-end;
-    font-style: italic;
   }
 `;
 

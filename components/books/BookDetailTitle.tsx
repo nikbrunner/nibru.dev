@@ -27,6 +27,16 @@ const SBookDetailTitle = styled.header`
     ${mq.m} {
       ${margin.right.xxl};
     }
+
+    max-width: 134px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .meta {
+    width: 100%;
   }
 
   .title {
