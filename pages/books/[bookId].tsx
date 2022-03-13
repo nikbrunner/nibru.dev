@@ -17,7 +17,7 @@ const Book = ({
   book: { title, cover_image_url, author },
   highlightsForBook
 }: IProps): JSX.Element => (
-  <Page title="Book">
+  <Page title={`Book - ${title}`}>
     <BookDetailTitle
       coverImageUrl={cover_image_url}
       title={title}
