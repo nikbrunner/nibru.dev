@@ -1,6 +1,6 @@
 import { Global, css, useTheme, Theme } from "@emotion/react";
 
-import { bg } from "../theme/mixins/bg";
+import { background } from "@mixins/background";
 import { text } from "../theme/mixins/text";
 import { transition } from "../theme/mixins/transition";
 
@@ -13,7 +13,7 @@ const globalStyles = (theme: Theme) =>
     }
 
     body {
-      ${bg.color.primary(theme)}
+      ${background.color.primary(theme)}
       ${text.color.primary(theme)}
       ${transition.fast("background")}
       ${transition.fast("color")}

@@ -10,7 +10,6 @@ import { flex } from "@theme/mixins/layout";
 import { text } from "@theme/mixins/text";
 import { margin, padding } from "@theme/mixins/spacing";
 import { mq } from "@theme/mixins/media-queries";
-import { bg } from "@theme/mixins/bg";
 
 interface IProps extends IGenericProps {
   highlight: IReadwiseHighlight;

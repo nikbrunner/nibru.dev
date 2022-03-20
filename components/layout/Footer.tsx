@@ -6,19 +6,20 @@ import { Link } from "@components/ui/Link";
 import { Container } from "@components/layout/Container";
 import { ThemeToggle } from "@components/ui/ThemeToggle";
 
+import { background } from "@mixins/background";
 import { margin, padding } from "@theme/mixins/spacing";
-import { bg } from "@theme/mixins/bg";
 import { flex } from "@theme/mixins/layout";
 import { space } from "@theme/mixins/space";
 import { text } from "@theme/mixins/text";
 
 const SFooter = styled.footer`
+  ${({ theme }) => background.color.primary(theme)};
+  ${margin.top["xxl"]};
+
   position: fixed;
   bottom: 0;
   width: 100%;
-  ${margin.top["xxl"]};
 
-  ${({ theme }) => bg.color.primary(theme)};
   border-top: 1px solid ${({ theme }) => theme.bg.secondary};
 
   .inner-wrapper {
