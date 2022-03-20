@@ -6,6 +6,7 @@ import { IGenericProps } from "@typings/GenericProps";
 
 import { formatDate } from "@lib/date";
 
+import { border } from "@mixins/border";
 import { flex } from "@theme/mixins/layout";
 import { text } from "@theme/mixins/text";
 import { margin, padding } from "@theme/mixins/spacing";
@@ -33,7 +34,7 @@ const SBookHighlight = styled.div`
   }
 
   ${({ theme }) => text.color.primary(theme)}
-  ${({ theme }) => theme.border.thin(theme.bg.ternary)}
+  ${({ theme }) => border.thin(theme.bg.ternary)}
   ${padding["3xl"]}
 
   .icon {

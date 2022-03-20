@@ -29,6 +29,7 @@ export interface IBorder {
   };
 }
 
+// TODO Setup directions
 export const border: IBorder = {
   thin: (color: string) => `border: ${BorderWith.Thin} solid ${color};`,
   default: (color: string) => `border: ${BorderWith.Default} solid ${color};`,

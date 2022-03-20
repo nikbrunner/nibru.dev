@@ -1,13 +1,7 @@
-import { IBaseTheme, Theme } from "@emotion/react";
-import { border } from "./mixins/border";
+import { Theme } from "@emotion/react";
 import { colors } from "./mixins/colors";
 
-const baseTheme: IBaseTheme = {
-  border
-};
-
 export const lightTheme: Theme = {
-  ...baseTheme,
   fg: {
     primary: colors.black,
     secondary: colors.gray[9],
@@ -23,7 +17,6 @@ export const lightTheme: Theme = {
 };
 
 export const darkTheme: Theme = {
-  ...baseTheme,
   fg: {
     primary: colors.white,
     secondary: colors.gray[0],
