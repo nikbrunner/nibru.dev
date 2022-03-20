@@ -1,12 +1,10 @@
-import React from "react";
-
-import { ThemeProvider } from "@context/ThemeContext";
-
-import "../style/main.scss";
+import { SGlobal } from "@style/Global.style";
+import { ThemeProvider } from "@theme/ThemeProvider";
 
 const App = ({ Component, pageProps }) => (
   <div className="App">
     <ThemeProvider>
+      <SGlobal />
       <Component {...pageProps} />
     </ThemeProvider>
   </div>

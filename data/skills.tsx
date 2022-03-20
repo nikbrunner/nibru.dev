@@ -16,9 +16,9 @@ import {
   FaFigma
 } from "react-icons/fa";
 
-import { Skill } from "@typings/profile/Skill";
+import { ISkill } from "@typings/profile/Skill";
 
-const skills: Skill[] = [
+export const skills: ISkill[] = [
   {
     icon: <SiHtml5 />,
     level: 95,
@@ -80,5 +80,3 @@ const skills: Skill[] = [
     title: "GraphQL"
   }
 ];
-
-export default skills;

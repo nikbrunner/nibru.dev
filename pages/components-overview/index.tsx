@@ -1,41 +1,36 @@
-import React from "react";
+import { Section } from "@components/layout/Section";
+import { Page } from "@components/layout/Page";
 
-import { Grid } from "@components/layout/Grid/Grid";
-import { Section } from "@components/layout/Section/Section";
-import { Row } from "@components/layout/Row/Row";
-import { Page } from "@components/layout/Page/Page";
+import { Button } from "@components/ui/Button";
+import { Headline } from "@components/ui/Headline";
+import { Link } from "@components/ui/Link";
+import { Paragraph } from "@components/ui/Paragraph";
 
-import { Button } from "@components/ui/Button/Button";
-import { Headline } from "@components/ui/Headline/Headline";
-import { Link } from "@components/ui/Link/Link";
-import { Text } from "@components/ui/Text/Text";
+import { Skill } from "@components/profile/Skill";
+import { Experience } from "@components/profile/Experience";
 
-import { Skill } from "@components/profile/Skill/Skill";
-import { Experience } from "@components/profile/Experience/Experience";
+import { IExperience as ExperienceType } from "@typings/profile/Experience";
+import { ISkill as SkillType } from "@typings/profile/Skill";
 
-import { Experience as ExperienceType } from "@typings/profile/Experience";
-import { Skill as SkillType } from "@typings/profile/Skill";
-import { Space } from "@typings/Spaces";
-
-import skills from "@data/skills";
-import experiences from "@data/experiences";
-import profile from "@data/profile";
+import { skills } from "@data/skills";
+import { experiences } from "@data/experiences";
+import { profile } from "@data/profile";
 
 const Components = () => (
-  <Page name="Components">
+  <Page title="Components">
     <Section>
-      <Headline tag="h1" size="h1">
-        Components Overview
-      </Headline>
+      <Headline tag="h1">Components Overview</Headline>
 
-      <Text>This page is just an overview over all components.</Text>
+      <Paragraph>
+        This page is just an overview over all components.
+      </Paragraph>
     </Section>
 
     <Section>
-      <Headline size="h2">Link component</Headline>
+      <Headline>Link component</Headline>
 
-      <Row>
-        <Text>
+      <div>
+        <Paragraph>
           This is an external link to{" "}
           <Link href={profile.github} type="external">
             GitHub
@@ -49,39 +44,23 @@ const Components = () => (
             About page
           </Link>
           .
-        </Text>
-      </Row>
+        </Paragraph>
+      </div>
     </Section>
 
     <Section>
-      <Headline tag="h1" size="h1">
-        Headline Size H1
-      </Headline>
-
-      <Headline tag="h2" size="h2">
-        Headline Size H2
-      </Headline>
-
-      <Headline tag="h3" size="h3">
-        Headline Size H3
-      </Headline>
-
-      <Headline tag="h4" size="h4">
-        Headline Size H4
-      </Headline>
-
-      <Headline tag="h5" size="h5">
-        Headline Size H5
-      </Headline>
-
-      <Headline tag="h6" size="h6">
-        Headline Size H6
-      </Headline>
+      <Headline tag="h1">Headline Size H1</Headline>
+      <Headline tag="h2">Headline Size H2</Headline>
+      <Headline tag="h3">Headline Size H3</Headline>
+      <Headline tag="h4">Headline Size H4</Headline>
+      <Headline tag="h5">Headline Size H5</Headline>
+      <Headline tag="h6">Headline Size H6</Headline>
     </Section>
 
     <Section>
-      <Headline size="h1">Text component</Headline>
-      <Text>
+      <Headline>Text component</Headline>
+
+      <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Interdum posuere{" "}
@@ -94,9 +73,9 @@ const Components = () => (
         sed. Nec feugiat in fermentum posuere urna. Interdum velit laoreet
         id donec ultrices tincidunt arcu. Quam vulputate dignissim
         suspendisse in. Feugiat sed lectus vestibulum mattis.
-      </Text>
+      </Paragraph>
 
-      <Text>
+      <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Interdum posuere{" "}
@@ -109,15 +88,13 @@ const Components = () => (
         sed. Nec feugiat in fermentum posuere urna. Interdum velit laoreet
         id donec ultrices tincidunt arcu. Quam vulputate dignissim
         suspendisse in. Feugiat sed lectus vestibulum mattis.
-      </Text>
+      </Paragraph>
     </Section>
 
     <Section>
-      <Headline tag="h1" size="h1">
-        Lorem ipsum dolor sit amet.
-      </Headline>
+      <Headline tag="h1">Lorem ipsum dolor sit amet.</Headline>
 
-      <Text>
+      <Paragraph>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
         aperiam voluptas explicabo, similique sunt provident quis beatae ab
         blanditiis veritatis! Lorem ipsum dolor, sit amet consectetur
@@ -127,13 +104,11 @@ const Components = () => (
         asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
         necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo
         modi totam!
-      </Text>
+      </Paragraph>
 
-      <Headline tag="h2" size="h2">
-        Lorem, ipsum dolor.
-      </Headline>
+      <Headline tag="h2">Lorem, ipsum dolor.</Headline>
 
-      <Text>
+      <Paragraph>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
         aperiam voluptas explicabo, similique sunt provident quis beatae ab
         blanditiis veritatis! Lorem ipsum dolor, sit amet consectetur
@@ -143,13 +118,11 @@ const Components = () => (
         asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
         necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo
         modi totam!
-      </Text>
+      </Paragraph>
 
-      <Headline tag="h3" size="h3">
-        Lorem ipsum dolor sit amet.
-      </Headline>
+      <Headline tag="h3">Lorem ipsum dolor sit amet.</Headline>
 
-      <Text>
+      <Paragraph>
         Vitae tempus quam{" "}
         <Link href="https://google.com" type="external">
           Pellentesque
@@ -162,13 +135,11 @@ const Components = () => (
         Viverra vitae congue eu consequat ac felis donec. Diam maecenas
         ultricies mi eget mauris pharetra. Donec pretium vulputate sapien
         nec sagittis aliquam malesuada.
-      </Text>
+      </Paragraph>
 
-      <Headline tag="h4" size="h4">
-        Lorem ipsum dolor sit.
-      </Headline>
+      <Headline tag="h4">Lorem ipsum dolor sit.</Headline>
 
-      <Text>
+      <Paragraph>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
         lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
         ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
@@ -182,13 +153,11 @@ const Components = () => (
         pretium. Id porta nibh venenatis cras sed felis eget. Non
         consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
         urna neque viverra justo.
-      </Text>
+      </Paragraph>
 
-      <Headline tag="h5" size="h5">
-        Lorem ipsum dolor sit amet consectetur.
-      </Headline>
+      <Headline tag="h5">Lorem ipsum dolor sit amet consectetur.</Headline>
 
-      <Text>
+      <Paragraph>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
         lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
         ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
@@ -202,13 +171,11 @@ const Components = () => (
         pretium. Id porta nibh venenatis cras sed felis eget. Non
         consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
         urna neque viverra justo.
-      </Text>
+      </Paragraph>
 
-      <Headline tag="h6" size="h6">
-        Lorem ipsum dolor sit.
-      </Headline>
+      <Headline tag="h6">Lorem ipsum dolor sit.</Headline>
 
-      <Text>
+      <Paragraph>
         Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
         lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
         ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
@@ -222,33 +189,31 @@ const Components = () => (
         pretium. Id porta nibh venenatis cras sed felis eget. Non
         consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
         urna neque viverra justo.
-      </Text>
+      </Paragraph>
     </Section>
 
     <Section>
-      <Headline size="h1">Button component</Headline>
+      <Headline>Button component</Headline>
 
-      <Row>
+      <div>
         <Button>This is a button without an Icon</Button>
-      </Row>
+      </div>
 
-      <Row>
+      <div>
         <Button size="l">This is a big button without an Icon</Button>
-      </Row>
+      </div>
     </Section>
 
     <Section>
-      <Row>
-        <Headline size="h1">Grid</Headline>
-      </Row>
+      <div>
+        <Headline>Grid</Headline>
+      </div>
 
-      <Grid cols={2} gap={Space.l}>
+      <div>
         <div>
-          <Headline tag="h2" size="h2">
-            Left column
-          </Headline>
+          <Headline tag="h2">Left column</Headline>
 
-          <Text>
+          <Paragraph>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
             aperiam voluptas explicabo, similique sunt provident quis
             beatae ab blanditiis veritatis! Lorem ipsum dolor, sit amet
@@ -258,15 +223,13 @@ const Components = () => (
             laudantium officiis asperiores fuga quae eos quisquam! Fugit
             amet, delectus rem quia necessitatibus molestiae, aliquid quam
             dignissimos doloribus, nemo modi totam!
-          </Text>
+          </Paragraph>
         </div>
 
         <div>
-          <Headline tag="h2" size="h2">
-            Right column
-          </Headline>
+          <Headline tag="h2">Right column</Headline>
 
-          <Text>
+          <Paragraph>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
             aperiam voluptas explicabo, similique sunt provident quis
             beatae ab blanditiis veritatis! Lorem ipsum dolor, sit amet
@@ -276,32 +239,32 @@ const Components = () => (
             laudantium officiis asperiores fuga quae eos quisquam! Fugit
             amet, delectus rem quia necessitatibus molestiae, aliquid quam
             dignissimos doloribus, nemo modi totam!
-          </Text>
+          </Paragraph>
         </div>
-      </Grid>
+      </div>
     </Section>
 
     <Section>
-      <Row>
+      <div>
         <Headline>Skill component</Headline>
-      </Row>
+      </div>
 
-      <Row classNames={["Components__skills-container"]}>
-        <Grid cols="auto-fit" gap={Space.m}>
+      <div className="Components__skills-container">
+        <div>
           {skills.map(({ title, level, icon }: SkillType) => (
             <Skill key={title} title={title} level={level} icon={icon} />
           ))}
-        </Grid>
-      </Row>
+        </div>
+      </div>
     </Section>
 
     <Section>
-      <Row>
+      <div>
         <Headline>Experience component</Headline>
-      </Row>
+      </div>
 
-      <Row classNames={["Components__experiences-container"]}>
-        <Grid cols={3} colMinWidth={"100px"} gap={Space.m}>
+      <div className="Components__experiences-container">
+        <div>
           {experiences.map(
             (
               { title, dateRange, company, details }: ExperienceType,
@@ -317,8 +280,8 @@ const Components = () => (
               />
             )
           )}
-        </Grid>
-      </Row>
+        </div>
+      </div>
     </Section>
   </Page>
 );

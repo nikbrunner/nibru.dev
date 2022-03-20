@@ -1,6 +1,6 @@
-import { Experience } from "@typings/profile/Experience";
+import { IExperience } from "@typings/profile/Experience";
 
-const experiences: Experience[] = [
+export const experiences: IExperience[] = [
   {
     dateRange: "2009 - 2011",
     title: "Training and Graduation as a Mastering- and Sound Engineer",
@@ -52,5 +52,3 @@ const experiences: Experience[] = [
     company: "DealerCenter Digital"
   }
 ];
-
-export default experiences;

@@ -1,4 +1,4 @@
-export interface Skill {
+export interface ISkill {
   title: string;
   level: number;
   icon: JSX.Element;

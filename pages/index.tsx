@@ -1,51 +1,44 @@
-import React from "react";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-import { RiXingLine } from "react-icons/ri";
+import { css, useTheme } from "@emotion/react";
 
-import { Section } from "@components/layout/Section/Section";
-import { Page } from "@components/layout/Page/Page";
-import { Grid } from "@components/layout/Grid/Grid";
-import { Flex } from "@components/layout/Flex/Flex";
+import { Section } from "@components/layout/Section";
+import { Page } from "@components/layout/Page";
+import { Paragraph } from "@components/ui/Paragraph";
+import { Link } from "@components/ui/Link";
 
-import { Headline } from "@components/ui/Headline/Headline";
-import { Text } from "@components/ui/Text/Text";
-import { Link } from "@components/ui/Link/Link";
+import { text } from "@theme/mixins/text";
+import { margin } from "@theme/mixins/spacing";
 
-const Home = () => (
-  <Page name="Home" title="Hi there. 👋">
-    <Section classNames={["Home__intro"]}>
-      <Grid>
-        <Flex classNames={["Home__intro-image"]}>
-          <img
-            src="/images/nb.jpg"
-            width="100%"
-            height="100%"
-            style={{ objectFit: "cover" }}
-          />
-        </Flex>
+const Home = () => {
+  const theme = useTheme();
 
-        <Flex
-          classNames={["Home__intro-text"]}
-          style={{ padding: "2rem" }}
-          flexDirection="column"
-        >
-          <Headline tag="h1" size="h1" noBorder>
-            Hi there.
-          </Headline>
+  return (
+    <Page title="Hi there. 👋">
+      <Section>
+        <div>
+          <h2
+            css={css`
+              margin: 0.5em 0 0.5em 0;
+              font-size: 5rem;
+              font-style: italic;
+            `}
+          >
+            Hi.{" "}
+          </h2>
 
-          <Text maxWidth="25rem">
-            My name is Nikolaus Brunner,
-            <br />
-            or short just <em>Nik</em>.
-          </Text>
+          <Paragraph>My name is Nik.</Paragraph>
+          <Paragraph>This is my little space on the internet.</Paragraph>
 
-          <Text maxWidth="30rem">
-            I am working as a Software Engineer for{" "}
+          <Paragraph>
+            There is not much to see here atm, <br /> because I am busy
+            working as a Software Engineer for{" "}
             <Link href="https://bike.center" type="external">
               DealerCenter Digital
             </Link>
             .
-            <br /> Previously I worked for{" "}
+          </Paragraph>
+
+          <Paragraph>
+            Previously I worked for{" "}
             <Link
               href="https://https://www.diva-e.com/de/"
               type="external"
@@ -53,64 +46,17 @@ const Home = () => (
               diva-e
             </Link>
             .
-          </Text>
+          </Paragraph>
 
-          <Text maxWidth="25rem">
-            I mainly work with <strong>React</strong>, <wbr />
+          <Paragraph>
+            I mainly work with <strong className="font-bold">React</strong>
+            , <wbr />
             <strong>TypeScript</strong> and <strong>SCSS</strong>.
-          </Text>
-
-          <Text maxWidth="30rem">
-            This website is being rebuilt.
-            <br /> You can visit my old website{" "}
-            <Link href="/archive/index.html" type="internal">
-              here
-            </Link>
-            .
-          </Text>
-
-          <Text maxWidth="30rem">
-            Developing{" "}
-            <Link href="https://sonder.haus" type="external">
-              sonder.haus
-            </Link>
-            .
-          </Text>
-
-          <Text style={{ fontSize: "2rem" }}>
-            <Link
-              href="https://github.com/nikbrunner"
-              type="external"
-              hideIcon
-            >
-              <FiGithub />
-            </Link>{" "}
-            <Link
-              href="mailto:nikolaus.brunner@protonmail.ch"
-              type="external"
-              hideIcon
-            >
-              <FiMail />
-            </Link>{" "}
-            <Link
-              href="https://www.xing.com/profile/Nikolaus_Brunner4/cv"
-              type="external"
-              hideIcon
-            >
-              <RiXingLine />
-            </Link>{" "}
-            <Link
-              href="https://www.linkedin.com/in/nikolaus-brunner-30847798/"
-              type="external"
-              hideIcon
-            >
-              <FiLinkedin />
-            </Link>
-          </Text>
-        </Flex>
-      </Grid>
-    </Section>
-  </Page>
-);
+          </Paragraph>
+        </div>
+      </Section>
+    </Page>
+  );
+};
 
 export default Home;

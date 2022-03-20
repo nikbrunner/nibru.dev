@@ -1,6 +1,6 @@
-import { Profile } from "@typings/profile/PersonalData";
+import { IProfile } from "@typings/profile/PersonalData";
 
-const profile: Profile = {
+export const profile: IProfile = {
   firstname: "Nikolaus",
   lastname: "Brunner",
   image: "/path/to/img",
@@ -12,5 +12,3 @@ const profile: Profile = {
   xing: "https://xing.com/profile/Nikolaus_Brunner4",
   linkedin: "https://www.linkedin.com/in/nikolaus-brunner-30847798/"
 };
-
-export default profile;

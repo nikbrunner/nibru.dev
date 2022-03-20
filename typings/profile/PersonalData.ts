@@ -1,4 +1,4 @@
-export interface Profile {
+export interface IProfile {
   firstname: string;
   lastname: string;
   image: string;
