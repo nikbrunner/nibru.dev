@@ -9,7 +9,8 @@
     "export": "next build && next export",
     "format": "prettier --write \"{components,containers,context,data,pages,partials,scripts,styles,types,utils}/**/*.{ts,tsx,js,jsx,json,scss}\" \"./*.{js,ts}\"",
     "format:check": "prettier --list-different \"{components,containers,context,data,pages,partials,scripts,styles,types,utils}/**/*.{ts,tsx,js,jsx,json,scss}\"  \"./*.{js,ts}\"",
-    "check": "npm run format:check && npm run build"
+    "test:compile": "tsc --project tsconfig.test.json",
+    "check": "npm run test:compile && npm run format:check"
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.2.0",
