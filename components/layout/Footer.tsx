@@ -7,6 +7,7 @@ import { Container } from "@components/layout/Container";
 import { ThemeToggle } from "@components/ui/ThemeToggle";
 
 import { background } from "@mixins/background";
+import { border } from "@mixins/border";
 import { margin, padding } from "@theme/mixins/spacing";
 import { flex } from "@theme/mixins/layout";
 import { space } from "@theme/mixins/space";
@@ -14,13 +15,13 @@ import { text } from "@theme/mixins/text";
 
 const SFooter = styled.footer`
   ${({ theme }) => background.color.primary(theme)};
+  ${({ theme }) => border.top.base(theme.bg.secondary)};
+
   ${margin.top["xxl"]};
 
   position: fixed;
   bottom: 0;
   width: 100%;
-
-  border-top: 1px solid ${({ theme }) => theme.bg.secondary};
 
   .inner-wrapper {
     ${padding.y.m};

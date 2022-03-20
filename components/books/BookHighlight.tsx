@@ -34,7 +34,9 @@ const SBookHighlight = styled.div`
   }
 
   ${({ theme }) => text.color.primary(theme)}
-  ${({ theme }) => border.thin(theme.bg.ternary)}
+  ${({ theme }) => border.s(theme.bg.secondary)}
+  ${({ theme }) => border.top["2xl"](theme.bg.ternary)}
+
   ${padding["3xl"]}
 
   .icon {

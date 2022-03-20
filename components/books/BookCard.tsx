@@ -15,7 +15,7 @@ interface IProps extends IGenericProps {
 }
 
 const SBookCard = styled.div`
-  ${({ theme }) => border.thin(theme.bg.ternary)}
+  ${({ theme }) => border.s(theme.bg.ternary)}
   ${({ theme }) => background.color.primary(theme)}
   ${({ theme }) => text.color.primary(theme)}
 
