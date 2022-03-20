@@ -29,8 +29,8 @@ const Home = () => {
           <Paragraph>This is my little space on the internet.</Paragraph>
 
           <Paragraph>
-            There is not much to see here atm, <br /> because I am busy
-            working as a Software Engineer for{" "}
+            There is not much to see here atm, <br /> because I am busy working as a
+            Software Engineer for{" "}
             <Link href="https://bike.center" type="external">
               DealerCenter Digital
             </Link>
@@ -39,10 +39,7 @@ const Home = () => {
 
           <Paragraph>
             Previously I worked for{" "}
-            <Link
-              href="https://https://www.diva-e.com/de/"
-              type="external"
-            >
+            <Link href="https://https://www.diva-e.com/de/" type="external">
               diva-e
             </Link>
             .

@@ -18,11 +18,7 @@ const Book = ({
   highlightsForBook
 }: IProps): JSX.Element => (
   <Page title={`Book - ${title}`}>
-    <BookDetailTitle
-      coverImageUrl={cover_image_url}
-      title={title}
-      author={author}
-    />
+    <BookDetailTitle coverImageUrl={cover_image_url} title={title} author={author} />
 
     <BookHighlightsLayout>
       {highlightsForBook?.results?.map(highlight => (

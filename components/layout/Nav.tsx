@@ -33,9 +33,7 @@ export const SNav = styled.nav`
   }
 `;
 
-export const Nav: React.FC<IProps> = ({
-  title = "nibru.dev"
-}): JSX.Element => (
+export const Nav: React.FC<IProps> = ({ title = "nibru.dev" }): JSX.Element => (
   <Container>
     <SNav>
       <div className="title-bar">

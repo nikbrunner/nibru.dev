@@ -21,9 +21,7 @@ const Components = () => (
     <Section>
       <Headline tag="h1">Components Overview</Headline>
 
-      <Paragraph>
-        This page is just an overview over all components.
-      </Paragraph>
+      <Paragraph>This page is just an overview over all components.</Paragraph>
     </Section>
 
     <Section>
@@ -61,33 +59,29 @@ const Components = () => (
       <Headline>Text component</Headline>
 
       <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Interdum posuere{" "}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Interdum posuere{" "}
         <Link href="/home" type="internal">
           home
         </Link>{" "}
-        dolor sit amet. Viverra vitae congue eu consequat ac felis donec
-        et. Tempor id eu nisl nunc. Hac habitasse platea dictumst quisque
-        sagittis purus sit amet volutpat. Nibh cras pulvinar mattis nunc
-        sed. Nec feugiat in fermentum posuere urna. Interdum velit laoreet
-        id donec ultrices tincidunt arcu. Quam vulputate dignissim
-        suspendisse in. Feugiat sed lectus vestibulum mattis.
+        dolor sit amet. Viverra vitae congue eu consequat ac felis donec et. Tempor
+        id eu nisl nunc. Hac habitasse platea dictumst quisque sagittis purus sit
+        amet volutpat. Nibh cras pulvinar mattis nunc sed. Nec feugiat in fermentum
+        posuere urna. Interdum velit laoreet id donec ultrices tincidunt arcu. Quam
+        vulputate dignissim suspendisse in. Feugiat sed lectus vestibulum mattis.
       </Paragraph>
 
       <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Interdum posuere{" "}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Interdum posuere{" "}
         <Link href="/home" type="internal">
           home
         </Link>{" "}
-        dolor sit amet. Viverra vitae congue eu consequat ac felis donec
-        et. Tempor id eu nisl nunc. Hac habitasse platea dictumst quisque
-        sagittis purus sit amet volutpat. Nibh cras pulvinar mattis nunc
-        sed. Nec feugiat in fermentum posuere urna. Interdum velit laoreet
-        id donec ultrices tincidunt arcu. Quam vulputate dignissim
-        suspendisse in. Feugiat sed lectus vestibulum mattis.
+        dolor sit amet. Viverra vitae congue eu consequat ac felis donec et. Tempor
+        id eu nisl nunc. Hac habitasse platea dictumst quisque sagittis purus sit
+        amet volutpat. Nibh cras pulvinar mattis nunc sed. Nec feugiat in fermentum
+        posuere urna. Interdum velit laoreet id donec ultrices tincidunt arcu. Quam
+        vulputate dignissim suspendisse in. Feugiat sed lectus vestibulum mattis.
       </Paragraph>
     </Section>
 
@@ -95,29 +89,27 @@ const Components = () => (
       <Headline tag="h1">Lorem ipsum dolor sit amet.</Headline>
 
       <Paragraph>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
-        aperiam voluptas explicabo, similique sunt provident quis beatae ab
-        blanditiis veritatis! Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Ad, laboriosam. Molestias accusamus, mollitia
-        cumque quos omnis nostrum aliquam ducimus fugiat qui architecto
-        totam vel hic doloribus corrupti a, eaque laudantium officiis
-        asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
-        necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo
-        modi totam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex aperiam voluptas
+        explicabo, similique sunt provident quis beatae ab blanditiis veritatis!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, laboriosam.
+        Molestias accusamus, mollitia cumque quos omnis nostrum aliquam ducimus
+        fugiat qui architecto totam vel hic doloribus corrupti a, eaque laudantium
+        officiis asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
+        necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo modi
+        totam!
       </Paragraph>
 
       <Headline tag="h2">Lorem, ipsum dolor.</Headline>
 
       <Paragraph>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
-        aperiam voluptas explicabo, similique sunt provident quis beatae ab
-        blanditiis veritatis! Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Ad, laboriosam. Molestias accusamus, mollitia
-        cumque quos omnis nostrum aliquam ducimus fugiat qui architecto
-        totam vel hic doloribus corrupti a, eaque laudantium officiis
-        asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
-        necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo
-        modi totam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex aperiam voluptas
+        explicabo, similique sunt provident quis beatae ab blanditiis veritatis!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, laboriosam.
+        Molestias accusamus, mollitia cumque quos omnis nostrum aliquam ducimus
+        fugiat qui architecto totam vel hic doloribus corrupti a, eaque laudantium
+        officiis asperiores fuga quae eos quisquam! Fugit amet, delectus rem quia
+        necessitatibus molestiae, aliquid quam dignissimos doloribus, nemo modi
+        totam!
       </Paragraph>
 
       <Headline tag="h3">Lorem ipsum dolor sit amet.</Headline>
@@ -127,68 +119,61 @@ const Components = () => (
         <Link href="https://google.com" type="external">
           Pellentesque
         </Link>{" "}
-        nec nam. Praesent semper feugiat nibh sed pulvinar proin gravida
-        hendrerit lectus. Ipsum dolor sit amet consectetur adipiscing elit
-        duis tristique sollicitudin. Nisi quis eleifend quam adipiscing
-        vitae. Posuere sollicitudin aliquam ultrices sagittis orci. Vitae
-        suscipit tellus mauris a. Proin sagittis nisl rhoncus mattis.
-        Viverra vitae congue eu consequat ac felis donec. Diam maecenas
-        ultricies mi eget mauris pharetra. Donec pretium vulputate sapien
-        nec sagittis aliquam malesuada.
+        nec nam. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit
+        lectus. Ipsum dolor sit amet consectetur adipiscing elit duis tristique
+        sollicitudin. Nisi quis eleifend quam adipiscing vitae. Posuere sollicitudin
+        aliquam ultrices sagittis orci. Vitae suscipit tellus mauris a. Proin
+        sagittis nisl rhoncus mattis. Viverra vitae congue eu consequat ac felis
+        donec. Diam maecenas ultricies mi eget mauris pharetra. Donec pretium
+        vulputate sapien nec sagittis aliquam malesuada.
       </Paragraph>
 
       <Headline tag="h4">Lorem ipsum dolor sit.</Headline>
 
       <Paragraph>
-        Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
-        lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
-        ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
-        sodales neque sodales ut etiam. Urna molestie at elementum eu.
-        Risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet
-        porttitor lacus luctus accumsan. Eget arcu dictum varius duis at
-        consectetur lorem donec. Malesuada nunc vel risus commodo. Sed
-        egestas egestas fringilla phasellus faucibus scelerisque eleifend
-        donec. Vel eros donec ac odio tempor orci dapibus. Ut morbi
-        tincidunt augue interdum velit euismod in. Ipsum consequat nisl vel
-        pretium. Id porta nibh venenatis cras sed felis eget. Non
-        consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
-        urna neque viverra justo.
+        Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur lorem donec
+        massa sapien faucibus et molestie ac. Id diam maecenas ultricies mi eget
+        mauris. Nisi lacus sed viverra tellus. Arcu non sodales neque sodales ut
+        etiam. Urna molestie at elementum eu. Risus at ultrices mi tempus imperdiet.
+        Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Eget arcu
+        dictum varius duis at consectetur lorem donec. Malesuada nunc vel risus
+        commodo. Sed egestas egestas fringilla phasellus faucibus scelerisque
+        eleifend donec. Vel eros donec ac odio tempor orci dapibus. Ut morbi
+        tincidunt augue interdum velit euismod in. Ipsum consequat nisl vel pretium.
+        Id porta nibh venenatis cras sed felis eget. Non consectetur a erat nam at
+        lectus urna. Nisl rhoncus mattis rhoncus urna neque viverra justo.
       </Paragraph>
 
       <Headline tag="h5">Lorem ipsum dolor sit amet consectetur.</Headline>
 
       <Paragraph>
-        Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
-        lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
-        ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
-        sodales neque sodales ut etiam. Urna molestie at elementum eu.
-        Risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet
-        porttitor lacus luctus accumsan. Eget arcu dictum varius duis at
-        consectetur lorem donec. Malesuada nunc vel risus commodo. Sed
-        egestas egestas fringilla phasellus faucibus scelerisque eleifend
-        donec. Vel eros donec ac odio tempor orci dapibus. Ut morbi
-        tincidunt augue interdum velit euismod in. Ipsum consequat nisl vel
-        pretium. Id porta nibh venenatis cras sed felis eget. Non
-        consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
-        urna neque viverra justo.
+        Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur lorem donec
+        massa sapien faucibus et molestie ac. Id diam maecenas ultricies mi eget
+        mauris. Nisi lacus sed viverra tellus. Arcu non sodales neque sodales ut
+        etiam. Urna molestie at elementum eu. Risus at ultrices mi tempus imperdiet.
+        Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Eget arcu
+        dictum varius duis at consectetur lorem donec. Malesuada nunc vel risus
+        commodo. Sed egestas egestas fringilla phasellus faucibus scelerisque
+        eleifend donec. Vel eros donec ac odio tempor orci dapibus. Ut morbi
+        tincidunt augue interdum velit euismod in. Ipsum consequat nisl vel pretium.
+        Id porta nibh venenatis cras sed felis eget. Non consectetur a erat nam at
+        lectus urna. Nisl rhoncus mattis rhoncus urna neque viverra justo.
       </Paragraph>
 
       <Headline tag="h6">Lorem ipsum dolor sit.</Headline>
 
       <Paragraph>
-        Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur
-        lorem donec massa sapien faucibus et molestie ac. Id diam maecenas
-        ultricies mi eget mauris. Nisi lacus sed viverra tellus. Arcu non
-        sodales neque sodales ut etiam. Urna molestie at elementum eu.
-        Risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet
-        porttitor lacus luctus accumsan. Eget arcu dictum varius duis at
-        consectetur lorem donec. Malesuada nunc vel risus commodo. Sed
-        egestas egestas fringilla phasellus faucibus scelerisque eleifend
-        donec. Vel eros donec ac odio tempor orci dapibus. Ut morbi
-        tincidunt augue interdum velit euismod in. Ipsum consequat nisl vel
-        pretium. Id porta nibh venenatis cras sed felis eget. Non
-        consectetur a erat nam at lectus urna. Nisl rhoncus mattis rhoncus
-        urna neque viverra justo.
+        Mattis vulputate enim nulla aliquet porttitor lacus. Consectetur lorem donec
+        massa sapien faucibus et molestie ac. Id diam maecenas ultricies mi eget
+        mauris. Nisi lacus sed viverra tellus. Arcu non sodales neque sodales ut
+        etiam. Urna molestie at elementum eu. Risus at ultrices mi tempus imperdiet.
+        Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Eget arcu
+        dictum varius duis at consectetur lorem donec. Malesuada nunc vel risus
+        commodo. Sed egestas egestas fringilla phasellus faucibus scelerisque
+        eleifend donec. Vel eros donec ac odio tempor orci dapibus. Ut morbi
+        tincidunt augue interdum velit euismod in. Ipsum consequat nisl vel pretium.
+        Id porta nibh venenatis cras sed felis eget. Non consectetur a erat nam at
+        lectus urna. Nisl rhoncus mattis rhoncus urna neque viverra justo.
       </Paragraph>
     </Section>
 
@@ -214,15 +199,14 @@ const Components = () => (
           <Headline tag="h2">Left column</Headline>
 
           <Paragraph>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
-            aperiam voluptas explicabo, similique sunt provident quis
-            beatae ab blanditiis veritatis! Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Ad, laboriosam. Molestias
-            accusamus, mollitia cumque quos omnis nostrum aliquam ducimus
-            fugiat qui architecto totam vel hic doloribus corrupti a, eaque
-            laudantium officiis asperiores fuga quae eos quisquam! Fugit
-            amet, delectus rem quia necessitatibus molestiae, aliquid quam
-            dignissimos doloribus, nemo modi totam!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex aperiam
+            voluptas explicabo, similique sunt provident quis beatae ab blanditiis
+            veritatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad,
+            laboriosam. Molestias accusamus, mollitia cumque quos omnis nostrum
+            aliquam ducimus fugiat qui architecto totam vel hic doloribus corrupti a,
+            eaque laudantium officiis asperiores fuga quae eos quisquam! Fugit amet,
+            delectus rem quia necessitatibus molestiae, aliquid quam dignissimos
+            doloribus, nemo modi totam!
           </Paragraph>
         </div>
 
@@ -230,15 +214,14 @@ const Components = () => (
           <Headline tag="h2">Right column</Headline>
 
           <Paragraph>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
-            aperiam voluptas explicabo, similique sunt provident quis
-            beatae ab blanditiis veritatis! Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Ad, laboriosam. Molestias
-            accusamus, mollitia cumque quos omnis nostrum aliquam ducimus
-            fugiat qui architecto totam vel hic doloribus corrupti a, eaque
-            laudantium officiis asperiores fuga quae eos quisquam! Fugit
-            amet, delectus rem quia necessitatibus molestiae, aliquid quam
-            dignissimos doloribus, nemo modi totam!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex aperiam
+            voluptas explicabo, similique sunt provident quis beatae ab blanditiis
+            veritatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad,
+            laboriosam. Molestias accusamus, mollitia cumque quos omnis nostrum
+            aliquam ducimus fugiat qui architecto totam vel hic doloribus corrupti a,
+            eaque laudantium officiis asperiores fuga quae eos quisquam! Fugit amet,
+            delectus rem quia necessitatibus molestiae, aliquid quam dignissimos
+            doloribus, nemo modi totam!
           </Paragraph>
         </div>
       </div>

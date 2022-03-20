@@ -8,13 +8,7 @@ import {
   SiAdobephotoshop,
   SiGraphql
 } from "react-icons/si";
-import {
-  FaSass,
-  FaGitAlt,
-  FaReact,
-  FaNodeJs,
-  FaFigma
-} from "react-icons/fa";
+import { FaSass, FaGitAlt, FaReact, FaNodeJs, FaFigma } from "react-icons/fa";
 
 import { ISkill } from "@typings/profile/Skill";
 

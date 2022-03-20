@@ -9,10 +9,7 @@ interface IProps extends IGenericProps {
   tag?: THeadlineTag;
 }
 
-export const Headline: React.FC<IProps> = ({
-  children,
-  tag = "h2"
-}): JSX.Element =>
+export const Headline: React.FC<IProps> = ({ children, tag = "h2" }): JSX.Element =>
   createElement(
     tag,
     {

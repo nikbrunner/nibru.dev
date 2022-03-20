@@ -49,11 +49,7 @@ export const Footer: React.FC = () => (
         </div>
 
         <div className="social-icons">
-          <Link
-            href="https://github.com/nikbrunner"
-            type="external"
-            hideIcon
-          >
+          <Link href="https://github.com/nikbrunner" type="external" hideIcon>
             <FiGithub />
           </Link>
 

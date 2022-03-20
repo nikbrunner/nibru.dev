@@ -38,9 +38,7 @@ export const Link: React.FC<IProps> = ({
     {children}
 
     <span className="icon">
-      {type === "external" && !hideIcon && (
-        <FiLink2 style={{ display: "inline" }} />
-      )}
+      {type === "external" && !hideIcon && <FiLink2 style={{ display: "inline" }} />}
     </span>
   </SLink>
 );

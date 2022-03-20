@@ -25,10 +25,7 @@ const SNavLink = styled.a<{ isActive: boolean }>`
   }
 `;
 
-export const NavLink: React.FC<IProps> = ({
-  href,
-  children
-}): JSX.Element => {
+export const NavLink: React.FC<IProps> = ({ href, children }): JSX.Element => {
   const router: NextRouter = useRouter();
   const isActive: boolean = router.pathname === href;
 
