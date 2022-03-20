@@ -1,53 +1,45 @@
-import { css, SerializedStyles } from "@emotion/react";
+export enum BorderWith {
+  Thin = "1px",
+  Default = "2px",
+  Thick = "4px",
+  ExtraThick = "6px"
+}
+
+export enum BorderRadius {
+  None = "0px",
+  Xs = "4px",
+  Sm = "6px",
+  Md = "8px",
+  Lg = "16px",
+  Round = "9999px"
+}
 
 export interface IBorder {
-  thin: (color: string) => SerializedStyles;
-  default: (color: string) => SerializedStyles;
-  thicc: (color: string) => SerializedStyles;
-  extraThicc: (color: string) => SerializedStyles;
+  thin: (color: string) => string;
+  default: (color: string) => string;
+  thick: (color: string) => string;
+  extraThick: (color: string) => string;
 
   radius: {
-    xs: () => SerializedStyles;
-    sm: () => SerializedStyles;
-    md: () => SerializedStyles;
-    lg: () => SerializedStyles;
-    round: () => SerializedStyles;
+    xs: () => string;
+    sm: () => string;
+    md: () => string;
+    lg: () => string;
+    round: () => string;
   };
 }
 
 export const border: IBorder = {
-  thin: (color: string) => css`
-    border: 1px solid ${color};
-  `,
-  default: (color: string) => css`
-    border: 2px solid ${color};
-  `,
-  thicc: (color: string) => css`
-    border: 4px solid ${color};
-  `,
-  extraThicc: (color: string) => css`
-    border: 6px solid ${color};
-  `,
+  thin: (color: string) => `border: ${BorderWith.Thin} solid ${color};`,
+  default: (color: string) => `border: ${BorderWith.Default} solid ${color};`,
+  thick: (color: string) => `border: ${BorderWith.Thick} solid ${color};`,
+  extraThick: (color: string) => `border: ${BorderWith.ExtraThick} solid ${color};`,
+
   radius: {
-    xs: () =>
-      css`
-        border-radius: 4px;
-      `,
-    sm: () =>
-      css`
-        border-radius: 6px;
-      `,
-    md: () =>
-      css`
-        border-radius: 8px;
-      `,
-    lg: () =>
-      css`
-        border-radius: 18px;
-      `,
-    round: () =>
-      css`
-        border-radius: 999px;
-      `
+    xs: () => `border-radius: ${BorderRadius.Xs};`,
+    sm: () => `border-radius: ${BorderRadius.Sm};`,
+    md: () => `border-radius: ${BorderRadius.Md};`,
+    lg: () => `border-radius: ${BorderRadius.Lg};`,
+    round: () => `border-radius: ${BorderRadius.Round};`
   }
 };

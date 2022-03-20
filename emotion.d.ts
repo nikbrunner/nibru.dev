@@ -1,8 +1,12 @@
-import "@emotion/react";
-import { ITheme } from "./theme/ThemeProvider";
+import { Theme } from "@emotion/react";
+import { IBorder } from "@theme/mixins/border";
 
 declare module "@emotion/react" {
-  export interface Theme {
+  export interface IBaseTheme {
+    border: IBorder;
+  }
+
+  export interface Theme extends IBaseTheme {
     fg: {
       primary: string;
       secondary: string;

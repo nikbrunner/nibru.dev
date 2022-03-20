@@ -8,7 +8,6 @@ import { formatDate } from "@lib/date";
 
 import { flex } from "@theme/mixins/layout";
 import { text } from "@theme/mixins/text";
-import { border } from "@theme/mixins/border";
 import { margin, padding } from "@theme/mixins/spacing";
 import { mq } from "@theme/mixins/media-queries";
 import { bg } from "@theme/mixins/bg";
@@ -35,7 +34,7 @@ const SBookHighlight = styled.div`
   }
 
   ${({ theme }) => text.color.primary(theme)}
-  ${({ theme }) => border.thin(theme.bg.ternary)}
+  ${({ theme }) => theme.border.thin(theme.bg.ternary)}
   ${padding["3xl"]}
 
   .icon {

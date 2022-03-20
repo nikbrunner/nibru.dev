@@ -6,7 +6,6 @@ import { IReadwiseBook } from "@typings/Readwise";
 
 import { text } from "@theme/mixins/text";
 import { bg } from "@theme/mixins/bg";
-import { border } from "@theme/mixins/border";
 import { formatDate } from "@lib/date";
 import { margin, padding } from "@theme/mixins/spacing";
 
@@ -15,7 +14,7 @@ interface IProps extends IGenericProps {
 }
 
 const SBookCard = styled.div`
-  ${({ theme }) => border.thin(theme.bg.ternary)}
+  ${({ theme }) => theme.border.thin(theme.bg.ternary)}
   ${({ theme }) => bg.color.primary(theme)}
   ${({ theme }) => text.color.primary(theme)}
 
