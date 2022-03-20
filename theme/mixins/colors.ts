@@ -1,4 +1,4 @@
-interface ColorPalette {
+interface ColorPaletteShades {
   0: string;
   1: string;
   2: string;
@@ -13,14 +13,14 @@ interface ColorPalette {
 interface Colors {
   black: string;
   white: string;
-  gray: ColorPalette;
-  blue: ColorPalette;
-  green: ColorPalette;
-  yellow: ColorPalette;
-  orange: ColorPalette;
-  red: ColorPalette;
-  purple: ColorPalette;
-  pink: ColorPalette;
+  gray: ColorPaletteShades;
+  blue: ColorPaletteShades;
+  green: ColorPaletteShades;
+  yellow: ColorPaletteShades;
+  orange: ColorPaletteShades;
+  red: ColorPaletteShades;
+  purple: ColorPaletteShades;
+  pink: ColorPaletteShades;
 }
 
 export const colors: Colors = {
