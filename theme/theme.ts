@@ -4,14 +4,14 @@ import { colors } from "./mixins/colors";
 export const lightTheme: Theme = {
   fg: {
     primary: colors.black,
-    secondary: colors.gray[9],
-    ternary: colors.gray[8],
+    secondary: colors.black,
+    ternary: colors.gray[9],
     accent: colors.blue[5]
   },
   bg: {
     primary: colors.white,
-    secondary: colors.gray[0],
-    ternary: colors.gray[1],
+    secondary: colors.black,
+    ternary: colors.gray[0],
     accent: colors.blue[5]
   }
 };
@@ -24,9 +24,9 @@ export const darkTheme: Theme = {
     accent: colors.green[3]
   },
   bg: {
-    primary: colors.gray[9],
-    secondary: colors.gray[8],
-    ternary: colors.gray[7],
+    primary: colors.black,
+    secondary: colors.gray[9],
+    ternary: colors.gray[8],
     accent: colors.green[3]
   }
 };

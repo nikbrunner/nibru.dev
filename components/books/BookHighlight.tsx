@@ -16,7 +16,23 @@ interface IProps extends IGenericProps {
   highlight: IReadwiseHighlight;
 }
 
-const SBookHighlight = styled.div`
+export const BookHighlight: React.FC<IProps> = ({
+  highlight: { text, updated }
+}): JSX.Element => (
+  <Style>
+    <div className="icon">
+      <FaQuoteLeft />
+    </div>
+
+    <div className="meta">
+      <p className="text">{text}</p>
+
+      <small className="date">{formatDate(updated)}</small>
+    </div>
+  </Style>
+);
+
+const Style = styled.div`
   label: BookHighlight;
 
   ${flex({
@@ -35,12 +51,12 @@ const SBookHighlight = styled.div`
 
   ${({ theme }) => text.color.primary(theme)}
   ${({ theme }) => border.s(theme.bg.secondary)}
-  ${({ theme }) => border.top["2xl"](theme.bg.ternary)}
+  ${({ theme }) => border.top["2xl"](theme.bg.secondary)}
 
   ${padding["3xl"]}
 
   .icon {
-    color: ${({ theme }) => theme.bg.ternary};
+    color: ${({ theme }) => theme.bg.secondary};
     ${padding.bottom["xxl"]}
     ${text.size.xl}
 
@@ -62,29 +78,16 @@ const SBookHighlight = styled.div`
 
   .text {
     ${text.lineHeight.base}
+    ${text.size.base}
     ${margin.top.zero}
 
-    font-family: "Vollkorn", serif;
+
     max-width: 60ch;
+    font-weight: 600;
+    font-style: italic;
   }
 
   .date {
     align-self: flex-end;
   }
 `;
-
-export const BookHighlight: React.FC<IProps> = ({
-  highlight: { text, updated }
-}): JSX.Element => (
-  <SBookHighlight>
-    <div className="icon">
-      <FaQuoteLeft />
-    </div>
-
-    <div className="meta">
-      <p className="text">{text}</p>
-
-      <small className="date">{formatDate(updated)}</small>
-    </div>
-  </SBookHighlight>
-);

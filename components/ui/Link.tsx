@@ -17,6 +17,8 @@ interface IProps extends IGenericProps {
 const SLink = styled.a`
   ${({ theme }) => text.color.accent(theme)};
 
+  font-weight: 900;
+
   .icon {
     position: relative;
     top: 0.25rem;

@@ -6,24 +6,13 @@ import styled from "@emotion/styled";
 import { IGenericProps } from "@typings/GenericProps";
 import { text } from "@theme/mixins/text";
 import { transition } from "@theme/mixins/transition";
+import { Theme, ThemeContext } from "@emotion/react";
+import { border } from "@theme/mixins/border";
 
 interface IProps extends IGenericProps {
   href: string;
   children: ReactNode;
 }
-
-const SNavLink = styled.a<{ isActive: boolean }>`
-  ${({ theme, isActive }) =>
-    isActive ? text.color.accent(theme) : text.color.primary(theme)}
-
-  ${transition.fast("color")}
-
-  cursor: pointer;
-
-  &:hover {
-    ${({ theme }) => text.color.accent(theme)}
-  }
-`;
 
 export const NavLink: React.FC<IProps> = ({ href, children }): JSX.Element => {
   const router: NextRouter = useRouter();
@@ -31,7 +20,22 @@ export const NavLink: React.FC<IProps> = ({ href, children }): JSX.Element => {
 
   return (
     <Link href={href} passHref={true}>
-      <SNavLink isActive={isActive}>{children}</SNavLink>
+      <Style isActive={isActive}>{children}</Style>
     </Link>
   );
 };
+
+const Style = styled.a<{ isActive: boolean }>`
+  ${transition.fast("color")}
+
+  ${({ theme, isActive }) =>
+    isActive
+      ? border.bottom.base(theme.fg.primary)
+      : border.bottom.base(theme.bg.primary)};
+
+  cursor: pointer;
+
+  &:hover {
+    ${({ theme }) => border.bottom.base(theme.fg.primary)}
+  }
+`;
