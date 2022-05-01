@@ -30,7 +30,7 @@ export const NavLink: React.FC<IProps> = ({ href, children }): JSX.Element => {
   const isActive: boolean = router.pathname === href;
 
   return (
-    <Link href={href}>
+    <Link href={href} passHref={true}>
       <SNavLink isActive={isActive}>{children}</SNavLink>
     </Link>
   );

@@ -40,7 +40,7 @@ export const BookCard: React.FC<IProps> = ({
   <Link href={`/books/${id}`} key={id}>
     <a>
       <SBookCard>
-        <img className="cover" src={cover_image_url} />
+        <img className="cover" src={cover_image_url} alt={title} />
 
         <h3 className="title">{title}</h3>
 

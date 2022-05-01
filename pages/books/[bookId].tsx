@@ -31,9 +31,10 @@ const Book = ({
 export const getStaticPaths: GetStaticPaths = async () => {
   const books = await getBooks();
 
-  const paths = books?.results?.map(book => ({
-    params: { bookId: book.id.toString() }
-  }));
+  const paths =
+    books?.results?.map(book => ({
+      params: { bookId: book.id.toString() }
+    })) ?? [];
 
   return {
     paths,

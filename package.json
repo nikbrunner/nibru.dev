@@ -10,6 +10,7 @@
     "format": "prettier --write \"{components,containers,context,data,pages,partials,scripts,styles,types,utils}/**/*.{ts,tsx,js,jsx,json,scss}\" \"./*.{js,ts}\"",
     "format:check": "prettier --list-different \"{components,containers,context,data,pages,partials,scripts,styles,types,utils}/**/*.{ts,tsx,js,jsx,json,scss}\"  \"./*.{js,ts}\"",
     "test:compile": "tsc --project tsconfig.test.json",
+    "test:lint": "next lint",
     "check": "npm run test:compile && npm run format:check"
   },
   "dependencies": {
@@ -25,6 +26,8 @@
   "devDependencies": {
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.40",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
     "prettier": "^2.5.1",
     "typescript": "^4.6.2",
     "typescript-styled-plugin": "^0.18.2"
