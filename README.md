@@ -1,11 +1,38 @@
-# nibru.dev
+# create-svelte
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/385dbce9-8778-41db-82e9-28035cd0b7d2/deploy-status)](https://app.netlify.com/sites/nibrudev/deploys)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-This is the my personal website.
+## Creating a project
 
-## Readwise
-It is necessery to setup the Authentication Token for Readwise.
+If you're seeing this, you've probably already done this step. Congrats!
 
-- For production the token is set up via Netlify
-- For development you need to set up a `.env.local` file with the `READWISE_TOKEN` property
+```bash
+# create a new project in the current directory
+npm init svelte
+
+# create a new project in my-app
+npm init svelte my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

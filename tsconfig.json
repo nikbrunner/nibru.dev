@@ -1,41 +1,26 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "jsxImportSource": "@emotion/react",
-    "baseUrl": "./",
-    "paths": {
-      "@components/*": ["components/*"],
-      "@config/*": ["config/*"],
-      "@context/*": ["context/*"],
-      "@data/*": ["data/*"],
-      "@lib/*": ["lib/*"],
-      "@style/*": ["style/*"],
-      "@typings/*": ["typings/*"],
-      "@theme/*": ["theme/*"],
-      "@mixins/*": ["theme/mixins/*"]
-    },
-    "plugins": [
-      {
-        "name": "typescript-styled-plugin",
-        "lint": {
-          "validProperties": ["label"]
-        }
-      }
-    ],
-    "incremental": true
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"lib": ["es2020", "DOM"],
+		"moduleResolution": "node",
+		"module": "es2020",
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "es2020",
+		"paths": {
+			"$components/*": ["src/components/*"],
+			"$data/*": ["src/data/*"],
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"],
+			"$typings/*": ["src/typings/*"],
+			"$config/*": ["src/config/*"]
+		}
+	},
+	"include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]
 }
