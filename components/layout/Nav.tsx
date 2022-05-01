@@ -40,10 +40,10 @@ export const Nav: React.FC<IProps> = ({ title = "nibru.dev" }): JSX.Element => (
         <h1 className="title">{title}</h1>
       </div>
 
-      {/* <div className="nav-links">
+      <div className="nav-links">
         <NavLink href="/">Home</NavLink>
         <NavLink href="/books">Books</NavLink>
-      </div> */}
+      </div>
     </SNav>
   </Container>
 );
