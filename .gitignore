@@ -16,6 +16,9 @@ Session.vim
 /.next/
 /out/
 
+# svelte
+/.svelte-kit/
+
 # production
 /build
 
