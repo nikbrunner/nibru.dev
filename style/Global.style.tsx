@@ -7,48 +7,48 @@ import { transition } from "../theme/mixins/transition";
 const globalStyles = (theme: Theme) =>
   css`
     @font-face {
-      font-family: "Comic Code";
-      src: url("/fonts/comic/Comic_Code_Regular.otf");
+      font-family: "JetBrainsMono";
+      src: url("/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2");
       font-style: normal;
       font-weight: 400;
       font-display: swap;
     }
 
     @font-face {
-      font-family: "Comic Code";
-      src: url("/fonts/comic/Comic_Code_Italic.otf");
+      font-family: "JetBrainsMono";
+      src: url("/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2");
       font-style: italic;
       font-weight: 400;
       font-display: swap;
     }
 
     @font-face {
-      font-family: "Comic Code";
-      src: url("/fonts/comic/Comic_Code_Medium.otf");
+      font-family: "JetBrainsMono";
+      src: url("/fonts/jetbrains-mono/JetBrainsMono-SemiBold.woff2");
       font-style: normal;
       font-weight: 600;
       font-display: swap;
     }
 
     @font-face {
-      font-family: "Comic Code";
-      src: url("/fonts/comic/Comic_Code_Medium_Italic.otf");
+      font-family: "JetBrainsMono";
+      src: url("/fonts/jetbrains-mono/JetBrainsMono-SemiBoldItalic.woff2");
       font-style: italic;
       font-weight: 600;
       font-display: swap;
     }
 
     @font-face {
-      font-family: "Comic Code";
-      src: url("/fonts/comic/Comic_Code_Bold.otf");
+      font-family: "JetBrainsMono";
+      src: url("/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2");
       font-style: normal;
       font-weight: 900;
       font-display: swap;
     }
 
     @font-face {
-      font-family: "Comic Code";
-      src: url("/fonts/comic/Comic_Code_Bold_Italic.otf");
+      font-family: "JetBrainsMono";
+      src: url("/fonts/jetbrains-mono/JetBrainsMono-BoldItalic.woff2");
       font-style: italic;
       font-weight: 900;
       font-display: swap;
@@ -66,7 +66,7 @@ const globalStyles = (theme: Theme) =>
 
       margin: 0;
       padding: 0;
-      font-family: "Comic Code", sans-serif;
+      font-family: "JetBrainsMono", monospace;
       font-size: 18px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
