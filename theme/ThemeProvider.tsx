@@ -12,18 +12,14 @@ interface IThemeContext {
   setTheme: Dispatch<SetStateAction<ETheme>>;
 }
 
-export const ThemeContext = createContext<IThemeContext>(
-  {} as IThemeContext
-);
+export const ThemeContext = createContext<IThemeContext>({} as IThemeContext);
 
 export const ThemeProvider = ({ children }: IProps) => {
-  const [theme, setTheme] = useState<ETheme>(ETheme.Light);
+  const [theme, setTheme] = useState<ETheme>(ETheme.Dark);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <EmotionThemeProvider
-        theme={theme === ETheme.Light ? lightTheme : darkTheme}
-      >
+      <EmotionThemeProvider theme={theme === ETheme.Light ? lightTheme : darkTheme}>
         {children}
       </EmotionThemeProvider>
     </ThemeContext.Provider>

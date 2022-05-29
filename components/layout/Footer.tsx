@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
 import { RiXingLine } from "react-icons/ri";
 
 import { Link } from "@components/ui/Link";
@@ -7,7 +7,6 @@ import { Container } from "@components/layout/Container";
 import { ThemeToggle } from "@components/ui/ThemeToggle";
 
 import { background } from "@mixins/background";
-import { border } from "@mixins/border";
 import { margin, padding } from "@theme/mixins/spacing";
 import { flex } from "@theme/mixins/layout";
 import { space } from "@theme/mixins/space";
@@ -15,7 +14,6 @@ import { text } from "@theme/mixins/text";
 
 const SFooter = styled.footer`
   ${({ theme }) => background.color.primary(theme)};
-  ${({ theme }) => border.top.base(theme.bg.secondary)};
 
   ${margin.top["xxl"]};
 
@@ -51,6 +49,10 @@ export const Footer: React.FC = () => (
         </div>
 
         <div className="social-icons">
+          <Link href="https://twitter.com/NikolausBrunner" type="external" hideIcon>
+            <FiTwitter />
+          </Link>
+
           <Link href="https://github.com/nikbrunner" type="external" hideIcon>
             <FiGithub />
           </Link>

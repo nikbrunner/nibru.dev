@@ -6,4 +6,5 @@ export interface IBreakpoints {
   xl: number | string;
   xxl: number | string;
   xxxl: number | string;
+  "4xl": number | string;
 }

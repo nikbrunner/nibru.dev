@@ -7,7 +7,7 @@ export interface IConfig {
 }
 
 export const config: IConfig = {
-  siteTitle: "Nikolaus Brunner",
+  siteTitle: "nibru.dev",
   dateFormat: "YY.MM.DD",
   breakpoints: {
     xs: 320,
@@ -16,6 +16,7 @@ export const config: IConfig = {
     l: 1024,
     xl: 1280,
     xxl: 1440,
-    xxxl: 1920
+    xxxl: 1920,
+    "4xl": 2550
   }
 };

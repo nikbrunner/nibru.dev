@@ -1,33 +1,32 @@
 import { Theme } from "@emotion/react";
-import { colors } from "./mixins/colors";
 
 export const lightTheme: Theme = {
   fg: {
-    primary: colors.black,
-    secondary: colors.black,
-    ternary: colors.gray[9],
-    accent: colors.blue[5]
+    primary: "#1D2530",
+    secondary: "#273241",
+    ternary: "#313F52",
+    accent: "#70a9a1"
   },
   bg: {
-    primary: colors.white,
-    secondary: colors.black,
-    ternary: colors.gray[0],
-    accent: colors.blue[5]
+    primary: "#d8dee9",
+    secondary: "#e5e9f0",
+    ternary: "#eceff4",
+    accent: "#70a9a1"
   }
 };
 
 export const darkTheme: Theme = {
   fg: {
-    primary: colors.white,
-    secondary: colors.gray[0],
-    ternary: colors.gray[1],
-    accent: colors.green[3]
+    primary: "#d8dee9",
+    secondary: "#e5e9f0",
+    ternary: "#eceff4",
+    accent: "#70a9a1"
   },
   bg: {
-    primary: colors.black,
-    secondary: colors.gray[9],
-    ternary: colors.gray[8],
-    accent: colors.green[3]
+    primary: "#1D2530",
+    secondary: "#273241",
+    ternary: "#313F52",
+    accent: "#70a9a1"
   }
 };
 

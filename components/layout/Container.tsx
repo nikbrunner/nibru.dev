@@ -11,26 +11,31 @@ interface IProps {
 const SContainer = styled.div`
   label: Container;
   max-width: 95vw;
+
   ${margin.x.center};
 
   ${mq.m} {
-    max-width: 90vw;
-  }
-
-  ${mq.l} {
-    max-width: 80vw;
-  }
-
-  ${mq.xl} {
     max-width: 75vw;
   }
 
-  ${mq.xxl} {
+  ${mq.l} {
     max-width: 65vw;
   }
 
-  ${mq.xxxl} {
+  ${mq.xl} {
     max-width: 55vw;
+  }
+
+  ${mq.xxl} {
+    max-width: 45vw;
+  }
+
+  ${mq.xxxl} {
+    max-width: 35vw;
+  }
+
+  ${mq["4xl"]} {
+    max-width: 25vw;
   }
 `;
 

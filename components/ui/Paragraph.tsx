@@ -1,31 +1,16 @@
-import React, { CSSProperties, ReactNode } from "react";
+import React, { ReactNode } from "react";
+import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
 
-import { cn } from "@lib/cn";
-
-const componentName: string = "Page";
-
 interface IProps extends IGenericProps {
   children: ReactNode;
-  maxWidth?: CSSProperties["maxWidth"];
 }
 
-export const Paragraph: React.FC<IProps> = ({
-  classNames,
-  children,
-  maxWidth
-}): JSX.Element => (
-  <p
-    className={cn({
-      block: componentName,
-      utils: [],
-      others: classNames
-    })}
-    style={{
-      maxWidth
-    }}
-  >
-    {children}
-  </p>
+const SParagraph = styled.p`
+  padding-bottom: 0.25rem;
+`;
+
+export const Paragraph: React.FC<IProps> = ({ children }): JSX.Element => (
+  <SParagraph>{children}</SParagraph>
 );

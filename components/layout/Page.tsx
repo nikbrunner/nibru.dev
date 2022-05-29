@@ -18,12 +18,8 @@ interface IProps extends IGenericProps {
 const SPage = styled.main`
   label: Page;
 
-  ${padding.top.xs};
-  ${padding.bottom["5xl"]};
-
-  .children {
-    ${padding.y.l};
-  }
+  ${padding.y["3xl"]}
+  min-height: 100%;
 `;
 
 export const Page: React.FC<IProps> = ({ children, title }): JSX.Element => (
@@ -36,9 +32,7 @@ export const Page: React.FC<IProps> = ({ children, title }): JSX.Element => (
     <SPage>
       <Nav title={config.siteTitle} />
 
-      <Container>
-        <main className="children">{children}</main>
-      </Container>
+      <Container>{children}</Container>
 
       <Footer />
     </SPage>
