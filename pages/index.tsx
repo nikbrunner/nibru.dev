@@ -43,11 +43,24 @@ const Home = () => {
           </Paragraph>
 
           <Paragraph>
-            My main stack consists of <strong className="font-bold">React</strong>
+            My main technology stack consists of{" "}
+            <Link href="https://reactjs.org" type="external">
+              React
+            </Link>
             , <wbr />
-            <strong>TypeScript</strong> and <strong>SCSS</strong>, but in my free
-            time I try to explore other technologies, frameworks, architectures and
-            best practices with some side projects.
+            <Link href="https://www.typescriptlang.org/" type="external">
+              TypeScript
+            </Link>
+            ,{" "}
+            <Link href="https://sass-lang.com" type="external">
+              SCSS
+            </Link>{" "}
+            and{" "}
+            <Link href="https://nodejs.org/en/" type="external">
+              NodeJS
+            </Link>{" "}
+            but in my free time I try to explore other technologies, frameworks,
+            architectures and best practices with some side projects.
           </Paragraph>
 
           <Paragraph>
@@ -68,9 +81,9 @@ const Home = () => {
           </Paragraph>
 
           <Paragraph>
-            Yeah this probably sounds confusing, but now since 2020, I work as a
-            Software Engineer, and I am very happy with my path, and I also think my
-            previous experiences make me a better developer.
+            While this probably sounds confusing, since 2020 I now work as a Software
+            Engineer, and I am very happy with my path, and I also think my previous
+            experiences make me a better developer.
           </Paragraph>
 
           <Paragraph>
@@ -78,7 +91,7 @@ const Home = () => {
           </Paragraph>
 
           <Paragraph>
-            And if my brain still has some energy left, I read alot of books about
+            If my brain still has some energy left, I also read alot of books about
             Philosophy, History and other non-fiction topics.
           </Paragraph>
         </div>
