@@ -101,6 +101,11 @@ const Home = () => {
             I think that should cover the basics. You can find a picture of me and
             other stuff in the links in the footer.
           </Paragraph>
+
+          <Paragraph>
+            If you want to get in contact with me, you can DM me on Twitter or shoot
+            me an E-Mail. :)
+          </Paragraph>
         </div>
       </Section>
     </Page>
