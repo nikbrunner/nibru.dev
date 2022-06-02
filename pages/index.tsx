@@ -56,13 +56,13 @@ const Home = () => {
             <Link href="https://nodejs.org/en/" type="external">
               NodeJS
             </Link>{" "}
-            but in my free time I try to explore other technologies, frameworks,
+            but in my free time I try to explore other languages, frameworks,
             architectures and best practices with some side projects.
           </Paragraph>
 
           <Paragraph>
-            I also love <Highlight>Vim/Neovim</Highlight> and my mechanical split
-            keyboard.
+            I also love <Highlight>Vim/Neovim</Highlight> and my{" "}
+            <Highlight>mechanical split keyboard</Highlight>.
           </Paragraph>
 
           <Paragraph>
@@ -84,27 +84,29 @@ const Home = () => {
 
           <Paragraph>
             While this probably sounds confusing, since 2020 I now work as a Software
-            Engineer, and I am very happy with my path, and I also think my previous
-            experiences make me a better developer.
+            Engineer, and I am very <Highlight>happy with my path</Highlight>, and I
+            also think my previous experiences make me a{" "}
+            <Highlight>better developer</Highlight>.
           </Paragraph>
 
           <Paragraph>
-            Otherwise I love to go hiking and running and meditating outside.
+            <Highlight>I love nature</Highlight>, and to go outside hiking and{" "}
+            running and meditating.
           </Paragraph>
 
           <Paragraph>
-            If my brain still has some energy left, I also read alot of books about
-            Philosophy, History and other non-fiction topics.
+            If my brain still has some energy left, I also{" "}
+            <Highlight>read alot of books</Highlight> about Philosophy, History and
+            other non-fiction topics.
           </Paragraph>
 
-          <Paragraph>
+          <Paragraph emphasis>
             I think that should cover the basics. You can find a picture of me and
             other stuff in the links in the footer.
-          </Paragraph>
-
-          <Paragraph>
-            If you want to get in contact with me, you can DM me on Twitter or shoot
-            me an E-Mail. :)
+            <br />
+            <br />
+            If you want to <Highlight>get in contact with me</Highlight>, you can DM
+            me on Twitter or shoot me an E-Mail. :)
           </Paragraph>
         </div>
       </Section>
