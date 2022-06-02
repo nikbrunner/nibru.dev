@@ -21,7 +21,7 @@ const underline = (color: string) => css`
   /* text-decoration-style: dotted; */
   text-decoration-thickness: 3px;
   text-decoration-color: ${color};
-  text-underline-offset: ${space.xs};
+  text-underline-offset: ${space.xxs};
 `;
 
 export const Highlight: React.FC<IProps> = ({
