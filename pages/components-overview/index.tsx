@@ -2,9 +2,9 @@ import { Section } from "@components/layout/Section";
 import { Page } from "@components/layout/Page";
 
 import { Button } from "@components/ui/Button";
-import { Headline } from "@components/ui/Headline";
-import { Link } from "@components/ui/Link";
-import { Paragraph } from "@components/ui/Paragraph";
+import { Headline } from "@components/typography/Headline";
+import { Link } from "@components/typography/Link";
+import { Paragraph } from "@components/typography/Paragraph";
 
 import { Skill } from "@components/profile/Skill";
 import { Experience } from "@components/profile/Experience";

@@ -4,9 +4,7 @@ import { NextRouter, useRouter } from "next/router";
 import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
-import { text } from "@theme/mixins/text";
 import { transition } from "@theme/mixins/transition";
-import { Theme, ThemeContext } from "@emotion/react";
 import { border } from "@theme/mixins/border";
 
 interface IProps extends IGenericProps {

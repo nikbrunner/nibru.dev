@@ -1,7 +1,7 @@
 import { Section } from "@components/layout/Section";
 import { Page } from "@components/layout/Page";
-import { Paragraph } from "@components/ui/Paragraph";
-import { Link } from "@components/ui/Link";
+import { Paragraph } from "@components/typography/Paragraph";
+import { Link } from "@components/typography/Link";
 import { Highlight } from "@components/typography/Highlight";
 
 const Home = () => {
