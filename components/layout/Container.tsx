@@ -10,7 +10,7 @@ interface IProps {
 
 const SContainer = styled.div`
   label: Container;
-  max-width: 95vw;
+  max-width: 90vw;
 
   ${margin.x.center};
 

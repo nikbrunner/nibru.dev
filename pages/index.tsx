@@ -1,36 +1,33 @@
-import { css } from "@emotion/react";
-
 import { Section } from "@components/layout/Section";
 import { Page } from "@components/layout/Page";
 import { Paragraph } from "@components/ui/Paragraph";
 import { Link } from "@components/ui/Link";
+import { Highlight } from "@components/typography/Highlight";
 
 const Home = () => {
   return (
     <Page title="Hi there. 👋">
       <Section>
         <div>
-          <h2
-            css={css`
-              margin: 0.5em 0 0.5em 0;
-              font-size: 2rem;
-              font-style: italic;
-            `}
-          >
-            Hi.{" "}
-          </h2>
+          <h2>👋</h2>
 
           <Paragraph>
-            My name is Nikolaus Brunner, but most people call me Nik.
+            Hi. My name is <Highlight underline>Nikolaus Brunner</Highlight>, but
+            most people call me <Highlight>Nik</Highlight>.
           </Paragraph>
 
-          <Paragraph>I was born 1984.</Paragraph>
+          <Paragraph>
+            I was born <Highlight>1984</Highlight>.
+          </Paragraph>
 
           <Paragraph>
-            I am working as a Software Engineer for{" "}
-            <Link href="https://bike.center" type="external">
-              DealerCenter Digital
-            </Link>
+            I am working as a{" "}
+            <Highlight>
+              Software Engineer for{" "}
+              <Link href="https://bike.center" type="external">
+                DealerCenter Digital
+              </Link>
+            </Highlight>
             .
           </Paragraph>
 
@@ -42,7 +39,7 @@ const Home = () => {
             .
           </Paragraph>
 
-          <Paragraph>
+          <Paragraph emphasis>
             My main technology stack consists of{" "}
             <Link href="https://reactjs.org" type="external">
               React
@@ -64,20 +61,25 @@ const Home = () => {
           </Paragraph>
 
           <Paragraph>
-            I also love Vim/Neovim and my mechanical split keyboard.
+            I also love <Highlight>Vim/Neovim</Highlight> and my mechanical split
+            keyboard.
           </Paragraph>
 
           <Paragraph>
             As far as software development is concerned, I try to put a lot of
-            emphasis on good architecture and elegant, yet readable code. I
-            don&apos;t want to stick a band-aid on a problem, but try to understand
-            and heal the wound.
+            emphasis on good architecture and elegant, yet readable code.{" "}
+            <Highlight>
+              I don&apos;t want to stick a band-aid on a problem, but try to
+              understand and heal the wound.
+            </Highlight>
           </Paragraph>
 
           <Paragraph>
-            In my younger years, I also worked as a Photographer, Audio & Video
-            Engineer in Studios and Hotels, but also as a Landscaper and I also
-            washed many dishes.
+            In my younger years, I also worked as a{" "}
+            <Highlight>Photographer</Highlight>,{" "}
+            <Highlight>Audio & Video Engineer</Highlight> in Studios and Hotels, but
+            also as a <Highlight>Landscaper</Highlight> and I also{" "}
+            <Highlight>washed many dishes</Highlight>.
           </Paragraph>
 
           <Paragraph>
@@ -93,6 +95,11 @@ const Home = () => {
           <Paragraph>
             If my brain still has some energy left, I also read alot of books about
             Philosophy, History and other non-fiction topics.
+          </Paragraph>
+
+          <Paragraph>
+            I think that should cover the basics. You can find a picture of me and
+            other stuff in the links in the footer.
           </Paragraph>
         </div>
       </Section>
