@@ -1,3 +1,5 @@
+import { Colors } from "@theme/mixins/colors";
+
 export const github_colors: Colors = {
   black: "#010409",
   white: "#f7f9fc",

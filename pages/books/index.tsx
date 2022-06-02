@@ -5,7 +5,7 @@ import { IReadwiseBooks } from "@typings/Readwise";
 
 import { Page } from "@components/layout/Page";
 import { Section } from "@components/layout/Section";
-import { Paragraph } from "@components/ui/Paragraph";
+import { Paragraph } from "@components/typography/Paragraph";
 import { BookCard } from "@components/books/BookCard";
 import { BookCardsLayout } from "@components/books/BookCardsLayout";
 
