@@ -2,8 +2,7 @@ import { ReactNode } from "react";
 import Link from "next/link";
 import { NextRouter, useRouter } from "next/router";
 
-import Style from "./NavLink.style"
-
+import Style from "./NavLink.style";
 
 interface IProps {
   href: string;

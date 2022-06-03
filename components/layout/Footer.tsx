@@ -4,7 +4,7 @@ import { RiXingLine } from "react-icons/ri";
 
 import { Link } from "@components/text/Link/Link";
 import { Container } from "@components/layout/Container";
-import { ThemeToggle } from "@components/ui/ThemeToggle";
+import { ThemeToggle } from "@components/ui/ThemeToggle/ThemeToggle";
 
 import { background } from "@mixins/background";
 import { margin, padding } from "@theme/mixins/spacing";
