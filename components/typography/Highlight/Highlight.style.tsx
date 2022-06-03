@@ -13,10 +13,10 @@ const underline = (color: string) => css`
   text-underline-offset: ${space.xxs};
 `;
 
-const Styled = styled.span<Partial<ComponentProps<typeof Highlight>>>`
+const Style = styled.span<Partial<ComponentProps<typeof Highlight>>>`
   label: Highlight;
 
   ${({ withUnderline, theme }) => withUnderline && underline(theme.bg.secondary)};
 `;
 
-export default Styled;
+export default Style;

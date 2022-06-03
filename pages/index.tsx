@@ -1,7 +1,7 @@
 import { Section } from "@components/layout/Section";
 import { Page } from "@components/layout/Page";
 import { Paragraph } from "@components/typography/Paragraph";
-import { Link } from "@components/typography/Link";
+import { Link } from "@components/typography/Link/Link";
 import { Highlight } from "@components/typography/Highlight/Highlight";
 import { Headline } from "@components/typography/Headline";
 import { Spacer } from "@components/layout/Spacer";

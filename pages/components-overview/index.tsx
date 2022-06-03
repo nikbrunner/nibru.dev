@@ -3,7 +3,7 @@ import { Page } from "@components/layout/Page";
 
 import { Button } from "@components/ui/Button";
 import { Headline } from "@components/typography/Headline";
-import { Link } from "@components/typography/Link";
+import { Link } from "@components/typography/Link/Link";
 import { Paragraph } from "@components/typography/Paragraph";
 
 import { Skill } from "@components/profile/Skill";
