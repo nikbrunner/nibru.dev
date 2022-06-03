@@ -129,12 +129,6 @@ const Home = () => {
           </Highlight>
         </Paragraph>
 
-        <Headline>Personal</Headline>
-
-        <Paragraph>
-          I was born <Highlight>1984</Highlight>.
-        </Paragraph>
-
         <Paragraph>
           In my younger years, I also worked as a <Highlight>Photographer</Highlight>
           , <Highlight>Audio & Video Engineer</Highlight> in Studios and Hotels, but
@@ -148,6 +142,14 @@ const Home = () => {
           also think my previous experiences make me a{" "}
           <Highlight>better developer</Highlight>.
         </Paragraph>
+      </Section>
+
+      <Section>
+        <Headline>Personal</Headline>
+
+        <Paragraph>
+          I was born <Highlight>1984</Highlight>.
+        </Paragraph>
 
         <Paragraph>
           <Highlight>I love nature</Highlight>, and to go outside hiking and running
@@ -159,14 +161,26 @@ const Home = () => {
           <Highlight>read alot of books</Highlight> about Philosophy, History and
           other non-fiction topics.
         </Paragraph>
+      </Section>
 
+      <Spacer space="xl" />
+
+      <Section>
         <Paragraph emphasis>
           I think that should cover the basics. You can find a picture of me and
           other stuff in the links in the footer.
           <br />
           <br />
-          If you want to <Highlight>get in contact with me</Highlight>, you can DM me
-          on Twitter or shoot me an E-Mail. :)
+          If you want to get in <Highlight>contact with me</Highlight>, you can DM me
+          on{" "}
+          <Link href="https://twitter.com/NikolausBrunner" type="external">
+            Twitter
+          </Link>{" "}
+          or shoot me an{" "}
+          <Link href="mailto:nikolaus.brunner@protonmail.ch" type="external">
+            E-Mail
+          </Link>
+          . :)
         </Paragraph>
       </Section>
     </Page>
