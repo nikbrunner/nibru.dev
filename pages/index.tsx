@@ -30,7 +30,7 @@ const Greeting = () => (
         margin: 0;
       `}
     >
-      My name is <Highlight underline>Nikolaus Brunner</Highlight>,<br />
+      Hi. My name is <Highlight underline>Nikolaus Brunner</Highlight>,<br />
       but most people call me <Highlight>Nik</Highlight>
     </h1>
   </div>
@@ -68,7 +68,7 @@ const Home = () => {
         </Paragraph>
 
         <Paragraph emphasis>
-          My main technology stack right now consists of{" "}
+          My tech stack at the moment consists of{" "}
           <Link href="https://reactjs.org" type="external">
             React
           </Link>
@@ -83,9 +83,39 @@ const Home = () => {
           and{" "}
           <Link href="https://nodejs.org/en/" type="external">
             NodeJS
+          </Link>
+          .
+          <br />
+          <br />
+          My main focus is definitely Frontend, but I regularly have touchpoints with
+          the Backend.
+          <br />
+          <br />
+          In my free time I try to explore other languages like{" "}
+          <Link href="https://go.dev/" type="external">
+            Go
+          </Link>
+          , frameworks like{" "}
+          <Link href="https://svelte.dev/" type="external">
+            Svelte
+          </Link>
+          , architectures like{" "}
+          <Link href="https://emotion.sh/docs/introduction" type="external">
+            Styled Components with EmotionCSS
           </Link>{" "}
-          but in my free time I try to explore other languages, frameworks,
-          architectures and best practices with some side projects.
+          and best practices with some side projects, like my{" "}
+          <Link
+            href="https://github.com/nikbrunner/obsidian-deep-work-theme"
+            type="external"
+          >
+            Obsidian Deep Work Theme
+          </Link>
+          , which has <Highlight>over 40k downloads</Highlight> at the moment, or of
+          course{" "}
+          <Link href="https://github.com/nikbrunner/nibru.dev" type="external">
+            this website
+          </Link>
+          .
         </Paragraph>
 
         <Paragraph>
@@ -101,8 +131,19 @@ const Home = () => {
         </Paragraph>
 
         <Paragraph>
-          I also love <Highlight>Vim/Neovim</Highlight> and my{" "}
-          <Highlight>mechanical split keyboard</Highlight>.
+          I also love{" "}
+          <Highlight>
+            <Link href="https://github.com/nikbrunner/vin" type="external">
+              Vim/Neovim
+            </Link>
+          </Highlight>{" "}
+          and my{" "}
+          <Highlight>
+            <Link href="https://www.zsa.io/moonlander/" type="external">
+              Moonlander Split Keyboard
+            </Link>
+          </Highlight>
+          .
         </Paragraph>
 
         <Paragraph>
@@ -115,23 +156,8 @@ const Home = () => {
         </Paragraph>
 
         <Paragraph>
-          At the moment, I try to learn{" "}
-          <Highlight>
-            <Link href="https://go.dev/" type="external">
-              Go
-            </Link>
-          </Highlight>{" "}
-          and{" "}
-          <Highlight>
-            <Link href="https://emotion.sh/docs/introduction" type="external">
-              Styled Components & EmotionCSS
-            </Link>
-          </Highlight>
-        </Paragraph>
-
-        <Paragraph>
-          In my younger years, I also worked as a <Highlight>Photographer</Highlight>
-          , <Highlight>Audio & Video Engineer</Highlight> in Studios and Hotels, but
+          In my years before, I also worked as a <Highlight>Photographer</Highlight>,{" "}
+          <Highlight>Audio & Video Engineer</Highlight> in Studios and Hotels, but
           also as a <Highlight>Landscaper</Highlight> and I also{" "}
           <Highlight>washed many dishes</Highlight>.
         </Paragraph>
@@ -148,12 +174,28 @@ const Home = () => {
         <Headline>Personal</Headline>
 
         <Paragraph>
-          I was born <Highlight>1984</Highlight>.
+          I was born <Highlight>1984</Highlight>, and am based in{" "}
+          <Highlight>Landshut (near Munich) Germany</Highlight>.
+        </Paragraph>
+
+        <Paragraph>
+          In my past I also made some{" "}
+          <Link
+            href="https://open.spotify.com/artist/603Tahq6jn44VFj23DldSW"
+            type="external"
+          >
+            Music
+          </Link>
+          .
         </Paragraph>
 
         <Paragraph>
           <Highlight>I love nature</Highlight>, and to go outside hiking and running
-          and meditating.
+          and meditating. I often combine this to maintain my{" "}
+          <Link href="https://www.instagram.com/nikolaus.brunner/" type="external">
+            Photography
+          </Link>
+          .
         </Paragraph>
 
         <Paragraph>
@@ -168,7 +210,7 @@ const Home = () => {
       <Section>
         <Paragraph emphasis>
           I think that should cover the basics. You can find a picture of me and
-          other stuff in the links in the footer.
+          other stuff in the footer-links.
           <br />
           <br />
           If you want to get in <Highlight>contact with me</Highlight>, you can DM me
