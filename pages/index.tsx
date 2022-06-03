@@ -2,7 +2,7 @@ import { Section } from "@components/layout/Section";
 import { Page } from "@components/layout/Page";
 import { Paragraph } from "@components/typography/Paragraph";
 import { Link } from "@components/typography/Link";
-import { Highlight } from "@components/typography/Highlight";
+import { Highlight } from "@components/typography/Highlight/Highlight";
 import { Headline } from "@components/typography/Headline";
 import { Spacer } from "@components/layout/Spacer";
 import { css } from "@emotion/react";
@@ -48,7 +48,7 @@ const Greeting = () => (
       `}
     >
       <span css={css``}>👋</span> Hi. My name is{" "}
-      <Highlight underline>Nikolaus Brunner</Highlight>, but most people call me{" "}
+      <Highlight withUnderline>Nikolaus Brunner</Highlight>, but most people call me{" "}
       <Highlight>Nik</Highlight>.
     </h1>
   </div>
