@@ -1,6 +1,6 @@
 import { Global, css, useTheme, Theme } from "@emotion/react";
 
-import { background } from "@mixins/background";
+import { background, dotgrid } from "@mixins/background";
 import { text } from "../theme/mixins/text";
 import { transition } from "../theme/mixins/transition";
 
@@ -63,6 +63,8 @@ const globalStyles = (theme: Theme) =>
       ${text.color.primary(theme)}
       ${transition.fast("background")}
       ${transition.fast("color")}
+
+      ${dotgrid(theme.bg.ternary)}
 
       margin: 0;
       padding: 0;
