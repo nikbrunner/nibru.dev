@@ -4,7 +4,7 @@ import { space, TSpace } from "@theme/mixins/space";
 type TDirection = "vertical" | "horizontal";
 
 interface IProps {
-  space: TSpace;
+  space?: TSpace;
   direction?: TDirection;
 }
 
