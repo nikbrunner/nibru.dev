@@ -15,7 +15,7 @@ interface IThemeContext {
 export const ThemeContext = createContext<IThemeContext>({} as IThemeContext);
 
 export const ThemeProvider = ({ children }: IProps) => {
-  const [theme, setTheme] = useState<ETheme>(ETheme.Dark);
+  const [theme, setTheme] = useState<ETheme>(ETheme.Light);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
