@@ -76,13 +76,17 @@ const Home = () => {
           <Link href="https://reactjs.org" type="external">
             React
           </Link>
-          , <wbr />
+          ,{" "}
           <Link href="https://www.typescriptlang.org/" type="external">
             TypeScript
           </Link>
           ,{" "}
           <Link href="https://sass-lang.com" type="external">
             SCSS
+          </Link>
+          ,{" "}
+          <Link href="https://storybook.js.org/" type="external">
+            StorybookJS
           </Link>{" "}
           and{" "}
           <Link href="https://nodejs.org/en/" type="external">
