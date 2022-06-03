@@ -7,31 +7,35 @@ import { Headline } from "@components/typography/Headline";
 import { Spacer } from "@components/layout/Spacer";
 import { css } from "@emotion/react";
 import { space } from "@theme/mixins/space";
+import { borderRadius } from "@theme/mixins/border";
 
 const Greeting = () => (
   <div
     css={css`
       display: grid;
-      grid-template-columns: 0.35fr 0.65fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: ${space.xl};
       align-items: center;
     `}
   >
-    <span
+    <img
+      src="/images/nb.jpg"
       css={css`
-        font-size: 5rem;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        justify-self: center;
+        border-radius: ${borderRadius.round};
       `}
-    >
-      👋
-    </span>
+    />
 
     <h1
       css={css`
         margin: 0;
       `}
     >
-      Hi. My name is <Highlight underline>Nikolaus Brunner</Highlight>,<br />
-      but most people call me <Highlight>Nik</Highlight>
+      Hi. My name is <Highlight underline>Nikolaus Brunner</Highlight>, but most
+      people call me <Highlight>Nik</Highlight>.
     </h1>
   </div>
 );
@@ -209,8 +213,8 @@ const Home = () => {
 
       <Section>
         <Paragraph emphasis>
-          I think that should cover the basics. You can find a picture of me and
-          other stuff in the footer-links.
+          I think that should cover the basics. You can find a current picture of me
+          and other stuff in the footer-links.
           <br />
           <br />
           If you want to get in <Highlight>contact with me</Highlight>, you can DM me
