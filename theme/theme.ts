@@ -9,8 +9,8 @@ export const lightTheme: Theme = {
   },
   bg: {
     primary: "#eceff4",
-    secondary: "#e5e9f0",
-    ternary: "#d8dee9",
+    secondary: "#ced6e3",
+    ternary: "#adb9d1",
     accent: "#70a9a1"
   }
 };
