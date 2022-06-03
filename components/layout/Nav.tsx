@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-import { NavLink } from "@components/ui/NavLink";
 import { Container } from "@components/layout/Container";
 
 import { margin } from "@theme/mixins/spacing";
