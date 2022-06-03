@@ -21,8 +21,8 @@ const SLink = styled.a`
 
   .icon {
     position: relative;
-    top: 0.25rem;
-    ${margin.left.xs};
+    top: 0.15rem;
+    ${margin.left.s};
   }
 `;
 
