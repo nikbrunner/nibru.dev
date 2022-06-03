@@ -4,7 +4,7 @@ import { Headline } from "@components/text/Headline";
 import { Highlight } from "@components/text/Highlight/Highlight";
 import { Link } from "@components/text/Link/Link";
 import { Page } from "@components/layout/Page";
-import { Paragraph } from "@components/text/Paragraph";
+import { Paragraph } from "@components/text/Paragraph/Paragraph";
 import { Section } from "@components/layout/Section";
 import { Shoutout } from "@components/text/Shoutout/Shoutout";
 import { Spacer } from "@components/layout/Spacer";

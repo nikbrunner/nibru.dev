@@ -5,7 +5,7 @@ import { IReadwiseBooks } from "@typings/Readwise";
 
 import { Page } from "@components/layout/Page";
 import { Section } from "@components/layout/Section";
-import { Paragraph } from "@components/text/Paragraph";
+import { Paragraph } from "@components/text/Paragraph/Paragraph";
 import { BookCard } from "@components/books/BookCard";
 import { BookCardsLayout } from "@components/books/BookCardsLayout";
 
@@ -31,7 +31,7 @@ const Books = ({ books }: IProps) => {
           Books
         </h1>
 
-        <Paragraph style={{ marginBottom: "1rem" }}>
+        <Paragraph>
           These are some of my Books I have read and highlighted.
         </Paragraph>
 
