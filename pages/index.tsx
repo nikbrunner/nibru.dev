@@ -14,6 +14,7 @@ import { mq } from "@theme/mixins/media-queries";
 import { profile } from "@data/profile";
 import { shadow } from "@theme/mixins/shadow";
 import { space } from "@theme/mixins/space";
+import { Button } from "@components/ui/Button/Button";
 
 const Greeting = () => (
   <div
