@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import { FiLink2 } from "react-icons/fi";
 
 import { IGenericProps } from "@typings/GenericProps";
-import { margin } from "@theme/mixins/spacing";
 import { text } from "@theme/mixins/text";
 
 interface IProps extends IGenericProps {
@@ -22,7 +21,6 @@ const SLink = styled.a`
   .icon {
     position: relative;
     top: 0.15rem;
-    ${margin.left.s};
   }
 `;
 
@@ -37,8 +35,7 @@ export const Link: React.FC<IProps> = ({
     href={href}
     target={type === "external" || openInNewTab ? "_blank" : "_self"}
   >
-    {children}
-
+    {children}&nbsp;
     <span className="icon">
       {type === "external" && !hideIcon && <FiLink2 style={{ display: "inline" }} />}
     </span>
