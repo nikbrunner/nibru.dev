@@ -3,21 +3,50 @@ import { Page } from "@components/layout/Page";
 import { Paragraph } from "@components/typography/Paragraph";
 import { Link } from "@components/typography/Link";
 import { Highlight } from "@components/typography/Highlight";
+import { Headline } from "@components/typography/Headline";
+import { Spacer } from "@components/layout/Spacer";
+import { css } from "@emotion/react";
+import { space } from "@theme/mixins/space";
+
+const Greeting = () => (
+  <div
+    css={css`
+      display: grid;
+      grid-template-columns: 0.35fr 0.65fr;
+      gap: ${space.xl};
+      align-items: center;
+    `}
+  >
+    <span
+      css={css`
+        font-size: 5rem;
+      `}
+    >
+      👋
+    </span>
+
+    <h1
+      css={css`
+        margin: 0;
+      `}
+    >
+      My name is <Highlight underline>Nikolaus Brunner</Highlight>,<br />
+      but most people call me <Highlight>Nik</Highlight>
+    </h1>
+  </div>
+);
 
 const Home = () => {
   return (
     <Page title="Hi there. 👋">
       <Section>
-        <h2>👋</h2>
+        <Spacer space="xxl" />
 
-        <Paragraph>
-          Hi. My name is <Highlight underline>Nikolaus Brunner</Highlight>, but most
-          people call me <Highlight>Nik</Highlight>.
-        </Paragraph>
+        <Greeting />
 
-        <Paragraph>
-          I was born <Highlight>1984</Highlight>.
-        </Paragraph>
+        <Spacer space="xxl" />
+
+        <Headline>Work</Headline>
 
         <Paragraph>
           I am working as a{" "}
@@ -39,7 +68,7 @@ const Home = () => {
         </Paragraph>
 
         <Paragraph emphasis>
-          My main technology stack consists of{" "}
+          My main technology stack right now consists of{" "}
           <Link href="https://reactjs.org" type="external">
             React
           </Link>
@@ -83,6 +112,27 @@ const Home = () => {
             I don&apos;t want to stick a band-aid on a problem, but try to understand
             and heal the wound.
           </Highlight>
+        </Paragraph>
+
+        <Paragraph>
+          At the moment, I try to learn{" "}
+          <Highlight>
+            <Link href="https://go.dev/" type="external">
+              Go
+            </Link>
+          </Highlight>{" "}
+          and{" "}
+          <Highlight>
+            <Link href="https://emotion.sh/docs/introduction" type="external">
+              Styled Components & EmotionCSS
+            </Link>
+          </Highlight>
+        </Paragraph>
+
+        <Headline>Personal</Headline>
+
+        <Paragraph>
+          I was born <Highlight>1984</Highlight>.
         </Paragraph>
 
         <Paragraph>
