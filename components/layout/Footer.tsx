@@ -20,6 +20,7 @@ const SFooter = styled.footer`
   position: fixed;
   bottom: 0;
   width: 100%;
+  box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.1);
 
   .inner-wrapper {
     ${padding.y.m};
