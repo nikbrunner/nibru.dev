@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
-import { IExperience } from "@typings/profile/Experience";
+import { IExperience } from "@typings/data/Experience";
 
 interface IProps extends IExperience, IGenericProps {
   current: boolean;

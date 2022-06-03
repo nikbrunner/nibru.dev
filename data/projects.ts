@@ -1,4 +1,4 @@
-import { IProject } from "@typings/profile/Project";
+import { IProject } from "@typings/data/Project";
 
 export const projects: IProject[] = [
   {

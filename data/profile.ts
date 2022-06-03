@@ -1,9 +1,10 @@
-import { IProfile } from "@typings/profile/PersonalData";
+import { IProfile } from "@typings/data/Profile";
 
 export const profile: IProfile = {
   firstname: "Nikolaus",
   lastname: "Brunner",
-  image: "/path/to/img",
+  nickName: "Nik",
+  image: "/images/nb_2022.jpg",
   email: "nikolaus.brunner@protonmail.ch",
   birthday: "1984-02-21",
   phone: "+4917624330932",

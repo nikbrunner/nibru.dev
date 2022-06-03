@@ -1,4 +1,4 @@
-import { IExperience } from "@typings/profile/Experience";
+import { IExperience } from "@typings/data/Experience";
 
 export const experiences: IExperience[] = [
   {

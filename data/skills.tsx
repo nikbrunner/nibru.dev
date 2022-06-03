@@ -1,4 +1,3 @@
-import React from "react";
 import {
   SiJavascript,
   SiTypescript,
@@ -10,7 +9,7 @@ import {
 } from "react-icons/si";
 import { FaSass, FaGitAlt, FaReact, FaNodeJs, FaFigma } from "react-icons/fa";
 
-import { ISkill } from "@typings/profile/Skill";
+import { ISkill } from "@typings/data/Skill";
 
 export const skills: ISkill[] = [
   {

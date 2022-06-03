@@ -1,16 +1,18 @@
-import { Section } from "@components/layout/Section";
+import { Headline } from "@components/typography/Headline";
+import { Highlight } from "@components/typography/Highlight/Highlight";
+import { Link } from "@components/typography/Link/Link";
 import { Page } from "@components/layout/Page";
 import { Paragraph } from "@components/typography/Paragraph";
-import { Link } from "@components/typography/Link/Link";
-import { Highlight } from "@components/typography/Highlight/Highlight";
-import { Headline } from "@components/typography/Headline";
-import { Spacer } from "@components/layout/Spacer";
-import { css } from "@emotion/react";
-import { space } from "@theme/mixins/space";
-import { borderRadius } from "@theme/mixins/border";
-import { mq } from "@theme/mixins/media-queries";
-import { shadow } from "@theme/mixins/shadow";
+import { Section } from "@components/layout/Section";
 import { Shoutout } from "@components/typography/Shoutout/Shoutout";
+import { Spacer } from "@components/layout/Spacer";
+
+import { borderRadius } from "@theme/mixins/border";
+import { css } from "@emotion/react";
+import { mq } from "@theme/mixins/media-queries";
+import { profile } from "@data/profile";
+import { shadow } from "@theme/mixins/shadow";
+import { space } from "@theme/mixins/space";
 
 const Greeting = () => (
   <div
@@ -26,7 +28,7 @@ const Greeting = () => (
     `}
   >
     <img
-      src="/images/nb_2022.jpg"
+      src={profile.image}
       css={css`
         width: 100%;
         max-height: 250px;
@@ -47,9 +49,11 @@ const Greeting = () => (
         }
       `}
     >
-      <span css={css``}>👋</span> Hi. My name is{" "}
-      <Highlight withUnderline>Nikolaus Brunner</Highlight>, but most people call me{" "}
-      <Highlight>Nik</Highlight>.
+      👋 Hi. My name is{" "}
+      <Highlight withUnderline>
+        {profile.firstname} {profile.lastname}
+      </Highlight>
+      ,<br /> but most people call me <Highlight>{profile.nickName}</Highlight>.
     </h1>
   </div>
 );

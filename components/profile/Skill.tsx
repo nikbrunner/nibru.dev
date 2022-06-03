@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 import { IGenericProps } from "@typings/GenericProps";
-import { ISkill } from "@typings/profile/Skill";
+import { ISkill } from "@typings/data/Skill";
 
 interface IProps extends ISkill, IGenericProps {}
 
