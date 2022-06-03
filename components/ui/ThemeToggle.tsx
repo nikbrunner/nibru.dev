@@ -6,13 +6,15 @@ import { ThemeContext } from "@theme/ThemeProvider";
 import { ETheme } from "@theme/theme";
 import { flex } from "@theme/mixins/layout";
 import { text } from "@theme/mixins/text";
+import { space } from "@theme/mixins/space";
 
 const SThemeToggle = styled.div`
   ${flex({
     flexflow: "row nowrap",
     justifyContent: "flex-end",
     alignItems: "center",
-    inline: true
+    inline: true,
+    gap: space.l
   })}
 `;
 
@@ -38,17 +40,17 @@ export const ThemeToggle: React.FC = () => {
   return (
     <SThemeToggle>
       <SButton
-        onClick={() => setTheme(ETheme.Light)}
-        isActive={theme === ETheme.Light}
-      >
-        <FiSun />
-      </SButton>
-
-      <SButton
         onClick={() => setTheme(ETheme.Dark)}
         isActive={theme === ETheme.Dark}
       >
         <FiMoon />
+      </SButton>
+
+      <SButton
+        onClick={() => setTheme(ETheme.Light)}
+        isActive={theme === ETheme.Light}
+      >
+        <FiSun />
       </SButton>
     </SThemeToggle>
   );
