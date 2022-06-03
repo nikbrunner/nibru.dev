@@ -10,6 +10,7 @@ import { space } from "@theme/mixins/space";
 import { borderRadius } from "@theme/mixins/border";
 import { mq } from "@theme/mixins/media-queries";
 import { shadow } from "@theme/mixins/shadow";
+import { Shoutout } from "@components/typography/Shoutout/Shoutout";
 
 const Greeting = () => (
   <div
@@ -84,60 +85,62 @@ const Home = () => {
           .
         </Paragraph>
 
-        <Paragraph emphasis>
-          My tech stack at the moment consists of{" "}
-          <Link href="https://reactjs.org" type="external">
-            React
-          </Link>
-          ,{" "}
-          <Link href="https://www.typescriptlang.org/" type="external">
-            TypeScript
-          </Link>
-          ,{" "}
-          <Link href="https://sass-lang.com" type="external">
-            SCSS
-          </Link>
-          ,{" "}
-          <Link href="https://storybook.js.org/" type="external">
-            StorybookJS
-          </Link>{" "}
-          and{" "}
-          <Link href="https://nodejs.org/en/" type="external">
-            NodeJS
-          </Link>
-          .
-          <br />
-          <br />
-          My main focus is definitely Frontend, but I regularly have touchpoints with
-          the Backend.
-          <br />
-          <br />
-          In my free time I try to explore other languages like{" "}
-          <Link href="https://go.dev/" type="external">
-            Go
-          </Link>
-          , frameworks like{" "}
-          <Link href="https://svelte.dev/" type="external">
-            Svelte
-          </Link>
-          , architectures like{" "}
-          <Link href="https://emotion.sh/docs/introduction" type="external">
-            Styled Components with EmotionCSS
-          </Link>{" "}
-          and best practices with some side projects, like my{" "}
-          <Link
-            href="https://github.com/nikbrunner/obsidian-deep-work-theme"
-            type="external"
-          >
-            Obsidian Deep Work Theme
-          </Link>
-          , which has <Highlight>over 40k downloads</Highlight> at the moment, or of
-          course{" "}
-          <Link href="https://github.com/nikbrunner/nibru.dev" type="external">
-            this website
-          </Link>
-          .
-        </Paragraph>
+        <Shoutout label="TLDR;">
+          <Paragraph>
+            My tech stack at the moment consists of{" "}
+            <Link href="https://reactjs.org" type="external">
+              React
+            </Link>
+            ,{" "}
+            <Link href="https://www.typescriptlang.org/" type="external">
+              TypeScript
+            </Link>
+            ,{" "}
+            <Link href="https://sass-lang.com" type="external">
+              SCSS
+            </Link>
+            ,{" "}
+            <Link href="https://storybook.js.org/" type="external">
+              StorybookJS
+            </Link>{" "}
+            and{" "}
+            <Link href="https://nodejs.org/en/" type="external">
+              NodeJS
+            </Link>
+            .
+            <br />
+            <br />
+            My main focus is definitely Frontend, but I regularly have touchpoints
+            with the Backend.
+            <br />
+            <br />
+            In my free time I try to explore other languages like{" "}
+            <Link href="https://go.dev/" type="external">
+              Go
+            </Link>
+            , frameworks like{" "}
+            <Link href="https://svelte.dev/" type="external">
+              Svelte
+            </Link>
+            , architectures like{" "}
+            <Link href="https://emotion.sh/docs/introduction" type="external">
+              Styled Components with EmotionCSS
+            </Link>{" "}
+            and best practices with some side projects, like my{" "}
+            <Link
+              href="https://github.com/nikbrunner/obsidian-deep-work-theme"
+              type="external"
+            >
+              Obsidian Deep Work Theme
+            </Link>
+            , which has <Highlight>over 40k downloads</Highlight> at the moment, or
+            of course{" "}
+            <Link href="https://github.com/nikbrunner/nibru.dev" type="external">
+              this website
+            </Link>
+            .
+          </Paragraph>
+        </Shoutout>
 
         <Paragraph>
           And to intimately familiarize myself with Linux, I run{" "}
@@ -226,25 +229,25 @@ const Home = () => {
         </Paragraph>
       </Section>
 
-      <Spacer space="xl" />
-
       <Section>
-        <Paragraph emphasis>
-          I think that should cover the basics. You can find a current picture of me
-          and other stuff in the footer-links.
-          <br />
-          <br />
-          If you want to get in <Highlight>contact with me</Highlight>, you can DM me
-          on{" "}
-          <Link href="https://twitter.com/NikolausBrunner" type="external">
-            Twitter
-          </Link>{" "}
-          or shoot me an{" "}
-          <Link href="mailto:nikolaus.brunner@protonmail.ch" type="external">
-            E-Mail
-          </Link>
-          . :)
-        </Paragraph>
+        <Shoutout label="Contact">
+          <Paragraph>
+            I think that should cover the basics. You can find a current picture of
+            me and other stuff in the footer-links.
+            <br />
+            <br />
+            If you want to get in <Highlight>contact with me</Highlight>, you can DM
+            me on{" "}
+            <Link href="https://twitter.com/NikolausBrunner" type="external">
+              Twitter
+            </Link>{" "}
+            or shoot me an{" "}
+            <Link href="mailto:nikolaus.brunner@protonmail.ch" type="external">
+              E-Mail
+            </Link>
+            . :)
+          </Paragraph>
+        </Shoutout>
       </Section>
     </Page>
   );
