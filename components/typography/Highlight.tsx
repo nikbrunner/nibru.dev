@@ -19,9 +19,9 @@ const SHighlight = styled.span<IProps>`
 
 const underline = (color: string) => css`
   text-decoration: underline;
-  text-decoration-thickness: ${borderWidth["3xl"]};
+  text-decoration-thickness: ${borderWidth.l};
   text-decoration-color: ${color};
-  text-underline-offset: ${space.xs};
+  text-underline-offset: ${space.xxs};
 `;
 
 export const Highlight: React.FC<IProps> = ({
