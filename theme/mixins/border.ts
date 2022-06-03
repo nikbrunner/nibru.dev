@@ -1,4 +1,3 @@
-import { appendUnit } from "@lib/helpers";
 import { CSSDirection } from "@typings/styling";
 
 interface BorderMixinSteps<Type> {
@@ -8,6 +7,7 @@ interface BorderMixinSteps<Type> {
   l: Type;
   xl: Type;
   "2xl": Type;
+  "3xl"?: Type;
 }
 
 interface BorderSteps<ReturnType> extends BorderMixinSteps<ReturnType> {}
@@ -22,7 +22,8 @@ export const borderWidth: BorderWidth<string> = {
   base: "2px",
   l: "4px",
   xl: "6px",
-  "2xl": "8px"
+  "2xl": "8px",
+  "3xl": "12px"
 };
 
 export const borderRadius: BorderRadius<string> = {

@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import { IGenericProps } from "@typings/GenericProps";
 import { css } from "@emotion/react";
 import { space } from "@theme/mixins/space";
+import { borderWidth } from "@theme/mixins/border";
 
 interface IProps extends IGenericProps {
   children: ReactNode;
@@ -13,15 +14,14 @@ interface IProps extends IGenericProps {
 const SHighlight = styled.span<IProps>`
   label: Highlight;
 
-  ${props => props.underline && underline(props.theme.fg.accent)}
+  ${props => props.underline && underline(props.theme.bg.secondary)}
 `;
 
 const underline = (color: string) => css`
   text-decoration: underline;
-  /* text-decoration-style: dotted; */
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: ${borderWidth["3xl"]};
   text-decoration-color: ${color};
-  text-underline-offset: ${space.xxs};
+  text-underline-offset: ${space.xs};
 `;
 
 export const Highlight: React.FC<IProps> = ({
