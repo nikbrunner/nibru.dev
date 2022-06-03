@@ -8,18 +8,18 @@ export const lightTheme: Theme = {
     accent: "#70a9a1"
   },
   bg: {
-    primary: "#d8dee9",
+    primary: "#eceff4",
     secondary: "#e5e9f0",
-    ternary: "#eceff4",
+    ternary: "#d8dee9",
     accent: "#70a9a1"
   }
 };
 
 export const darkTheme: Theme = {
   fg: {
-    primary: "#d8dee9",
+    primary: "#eceff4",
     secondary: "#e5e9f0",
-    ternary: "#eceff4",
+    ternary: "#d8dee9",
     accent: "#70a9a1"
   },
   bg: {
