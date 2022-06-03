@@ -74,6 +74,10 @@ const globalStyles = (theme: Theme) =>
       -moz-osx-font-smoothing: grayscale;
       overflow-x: hidden;
       min-height: 100%;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     a {
