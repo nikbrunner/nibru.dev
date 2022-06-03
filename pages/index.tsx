@@ -8,34 +8,47 @@ import { Spacer } from "@components/layout/Spacer";
 import { css } from "@emotion/react";
 import { space } from "@theme/mixins/space";
 import { borderRadius } from "@theme/mixins/border";
+import { mq } from "@theme/mixins/media-queries";
+import { shadow } from "@theme/mixins/shadow";
 
 const Greeting = () => (
   <div
     css={css`
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: 1fr;
       gap: ${space.xl};
       align-items: center;
+
+      ${mq.m} {
+        grid-template-columns: 250px 1fr;
+      }
     `}
   >
     <img
-      src="/images/nb.jpg"
+      src="/images/nb_2022.jpg"
       css={css`
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        max-height: 250px;
         object-fit: cover;
         justify-self: center;
-        border-radius: ${borderRadius.round};
+        border-radius: ${borderRadius.xl};
+        box-shadow: ${shadow.box.big};
       `}
     />
 
     <h1
       css={css`
         margin: 0;
+        text-align: center;
+
+        ${mq.m} {
+          text-align: left;
+        }
       `}
     >
-      Hi. My name is <Highlight underline>Nikolaus Brunner</Highlight>, but most
-      people call me <Highlight>Nik</Highlight>.
+      <span css={css``}>👋</span> Hi. My name is{" "}
+      <Highlight underline>Nikolaus Brunner</Highlight>, but most people call me{" "}
+      <Highlight>Nik</Highlight>.
     </h1>
   </div>
 );
@@ -48,7 +61,7 @@ const Home = () => {
 
         <Greeting />
 
-        <Spacer space="xxl" />
+        <Spacer space="l" />
 
         <Headline>Work</Headline>
 
