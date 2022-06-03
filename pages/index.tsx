@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 
-import { Headline } from "@components/text/Headline";
+import { Headline } from "@components/text/Headline/Headline";
 import { Highlight } from "@components/text/Highlight/Highlight";
 import { Link } from "@components/text/Link/Link";
 import { Page } from "@components/layout/Page";
