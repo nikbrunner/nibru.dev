@@ -40,17 +40,17 @@ export const ThemeToggle: React.FC = () => {
   return (
     <SThemeToggle>
       <SButton
-        onClick={() => setTheme(ETheme.Dark)}
-        isActive={theme === ETheme.Dark}
-      >
-        <FiMoon />
-      </SButton>
-
-      <SButton
         onClick={() => setTheme(ETheme.Light)}
         isActive={theme === ETheme.Light}
       >
         <FiSun />
+      </SButton>
+
+      <SButton
+        onClick={() => setTheme(ETheme.Dark)}
+        isActive={theme === ETheme.Dark}
+      >
+        <FiMoon />
       </SButton>
     </SThemeToggle>
   );
