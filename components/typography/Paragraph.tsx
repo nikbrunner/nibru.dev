@@ -15,13 +15,14 @@ const SParagraph = styled.p<IProps>`
   label: Paragraph;
   padding-bottom: 0.25rem;
 
-  ${props => props.emphasis && emphasis(props.theme.fg.ternary)}
+  ${props => props.emphasis && emphasis(props.theme.fg.primary)}
 `;
 
 const emphasis = (color: string) => css`
   padding: ${space.xl};
   border: ${borderWidth.base} solid ${color};
   ${border.radius.l};
+  border-style: dashed;
 `;
 
 export const Paragraph: React.FC<IProps> = ({ children, emphasis }): JSX.Element => (
