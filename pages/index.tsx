@@ -1,14 +1,15 @@
-import { Headline } from "@components/typography/Headline";
-import { Highlight } from "@components/typography/Highlight/Highlight";
-import { Link } from "@components/typography/Link/Link";
+import { css } from "@emotion/react";
+
+import { Headline } from "@components/text/Headline";
+import { Highlight } from "@components/text/Highlight/Highlight";
+import { Link } from "@components/text/Link/Link";
 import { Page } from "@components/layout/Page";
-import { Paragraph } from "@components/typography/Paragraph";
+import { Paragraph } from "@components/text/Paragraph";
 import { Section } from "@components/layout/Section";
-import { Shoutout } from "@components/typography/Shoutout/Shoutout";
+import { Shoutout } from "@components/text/Shoutout/Shoutout";
 import { Spacer } from "@components/layout/Spacer";
 
 import { borderRadius } from "@theme/mixins/border";
-import { css } from "@emotion/react";
 import { mq } from "@theme/mixins/media-queries";
 import { profile } from "@data/profile";
 import { shadow } from "@theme/mixins/shadow";

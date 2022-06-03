@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
 import { RiXingLine } from "react-icons/ri";
 
-import { Link } from "@components/typography/Link/Link";
+import { Link } from "@components/text/Link/Link";
 import { Container } from "@components/layout/Container";
 import { ThemeToggle } from "@components/ui/ThemeToggle";
 
