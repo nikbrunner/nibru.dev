@@ -1,19 +1,18 @@
 const unit = "rem";
 
-export interface ISpace {
-  xxs: string;
-  xs: string;
-  s: string;
-  m: string;
-  l: string;
-  xl: string;
-  xxl: string;
-  "3xl": string;
-  "4xl": string;
-  "5xl": string;
-}
+export type TSpace =
+  | "xxs"
+  | "xs"
+  | "s"
+  | "m"
+  | "l"
+  | "xl"
+  | "xxl"
+  | "3xl"
+  | "4xl"
+  | "5xl";
 
-export const space: ISpace = {
+export const space: Record<TSpace, string> = {
   xxs: `0.15${unit}`,
   xs: `0.25${unit}`,
   s: `0.5${unit}`,
