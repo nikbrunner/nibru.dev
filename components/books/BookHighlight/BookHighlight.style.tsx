@@ -5,6 +5,7 @@ import { flex } from "@theme/mixins/layout";
 import { margin, padding } from "@theme/mixins/spacing";
 import { mq } from "@theme/mixins/media-queries";
 import { text } from "@theme/mixins/text";
+import { shadow } from "@theme/mixins/shadow";
 
 const Style = styled.div`
   label: BookHighlight;
@@ -28,6 +29,9 @@ const Style = styled.div`
   ${({ theme }) => border.top["2xl"](theme.bg.secondary)}
 
   ${padding["3xl"]}
+
+  background-color: ${({ theme }) => theme.bg.primary};
+  box-shadow: ${shadow.box.sharp};
 
   .icon {
     color: ${({ theme }) => theme.bg.secondary};
