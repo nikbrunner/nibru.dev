@@ -14,7 +14,6 @@ import { mq } from "@theme/mixins/media-queries";
 import { profile } from "@data/profile";
 import { shadow } from "@theme/mixins/shadow";
 import { space } from "@theme/mixins/space";
-import { Button } from "@components/ui/Button/Button";
 
 const Greeting = () => (
   <div
@@ -37,7 +36,7 @@ const Greeting = () => (
         object-fit: cover;
         justify-self: center;
         border-radius: ${borderRadius.xl};
-        box-shadow: ${shadow.box.big};
+        box-shadow: ${shadow.box.sharp};
       `}
     />
 
@@ -51,7 +50,7 @@ const Greeting = () => (
         }
       `}
     >
-      👋 Hi. My name is{" "}
+      Hi. My name is{" "}
       <Highlight withUnderline>
         {profile.firstname} {profile.lastname}
       </Highlight>
