@@ -4,7 +4,7 @@ import { IReadwiseBook, IReadwiseHighlights } from "@typings/Readwise";
 
 import { Page } from "@components/layout/Page";
 import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
-import { BookHighlight } from "@components/books/BookHighlight";
+import { BookHighlight } from "@components/books/BookHighlight/BookHighlight";
 import { BookHighlightsLayout } from "@components/books/BookHighlightsLayout";
 import { BookDetailTitle } from "@components/books/BookDetailTitle/BookDetailTitle";
 
