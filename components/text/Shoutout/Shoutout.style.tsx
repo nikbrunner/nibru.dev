@@ -2,9 +2,11 @@ import { ComponentProps } from "react";
 import { css } from "@emotion/react";
 
 import styled from "@emotion/styled";
-import { Shoutout } from "./Shoutout";
 import { space } from "@theme/mixins/space";
 import { border, borderWidth } from "@theme/mixins/border";
+import { shadow } from "@theme/mixins/shadow";
+
+import { Shoutout } from "./Shoutout";
 
 const style_border = (color: string) => css`
   padding: ${space.xl};
@@ -17,6 +19,8 @@ const Style = styled.div<Partial<ComponentProps<typeof Shoutout>>>`
 
   position: relative;
   margin: ${space["3xl"]} 0;
+  background-color: ${({ theme }) => theme.bg.primary};
+  box-shadow: ${shadow.box.sharp};
 
   & > * {
     margin-bottom: 0;
