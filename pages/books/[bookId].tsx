@@ -6,7 +6,7 @@ import { Page } from "@components/layout/Page";
 import { getBook, getBooks, getHighlightsForBook } from "@lib/readwise";
 import { BookHighlight } from "@components/books/BookHighlight";
 import { BookHighlightsLayout } from "@components/books/BookHighlightsLayout";
-import { BookDetailTitle } from "@components/books/BookDetailTitle";
+import { BookDetailTitle } from "@components/books/BookDetailTitle/BookDetailTitle";
 
 interface IProps {
   book: IReadwiseBook;
