@@ -6,7 +6,7 @@ import { IReadwiseBooks } from "@typings/Readwise";
 import { Page } from "@components/layout/Page";
 import { Section } from "@components/layout/Section";
 import { Paragraph } from "@components/text/Paragraph/Paragraph";
-import { BookCard } from "@components/books/BookCard";
+import { BookCard } from "@components/books/BookCard/BookCard";
 import { BookCardsLayout } from "@components/books/BookCardsLayout";
 
 import { filterBooksByTag, getBooks } from "@lib/readwise";
