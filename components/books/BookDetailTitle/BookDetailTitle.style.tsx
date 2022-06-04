@@ -1,3 +1,4 @@
+import { ComponentProps } from "react";
 import styled from "@emotion/styled";
 
 import { flex } from "@theme/mixins/layout";
@@ -5,7 +6,11 @@ import { margin, padding } from "@theme/mixins/spacing";
 import { mq } from "@theme/mixins/media-queries";
 import { text } from "@theme/mixins/text";
 
-const Style = styled.header`
+import { BookDetailTitle } from "./BookDetailTitle";
+
+type Props = Partial<ComponentProps<typeof BookDetailTitle>>;
+
+const Style = styled.header<Props>`
   ${flex({ flexflow: "column nowrap" })};
 
   ${mq.m} {

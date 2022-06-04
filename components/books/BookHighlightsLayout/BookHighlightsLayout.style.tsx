@@ -1,10 +1,15 @@
+import { ComponentProps } from "react";
 import styled from "@emotion/styled";
 
 import { space } from "@theme/mixins/space";
 import { padding } from "@theme/mixins/spacing";
 import { mq } from "@theme/mixins/media-queries";
 
-const Style = styled.ul`
+import { BookHighlightsLayout } from "./BookHighlightsLayout";
+
+type Props = Partial<ComponentProps<typeof BookHighlightsLayout>>;
+
+const Style = styled.ul<Props>`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: ${space.xxl};

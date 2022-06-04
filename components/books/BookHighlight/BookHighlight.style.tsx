@@ -1,3 +1,4 @@
+import { ComponentProps } from "react";
 import styled from "@emotion/styled";
 
 import { border } from "@mixins/border";
@@ -7,7 +8,11 @@ import { mq } from "@theme/mixins/media-queries";
 import { text } from "@theme/mixins/text";
 import { shadow } from "@theme/mixins/shadow";
 
-const Style = styled.div`
+import { BookHighlight } from "./BookHighlight";
+
+type Props = Partial<ComponentProps<typeof BookHighlight>>;
+
+const Style = styled.div<Props>`
   label: BookHighlight;
 
   ${flex({
