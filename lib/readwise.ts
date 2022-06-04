@@ -11,10 +11,7 @@ const HIGHLIGHTS_SUBPATH: string = "highlights";
 
 const READWISE_TOKEN: string = process.env.READWISE_TOKEN || "";
 
-export const filterBooksByTag = (
-  books: IReadwiseBooks,
-  tagName: string
-) => {
+export const filterBooksByTag = (books: IReadwiseBooks, tagName: string) => {
   return books
     ? books.results?.filter(
         ({ tags }) => tags.filter(tag => tag.name === tagName).length > 0
@@ -22,21 +19,21 @@ export const filterBooksByTag = (
     : [];
 };
 
-const fetchFromReadwiseAPI = async (
-  subpath: string
-): Promise<Response> => {
+// TODO Add Better Error Handling
+const fetchFromReadwiseAPI = async (subpath: string): Promise<Response> => {
+  if (!READWISE_TOKEN) {
+    console.error("No Readwise Token found! Please add a Token via .env.local!");
+  }
+
   const authorizationHeader: IReadwiseAuthorizationHeader = {
     Authorization: `Token ${READWISE_TOKEN}`
   };
 
-  const res: Response = await fetch(
-    `${READWISE_API_BASE_URL}/${subpath}`,
-    {
-      headers: {
-        ...authorizationHeader
-      }
+  const res: Response = await fetch(`${READWISE_API_BASE_URL}/${subpath}`, {
+    headers: {
+      ...authorizationHeader
     }
-  );
+  });
 
   return res;
 };
