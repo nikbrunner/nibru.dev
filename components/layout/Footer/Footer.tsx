@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
 import { RiXingLine } from "react-icons/ri";
 
@@ -6,43 +5,10 @@ import { Link } from "@components/text/Link/Link";
 import { Container } from "@components/layout/Container";
 import { ThemeToggle } from "@components/ui/ThemeToggle/ThemeToggle";
 
-import { background } from "@mixins/background";
-import { margin, padding } from "@theme/mixins/spacing";
-import { flex } from "@theme/mixins/layout";
-import { space } from "@theme/mixins/space";
-import { text } from "@theme/mixins/text";
-
-const SFooter = styled.footer`
-  ${({ theme }) => background.color.primary(theme)};
-
-  ${margin.top["xxl"]};
-
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.1);
-
-  .inner-wrapper {
-    ${padding.y.m};
-    ${flex({ justifyContent: "space-between", gap: space.xs })};
-  }
-
-  .social-icons {
-    ${flex({ alignItems: "center", gap: space.s })};
-
-    a {
-      ${flex({
-        justifyContent: "center",
-        alignItems: "center",
-        inline: true
-      })};
-      ${text.size.base};
-    }
-  }
-`;
+import Style from "./Footer.style";
 
 export const Footer: React.FC = () => (
-  <SFooter>
+  <Style>
     <Container>
       <div className="inner-wrapper">
         <div className="theme-toggle">
@@ -84,5 +50,5 @@ export const Footer: React.FC = () => (
         </div>
       </div>
     </Container>
-  </SFooter>
+  </Style>
 );

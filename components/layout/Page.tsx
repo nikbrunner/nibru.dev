@@ -4,11 +4,11 @@ import Head from "next/head";
 
 import { Nav } from "@components/layout/Nav";
 import { Container } from "@components/layout/Container";
-import { Footer } from "@components/layout/Footer";
 
 import { IGenericProps } from "@typings/GenericProps";
 import { padding } from "@theme/mixins/spacing";
 import { config } from "@config/config";
+import { Footer } from "./Footer/Footer";
 
 interface IProps extends IGenericProps {
   children: ReactNode;
