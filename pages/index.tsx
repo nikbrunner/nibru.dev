@@ -132,11 +132,15 @@ const Home = () => {
               Styled Components with EmotionCSS
             </Link>{" "}
             and best practices with some side projects, like my{" "}
+            <Link href="https://github.com/terra-theme" type="external">
+              Terra Theme
+            </Link>
+            ,{" "}
             <Link
               href="https://github.com/nikbrunner/obsidian-deep-work-theme"
               type="external"
             >
-              Obsidian Deep Work Theme
+              my Obsidian Deep Work Theme
             </Link>
             , which has <Highlight>over 40k downloads</Highlight> at the moment, or
             of course{" "}
