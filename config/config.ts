@@ -7,7 +7,7 @@ export interface IConfig {
 }
 
 export const config: IConfig = {
-  siteTitle: "nibru.dev",
+  siteTitle: "nbr.land",
   dateFormat: "YY.MM.DD",
   breakpoints: {
     xs: 320,

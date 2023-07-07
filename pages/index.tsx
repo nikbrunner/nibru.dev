@@ -144,7 +144,7 @@ const Home = () => {
             </Link>
             , which has <Highlight>over 40k downloads</Highlight> at the moment, or
             of course{" "}
-            <Link href="https://github.com/nikbrunner/nibru.dev" type="external">
+            <Link href="https://nbr.land" type="external">
               this website
             </Link>
             .
